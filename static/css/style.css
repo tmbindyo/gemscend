@@ -4028,6 +4028,43 @@ Section Title
 
 
 
+
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  z-index: 9999;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float img {
+  width: 35px;
+  height: 35px;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #1ebd57;
+}
+
+
+
+
+
+
+
+
+
+
 .hero-1 {
   padding: 170px 0 170px;
   background: #F5F5F5;
