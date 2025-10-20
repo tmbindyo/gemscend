@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-wtv=@6kvvw8x#64ks16fx+jqf0!a*8qo%5gerq+%1so)v@1cb5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['174.138.0.18', 'localhost', 'gemscend.tomulumbi.com']
 
 
 # Application definition
