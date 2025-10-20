@@ -1,0 +1,856 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Gemscend - Refer and Earn </title>
+<!-- Stylesheets -->
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+<link rel="icon" href="images/favicon.svg" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.flag-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+</style>
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="spinner">                
+            </div>
+            <div class="txt-loading">
+                <span data-text-preloader="G" class="letters-loading">
+                    G
+                </span>
+                <span data-text-preloader="E" class="letters-loading">
+                    E
+                </span>
+                <span data-text-preloader="M" class="letters-loading">
+                    M
+                </span>
+                <span data-text-preloader="S" class="letters-loading">
+                    S
+                </span>
+                <span data-text-preloader="C" class="letters-loading">
+                    C
+                </span>
+                <span data-text-preloader="E" class="letters-loading">
+                    E
+                </span>
+                <span data-text-preloader="N" class="letters-loading">
+                    N
+                </span>
+                <span data-text-preloader="D" class="letters-loading">
+                    D
+                </span>
+            </div>
+            <p class="text-center">Loading</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll To Top -->
+    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+    <!-- Main Header-->
+    <header class="main-header header-style-one header-5">
+        <!-- Header Lower -->
+        <div class="header-lower header-lower5 show-header-section">
+            <!-- Main box -->
+            <div class="main-box">				
+                <!--Nav Box-->
+                <div class="nav-outer">
+                    <div class="logo-box">
+                        <div class="logo"><a href="{% url 'template-index' %}"><img src="{% static 'images/gemscend/logo.png' %}" alt="" style="max-width:350px; height:auto;" title="finclix"></a></div>
+                    </div>
+                    <nav class="nav main-menu">
+                        <ul class="navigation">
+                            <li><a href="{% url 'index' %}">Home</a></li>
+                            <li><a href="#home">How It Works</a></li>
+                            <li><a href="#home">Pricing</a></li>
+                            <li><a href="{% url 'faqs' %}">FAQ's</a></li>
+                            <li><a href="{% url 'refer_and_earn' %}">Refer & Earn</a></li>
+                            <li class="dropdown">
+                                <a href="#">
+                                    <img src="https://flagcdn.com/48x36/gb.png" alt="English" class="flag-icon">
+                                    EN
+                                    <span class="chevron">▼</span>
+                                </a>
+                                <ul>
+                                    <li>
+                                    <a href="#"><img src="https://flagcdn.com/48x36/fr.png" class="flag-icon"> FR</a>
+                                    </li>
+                                    <li>
+                                    <a href="#"><img src="https://flagcdn.com/48x36/de.png" class="flag-icon"> DE</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                        </ul>
+                    </nav>
+                    <!-- Main Menu End-->
+                    <div class="outer-box">
+                        <a href="{% url 'template-contact' %}" class="theme-btn btn-style-four btn-outline">
+                            Log-In
+                        </a>
+                        <a href="{% url 'template-contact' %}" class="theme-btn btn-style-four btn-solid">
+                            Register Now
+                        </a>
+                        <!-- Mobile Nav toggler -->
+                        <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Header Lower -->
+
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+
+            <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+            <nav class="menu-box">
+                <div class="upper-box">
+                    <div class="nav-logo"><a href="{% url 'template-index' %}"><img src="{% static 'images/white-logo.png' %}" alt=""></a></div>
+                    <div class="close-btn"><i class="icon fa fa-times"></i></div>
+                </div>
+
+                <ul class="navigation clearfix">
+                    <!--Keep This Empty / Menu will come through Javascript-->
+                </ul>
+                <ul class="contact-list-one">
+                    <li>
+                        <!-- Contact Info Box -->
+                        <div class="contact-info-box">
+                            <i class="icon lnr-icon-phone-handset"></i>
+                            <span class="title">Call Now</span>
+                            <a href="tel:+92880098670">+92 (8800) - 98670</a>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- Contact Info Box -->
+                        <div class="contact-info-box">
+                            <span class="icon lnr-icon-envelope1"></span>
+                            <span class="title">Send Email</span>
+                            <a href="/cdn-cgi/l/email-protection#670f020b172704080a1706091e4904080a"><span class="__cf_email__" data-cfemail="3a525f564a7a5955574a5b544314595557">[email&#160;protected]</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- Contact Info Box -->
+                        <div class="contact-info-box">
+                            <span class="icon lnr-icon-clock"></span>
+                            <span class="title">Send Email</span>
+                            Mon - Sat 8:00 - 6:30, Sunday - CLOSED
+                        </div>
+                    </li>
+                </ul>
+
+
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </nav>
+        </div><!-- End Mobile Menu -->
+
+        <!-- Header Search -->
+        <div class="search-popup">
+          <span class="search-back-drop"></span>
+          <button class="close-search"><span class="fa fa-times"></span></button>
+          <div class="search-inner">
+            <form method="post" action="index.html">
+              <div class="form-group">
+                <input type="search" name="search-field" value="" placeholder="Search..." required="">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- End Header Search -->
+
+        <!-- Sticky Header  -->
+        <div class="sticky-header">
+            <div class="auto-container">
+                <div class="inner-container">
+                    <!--Logo-->
+                    <div class="logo">
+                        <a href="{% url 'template-index' %}"><img src="{% static 'images/black-logo.png' %}" alt="img"></a>
+                    </div>
+
+                    <!--Right Col-->
+                    <div class="nav-outer">
+                        <!-- Main Menu -->
+                        <nav class="main-menu">
+                            <div class="navbar-collapse show collapse clearfix">
+                                <ul class="navigation clearfix">
+                                    <!--Keep This Empty / Menu will come through Javascript-->
+                                </ul>
+                            </div>
+                        </nav><!-- Main Menu End-->
+
+                        <!--Mobile Navigation Toggler-->
+                        <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End Sticky Menu -->
+    </header>
+    <!--End Main Header -->
+
+    <!-- Hero Section Start -->
+    {% comment %} <section class="hero-section hero-5 parallaxie bg-cover" style="background-image: url('{% static 'images/header-image/gemscend _header_transparent_slice.png' %}');">
+        <div class="banner-outer">
+            <div class="hero-content">
+                <h1 class="banner-title wow fadeInUp" data-wow-delay=".2s">The Journey Starts Now!</h1>
+
+
+                <div class="info mt-50 wow fadeInUp" data-wow-delay=".2s">
+                    <a href="{% url 'template-contact' %}" class="theme-btn btn-style-five btn-outline">
+                        Get Started Today!
+                    </a>
+                </div>
+            </div>
+        </div>				
+    </section> {% endcomment %}
+	{% comment %} <section class="gemscend-hero-section">
+		<!-- Pulsing background layer -->
+		<div class="gemscend-hero-bg"></div>
+
+		<!-- Transparent main image layer -->
+		<div class="gemscend-hero-image"></div>
+
+		<!-- Glowing sides -->
+		<div class="gemscend-glow-left"></div>
+		<div class="gemscend-glow-right"></div>
+
+		<!-- Text content -->
+		<div class="gemscend-banner-outer">
+			<div class="gemscend-hero-content">
+			<h1 class="gemscend-banner-title wow fadeInUp" data-wow-delay=".2s">
+				The Journey Starts Now!
+			</h1>
+
+			<div class="gemscend-info mt-50 wow fadeInUp" data-wow-delay=".2s">
+				<a href="{% url 'template-contact' %}" class="theme-btn btn-style-five btn-outline">
+				Get Started Today!
+				</a>
+			</div>
+			</div>
+		</div>
+	</section> {% endcomment %}
+
+    {% comment %} <section class="refer_and_earn-section">
+        <!-- Background and glow layers -->
+        <div class="refer_and_earn-bg"></div>
+        <div class="refer_and_earn-image"></div>
+        <div class="refer_and_earn-glow-left"></div>
+        <div class="refer_and_earn-glow-right"></div>
+
+        <!-- Foreground content -->
+        <div class="refer_and_earn-banner-outer">
+            <div class="refer_and_earn-hero-content">
+                <h1 class="refer_and_earn-banner-title wow fadeInUp" data-wow-delay=".2s">
+                    Turn your network into rewards!
+                </h1>
+                <p class="refer_and_earn-subtext wow fadeInUp" data-wow-delay=".3s">
+                    Start earning up to <strong>5% commission</strong> on every referral.
+                </p>
+            </div>
+
+            <!-- Button group -->
+            <div class="refer_and_earn-buttons wow fadeInUp" data-wow-delay=".4s">
+                <a href="#" class="theme-btn btn-style-five">Become An Affiliate</a>
+                <a href="#" class="theme-btn btn-outline">Affiliate Login</a>
+            </div>
+
+            <!-- Bottom content group -->
+            <div class="refer_and_earn-bottom-group">
+                <div class="refer_and_earn-content-left">
+                    <h3>
+                        By becoming an official <span>Gemscend partner</span> you unlock:
+                    </h3>
+                    <ul class="refer_and_earn-features">
+                        <li>
+                            <div class="icon"><img src="{% static 'images/gemscend/partnership.gif' %}" alt="Affiliate Deals"></div>
+                            Custom Affiliate Deals
+                        </li>
+                        <li>
+                            <div class="icon"><img src="{% static 'images/gemscend/giveaway.gif' %}" alt="Giveaway Accounts"></div>
+                            Giveaway Accounts
+                        </li>
+                        <li>
+                            <div class="icon"><img src="{% static 'images/gemscend/exclusive.gif' %}" alt="Merch"></div>
+                            Exclusive Gemscend Merchandise
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="refer_and_earn-video">
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/example"
+                        title="Affiliate Program Overview"
+                        frameborder="0"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section> {% endcomment %}
+
+    <section class="refer_and_earn-section">
+        <div class="refer_and_earn-banner-outer">
+            <div class="refer_and_earn-hero-content">
+                <h1 class="refer_and_earn-banner-title wow fadeInUp" data-wow-delay=".2s">
+                    Turn your network into rewards!
+                </h1>
+                <p class="refer_and_earn-subtext wow fadeInUp" data-wow-delay=".3s">
+                    Start earning up to <strong>5% commission</strong> on every referral.
+                </p>
+            </div>
+
+            <!-- Button group -->
+            <div class="refer_and_earn-buttons wow fadeInUp" data-wow-delay=".4s">
+                <a href="#" class="theme-btn btn-style-five" style="background-color: white; color: var(--gemscend-emerald);">
+                    Become An Affiliate
+                </a>
+                <a href="#" class="theme-btn btn-style-five" style="background-color: transparent; color: white; border: 1px solid white;">
+                    Affiliate Login
+                </a>
+            {% comment %} <a href="#" class="theme-btn btn-outline">Affiliate Login</a> {% endcomment %}
+            </div>
+
+            <!-- Bottom content group -->
+            <div class="refer_and_earn-bottom-group">
+            <div class="refer_and_earn-content-left">
+                <h3 style="font-size: 32px;">
+                    By becoming an official <br> <span>Gemscend partner</span> you unlock:
+                </h3>
+                <ul class="refer_and_earn-features">
+                <li>
+                    <div class="icon"><img src="{% static 'images/gemscend/partnership.gif' %}" alt="Affiliate Deals"></div>
+                    Custom Affiliate Deals
+                </li>
+                <li>
+                    <div class="icon"><img src="{% static 'images/gemscend/giveaway.gif' %}" alt="Giveaway Accounts"></div>
+                    Giveaway Accounts
+                </li>
+                <li>
+                    <div class="icon"><img src="{% static 'images/gemscend/exclusive.gif' %}" alt="Merch"></div>
+                    Exclusive Gemscend Merchandise
+                </li>
+                </ul>
+            </div>
+
+            <div class="refer_and_earn-video">
+                <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/example"
+                title="Affiliate Program Overview"
+                frameborder="0"
+                allowfullscreen>
+                </iframe>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Horizontal accordion area start here -->
+    {% comment %} <section class="dual-showcase-section">
+        <div class="container-fluid" style="max-width: 90%;">
+            <div class="row align-items-center g-5">
+				<!-- LEFT: Video -->
+				<div class="col-lg-6 text-center text-lg-start">
+					<h2 class="fw-bold text-white mb-4">How It Works</h2>
+					<div class="video-box border border-2 rounded-4 overflow-hidden" style="border-color: #00c96b;">
+						<iframe src="https://www.youtube.com/embed/edfHZq5lrTA" title="How It Works Video" class="w-100" style="aspect-ratio: 16/9;" allowfullscreen loading="lazy"></iframe>
+					</div>
+				</div>
+
+				<!-- RIGHT: Calculator -->
+				<div class="bg-white rounded-4 shadow p-4 mx-auto" style="max-width: 800px;">
+					<h5 class="fw-bold text-success text-center mb-4" style="font-size: 40px;">Choose Your Account Size</h5>
+					
+					<!-- Account Size Slider -->
+					<div class="slider-container mb-5">
+						<div class="d-flex justify-content-between small text-muted mb-2">
+						<span>$3K</span><span>$50K</span><span>$100K</span>
+						</div>
+						<input type="range" class="form-range" min="3000" max="100000" step="1000" id="accountRange" value="10000">
+						<div id="accountTooltip" class="slider-tooltip">$10,000</div>
+					</div>
+
+					<!-- Profit Percentage Slider -->
+					<div class="slider-container mb-4">
+						<input type="range" class="form-range" min="1" max="100" step="1" id="profitRange" value="12">
+						<div id="profitTooltip" class="slider-tooltip">12%</div>
+					</div>
+
+					<p class="fw-semibold text-muted text-center" style="font-size: 30px;">Net Trader Take Home 80%</p>
+					<div class="bg-dark text-white rounded-3 p-3 mt-3 text-center earnings-box">
+						<h3 class="mb-0 fw-bold text-white" style="font-size: 40px;">$25,000<span class="fs-5">/Month</span></h3>
+					</div>
+				</div>
+
+				
+
+            </div>
+        </div>
+    </section> {% endcomment %}
+    <section class="how-it-works-css fix section-padding">
+        <div class="auto-container">
+            <div class="sec-title text-center">
+            <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                How Our Affiliate Model Works
+            </h2>
+            {% comment %} <h3 class="wow fadeInUp" data-wow-delay=".3s">
+                Join our <span class="text-gemscend-emerald">Gemscend Affiliate Program</span> today
+            </h3> {% endcomment %}
+            </div>
+
+            <!-- Combined Steps Row -->
+            <div class="how-it-works-row">
+            <!-- Step 1 -->
+            <div class="step-group">
+                <div class="number-box">1</div>
+                <img src="{% static 'images/gemscend/down.gif' %}" alt="arrow down" class="arrow-down">
+                <div class="step">
+                <h4>Apply</h4>
+                <p>Apply for our Gemscend affiliate program</p>
+                </div>
+            </div>
+
+            <img src="{% static 'images/gemscend/horizontal_image.gif' %}" alt="arrow" class="horizontal-arrow">
+
+            <!-- Step 2 -->
+            <div class="step-group">
+                <div class="number-box">2</div>
+                <img src="{% static 'images/gemscend/down.gif' %}" alt="arrow down" class="arrow-down">
+                <div class="step">
+                <h4>Verify</h4>
+                <p>After verification you'll receive your affiliate account credentials via email</p>
+                </div>
+            </div>
+
+            <img src="{% static 'images/gemscend/horizontal_image.gif' %}" alt="arrow" class="horizontal-arrow">
+
+            <!-- Step 3 -->
+            <div class="step-group">
+                <div class="number-box">3</div>
+                <img src="{% static 'images/gemscend/down.gif' %}" alt="arrow down" class="arrow-down">
+                <div class="step">
+                <h4>Promote</h4>
+                <p>Promote Gemscend and share your affiliate link</p>
+                </div>
+            </div>
+
+            <img src="{% static 'images/gemscend/horizontal_image.gif' %}" alt="arrow" class="horizontal-arrow">
+
+            <!-- Step 4 -->
+            <div class="step-group">
+                <div class="number-box">4</div>
+                <img src="{% static 'images/gemscend/down.gif' %}" alt="arrow down" class="arrow-down">
+                <div class="step">
+                <h4>Track</h4>
+                <p>Track your progress via your affiliate dashboard</p>
+                </div>
+            </div>
+
+            <img src="{% static 'images/gemscend/horizontal_image.gif' %}" alt="arrow" class="horizontal-arrow">
+
+            <!-- Step 5 -->
+            <div class="step-group">
+                <div class="number-box">5</div>
+                <img src="{% static 'images/gemscend/down.gif' %}" alt="arrow down" class="arrow-down">
+                <div class="step">
+                <h4>Payout</h4>
+                <p>Request your payout once you reach your commission target</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer Section Start -->
+      <footer class="footer-section-1 fix footer-bg bg-cover" style="background-color: #eef8f0;">
+        <div class="container-fluid"> 
+            <div class="row text-center">
+                <div class="footer-widget-wrapper">
+                    <div class="row justify-content-between">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="footer-widget-items mt-30">
+                        <div class="widget-title mb-25">
+                            <a href="{% url 'template-index' %}" class="footer-logo">
+                            <img src="{% static 'images/gemscend/logo.png' %}" alt="img" />
+                            </a>
+                        </div>
+                        <div class="footer-content">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="footer-widget-items mt-30">
+                        <div class="widget-title mb-25">
+                            <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Postal Address</h3>
+                        </div>
+                        <p class="font-size-15 text-gemscend-emerald font-weight-500">Top Floor, Rodney Court Building, Rodney Bay, Gros Islet, Saint Lucia, LC01 401</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".6s">
+                        <div class="footer-widget-items mt-30">
+                        
+                            <div class="widget-title mb-25">
+                                <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Contact Details</h3>
+                                <p class="font-size-15 text-gemscend-emerald font-weight-500">support@gemscend.com</p>
+                            </div>
+                            <div class="widget-title mb-25">
+                                <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Registration Number</h5>
+                                <p class="font-size-15 text-gemscend-emerald font-weight-500">2025-00572</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".8s">
+                        <div class="footer-widget-items mt-30">
+                            <div class="widget-title mb-25" style="display:flex; justify-content:center;">
+                            <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75" 
+                                style="text-align:left;">
+                                Socials
+                            </h3>
+                            </div>
+
+                            <!-- wrapper only for ul -->
+                            <div style="display:flex; justify-content:center;">
+                            <ul class="contact-list" 
+                                style="display:flex; flex-direction:column; align-items:flex-start; gap:8px; padding:0; margin:0;">
+                                
+                                <li style="display:flex; align-items:center; gap:8px; list-style:none;">
+                                <i class="fa-brands fa-facebook-f text-gemscend-dark-emerald-75" style="font-size:18px;"></i>
+                                <a href="https://facebook.com" style="font-size:16px; text-decoration:none;" class="text-gemscend-emerald">
+                                    Facebook
+                                </a>
+                                </li>
+
+                                <li style="display:flex; align-items:center; gap:8px; list-style:none;">
+                                <i class="fa-brands fa-instagram text-gemscend-dark-emerald-75" style="font-size:18px;"></i>
+                                <a href="https://instagram.com" style="font-size:16px; text-decoration:none;" class="text-gemscend-emerald">
+                                    Instagram
+                                </a>
+                                </li>
+
+                                <li style="display:flex; align-items:center; gap:8px; list-style:none;">
+                                <i class="fa-brands fa-twitter text-gemscend-dark-emerald-75" style="font-size:18px;"></i>
+                                <a href="https://x.com" style="font-size:16px; text-decoration:none;" class="text-gemscend-emerald">
+                                    X
+                                </a>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <div class="footer-bottom">
+            <div class="auto-container" style="display:flex; justify-content:center; flex-wrap:wrap; align-items:center; text-align:center; gap:40px;">
+                <p class="wow fadeInUp text-white" data-wow-delay=".3s" style="margin:0;">
+                    © Gemscend Limited. All Rights Reserved
+                </p>
+
+
+                <p class="wow fadeInUp" data-wow-delay=".3s"><a href="{% url 'legal' %}#privacy_policy" class="text-white">Privacy Policy</a></p>
+                <p class="wow fadeInUp" data-wow-delay=".3s"><a href="{% url 'legal' %}#disclaimer" class="text-white">Disclaimer</a></p>
+                <p class="wow fadeInUp" data-wow-delay=".3s"><a href="{% url 'legal' %}#terms_and_conditions" class="text-white">Terms and Conditions</a></p>
+            </div>
+
+        </div>
+      </footer>
+
+</div><!-- End Page Wrapper -->
+
+{% comment %} <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const marquee = document.querySelector('.marquee');
+    const marqueeGroup = document.querySelector('.marquee-group');
+    
+    // Get all the items from the original group
+    const items = Array.from(marqueeGroup.children);
+    
+    // Create a new container that will hold both original and duplicated content
+    const newContainer = document.createElement('div');
+    newContainer.className = 'marquee-group';
+    newContainer.style.display = 'flex';
+    newContainer.style.alignItems = 'center';
+    newContainer.style.animation = 'scroll 30s linear infinite';
+    
+    // Add original items
+    items.forEach(item => {
+        newContainer.appendChild(item.cloneNode(true));
+    });
+    
+    // Add duplicated items for seamless loop
+    items.forEach(item => {
+        newContainer.appendChild(item.cloneNode(true));
+    });
+    
+    // Replace the original marquee group with the new container
+    marqueeGroup.parentNode.replaceChild(newContainer, marqueeGroup);
+});
+</script> {% endcomment %}
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // --- Account size buttons functionality ---
+    const accountOptions = document.querySelectorAll('.account-option');
+    const accountRange = document.getElementById('accountRange');
+    const accountTooltip = document.getElementById('accountTooltip');
+    
+    accountOptions.forEach(option => {
+        option.addEventListener('click', function() {
+            accountOptions.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            const value = this.getAttribute('data-value');
+            accountRange.value = value;
+            accountTooltip.textContent = `$${parseInt(value).toLocaleString()}`;
+            updateTooltipPosition(accountRange, accountTooltip);
+            calculateEarnings();
+        });
+    });
+    
+    function updateTooltipPosition(slider, tooltip) {
+        const percent = (slider.value - slider.min) / (slider.max - slider.min);
+        const sliderWidth = slider.offsetWidth;
+        const tooltipWidth = tooltip.offsetWidth;
+        const left = percent * (sliderWidth - tooltipWidth) + tooltipWidth / 2;
+        tooltip.style.left = `${left}px`;
+    }
+
+    updateTooltipPosition(accountRange, accountTooltip);
+    updateTooltipPosition(document.getElementById('profitRange'), document.getElementById('profitTooltip'));
+    
+    accountRange.addEventListener('input', function() {
+        accountTooltip.textContent = `$${parseInt(this.value).toLocaleString()}`;
+        updateTooltipPosition(this, accountTooltip);
+        calculateEarnings();
+    });
+    
+    document.getElementById('profitRange').addEventListener('input', function() {
+        document.getElementById('profitTooltip').textContent = `${this.value}%`;
+        updateTooltipPosition(this, document.getElementById('profitTooltip'));
+        calculateEarnings();
+    });
+    
+    function calculateEarnings() {
+        // Add your earnings calculation logic here
+    }
+
+
+    // --- Info tooltip system for table icons (arrow on right side) ---
+    const infoIcons = document.querySelectorAll('.info-tooltip');
+    infoIcons.forEach(icon => {
+        let tooltip;
+
+        icon.addEventListener('mouseenter', () => {
+            const text = icon.getAttribute('data-tooltip');
+            if (!text) return;
+
+            tooltip = document.createElement('div');
+            tooltip.className = 'floating-tooltip arrow-right'; // 👈 pointer from the right
+            tooltip.innerText = text;
+            document.body.appendChild(tooltip);
+
+            const rect = icon.getBoundingClientRect();
+            const tooltipWidth = tooltip.offsetWidth;
+            const tooltipHeight = tooltip.offsetHeight;
+
+            // Position tooltip to the LEFT of the icon
+            const left = rect.left - tooltipWidth - 12; // 12px gap
+            const top = rect.top + rect.height / 2 - tooltipHeight / 2;
+
+            tooltip.style.left = `${left}px`;
+            tooltip.style.top = `${top}px`;
+            tooltip.classList.add('visible');
+        });
+
+        icon.addEventListener('mouseleave', () => {
+            if (tooltip) {
+                tooltip.remove();
+                tooltip = null;
+            }
+        });
+    });
+});
+</script>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const accountOptions = document.querySelectorAll('.account-option');
+    const accountRange = document.getElementById('accountRange');
+    const profitRange = document.getElementById('profitRange');
+    const monthlyEarnings = document.getElementById('monthlyEarnings');
+    const accountTooltip = document.getElementById('accountTooltip');
+    const profitTooltip = document.getElementById('profitTooltip');
+    
+    // Update slider tooltip position and value
+    function updateSliderTooltip(slider, tooltip) {
+        const min = parseFloat(slider.min);
+        const max = parseFloat(slider.max);
+        const value = parseFloat(slider.value);
+        const percent = (value - min) / (max - min);
+        
+        // Position tooltip above thumb
+        const sliderRect = slider.getBoundingClientRect();
+        const tooltipWidth = tooltip.offsetWidth;
+        const left = percent * (sliderRect.width - 24) + 12; // 24px is thumb width
+        
+        tooltip.style.left = `${left}px`;
+        
+        // Update tooltip text based on slider type
+        if (slider.id === 'accountRange') {
+            const valueInK = value >= 1000 ? `$${(value/1000).toFixed(0)}K` : `$${value}`;
+            tooltip.textContent = valueInK;
+        } else {
+            tooltip.textContent = `${value}%`;
+        }
+    }
+    
+    // Calculate monthly earnings
+    function calculateEarnings() {
+        const accountSize = parseInt(accountRange.value);
+        const profitPercent = parseInt(profitRange.value);
+        const traderTakeHome = 0.8; // 80%
+        
+        // Monthly earnings calculation: (accountSize * profitPercent / 100) * traderTakeHome
+        const monthlyProfit = (accountSize * profitPercent / 100) * traderTakeHome;
+        
+        // Format number with commas
+        const formattedEarnings = new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD',
+            minimumFractionDigits: 0,
+            maximumFractionDigits: 0
+        }).format(monthlyProfit);
+        
+        monthlyEarnings.innerHTML = `${formattedEarnings}<span class="fs-5">/Month</span>`;
+    }
+    
+    // Account size buttons functionality
+    accountOptions.forEach(option => {
+        option.addEventListener('click', function() {
+            // Remove active class from all buttons
+            accountOptions.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            this.classList.add('active');
+            // Update slider value
+            const value = this.getAttribute('data-value');
+            accountRange.value = value;
+            updateSliderTooltip(accountRange, accountTooltip);
+            calculateEarnings();
+        });
+    });
+    
+    // Update on slider input
+    accountRange.addEventListener('input', function() {
+        // Update active button based on value
+        accountOptions.forEach(btn => {
+            const btnValue = btn.getAttribute('data-value');
+            btn.classList.toggle('active', parseInt(btnValue) === parseInt(this.value));
+        });
+        updateSliderTooltip(accountRange, accountTooltip);
+        calculateEarnings();
+    });
+    
+    profitRange.addEventListener('input', function() {
+        updateSliderTooltip(profitRange, profitTooltip);
+        calculateEarnings();
+    });
+    
+    // Initialize tooltips and calculations
+    updateSliderTooltip(accountRange, accountTooltip);
+    updateSliderTooltip(profitRange, profitTooltip);
+    calculateEarnings();
+    
+    // Update tooltips on window resize
+    window.addEventListener('resize', function() {
+        updateSliderTooltip(accountRange, accountTooltip);
+        updateSliderTooltip(profitRange, profitTooltip);
+    });
+});
+</script>
+
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="{% static 'js/jquery.js' %}"></script> 
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.js' %}"></script>
+<script src="{% static 'js/jquery-ui.js' %}"></script>
+<script src="{% static 'js/gsap.js' %}"></script>
+<script src="{% static 'js/gsap-scroll-to-plugin.js' %}"></script>
+<script src="{% static 'js/gsap-scroll-smoother.js' %}"></script>
+<script src="{% static 'js/gsap-scroll-trigger.js' %}"></script>
+<script src="{% static 'js/gsap-split-text.js' %}"></script>
+<script src="{% static 'js/split-type.min.js' %}"></script>
+<script src="{% static 'js/parallaxie.js' %}"></script>
+<script src="{% static 'js/wow.js' %}"></script>
+<script src="{% static 'js/bxslider.js' %}"></script>
+<script src="{% static 'js/nice-select.min.js' %}"></script>
+<script src="{% static 'js/knob.js' %}"></script>
+<script src="{% static 'js/appear.js' %}"></script>
+<script src="{% static 'js/swiper.min.js' %}"></script>
+<script src="{% static 'js/mixitup.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

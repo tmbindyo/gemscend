@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Finclix - Business Consulting Html Template </title>
+<!-- Stylesheets -->
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+<link rel="icon" href="images/favicon.svg" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+	<!-- Preloader Start -->
+	<div id="preloader" class="preloader">
+		<div class="animation-preloader">
+			<div class="spinner">                
+			</div>
+			<div class="txt-loading">
+				<span data-text-preloader="F" class="letters-loading">
+					F
+				</span>
+				<span data-text-preloader="I" class="letters-loading">
+					I
+				</span>
+				<span data-text-preloader="N" class="letters-loading">
+					N
+				</span>
+				<span data-text-preloader="C" class="letters-loading">
+					C
+				</span>
+				<span data-text-preloader="L" class="letters-loading">
+					L
+				</span>
+				<span data-text-preloader="I" class="letters-loading">
+					I
+				</span>
+				<span data-text-preloader="X" class="letters-loading">
+					X
+				</span>
+			</div>
+			<p class="text-center">Loading</p>
+		</div>
+		<div class="loader">
+			<div class="row">
+				<div class="col-3 loader-section section-left">
+					<div class="bg"></div>
+				</div>
+				<div class="col-3 loader-section section-left">
+					<div class="bg"></div>
+				</div>
+				<div class="col-3 loader-section section-right">
+					<div class="bg"></div>
+				</div>
+				<div class="col-3 loader-section section-right">
+					<div class="bg"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Scroll To Top -->
+	<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+	<!-- 404 Section -->
+	<section class="">
+		<div class="auto-container pt-120 pb-70">
+			<div class="row">
+				<div class="col-xl-12">
+					<div class="error-page__inner">
+						<div class="error-page__title-box">
+							<img src="{% static 'images/inner/404.jpg' %}" alt="">
+							<h3 class="error-page__sub-title">Page not found!</h3>
+						</div>
+						<p class="error-page__text">Sorry we can't find that page! The page you are looking <br> for
+							was never existed.</p>
+						<form class="error-page__form">
+							<div class="error-page__form-input">
+								<input type="search" placeholder="Search here">
+								<button type="submit"><i class="lnr lnr-icon-magnifier"></i></button>
+							</div>
+						</form>
+						<a href="{% url 'template-index' %}" class="theme-btn btn-style-one">
+								Back to Home
+								<span class="icon"><i class="flaticon-finance-arrow-right-svgrepo-com1-2"></i></span>
+							</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--End 404 Section -->
+	
+
+</div><!-- End Page Wrapper -->
+
+
+
+<script src="{% static 'js/jquery.js' %}"></script> 
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.js' %}"></script>
+<script src="{% static 'js/jquery-ui.js' %}"></script>
+<script src="{% static 'js/gsap.js' %}"></script>
+<script src="{% static 'js/gsap-scroll-to-plugin.js' %}"></script>
+<script src="{% static 'js/gsap-scroll-smoother.js' %}"></script>
+<script src="{% static 'js/gsap-scroll-trigger.js' %}"></script>
+<script src="{% static 'js/gsap-split-text.js' %}"></script>
+<script src="{% static 'js/split-type.min.js' %}"></script>
+<script src="{% static 'js/parallaxie.js' %}"></script>
+<script src="{% static 'js/wow.js' %}"></script>
+<script src="{% static 'js/bxslider.js' %}"></script>
+<script src="{% static 'js/nice-select.min.js' %}"></script>
+<script src="{% static 'js/knob.js' %}"></script>
+<script src="{% static 'js/appear.js' %}"></script>
+<script src="{% static 'js/swiper.min.js' %}"></script>
+<script src="{% static 'js/mixitup.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

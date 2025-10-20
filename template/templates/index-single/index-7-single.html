@@ -1,0 +1,1102 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Finclix - Business Consulting Html Template </title>
+<!-- Stylesheets -->
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+<link rel="icon" href="images/favicon.svg" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+	<!-- Preloader Start -->
+	<div id="preloader" class="preloader">
+		<div class="animation-preloader">
+			<div class="spinner">
+			</div>
+			<div class="txt-loading">
+				<span data-text-preloader="F" class="letters-loading">
+					F
+				</span>
+				<span data-text-preloader="I" class="letters-loading">
+					I
+				</span>
+				<span data-text-preloader="N" class="letters-loading">
+					N
+				</span>
+				<span data-text-preloader="C" class="letters-loading">
+					C
+				</span>
+				<span data-text-preloader="L" class="letters-loading">
+					L
+				</span>
+				<span data-text-preloader="I" class="letters-loading">
+					I
+				</span>
+				<span data-text-preloader="X" class="letters-loading">
+					X
+				</span>
+			</div>
+			<p class="text-center">Loading</p>
+		</div>
+		<div class="loader">
+			<div class="row">
+				<div class="col-3 loader-section section-left">
+					<div class="bg"></div>
+				</div>
+				<div class="col-3 loader-section section-left">
+					<div class="bg"></div>
+				</div>
+				<div class="col-3 loader-section section-right">
+					<div class="bg"></div>
+				</div>
+				<div class="col-3 loader-section section-right">
+					<div class="bg"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Scroll To Top -->
+	<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+	<!-- Main Header-->
+	<header class="main-header header-style-one header-7">
+
+		<!-- Header Lower -->
+		<div class="header-lower">
+			<!-- Main box -->
+			<div class="main-box">				
+				<!--Nav Box-->
+				<div class="nav-outer">
+					<div class="logo-box">
+						<div class="logo"><a href="{% url 'template-index' %}"><img src="{% static 'images/logo/logo.png' %}" alt="" title="finclix"></a></div>
+					</div>
+					<nav class="nav main-menu">
+						<ul class="navigation onepage-nav">
+							<li><a href="#home">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#service">Services</a></li>
+							<li><a href="#testimonial">Testimonial</a></li>
+							<li><a href="#news">News</a></li>
+							<li><a href="#contacts">Contact</a></li>
+						</ul>
+					</nav>
+					<div class="outer-box">
+						<button class="ui-btn search-btn">
+							<i class="icon fal fa-search"></i>
+						</button>
+						<a href="{% url 'template-contact' %}" class="theme-btn btn-style-one">Book Appointment 
+							<div class="icon">
+								<svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.2354 0.65918C12.5726 0.880082 12.5274 0.895284 12.5244 0.896484V0.898438C12.5247 0.89923 12.525 0.900235 12.5254 0.901367C12.5262 0.90369 12.528 0.906438 12.5293 0.910156C12.5319 0.917882 12.5353 0.928976 12.54 0.942383C12.5495 0.969439 12.5632 1.00832 12.5811 1.05664C12.6167 1.15312 12.6691 1.28979 12.7383 1.45703C12.8767 1.79155 13.0846 2.25237 13.3613 2.75977C13.9049 3.75621 14.759 5.0148 15.9541 5.81152C16.152 5.94347 16.3539 6.06407 16.5547 6.17871H0V7.67871H16.5547C16.3539 7.79335 16.152 7.91395 15.9541 8.0459C14.759 8.84262 13.9049 10.1012 13.3613 11.0977C13.0846 11.6051 12.8767 12.0659 12.7383 12.4004C12.6691 12.5676 12.6167 12.7043 12.5811 12.8008C12.5632 12.8491 12.5495 12.888 12.54 12.915C12.5353 12.9284 12.5319 12.9395 12.5293 12.9473C12.528 12.951 12.5262 12.9537 12.5254 12.9561C12.525 12.9572 12.5247 12.9582 12.5244 12.959V12.9609C12.5274 12.9621 12.5726 12.9773 13.2354 13.1982C13.9343 13.4312 13.9471 13.4353 13.9473 13.4355C13.9475 13.4348 13.9476 13.4334 13.9482 13.4316C13.9497 13.4275 13.9527 13.4208 13.9561 13.4111C13.9629 13.3916 13.9735 13.3604 13.9883 13.3203C14.0179 13.24 14.0638 13.1215 14.125 12.9736C14.2478 12.6768 14.432 12.2659 14.6777 11.8154C15.1791 10.8963 15.8915 9.89035 16.7861 9.29395C17.7484 8.65244 18.8053 8.24367 19.6338 7.99512C20.0452 7.87169 20.3941 7.79002 20.6377 7.73926C20.7594 7.71391 20.855 7.69645 20.918 7.68555C20.9492 7.68014 20.9726 7.67614 20.9873 7.67383C20.9946 7.67268 21 7.67231 21.0029 7.67188L21.0049 7.6709L20.9521 6.92871L21.0049 6.18652L21.0029 6.18555C21 6.18511 20.9946 6.18474 20.9873 6.18359C20.9726 6.18128 20.9492 6.17728 20.918 6.17188C20.855 6.16097 20.7594 6.14352 20.6377 6.11816C20.3941 6.0674 20.0452 5.98573 19.6338 5.8623C18.8053 5.61375 17.7484 5.20498 16.7861 4.56348C15.8915 3.96707 15.1791 2.96111 14.6777 2.04199C14.432 1.59155 14.2478 1.18058 14.125 0.883789C14.0638 0.73595 14.0179 0.617398 13.9883 0.537109C13.9735 0.496987 13.9629 0.465833 13.9561 0.446289C13.9527 0.436659 13.9497 0.429922 13.9482 0.425781C13.9476 0.423985 13.9475 0.422593 13.9473 0.421875C13.9471 0.422084 13.9343 0.426207 13.2354 0.65918Z" fill="white"/>
+								</svg>
+							</div>
+						</a>
+						<!-- Mobile Nav toggler -->
+						<div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Header Lower -->
+
+		<!-- Mobile Menu  -->
+		<div class="mobile-menu">
+			<div class="menu-backdrop"></div>
+			<!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+			<nav class="menu-box">
+				<div class="upper-box">
+					<div class="nav-logo"><a href="{% url 'template-index' %}"><img src="{% static 'images/white-logo.png' %}" alt=""></a></div>
+					<div class="close-btn"><i class="icon fa fa-times"></i></div>
+				</div>
+				<ul class="navigation clearfix">
+					<!--Keep This Empty / Menu will come through Javascript-->
+				</ul>
+				<ul class="contact-list-one">
+					<li>
+						<!-- Contact Info Box -->
+						<div class="contact-info-box">
+							<i class="icon lnr-icon-phone-handset"></i>
+							<span class="title">Call Now</span>
+							<a href="tel:+92880098670">+92 (8800) - 98670</a>
+						</div>
+					</li>
+					<li>
+						<!-- Contact Info Box -->
+						<div class="contact-info-box">
+							<span class="icon lnr-icon-envelope1"></span>
+							<span class="title">Send Email</span>
+							<a href="/cdn-cgi/l/email-protection#3058555c4070535f5d40515e491e535f5d"><span class="__cf_email__" data-cfemail="620a070e1222010d0f12030c1b4c010d0f">[email&#160;protected]</span></a>
+						</div>
+					</li>
+					<li>
+						<!-- Contact Info Box -->
+						<div class="contact-info-box">
+							<span class="icon lnr-icon-clock"></span>
+							<span class="title">Send Email</span>
+							Mon - Sat 8:00 - 6:30, Sunday - CLOSED
+						</div>
+					</li>
+				</ul>
+				<ul class="social-links">
+					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+				</ul>
+			</nav>
+		</div><!-- End Mobile Menu -->
+
+		<!-- Header Search -->
+		<div class="search-popup">
+			<span class="search-back-drop"></span>
+			<button class="close-search"><span class="fa fa-times"></span></button>
+			<div class="search-inner">
+				<form method="post" action="index.html">
+					<div class="form-group">
+						<input type="search" name="search-field" value="" placeholder="Search..." required="">
+						<button type="submit"><i class="fa fa-search"></i></button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- End Header Search -->
+
+		<!-- Sticky Header  -->
+		<div class="sticky-header">
+			<div class="auto-container">
+				<div class="inner-container">
+					<!--Logo-->
+					<div class="logo">
+						<a href="{% url 'template-index' %}"><img src="{% static 'images/black-logo.png' %}" alt="img"></a>
+					</div>
+					<!--Right Col-->
+					<div class="nav-outer">
+						<!-- Main Menu -->
+						<nav class="main-menu">
+							<div class="navbar-collapse show collapse clearfix">
+								<ul class="navigation clearfix">
+									<!--Keep This Empty / Menu will come through Javascript-->
+								</ul>
+							</div>
+						</nav><!-- Main Menu End-->
+						<!--Mobile Navigation Toggler-->
+						<div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+					</div>
+				</div>
+			</div>
+		</div><!-- End Sticky Menu -->
+	</header>
+	<!--End Main Header -->
+
+	<!--Hero Section -->
+	<section class="hero-section hero-7" id="home">
+		<div class="bg-layer" style="background-image: url('{% static "images/home-7/banner/banner-image.jpg" %}');"></div>
+		<div class="banner-shape"><img src="{% static 'images/home-7/banner/banner-shape.jpg' %}" alt=""></div>
+		<div class="container-fluid">
+			<div class="banner-content">
+				<div class="anim-icons">
+					<div class="shape-image-1 float-bob-x"><img src="{% static 'images/home-7/banner/shape-image1.png' %}" alt=""></div>
+					<div class="shape-image-2 float-bob-x"><img src="{% static 'images/home-7/banner/shape-image2.png' %}" alt=""></div>
+				</div>
+				<div class="banner-know-box wow fadeInUp" data-wow-delay=".3s">
+					<div class="icon">
+						<svg width="18" height="26" viewBox="0 0 18 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M9 10.5H17.75L4 25.5L7.75 14.25H0.25L10.25 0.5L9 10.5Z" fill="white"/>
+						</svg>
+					</div>
+					<div class="text">Reliable And Fast Business Solutions</div>
+				</div>
+				<h1 class="title wow fadeInUp" data-wow-delay=".2s">Market Smarter <br>Grow Faster </h1>
+				<p class="banner-text wow fadeInUp" data-wow-delay=".4s">They analyse existing Marketing policies or help clients select the most suitable policies for health life property</p>
+				<div class="hero-button wow fadeInUp animated" data-wow-delay=".6s">
+					<a href="{% url 'template-contact' %}" class="theme-btn btn-style-two">
+						Lets Talk With Us
+						<i class="icon flaticon-finance-arrow-right-svgrepo-com1-2"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Counter Section Start -->
+	<section class="counter-section section-padding">
+		<div class="auto-container">
+			<div class="counter-wrapper">
+				<div class="counter-box-one wow bounceInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+					<div class="count-box">
+						<h2><span class="count-text" data-speed="3000" data-stop="1">0</span>M</h2>
+						<p>Worldwide business Grow</p>
+					</div>
+				</div>
+				<div class="separator"></div>
+				<div class="counter-box-one wow bounceInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+					<div class="count-box">
+						<h2><span class="count-text" data-speed="3000" data-stop="12">0</span>K+</h2>
+						<p>Satisfied Clients</p>
+					</div>
+				</div>
+				<div class="separator"></div>
+				<div class="counter-box-one wow bounceInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+					<div class="count-box">
+						<h2><span class="count-text" data-speed="3000" data-stop="119">0</span>M</h2>
+						<p>Countries Served</p>
+					</div>
+				</div>
+				<div class="separator"></div>
+				<div class="counter-box-one wow bounceInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
+					<div class="count-box">
+						<h2><span class="count-text" data-speed="3000" data-stop="33">0</span></h2>
+						<p>Award winning contest</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Service Section Start -->
+	<section class="service-section-four pb-90" id="service">
+		<div class="service-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+						<div class="sec-title mb-40">
+							<h6 class="sub-title wow fadeInUp">
+								<span class="triangle triangle1"></span>
+								<span class="triangle triangle2"></span>
+								Our Services
+							</h6>
+							<h2 class="title wow fadeInUp mb-30" data-wow-delay=".2s">Delivering the Best marketing Solutions</h2>
+							<div class="hero-button wow fadeInUp animated" data-wow-delay=".6s">
+								<a href="{% url 'template-contact' %}" class="theme-btn btn-style-two">
+									All Services
+									<span class="icon"><i class="flaticon-finance-arrow-right-svgrepo-com1-2"></i></span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+						<div class="service-block-four">
+							<div class="icon">
+								<img class="animated-svg" src="{% static 'images/home-7/icon/icon-1.png' %}" alt="">
+							</div>
+							<div class="content">
+								<h3 class="title"><a href="{% url 'template-service-details' %}">Financial Planning</a></h3>
+								<p class="text">Financial planning is the process of managing your finances to meet your life goals. These goals can include saving</p>
+								<a href="{% url 'template-service-details' %}" class="link-btn">
+									Read More
+									<i class="icon fa-solid fa-arrow-right-long"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+						<div class="service-block-four">
+							<div class="icon">
+								<img class="animated-svg" src="{% static 'images/home-7/icon/icon-2.png' %}" alt="">
+							</div>
+							<div class="content">
+								<h3 class="title"><a href="{% url 'template-service-details' %}">Operational Optimize</a></h3>
+								<p class="text">Operational optimization is the process of improving the efficiency, effectiveness, and performance of an organization’s</p>
+								<a href="{% url 'template-service-details' %}" class="link-btn">
+									Read More
+									<i class="icon fa-solid fa-arrow-right-long"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+						<div class="service-block-four">
+							<div class="icon">
+								<img class="animated-svg" src="{% static 'images/home-7/icon/icon-3.png' %}" alt="">
+							</div>
+							<div class="content">
+								<h3 class="title"><a href="{% url 'template-service-details' %}">Marketing Strategy</a></h3>
+								<p class="text">A marketing strategy is a long-term plan that outlines how a business will promote its good products or services</p>
+								<a href="{% url 'template-service-details' %}" class="link-btn">
+									Read More
+									<i class="icon fa-solid fa-arrow-right-long"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+						<div class="service-block-four">
+							<div class="icon">
+								<img class="animated-svg" src="{% static 'images/home-7/icon/icon-4.png' %}" alt="">
+							</div>
+							<div class="content">
+								<h3 class="title"><a href="{% url 'template-service-details' %}">Risk Management</a></h3>
+								<p class="text">Risk management is the process of identifying assessing and controlling to organization's capital earnings operations</p>
+								<a href="{% url 'template-service-details' %}" class="link-btn">
+									Read More
+									<i class="icon fa-solid fa-arrow-right-long"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1s">
+						<div class="service-block-four">
+							<div class="icon">
+								<img class="animated-svg" src="{% static 'images/home-7/icon/icon-5.png' %}" alt="">
+							</div>
+							<div class="content">
+								<h3 class="title"><a href="{% url 'template-service-details' %}">Account & Audit </a></h3>
+								<p class="text">Accounting refers to the systematic recording reporting and analysis of financial transactions of a business It helps track income</p>
+								<a href="{% url 'template-service-details' %}" class="link-btn">
+									Read More
+									<i class="icon fa-solid fa-arrow-right-long"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</section>
+
+	<!-- About Section Start -->
+	<section class="about-section-four have-margin fix section-padding" id="about">
+		<div class="arrow-shape-1 bounce-x">
+			<img src="{% static 'images/home-7/about/arrow-1.png' %}" alt="img">
+		</div>
+		<div class="arrow-shape-2 bounce-y">
+			<img src="{% static 'images/home-7/about/arrow-1.png' %}" alt="img">
+		</div>
+		<div class="shape-1">
+			<img src="{% static 'images/home-7/about/shape-1.png' %}" alt="img">
+		</div>
+		<div class="auto-container">
+			<div class="row g-4 align-items-center">
+				<div class="col-lg-6">
+					<div class="about-image-four wow img-custom-anim-left">
+						<div class="about-image">
+							<img src="{% static 'images/home-7/about/about-01.png' %}" alt="img">
+						</div>
+						<div class="shape-bg1"></div>
+						<div class="about-counter-four">
+							<div class="count-box">
+								<div class="counter"><span class="count-text" data-speed="3000" data-stop="25">0</span>+</div>
+								<div class="counter-title">Years of <br>Experience</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="about-content-four">
+						<div class="sec-title mb-30">
+							<h6 class="sub-title light wow fadeInUp">
+								<span class="triangle triangle1"></span>
+								<span class="triangle triangle2"></span>
+								Who We Are
+							</h6>
+							<h2 class="title light fadeInUp" data-wow-delay=".2s">Increase your money systematically </h2>
+						</div>
+						<div class="icon-items-area">
+							<div class="icon-items wow fadeInUp" data-wow-delay=".3s">
+								<div class="icon-box">
+									<div class="icon">
+										<svg width="37" height="29" viewBox="0 0 37 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.46875 14.4101V8.05758C1.46875 6.8881 2.4168 5.94008 3.58625 5.94008H12.0563M1.46875 14.4101V24.9976C1.46875 26.1671 2.4168 27.1151 3.58625 27.1151H33.2313C34.4007 27.1151 35.3488 26.1671 35.3488 24.9976V14.4101M1.46875 14.4101L16.2913 16.5276H20.5263L35.3488 14.4101M12.0563 5.94008V3.82258C12.0563 2.65313 13.0043 1.70508 14.1738 1.70508H22.6438C23.8132 1.70508 24.7613 2.65313 24.7613 3.82258V5.94008M12.0563 5.94008H24.7613M35.3488 14.4101V8.05758C35.3488 6.8881 34.4007 5.94008 33.2313 5.94008H24.7613M16.2913 19.7038H20.5263" stroke="url(#paint0_linear_810_264)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+											<defs>
+											<linearGradient id="paint0_linear_810_264" x1="18.4088" y1="1.70508" x2="18.4088" y2="27.1151" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#ACE470"/>
+											<stop offset="1" stop-color="#30C596"/>
+											</linearGradient>
+											</defs>
+										</svg>
+									</div>									
+								</div>
+								<h6 class="icon-title">Worldwide <br>business Grow</h6>
+							</div>
+							<div class="icon-items wow fadeInUp" data-wow-delay=".5s">
+								<div class="icon-box">
+									<div class="icon">
+										<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M20 20L27.5 12.5" stroke="url(#paint0_linear_810_270)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M37.5 7.5H32.5V2.5L27.5 7.5V12.5H32.5L37.5 7.5Z" stroke="url(#paint1_linear_810_270)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M20 27.5C24.1421 27.5 27.5 24.1421 27.5 20C27.5 15.8579 24.1421 12.5 20 12.5C15.8579 12.5 12.5 15.8579 12.5 20C12.5 24.1421 15.8579 27.5 20 27.5Z" stroke="url(#paint2_linear_810_270)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+											<path d="M33.75 11.25C35.375 13.75 36.25 16.75 36.25 20C36.25 29 29 36.25 20 36.25C11 36.25 3.75 29 3.75 20C3.75 11 11 3.75 20 3.75C23.25 3.75 26.25 4.625 28.75 6.25" stroke="url(#paint3_linear_810_270)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+											<defs>
+											<linearGradient id="paint0_linear_810_270" x1="23.75" y1="12.5" x2="23.75" y2="20" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#C8F169"/>
+											<stop offset="1" stop-color="#0E9894"/>
+											</linearGradient>
+											<linearGradient id="paint1_linear_810_270" x1="32.5" y1="2.5" x2="32.5" y2="12.5" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#C8F169"/>
+											<stop offset="1" stop-color="#0E9894"/>
+											</linearGradient>
+											<linearGradient id="paint2_linear_810_270" x1="20" y1="12.5" x2="20" y2="27.5" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#C8F169"/>
+											<stop offset="1" stop-color="#0E9894"/>
+											</linearGradient>
+											<linearGradient id="paint3_linear_810_270" x1="20" y1="3.75" x2="20" y2="36.25" gradientUnits="userSpaceOnUse">
+											<stop stop-color="#C8F169"/>
+											<stop offset="1" stop-color="#0E9894"/>
+											</linearGradient>
+											</defs>
+										</svg>
+									</div>
+								</div>
+								<h6 class="icon-title">business Strategy & <br> growth planning</h6>
+							</div>
+						</div>
+						<p class="about-text wow fadeInUp" data-wow-delay=".5s">
+							everyone with high and useful reward for  his/her trading, purchase and investment. Our goal is to make the Discover the transformative power of our solutions. Learn how we've helped businesses of all 
+							sizes overcome challenges.
+						</p>
+						<a href="{% url 'template-contact' %}" class="theme-btn btn-style-two wow fadeInUp" data-wow-delay=".7s">
+							Lets Talk With Us
+							<span class="icon"><i class="flaticon-finance-arrow-right-svgrepo-com1-2"></i></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--How It Work Section -->
+	<section class="how-it-work-section fix section-padding gray-bg">
+		<div class="auto-container">
+			<div class="sec-title text-center mb-60">
+				<h6 class="sub-title wow fadeInUp">
+					<span class="triangle triangle1"></span>
+					<span class="triangle triangle2"></span>
+					How It Work
+				</h6>
+				<h2 class="title wow fadeInUp" data-wow-delay=".2s">Behind the Scenes of Our Marketing Consulting</h2>
+			</div>
+			<div class="how-it-work-wrapper border-none">
+				<div class="row">
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
+						<div class="how-it-work-items-style-3 style-2">
+							<h3 class="number">01</h3>
+							<h4 class="title">Strategic Growth</h4>
+							<p class="text">Sparking Innovation, Shaping Tomorrow successful</p>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".4s">
+						<div class="how-it-work-items-style-3 style-2">
+							<h3 class="number">02</h3>
+							<h4 class="title">Fuel Innovation</h4>
+							<p class="text">Sparking Innovation, Shaping Tomorrow successful</p>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".6s">
+						<div class="how-it-work-items-style-3 style-2">
+							<h3 class="number">03</h3>
+							<h4 class="title">Financial Planning</h4>
+							<p class="text">Helping You Stay on Track with Accurate Estimates</p>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".8s">
+						<div class="how-it-work-items-style-3 style-2">
+							<h3 class="number">04</h3>
+							<h4 class="title">Sustainable Success</h4>
+							<p class="text">Amazing Support! with lot of ele
+							demos to choose from top</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h5 class="how-sec-text mt-20 wow fadeInUp" data-wow-delay=".3s">Embrace Innovation, Adapt Quickly, and Lead with Confidence. <a href="{% url 'template-contact' %}">Consult Now</a></h5>
+		</div>
+	</section>
+
+	<!--Team Section -->
+	<section class="team-section-six pt-120 pb-90 fix">
+		<div class="auto-container">
+			<div class="sec-title mb-50">
+				<div class="row g-4 justify-content-between align-items-end">
+					<div class="col-xl-6 col-md-8">
+						<h6 class="sub-title wow fadeInUp">
+							<span class="triangle triangle1"></span>
+							<span class="triangle triangle2"></span>
+							Our Team
+						</h6>
+						<h2 class="title wow fadeInUp" data-wow-delay=".2s">Our Dedicated Experts at Your Service</h2>
+					</div>
+					<div class="col-xl-5 col-md-4 wow fadeInUp animated" data-wow-delay=".4s">
+						<a href="{% url 'template-contact' %}" class="theme-btn btn-style-two">
+							Know More
+							<span class="icon"><i class="flaticon-finance-arrow-right-svgrepo-com1-2"></i></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
+					<div class="team-block-six">
+						<div class="inner-box">
+							<div class="team-image">
+								<img src="{% static 'images/home-7/team/team-image-1.jpg' %}" alt="img">
+								<img src="{% static 'images/home-7/team/team-image-1.jpg' %}" alt="img">
+							</div>						
+							<div class="content-box">
+								<h4 class="name"><a href="{% url 'template-team-details' %}">Madison Loren</a></h4>
+								<p class="designation">Chief Executive</p>
+								<div class="social-links">
+									<ul>
+										<li><a href="#0"><i class="fa-brands fa-behance"></i></a></li>
+										<li><a href="#0"><i class="fa-brands fa-facebook-f"></i></a></li>
+										<li><a href="#0"><i class="fa-brands fa-instagram"></i></a></li>
+										<li><a href="#0"><i class="fa-brands fa-x-twitter"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
+					<div class="team-block-six">
+						<div class="inner-box">
+							<div class="team-image">
+								<img src="{% static 'images/home-7/team/team-image-2.jpg' %}" alt="img">
+								<img src="{% static 'images/home-7/team/team-image-2.jpg' %}" alt="img">
+							</div>						
+							<div class="content-box">
+								<h4 class="name"><a href="{% url 'template-team-details' %}">Wanda Maximoff</a></h4>
+								<p class="designation">Investment advisor</p>
+								<div class="social-links">
+									<ul>
+										<li><a href="#0"><i class="fa-brands fa-behance"></i></a></li>
+										<li><a href="#0"><i class="fa-brands fa-facebook-f"></i></a></li>
+										<li><a href="#0"><i class="fa-brands fa-instagram"></i></a></li>
+										<li><a href="#0"><i class="fa-brands fa-x-twitter"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
+					<div class="team-block-six">
+						<div class="inner-box">
+							<div class="team-image">
+								<img src="{% static 'images/home-7/team/team-image-3.jpg' %}" alt="img">
+								<img src="{% static 'images/home-7/team/team-image-3.jpg' %}" alt="img">
+							</div>						
+							<div class="content-box">
+								<h4 class="name"><a href="{% url 'template-team-details' %}">Esther Howard</a></h4>
+								<p class="designation">Tax consultant</p>
+								<div class="social-links">
+									<ul>
+										<li><a href="#0"><i class="fa-brands fa-behance"></i></a></li>
+										<li><a href="#0"><i class="fa-brands fa-facebook-f"></i></a></li>
+										<li><a href="#0"><i class="fa-brands fa-instagram"></i></a></li>
+										<li><a href="#0"><i class="fa-brands fa-x-twitter"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Case area start here -->
+	<section class="case-section-three">
+		<div class="sec-shape">
+			<img class="sway_Y__animation" src="{% static 'images/home-7/case/case-three-shape.png' %}" alt="Image">
+		</div>
+		<div class="box-shape">
+			<div class="box1 wow slideInUp" data-wow-delay="200ms" data-wow-duration="1500ms"></div>
+			<div class="box2 wow slideInLeft" data-wow-delay="200ms" data-wow-duration="1500ms"></div>
+		</div>
+		<div class="outer-box">
+			<div class="content-column">
+				<div class="inner-column">
+					<div class="sec-title mb-20">
+						<h6 class="sub-title light wow fadeInUp">
+							<span class="triangle triangle1"></span>
+							<span class="triangle triangle2"></span>
+							Case Studies
+						</h6>
+						<h2 class="title light fadeInUp" data-wow-delay=".2s">Together We Build Your Success Story</h2>
+					</div>
+					<div class="text">Sed ut perspiciatis unde omnis iste natus voluptatem doloremque laudantium totames aperiam eaque quaesy inventore a tetar bikal  architecto beatae vitae dicta.</div>
+					<ul class="info wow fadeInDown mb-30" data-wow-delay="00ms" data-wow-duration="1500ms">
+						<li>
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="10" cy="10" r="10" fill="#C6D936" />
+								<path
+									d="M8.37891 13.8438L5.13672 10.6016C4.94141 10.4062 4.94141 10.0742 5.13672 9.87891L5.83984 9.17578C6.03516 8.98047 6.34766 8.98047 6.54297 9.17578L8.75 11.3633L13.4375 6.67578C13.6328 6.48047 13.9453 6.48047 14.1406 6.67578L14.8438 7.37891C15.0391 7.57422 15.0391 7.90625 14.8438 8.10156L9.10156 13.8438C8.90625 14.0391 8.57422 14.0391 8.37891 13.8438Z"
+									fill="black" />
+							</svg>
+							Real-time insights to drive results.
+						</li>
+						<li>
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="10" cy="10" r="10" fill="#C6D936" />
+								<path
+									d="M8.37891 13.8438L5.13672 10.6016C4.94141 10.4062 4.94141 10.0742 5.13672 9.87891L5.83984 9.17578C6.03516 8.98047 6.34766 8.98047 6.54297 9.17578L8.75 11.3633L13.4375 6.67578C13.6328 6.48047 13.9453 6.48047 14.1406 6.67578L14.8438 7.37891C15.0391 7.57422 15.0391 7.90625 14.8438 8.10156L9.10156 13.8438C8.90625 14.0391 8.57422 14.0391 8.37891 13.8438Z"
+									fill="black" />
+							</svg>
+							Accept fast payments directly during meetings.
+						</li>
+					</ul>
+					<a href="{% url 'template-contact' %}" class="theme-btn btn-style-two">
+						Get In Touch
+						<span class="icon"><i class="flaticon-finance-arrow-right-svgrepo-com1-2"></i></span>
+					</a>
+				</div>
+			</div>
+			<div class="image-column">
+				<div class="row g-0">
+					<div class="col-sm-6">
+						<div class="case-block-three overlay-anim">
+							<figure class="image">
+								<img src="{% static 'images/home-7/case/case-three-image1.jpg' %}" alt="Image">
+							</figure>
+							<a class="icon" href="page-case-details.html"><i class="fa-solid fa-arrow-up-right"></i></a>
+							<div class="content">
+								<h5 class="title"><a href="page-case-details.html">HR Development</a></h5>
+								<h4 class="sub-title"><a href="page-case.html">Consultuing</a></h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="case-block-three overlay-anim">
+							<figure class="image">
+								<img src="{% static 'images/home-7/case/case-three-image2.jpg' %}" alt="Image">
+							</figure>
+							<a class="icon" href="page-case-details.html"><i class="fa-solid fa-arrow-up-right"></i></a>
+							<div class="content">
+								<h5 class="title"><a href="page-case-details.html">HR Development</a></h5>
+								<h4 class="sub-title"><a href="page-case.html">Consultuing</a></h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="case-block-three overlay-anim">
+							<figure class="image">
+								<img src="{% static 'images/home-7/case/case-three-image3.jpg' %}" alt="Image">
+							</figure>
+							<a class="icon" href="page-case-details.html"><i class="fa-solid fa-arrow-up-right"></i></a>
+							<div class="content">
+								<h5 class="title"><a href="page-case-details.html">HR Development</a></h5>
+								<h4 class="sub-title"><a href="page-case.html">Consultuing</a></h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="case-block-three overlay-anim">
+							<figure class="image">
+								<img src="{% static 'images/home-7/case/case-three-image4.jpg' %}" alt="Image">
+							</figure>
+							<a class="icon" href="page-case-details.html"><i class="fa-solid fa-arrow-up-right"></i></a>
+							<div class="content">
+								<h5 class="title"><a href="page-case-details.html">HR Development</a></h5>
+								<h4 class="sub-title"><a href="page-case.html">Consultuing</a></h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Case area end here -->
+
+	<!-- Testimonial Five area start here -->
+	<section class="testimonial-section-five pt-120 pb-120" id="testimonial">
+		<div class="auto-container">
+			<div class="row">
+				<div class="col-xl-5 col-lg-4">
+					<div class="title-box sticky-style mb-30">
+						<div class="sec-title mb-30">
+							<h6 class="sub-title wow fadeInUp">
+								<span class="triangle triangle1"></span>
+								<span class="triangle triangle2"></span>
+								Testimonials
+							</h6>
+							<h2 class="title fadeInUp" data-wow-delay=".2s">What our Client Says About our Services</h2>
+						</div>
+						<a href="{% url 'template-contact' %}" class="theme-btn btn-style-two">
+							Get In Touch
+							<span class="icon"><i class="flaticon-finance-arrow-right-svgrepo-com1-2"></i></span>
+						</a>
+					</div>					
+				</div>
+				<div class="col-xl-7 col-lg-8">
+					<div class="testimonials-outer">
+						<!-- Testimonial Block -->
+						<div class="testimonial-block-five">
+							<div class="inner-box">
+								<figure class="thumb">
+									<img src="{% static 'images/home-7/testimonial/testimonial-image-1.jpg' %}" alt="">
+									<a href="https://www.youtube.com/watch?v=Lplq8RjQ0zU" data-fancybox="gallery" class="video-btn playbtnanim"><i class="fa-sharp fa-solid fa-play"></i></a>
+								</figure>
+								<div class="content-box">
+									<div class="logo"><img src="{% static 'images/home-7/testimonial/netflix.png' %}" alt=""></div>
+									<div class="text">We get absolutely raving reviews from our sales and customer support teams using close. Even our co- sales founders are very happy. We get absolutely raving reviews from our Even our co- founders are very happy for services</div>
+									<div class="info-box">
+										<div class="user-info">
+											<h4 class="name">Rudra Ghosh</h4>
+											<span class="designation">Founder & CEO</span>
+										</div>
+										<div class="rating-info">
+											<div class="rating">4.9</div>
+											<i class="icon fa fa-star"></i>
+										</div>
+									</div>                    
+								</div>
+							</div>
+						</div>
+						<!-- Testimonial Block -->
+						<div class="testimonial-block-five">
+							<div class="inner-box">
+								<figure class="thumb">
+									<img src="{% static 'images/home-7/testimonial/testimonial-image-2.jpg' %}" alt="">
+									<a href="https://www.youtube.com/watch?v=Lplq8RjQ0zU" data-fancybox="gallery" class="video-btn playbtnanim"><i class="fa-sharp fa-solid fa-play"></i></a>
+								</figure>
+								<div class="content-box">
+									<div class="logo"><img src="{% static 'images/home-7/testimonial/shopify.png' %}" alt=""></div>
+									<div class="text">We get absolutely raving reviews from our sales and customer support teams using close. Even our co- sales founders are very happy. We get absolutely raving reviews from our Even our co- founders are very happy for services</div>
+									<div class="info-box">
+										<div class="user-info">
+											<h4 class="name">Rudra Ghosh</h4>
+											<span class="designation">Business Owner</span>
+										</div>
+										<div class="rating-info">
+											<div class="rating">4.9</div>
+											<i class="icon fa fa-star"></i>
+										</div>
+									</div>                    
+								</div>
+							</div>
+						</div>
+						<!-- Testimonial Block -->
+						<div class="testimonial-block-five">
+							<div class="inner-box">
+								<figure class="thumb">
+									<img src="{% static 'images/home-7/testimonial/testimonial-image-3.jpg' %}" alt="">
+									<a href="https://www.youtube.com/watch?v=Lplq8RjQ0zU" data-fancybox="gallery" class="video-btn playbtnanim"><i class="fa-sharp fa-solid fa-play"></i></a>
+								</figure>
+								<div class="content-box">
+									<div class="logo"><img src="{% static 'images/home-7/testimonial/spotify.png' %}" alt=""></div>
+									<div class="text">We get absolutely raving reviews from our sales and customer support teams using close. Even our co- sales founders are very happy. We get absolutely raving reviews from our Even our co- founders are very happy for services</div>
+									<div class="info-box">
+										<div class="user-info">
+											<h4 class="name">Rudra Ghosh</h4>
+											<span class="designation">CO Founder</span>
+										</div>
+										<div class="rating-info">
+											<div class="rating">4.9</div>
+											<i class="icon fa fa-star"></i>
+										</div>
+									</div>                    
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Testimonial Five area end here -->
+
+	<!-- Contact area start here -->
+	<section class="contact-two-area section-padding fix" id="contacts">
+		<div class="auto-container">
+			<div class="contact-outer">
+				<div class="contact-two-left">
+					<div class="sec-title mb-50">
+						<h6 class="sub-title light wow fadeInUp">
+							<span class="triangle triangle1"></span>
+							<span class="triangle triangle2"></span>
+							Contact Us
+						</h6>
+						<h2 class="title light fadeInUp" data-wow-delay=".2s">Please Keep in Touch With <br>us When you want</h2>
+					</div>
+					<div class="contact-two__form">
+						<form action="#">
+							<h3 class="form-title">Contact with us</h3>
+							<div class="input">
+								<input id="name" placeholder="Name" type="text">
+							</div>
+							<div class="input">
+								<input id="email" placeholder="E-mail address" type="email">
+							</div>
+							<div class="input">
+								<input id="phone" placeholder="Phone" type="text">
+							</div>
+							<div class="textarea">
+								<textarea name="message" placeholder="Message" id="message"></textarea>
+							</div>
+							<button class="theme-btn btn-style-two" data-splitting data-text="Send Message">Send Message</button>
+						</form>
+					</div>
+				</div>
+			</div>			
+		</div>
+		<div class="contact-two_shape">
+			<img src="{% static 'images/home-7/contact/shape-image.png' %}" alt="">
+		</div>
+		<div class="contact-two__map" style="background-image: url('{% static "images/home-7/contact/map.png" %}');">
+			<div class="location">
+				<img class="wow bounceIn" src="{% static 'images/home-7/contact/map-location.png' %}" alt="image">
+			</div>
+		</div>
+	</section>
+	<!-- Contact area end here -->
+
+	<!-- News Section Start -->
+	<section class="news-secton section-padding fix" id="news">
+		<div class="auto-container">
+			<div class="sec-title text-center">
+            <h6 class="sub-title wow fadeInUp">
+              <span class="triangle triangle1"></span>
+              <span class="triangle triangle2"></span>
+              Our Blog
+            </h6>
+            <h2 class="wow fadeInUp" data-wow-delay=".3s">Insights from Latest Blog</h2>
+			</div>
+			<div class="row">
+				<div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+					<div class="news-box-items">
+						<div class="news-image">
+							<img src="{% static 'images/home-1/news/news-01.jpg' %}" alt="img">
+							<img src="{% static 'images/home-1/news/news-01.jpg' %}" alt="img">
+							<span class="post-box">
+								<span class="date">20</span>
+								<span class="month">March</span>
+							</span>
+						</div>
+						<div class="news-content">
+							<ul class="comments-list">
+								<li>
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+										<path opacity="0.5" d="M9 9C10.2426 9 11.25 7.99264 11.25 6.75C11.25 5.50736 10.2426 4.5 9 4.5C7.75736 4.5 6.75 5.50736 6.75 6.75C6.75 7.99264 7.75736 9 9 9Z" stroke="#144443"/>
+										<path d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z" stroke="#144443"/>
+										<path opacity="0.5" d="M13.4772 15C13.3579 12.8314 12.6939 11.25 9.00029 11.25C5.30678 11.25 4.6428 12.8314 4.52344 15" stroke="#144443" stroke-linecap="round"/>
+									</svg>
+									Admin
+								</li>
+								<li>
+									<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M8.42865 5.05957H14.5696C16.4442 5.07375 17.9525 6.60465 17.9387 8.47921V12.6312C17.9453 13.5316 17.594 14.3977 16.9619 15.039C16.33 15.6802 15.4691 16.0443 14.5687 16.0508H8.42865L5.05869 17.9396V8.47921C5.05207 7.57884 5.40341 6.71274 6.0354 6.07142C6.66741 5.43011 7.52828 5.06613 8.42865 5.05957Z" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M6.90039 10.5802C6.90039 10.072 7.31229 9.66016 7.82039 9.66016C8.3285 9.66016 8.74039 10.072 8.74039 10.5802C8.74039 11.0883 8.3285 11.5002 7.82039 11.5002C7.5764 11.5002 7.34239 11.4032 7.16985 11.2307C6.99732 11.0582 6.90039 10.8241 6.90039 10.5802Z" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M10.5801 10.5802C10.5801 10.072 10.992 9.66016 11.5001 9.66016C12.0082 9.66016 12.4201 10.072 12.4201 10.5802C12.4201 11.0883 12.0082 11.5002 11.5001 11.5002C10.992 11.5002 10.5801 11.0883 10.5801 10.5802Z" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M14.2598 10.5802C14.2598 10.072 14.6716 9.66016 15.1798 9.66016C15.6879 9.66016 16.0998 10.072 16.0998 10.5802C16.0998 11.0883 15.6879 11.5002 15.1798 11.5002C14.6716 11.5002 14.2598 11.0883 14.2598 10.5802Z" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									3 Comments
+								</li>
+							</ul>
+							<h3>
+								<a href="{% url 'template-news-details' %}">Errors with financial 
+									consequences in tax ?</a>
+							</h3>
+                  <a href="{% url 'template-news-details' %}" class="link-btn">
+                    Learn More
+                    <span class="icon"><i class="lnr-icon-arrow-right"></i></span>
+                  </a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+					<div class="news-box-items">
+						<div class="news-image">
+							<img src="{% static 'images/home-1/news/news-02.jpg' %}" alt="img">
+							<img src="{% static 'images/home-1/news/news-02.jpg' %}" alt="img">
+							<span class="post-box">
+								<span class="date">25</span>
+								<span class="month">March</span>
+							</span>
+						</div>
+						<div class="news-content">
+							<ul class="comments-list">
+								<li>
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+										<path opacity="0.5" d="M9 9C10.2426 9 11.25 7.99264 11.25 6.75C11.25 5.50736 10.2426 4.5 9 4.5C7.75736 4.5 6.75 5.50736 6.75 6.75C6.75 7.99264 7.75736 9 9 9Z" stroke="#144443"/>
+										<path d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z" stroke="#144443"/>
+										<path opacity="0.5" d="M13.4772 15C13.3579 12.8314 12.6939 11.25 9.00029 11.25C5.30678 11.25 4.6428 12.8314 4.52344 15" stroke="#144443" stroke-linecap="round"/>
+									</svg>
+									Admin
+								</li>
+								<li>
+									<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M8.42865 5.05957H14.5696C16.4442 5.07375 17.9525 6.60465 17.9387 8.47921V12.6312C17.9453 13.5316 17.594 14.3977 16.9619 15.039C16.33 15.6802 15.4691 16.0443 14.5687 16.0508H8.42865L5.05869 17.9396V8.47921C5.05207 7.57884 5.40341 6.71274 6.0354 6.07142C6.66741 5.43011 7.52828 5.06613 8.42865 5.05957Z" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M6.90039 10.5802C6.90039 10.072 7.31229 9.66016 7.82039 9.66016C8.3285 9.66016 8.74039 10.072 8.74039 10.5802C8.74039 11.0883 8.3285 11.5002 7.82039 11.5002C7.5764 11.5002 7.34239 11.4032 7.16985 11.2307C6.99732 11.0582 6.90039 10.8241 6.90039 10.5802Z" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M10.5801 10.5802C10.5801 10.072 10.992 9.66016 11.5001 9.66016C12.0082 9.66016 12.4201 10.072 12.4201 10.5802C12.4201 11.0883 12.0082 11.5002 11.5001 11.5002C10.992 11.5002 10.5801 11.0883 10.5801 10.5802Z" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M14.2598 10.5802C14.2598 10.072 14.6716 9.66016 15.1798 9.66016C15.6879 9.66016 16.0998 10.072 16.0998 10.5802C16.0998 11.0883 15.6879 11.5002 15.1798 11.5002C14.6716 11.5002 14.2598 11.0883 14.2598 10.5802Z" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									3 Comments
+								</li>
+							</ul>
+							<h3>
+								<a href="{% url 'template-news-details' %}">Achieving Work Life Balance in a Hectic World</a>
+							</h3>
+                  <a href="{% url 'template-news-details' %}" class="link-btn">
+                    Learn More
+                    <span class="icon"><i class="lnr-icon-arrow-right"></i></span>
+                  </a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+					<div class="news-box-items">
+						<div class="news-image">
+							<img src="{% static 'images/home-1/news/news-03.jpg' %}" alt="img">
+							<img src="{% static 'images/home-1/news/news-03.jpg' %}" alt="img">
+							<span class="post-box">
+								<span class="date">30</span>
+								<span class="month">March</span>
+							</span>
+						</div>
+						<div class="news-content">
+							<ul class="comments-list">
+								<li>
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+										<path opacity="0.5" d="M9 9C10.2426 9 11.25 7.99264 11.25 6.75C11.25 5.50736 10.2426 4.5 9 4.5C7.75736 4.5 6.75 5.50736 6.75 6.75C6.75 7.99264 7.75736 9 9 9Z" stroke="#144443"/>
+										<path d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z" stroke="#144443"/>
+										<path opacity="0.5" d="M13.4772 15C13.3579 12.8314 12.6939 11.25 9.00029 11.25C5.30678 11.25 4.6428 12.8314 4.52344 15" stroke="#144443" stroke-linecap="round"/>
+									</svg>
+									Admin
+								</li>
+								<li>
+									<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M8.42865 5.05957H14.5696C16.4442 5.07375 17.9525 6.60465 17.9387 8.47921V12.6312C17.9453 13.5316 17.594 14.3977 16.9619 15.039C16.33 15.6802 15.4691 16.0443 14.5687 16.0508H8.42865L5.05869 17.9396V8.47921C5.05207 7.57884 5.40341 6.71274 6.0354 6.07142C6.66741 5.43011 7.52828 5.06613 8.42865 5.05957Z" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M6.90039 10.5802C6.90039 10.072 7.31229 9.66016 7.82039 9.66016C8.3285 9.66016 8.74039 10.072 8.74039 10.5802C8.74039 11.0883 8.3285 11.5002 7.82039 11.5002C7.5764 11.5002 7.34239 11.4032 7.16985 11.2307C6.99732 11.0582 6.90039 10.8241 6.90039 10.5802Z" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M10.5801 10.5802C10.5801 10.072 10.992 9.66016 11.5001 9.66016C12.0082 9.66016 12.4201 10.072 12.4201 10.5802C12.4201 11.0883 12.0082 11.5002 11.5001 11.5002C10.992 11.5002 10.5801 11.0883 10.5801 10.5802Z" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M14.2598 10.5802C14.2598 10.072 14.6716 9.66016 15.1798 9.66016C15.6879 9.66016 16.0998 10.072 16.0998 10.5802C16.0998 11.0883 15.6879 11.5002 15.1798 11.5002C14.6716 11.5002 14.2598 11.0883 14.2598 10.5802Z" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									3 Comments
+								</li>
+							</ul>
+							<h3>
+								<a href="{% url 'template-news-details' %}">Mastering Work-Life On
+									Target Business Goal </a>
+							</h3>
+                  <a href="{% url 'template-news-details' %}" class="link-btn">
+                    Learn More
+                    <span class="icon"><i class="lnr-icon-arrow-right"></i></span>
+                  </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer Section Start -->
+	<footer class="footer-section-2 fix footer-bg">
+		<div class="bg-color">
+			<img src="{% static 'images/home-2/footer-bg-color.png' %}" alt="img">
+		</div>
+		<div class="footer-shape">
+			<img src="{% static 'images/home-2/footer-shape.png' %}" alt="img">
+		</div>
+		<div class="auto-container">
+			<div class="footer-top-wrapper">
+				<a href="{% url 'template-index' %}" class="footer-logo wow fadeInUp" data-wow-delay=".3s">
+					<img src="{% static 'images/white-logo.png' %}" alt="img">
+				</a>
+				<div class="social-icon wow fadeInUp" data-wow-delay=".5s">
+					<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+					<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="#"><i class="fa-brands fa-pinterest"></i></a>
+					<a href="#"><i class="fa-brands fa-instagram"></i></a>
+				</div>
+			</div>
+			<div class="footer-widget-wrapper style-2">
+				<div class="row justify-content-between">
+					<div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+						<div class="footer-widget-items mt-30">
+							<div class="widget-title mb-25">
+								<h3 class="font-size-24 text-white font-weight-500">Head office</h3>
+							</div>
+							<div class="footer-content">
+								<p class="text-white">2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
+								<ul class="contact-list-2">
+									<li>
+										<a href="tel:+123456-7890">+ (123) 456-7890</a>
+									</li>
+									<li>
+										<a href="/cdn-cgi/l/email-protection#344d5b4146575b5944555a4d74514c55594458511a575b59"><span class="__cf_email__" data-cfemail="faa3958f889995978a9b9483ba9f829b978a969fd4999597">[email&#160;protected]</span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-2 d-none d-xl-block"></div>
+					<div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+						<div class="footer-widget-items mt-30">
+							<div class="widget-title mb-25">
+								<h3 class="font-size-24 text-white font-weight-500">Quick Link</h3>
+							</div>
+							<div class="user-links-area">
+								<ul class="user-links">
+									<li><a href="{% url 'template-about' %}">About Us</a></li>
+									<li><a href="{% url 'template-team' %}">Our Team</a></li>
+									<li><a href="{% url 'template-projects' %}">Our Portfolio</a></li>
+									<li><a href="{% url 'template-contact' %}">Careers</a></li>
+									<li><a href="{% url 'template-contact' %}">Contact Us</a></li>
+								</ul>
+								<ul class="user-links">
+									<li><a href="{% url 'template-services' %}">Works</a></li>
+									<li><a href="{% url 'template-services' %}">Expertise</a></li>
+									<li><a href="{% url 'template-news-grid' %}">Blog</a></li>
+									<li><a href="{% url 'template-about' %}">Awards</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+						<div class="footer-widget-items mt-30">
+							<div class="widget-title mb-25">
+								<h3 class="font-size-24 text-white font-weight-500">Our Solutions</h3>
+							</div>
+							<ul class="user-links">
+								<li><a href="{% url 'template-service-details' %}">Web Development</a></li>
+								<li><a href="{% url 'template-service-details' %}">UI/UX Design</a></li>
+								<li><a href="{% url 'template-service-details' %}">Mobile Application</a></li>
+								<li><a href="{% url 'template-service-details' %}">Cloud Service</a></li>
+								<li><a href="{% url 'template-service-details' %}">Cyber Security </a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="footer-text wow fadeInUp" data-wow-delay=".3s">Copyright © 2025 Finclix.  All Rights Reserved</p>
+		</div>
+	</footer>
+
+</div><!-- End Page Wrapper -->
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="{% static 'js/jquery.js' %}"></script> 
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.js' %}"></script>
+<script src="{% static 'js/jquery-ui.js' %}"></script>
+<script src="{% static 'js/gsap.js' %}"></script>
+<script src="{% static 'js/gsap-scroll-to-plugin.js' %}"></script>
+<script src="{% static 'js/gsap-scroll-smoother.js' %}"></script>
+<script src="{% static 'js/gsap-scroll-trigger.js' %}"></script>
+<script src="{% static 'js/gsap-split-text.js' %}"></script>
+<script src="{% static 'js/split-type.min.js' %}"></script>
+<script src="{% static 'js/parallaxie.js' %}"></script>
+<script src="{% static 'js/wow.js' %}"></script>
+<script src="{% static 'js/bxslider.js' %}"></script>
+<script src="{% static 'js/nice-select.min.js' %}"></script>
+<script src="{% static 'js/knob.js' %}"></script>
+<script src="{% static 'js/appear.js' %}"></script>
+<script src="{% static 'js/swiper.min.js' %}"></script>
+<script src="{% static 'js/mixitup.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

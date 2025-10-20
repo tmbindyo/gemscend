@@ -1,0 +1,1525 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Finclix - Business Consulting Html Template </title>
+<!-- Stylesheets -->
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+<link rel="icon" href="images/favicon.svg" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+	<!-- Preloader Start -->
+	<div id="preloader" class="preloader">
+		<div class="animation-preloader">
+			<div class="spinner">                
+			</div>
+			<div class="txt-loading">
+				<span data-text-preloader="F" class="letters-loading">
+					F
+				</span>
+				<span data-text-preloader="I" class="letters-loading">
+					I
+				</span>
+				<span data-text-preloader="N" class="letters-loading">
+					N
+				</span>
+				<span data-text-preloader="C" class="letters-loading">
+					C
+				</span>
+				<span data-text-preloader="L" class="letters-loading">
+					L
+				</span>
+				<span data-text-preloader="I" class="letters-loading">
+					I
+				</span>
+				<span data-text-preloader="X" class="letters-loading">
+					X
+				</span>
+			</div>
+			<p class="text-center">Loading</p>
+		</div>
+		<div class="loader">
+			<div class="row">
+				<div class="col-3 loader-section section-left">
+					<div class="bg"></div>
+				</div>
+				<div class="col-3 loader-section section-left">
+					<div class="bg"></div>
+				</div>
+				<div class="col-3 loader-section section-right">
+					<div class="bg"></div>
+				</div>
+				<div class="col-3 loader-section section-right">
+					<div class="bg"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Scroll To Top -->
+	<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+	<!-- Main Header-->
+	<header class="main-header header-style-one header-5">
+		<!-- Header Lower -->
+		<div class="header-lower header-lower5 show-header-section">
+			<!-- Main box -->
+			<div class="main-box style-2">				
+				<!--Nav Box-->
+				<div class="nav-outer">
+					<div class="logo-box">
+						<div class="logo"><a href="{% url 'template-index' %}"><img src="{% static 'images/white-logo.png' %}" alt="" title="finclix"></a></div>
+					</div>
+					<nav class="nav main-menu">
+						<ul class="navigation onepage-nav">
+							<li><a href="#home">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#service">Services</a></li>
+							<li><a href="#testimonial">Testimonial</a></li>
+							<li><a href="#news">News</a></li>
+							<li><a href="#pricing">Pricing</a></li>
+						</ul>
+					</nav>
+					<!-- Main Menu End-->
+					<div class="outer-box">
+						<a href="tel:+92(8800)9806" class="contact-info">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_573_2064)">
+							<path d="M0.654993 10.1808C0.230996 9.03553 -0.0760365 7.86588 0.0165606 6.62313C0.075043 5.85799 0.362581 5.20493 0.923038 4.66884C1.53223 4.09377 2.10731 3.48945 2.70675 2.90462C3.48652 2.13461 4.4661 2.13948 5.24586 2.90462C5.72834 3.37736 6.20595 3.85984 6.68355 4.34232C7.14654 4.8053 7.6144 5.26829 8.07738 5.73615C8.89126 6.55977 8.89614 7.51986 8.08226 8.33861C7.49743 8.92344 6.91748 9.51313 6.32291 10.0882C6.16696 10.2393 6.15234 10.366 6.23519 10.5561C6.62507 11.4918 7.1904 12.3252 7.82396 13.1049C9.10082 14.6742 10.5434 16.068 12.2637 17.1451C12.6341 17.3741 13.0386 17.5447 13.4236 17.7543C13.6235 17.8615 13.755 17.8274 13.9159 17.6617C14.4958 17.0622 15.0904 16.4725 15.685 15.8828C16.4647 15.1128 17.4394 15.1079 18.2192 15.8828C19.1744 16.8283 20.1248 17.7786 21.0702 18.7339C21.8646 19.5331 21.8597 20.5127 21.0605 21.3168C20.5195 21.8627 19.9493 22.3793 19.4425 22.9495C18.7017 23.778 17.766 24.0509 16.7035 23.9924C15.1538 23.9095 13.7258 23.393 12.3466 22.7253C9.28602 21.2389 6.67381 19.1773 4.48559 16.5749C2.86758 14.645 1.53223 12.5493 0.654993 10.1808ZM23.9992 11.9255C23.9992 5.35114 18.6481 0 12.0737 0V2.27107C17.3956 2.27107 21.7281 6.60364 21.7281 11.9255H23.9992ZM17.4687 11.9255H19.7397C19.7397 7.70018 16.299 4.25947 12.0737 4.25947V6.53053C13.5162 6.53053 14.8711 7.09099 15.8897 8.10956C16.9082 9.12813 17.4687 10.483 17.4687 11.9255Z" fill="url(#paint0_linear_573_2064)"/>
+							</g>
+							<defs>
+							<linearGradient id="paint0_linear_573_2064" x1="-5.78588e-08" y1="11.7333" x2="23.9992" y2="11.7333" gradientUnits="userSpaceOnUse">
+							<stop stop-color="#C8F169"/>
+							<stop offset="1" stop-color="#039397"/>
+							</linearGradient>
+							<clipPath id="clip0_573_2064">
+							<rect width="24" height="24" fill="white"/>
+							</clipPath>
+							</defs>
+							</svg>
+							+00 222 111 0002
+						</a>
+						<button class="ui-btn search-btn">
+							<i class="icon fal fa-search"></i>
+						</button>
+						<div class="user-btn">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<mask id="mask0_573_2072" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="21">
+								<path d="M0 0.00430298H20V20.0062H0V0.00430298Z" fill="white"/>
+								</mask>
+								<g mask="url(#mask0_573_2072)">
+								<path d="M19.4141 10.0053C19.4141 15.205 15.1992 19.4202 10 19.4202C4.80066 19.4202 0.585938 15.205 0.585938 10.0053C0.585938 4.80547 4.80066 0.59035 10 0.59035C15.1992 0.59035 19.4141 4.80547 19.4141 10.0053Z" stroke="white" stroke-width="1.17187" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M13.7657 8.75025C13.7657 10.8299 12.0798 12.5159 10 12.5159C7.9202 12.5159 6.23438 10.8299 6.23438 8.75025C6.23438 6.6706 7.9202 4.98466 10 4.98466C12.0798 4.98466 13.7657 6.6706 13.7657 8.75025Z" stroke="white" stroke-width="1.17187" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M4.38281 17.5618C4.68398 14.7258 7.08367 12.5166 9.99949 12.5166C12.9154 12.5166 15.315 14.726 15.6161 17.5619" stroke="white" stroke-width="1.17187" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								</g>
+							</svg>
+						</div>
+						<!-- Mobile Nav toggler -->
+						<div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Header Lower -->
+
+		<!-- Mobile Menu  -->
+		<div class="mobile-menu">
+			<div class="menu-backdrop"></div>
+			<!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+			<nav class="menu-box">
+				<div class="upper-box">
+					<div class="nav-logo"><a href="{% url 'template-index' %}"><img src="{% static 'images/white-logo.png' %}" alt=""></a></div>
+					<div class="close-btn"><i class="icon fa fa-times"></i></div>
+				</div>
+				<ul class="navigation clearfix">
+					<!--Keep This Empty / Menu will come through Javascript-->
+				</ul>
+				<ul class="contact-list-one">
+					<li>
+						<!-- Contact Info Box -->
+						<div class="contact-info-box">
+							<i class="icon lnr-icon-phone-handset"></i>
+							<span class="title">Call Now</span>
+							<a href="tel:+92880098670">+92 (8800) - 98670</a>
+						</div>
+					</li>
+					<li>
+						<!-- Contact Info Box -->
+						<div class="contact-info-box">
+							<span class="icon lnr-icon-envelope1"></span>
+							<span class="title">Send Email</span>
+							<a href="/cdn-cgi/l/email-protection#deb6bbb2ae9ebdb1b3aebfb0a7f0bdb1b3"><span class="__cf_email__" data-cfemail="b0d8d5dcc0f0d3dfddc0d1dec99ed3dfdd">[email&#160;protected]</span></a>
+						</div>
+					</li>
+					<li>
+						<!-- Contact Info Box -->
+						<div class="contact-info-box">
+							<span class="icon lnr-icon-clock"></span>
+							<span class="title">Send Email</span>
+							Mon - Sat 8:00 - 6:30, Sunday - CLOSED
+						</div>
+					</li>
+				</ul>
+				<ul class="social-links">
+					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+				</ul>
+			</nav>
+		</div><!-- End Mobile Menu -->
+
+		<!-- Header Search -->
+        <div class="search-popup">
+          <span class="search-back-drop"></span>
+          <button class="close-search"><span class="fa fa-times"></span></button>
+          <div class="search-inner">
+            <form method="post" action="index.html">
+              <div class="form-group">
+                <input type="search" name="search-field" value="" placeholder="Search..." required="">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- End Header Search -->
+
+		<!-- Sticky Header  -->
+		<div class="sticky-header">
+			<div class="auto-container">
+				<div class="inner-container">
+					<!--Logo-->
+					<div class="logo">
+						<a href="{% url 'template-index' %}"><img src="{% static 'images/black-logo.png' %}" alt="img"></a>
+					</div>
+					<!--Right Col-->
+					<div class="nav-outer">
+						<!-- Main Menu -->
+						<nav class="main-menu">
+							<div class="navbar-collapse show collapse clearfix">
+								<ul class="navigation clearfix">
+									<!--Keep This Empty / Menu will come through Javascript-->
+								</ul>
+							</div>
+						</nav><!-- Main Menu End-->
+						<!--Mobile Navigation Toggler-->
+						<div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+					</div>
+				</div>
+			</div>
+		</div><!-- End Sticky Menu -->
+	</header>
+	<!--End Main Header -->
+
+	<!--Hero Section -->
+	<section class="hero-section hero-6" id="home">
+		<div class="bg-layer">
+			<div class="shape-1"><img src="{% static 'images/home-6/banner/hero-bg-shape.png' %}" alt=""></div>
+			<div class="shape-2" style="background-image: url('{% static "images/home-6/banner/hero-bg-shape-2.png" %}');"></div>
+		</div>
+		<div class="auto-container">
+			<div class="row g-4">
+				<div class="col-xl-8 col-lg-6">
+					<div class="banner-content">
+						<h1 class="wow fadeInUp" data-wow-delay=".2s">Your Trusted Insurance <br>Consulting Partner </h1>
+						<div class="text-item wow fadeInUp" data-wow-delay=".4s">
+							<p>They analyze existing insurance policies or help clients select the most suitable policies for health life property liability auto </p>
+						</div>
+						<div class="hero-button wow fadeInUp animated" data-wow-delay=".6s">
+							<a href="{% url 'template-contact' %}" class="theme-btn btn-style-three">
+								Lets Talk With Us
+								<span class="icon"><i class="flaticon-finance-arrow-right-svgrepo-com1-2"></i></span>
+							</a>
+						</div>
+						<div class="paper-shape">
+							<img src="{% static 'images/home-6/banner/paper-shape.png' %}" alt="img">
+						</div>
+						<div class="banner-user">
+							<ul>
+								<li><img src="{% static 'images/home-6/banner/banner-user1.png' %}" alt="Image"></li>
+								<li><img src="{% static 'images/home-6/banner/banner-user2.png' %}" alt="Image"></li>
+								<li><img src="{% static 'images/home-6/banner/banner-user3.png' %}" alt="Image"></li>
+								<li>30k</li>
+							</ul>
+							<h6 class="user-title">Our 30k Satisfaction Clients Worldwide</h6>
+						</div>						
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+					<div class="banner-image ed_top_img">
+						<img src="{% static 'images/home-6/banner/banner-image-1.png' %}" alt="img">
+						<div class="circle-shape animation__rotateAndScale">
+							<img src="{% static 'images/home-6/banner/circle-shape.png' %}" alt="">
+							<div class="circle-light"></div>
+						</div>
+						<div class="banner-quote sway_Y__animationY">
+							<div class="icon-box">
+								<svg class="icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_573_2014)">
+									<path d="M37.2919 21.7994C37.6886 21.8803 38.0753 21.6245 38.1565 21.227C38.3375 20.3397 38.4292 19.4267 38.4292 18.513C38.4292 11.0856 32.4048 5.04297 24.9998 5.04297C17.5947 5.04297 11.5703 11.0856 11.5703 18.513C11.5703 25.9403 17.5947 31.983 24.9998 31.983C30.0471 31.983 34.6222 29.1865 36.9396 24.685C37.1252 24.3244 36.9843 23.8811 36.6248 23.695C36.2654 23.5087 35.8234 23.6503 35.6379 24.0106C33.573 28.0217 29.4967 30.5134 24.9999 30.5134C18.4026 30.5134 13.0354 25.13 13.0354 18.5129C13.0354 11.8957 18.4026 6.5123 24.9999 6.5123C31.5971 6.5123 36.9643 11.8957 36.9643 18.5129C36.9643 19.3277 36.8826 20.1417 36.7212 20.9322C36.64 21.3298 36.8956 21.7181 37.2919 21.7994Z" fill="#121C27"/>
+									<path d="M33.1494 15.7808C33.0631 15.5142 32.8332 15.3203 32.5567 15.2805L27.7826 14.5946L25.657 10.2523C25.4142 9.71271 24.5846 9.71281 24.3419 10.2523L22.2162 14.5945L17.4421 15.2804C16.8548 15.3454 16.5995 16.1372 17.0357 16.5348L20.496 19.9044L19.6711 24.6704C19.5512 25.249 20.2214 25.7395 20.735 25.4458L24.9994 23.186L29.2637 25.4458C29.7765 25.7395 30.4478 25.249 30.3276 24.6704L29.5027 19.9044L32.963 16.5348C33.1635 16.3397 33.2358 16.0472 33.1494 15.7808ZM28.2046 19.1206C28.0308 19.2897 27.9517 19.534 27.993 19.7734L28.6289 23.4476L25.3415 21.7055C25.1274 21.5921 24.8712 21.5921 24.6571 21.7055L21.3697 23.4476L22.0056 19.7734C22.047 19.534 21.9678 19.2897 21.7941 19.1206L19.1264 16.5229L22.8069 15.994C23.0466 15.9595 23.2538 15.8086 23.3606 15.5905L24.9993 12.2431L26.6379 15.5905C26.7447 15.8085 26.952 15.9595 27.1916 15.994L30.8721 16.5229L28.2046 19.1206Z" fill="#121C27"/>
+									<path d="M45.5576 43.6729L38.398 31.2346C41.5329 27.915 43.4587 23.4355 43.4587 18.513C43.4586 8.30488 35.1787 0 25.0012 0C21.8699 0 18.7763 0.800982 16.0548 2.31641C15.701 2.51341 15.5734 2.96064 15.7699 3.31547C15.9662 3.6701 16.4121 3.79805 16.7658 3.60125C19.2703 2.20663 22.118 1.46953 25.0012 1.46953C34.3709 1.46953 41.9935 9.11533 41.9935 18.5131C41.9935 27.911 34.3709 35.5568 25.0012 35.5568C15.6316 35.5568 8.00889 27.911 8.00889 18.513C8.00889 13.4714 10.2169 8.71597 14.0669 5.46633C14.3764 5.20507 14.4162 4.74153 14.1557 4.43114C13.8952 4.12065 13.4331 4.0806 13.1236 4.34206C8.94212 7.87152 6.54386 13.0366 6.54386 18.513C6.54386 23.4439 8.47604 27.9305 11.6205 31.2518L9.59279 34.7744C9.10689 35.5899 10.3926 36.3439 10.8615 35.5092L12.7048 32.3069C14.9101 34.2867 17.5909 35.7434 20.552 36.4813L14.231 47.4626L12.6141 42.3583C12.4995 41.9964 12.1288 41.7819 11.759 41.8631L6.54337 43.0107L9.15211 38.4786C9.35438 38.1272 9.23434 37.6778 8.88401 37.4749C8.53357 37.2721 8.08566 37.3924 7.88339 37.7438L4.44467 43.7178C4.11845 44.2426 4.63649 44.9557 5.23598 44.8029L11.4201 43.4421L13.3372 49.4943C13.5048 50.0897 14.377 50.1866 14.6697 49.6391L22.0651 36.7911C23.0215 36.9451 24.0019 37.0263 25.0009 37.0263C26.0082 37.0263 26.9964 36.9436 27.9603 36.7872L32.402 44.5037C32.5376 44.7395 32.7839 44.8711 33.037 44.8711C33.1613 44.8711 33.2872 44.8394 33.4026 44.7726C33.7529 44.5696 33.873 44.1203 33.6707 43.7689L29.4727 36.4757C32.4325 35.7341 35.1115 34.2742 37.3143 32.2917L43.4586 42.9659L38.243 41.8183C37.8732 41.7369 37.5025 41.9516 37.3879 42.3135L35.771 47.4177L35.3799 46.7383C35.1776 46.3869 34.7296 46.2666 34.3793 46.4695C34.0289 46.6724 33.9089 47.1217 34.1112 47.4731L35.3321 49.5944C35.625 50.142 36.497 50.0448 36.6646 49.4495L38.5818 43.3974L44.7659 44.7582C45.366 44.9104 45.8836 44.1978 45.5576 43.6729Z" fill="#121C27"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_573_2014">
+									<rect width="50" height="50" fill="white"/>
+									</clipPath>
+									</defs>
+								</svg>
+							</div>
+							<div class="content-box">
+								<div class="content-title">Certified Consultant</div>
+								<div class="content-text">Accelerate innovation with world match entire remote team</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+		<div class="shape-image1 sway_Y__animationY">
+			<img src="{% static 'images/home-6/banner/shape-image1.png' %}" alt="img">
+		</div>		
+	</section>
+
+	<!--Service Section Three-->
+	<section class="service-section-three fix section-padding" id="service">
+		<div class="auto-container">
+			<div class="sec-title mb-50">
+				<div class="row g-4 justify-content-between align-items-end">
+					<div class="col-xl-6 col-md-8">
+						<h6 class="sub-title wow fadeInUp">
+							<span class="triangle triangle1"></span>
+							<span class="triangle triangle2"></span>
+							Our Services
+						</h6>
+						<h2 class="title wow fadeInUp" data-wow-delay=".2s">Worldwide Insurance Tailored Solutions</h2>
+					</div>
+					<div class="col-xl-5 col-md-4 wow fadeInUp animated" data-wow-delay=".4s">
+						<a href="{% url 'template-services' %}" class="theme-btn btn-style-two">
+							All Services
+							<span class="icon"><i class="flaticon-finance-arrow-right-svgrepo-com1-2"></i></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 wow bounceInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+					<div class="service-block-three">
+						<div class="outer-box">
+							<div class="icon-box">
+								<svg class="icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_573_1016)">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M26.5968 2.449C25.983 2.13907 25.2366 2.13907 24.6227 2.449L9.36783 10.1509C7.97388 10.8547 7.97388 12.6765 9.36783 13.3802L24.6227 21.0822C25.2366 21.3921 25.983 21.3921 26.5968 21.0822L41.8517 13.3802C43.2457 12.6765 43.2457 10.8547 41.8517 10.1509L26.5968 2.449ZM23.4382 0.511384C24.7887 -0.170461 26.4308 -0.170462 27.7813 0.511384L43.0362 8.21328C46.1028 9.76158 46.1028 13.7696 43.0363 15.3178L27.7813 23.0197C26.4308 23.7016 24.7887 23.7016 23.4382 23.0197L8.18331 15.3178C5.11668 13.7696 5.11667 9.76158 8.18331 8.21328L23.4382 0.511384ZM5.42253 20.2137C4.06887 19.5624 2.43902 20.4543 2.43902 21.8462V38.8317C2.43902 39.5059 2.84314 40.1265 3.49337 40.4509L17.721 47.5497C19.0756 48.2255 20.7317 47.3348 20.7317 45.9306V28.6914C20.7317 28.0072 20.3156 27.3791 19.6502 27.0589L5.42253 20.2137ZM0 21.8462C0 18.7839 3.58568 16.8219 6.56372 18.2547L20.7913 25.1C22.2552 25.8043 23.1707 27.1862 23.1707 28.6914V45.9306C23.1707 49.02 19.5273 50.9795 16.5473 49.4927L2.31957 42.3939C0.88905 41.6802 0 40.3148 0 38.8317V21.8462ZM47.561 21.8462C47.561 20.4543 45.9311 19.5624 44.5775 20.2137L30.3498 27.0589C29.6844 27.3791 29.2683 28.0072 29.2683 28.6914V45.9306C29.2683 47.3348 30.9244 48.2255 32.279 47.5497L46.5066 40.4509C47.1568 40.1265 47.561 39.5059 47.561 38.8317V21.8462ZM43.4362 18.2547C46.4143 16.8219 50 18.7839 50 21.8462V38.8317C50 40.3148 49.1109 41.6802 47.6804 42.3939L33.4527 49.4927C30.4727 50.9795 26.8292 49.02 26.8292 45.9306V28.6914C26.8292 27.1862 27.7448 25.8043 29.2087 25.1L43.4362 18.2547Z" fill="url(#paint0_linear_573_1016)"/>
+									</g>
+									<defs>
+									<linearGradient id="paint0_linear_573_1016" x1="-1.20543e-07" y1="24.4444" x2="50" y2="24.4444" gradientUnits="userSpaceOnUse">
+									<stop stop-color="#C8F169"/>
+									<stop offset="1" stop-color="#039397"/>
+									</linearGradient>
+									<clipPath id="clip0_573_1016">
+									<rect width="50" height="50" fill="white"/>
+									</clipPath>
+									</defs>
+								</svg>
+							</div>
+							<div class="content-box">
+								<h4 class="contact-title"><a href="{% url 'template-service-details' %}">Risk Assessment & Analysis</a></h4>
+								<ul class="feature-list">
+									<li>Insurance Regulation</li>
+									<li>Insurer Reputation</li>
+									<li>Tailored insurance</li>
+									<li>Consultants Ensure</li>
+									<li>Benefit Packages</li>
+								</ul>
+							</div>
+							<div class="arrow-shape-2 float-bob-x">
+								<img src="{% static 'images/home-6/service/arrow-shape.png' %}" alt="img">
+							</div>
+						</div>						
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 wow bounceInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+					<div class="service-block-three">
+						<div class="outer-box">
+							<div class="icon-box">
+								<svg class="icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_573_1016)">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M26.5968 2.449C25.983 2.13907 25.2366 2.13907 24.6227 2.449L9.36783 10.1509C7.97388 10.8547 7.97388 12.6765 9.36783 13.3802L24.6227 21.0822C25.2366 21.3921 25.983 21.3921 26.5968 21.0822L41.8517 13.3802C43.2457 12.6765 43.2457 10.8547 41.8517 10.1509L26.5968 2.449ZM23.4382 0.511384C24.7887 -0.170461 26.4308 -0.170462 27.7813 0.511384L43.0362 8.21328C46.1028 9.76158 46.1028 13.7696 43.0363 15.3178L27.7813 23.0197C26.4308 23.7016 24.7887 23.7016 23.4382 23.0197L8.18331 15.3178C5.11668 13.7696 5.11667 9.76158 8.18331 8.21328L23.4382 0.511384ZM5.42253 20.2137C4.06887 19.5624 2.43902 20.4543 2.43902 21.8462V38.8317C2.43902 39.5059 2.84314 40.1265 3.49337 40.4509L17.721 47.5497C19.0756 48.2255 20.7317 47.3348 20.7317 45.9306V28.6914C20.7317 28.0072 20.3156 27.3791 19.6502 27.0589L5.42253 20.2137ZM0 21.8462C0 18.7839 3.58568 16.8219 6.56372 18.2547L20.7913 25.1C22.2552 25.8043 23.1707 27.1862 23.1707 28.6914V45.9306C23.1707 49.02 19.5273 50.9795 16.5473 49.4927L2.31957 42.3939C0.88905 41.6802 0 40.3148 0 38.8317V21.8462ZM47.561 21.8462C47.561 20.4543 45.9311 19.5624 44.5775 20.2137L30.3498 27.0589C29.6844 27.3791 29.2683 28.0072 29.2683 28.6914V45.9306C29.2683 47.3348 30.9244 48.2255 32.279 47.5497L46.5066 40.4509C47.1568 40.1265 47.561 39.5059 47.561 38.8317V21.8462ZM43.4362 18.2547C46.4143 16.8219 50 18.7839 50 21.8462V38.8317C50 40.3148 49.1109 41.6802 47.6804 42.3939L33.4527 49.4927C30.4727 50.9795 26.8292 49.02 26.8292 45.9306V28.6914C26.8292 27.1862 27.7448 25.8043 29.2087 25.1L43.4362 18.2547Z" fill="url(#paint0_linear_573_1016)"/>
+									</g>
+									<defs>
+									<linearGradient id="paint0_linear_573_1016" x1="-1.20543e-07" y1="24.4444" x2="50" y2="24.4444" gradientUnits="userSpaceOnUse">
+									<stop stop-color="#C8F169"/>
+									<stop offset="1" stop-color="#039397"/>
+									</linearGradient>
+									<clipPath id="clip0_573_1016">
+									<rect width="50" height="50" fill="white"/>
+									</clipPath>
+									</defs>
+								</svg>
+							</div>
+							<div class="content-box">
+								<h4 class="contact-title"><a href="{% url 'template-service-details' %}">Policy Review & Optimization</a></h4>
+								<ul class="feature-list">
+									<li>Insurance Regulation</li>
+									<li>Insurer Reputation</li>
+									<li>Tailored insurance</li>
+									<li>Consultants Ensure</li>
+									<li>Benefit Packages</li>
+								</ul>
+							</div>
+							<div class="arrow-shape-2 float-bob-x">
+								<img src="{% static 'images/home-6/service/arrow-shape.png' %}" alt="img">
+							</div>
+						</div>						
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 wow bounceInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
+					<div class="service-block-three">
+						<div class="outer-box">
+							<div class="icon-box">
+								<svg class="icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_573_1016)">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M26.5968 2.449C25.983 2.13907 25.2366 2.13907 24.6227 2.449L9.36783 10.1509C7.97388 10.8547 7.97388 12.6765 9.36783 13.3802L24.6227 21.0822C25.2366 21.3921 25.983 21.3921 26.5968 21.0822L41.8517 13.3802C43.2457 12.6765 43.2457 10.8547 41.8517 10.1509L26.5968 2.449ZM23.4382 0.511384C24.7887 -0.170461 26.4308 -0.170462 27.7813 0.511384L43.0362 8.21328C46.1028 9.76158 46.1028 13.7696 43.0363 15.3178L27.7813 23.0197C26.4308 23.7016 24.7887 23.7016 23.4382 23.0197L8.18331 15.3178C5.11668 13.7696 5.11667 9.76158 8.18331 8.21328L23.4382 0.511384ZM5.42253 20.2137C4.06887 19.5624 2.43902 20.4543 2.43902 21.8462V38.8317C2.43902 39.5059 2.84314 40.1265 3.49337 40.4509L17.721 47.5497C19.0756 48.2255 20.7317 47.3348 20.7317 45.9306V28.6914C20.7317 28.0072 20.3156 27.3791 19.6502 27.0589L5.42253 20.2137ZM0 21.8462C0 18.7839 3.58568 16.8219 6.56372 18.2547L20.7913 25.1C22.2552 25.8043 23.1707 27.1862 23.1707 28.6914V45.9306C23.1707 49.02 19.5273 50.9795 16.5473 49.4927L2.31957 42.3939C0.88905 41.6802 0 40.3148 0 38.8317V21.8462ZM47.561 21.8462C47.561 20.4543 45.9311 19.5624 44.5775 20.2137L30.3498 27.0589C29.6844 27.3791 29.2683 28.0072 29.2683 28.6914V45.9306C29.2683 47.3348 30.9244 48.2255 32.279 47.5497L46.5066 40.4509C47.1568 40.1265 47.561 39.5059 47.561 38.8317V21.8462ZM43.4362 18.2547C46.4143 16.8219 50 18.7839 50 21.8462V38.8317C50 40.3148 49.1109 41.6802 47.6804 42.3939L33.4527 49.4927C30.4727 50.9795 26.8292 49.02 26.8292 45.9306V28.6914C26.8292 27.1862 27.7448 25.8043 29.2087 25.1L43.4362 18.2547Z" fill="url(#paint0_linear_573_1016)"/>
+									</g>
+									<defs>
+									<linearGradient id="paint0_linear_573_1016" x1="-1.20543e-07" y1="24.4444" x2="50" y2="24.4444" gradientUnits="userSpaceOnUse">
+									<stop stop-color="#C8F169"/>
+									<stop offset="1" stop-color="#039397"/>
+									</linearGradient>
+									<clipPath id="clip0_573_1016">
+									<rect width="50" height="50" fill="white"/>
+									</clipPath>
+									</defs>
+								</svg>
+							</div>
+							<div class="content-box">
+								<h4 class="contact-title"><a href="{% url 'template-service-details' %}">Insurance Planning & Strategy</a></h4>
+								<ul class="feature-list">
+									<li>Insurance Regulation</li>
+									<li>Insurer Reputation</li>
+									<li>Tailored insurance</li>
+									<li>Consultants Ensure</li>
+									<li>Benefit Packages</li>
+								</ul>
+							</div>
+							<div class="arrow-shape-2 float-bob-x">
+								<img src="{% static 'images/home-6/service/arrow-shape.png' %}" alt="img">
+							</div>
+						</div>						
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 wow bounceInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+					<div class="service-block-three">
+						<div class="outer-box">
+							<div class="icon-box">
+								<svg class="icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_573_1016)">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M26.5968 2.449C25.983 2.13907 25.2366 2.13907 24.6227 2.449L9.36783 10.1509C7.97388 10.8547 7.97388 12.6765 9.36783 13.3802L24.6227 21.0822C25.2366 21.3921 25.983 21.3921 26.5968 21.0822L41.8517 13.3802C43.2457 12.6765 43.2457 10.8547 41.8517 10.1509L26.5968 2.449ZM23.4382 0.511384C24.7887 -0.170461 26.4308 -0.170462 27.7813 0.511384L43.0362 8.21328C46.1028 9.76158 46.1028 13.7696 43.0363 15.3178L27.7813 23.0197C26.4308 23.7016 24.7887 23.7016 23.4382 23.0197L8.18331 15.3178C5.11668 13.7696 5.11667 9.76158 8.18331 8.21328L23.4382 0.511384ZM5.42253 20.2137C4.06887 19.5624 2.43902 20.4543 2.43902 21.8462V38.8317C2.43902 39.5059 2.84314 40.1265 3.49337 40.4509L17.721 47.5497C19.0756 48.2255 20.7317 47.3348 20.7317 45.9306V28.6914C20.7317 28.0072 20.3156 27.3791 19.6502 27.0589L5.42253 20.2137ZM0 21.8462C0 18.7839 3.58568 16.8219 6.56372 18.2547L20.7913 25.1C22.2552 25.8043 23.1707 27.1862 23.1707 28.6914V45.9306C23.1707 49.02 19.5273 50.9795 16.5473 49.4927L2.31957 42.3939C0.88905 41.6802 0 40.3148 0 38.8317V21.8462ZM47.561 21.8462C47.561 20.4543 45.9311 19.5624 44.5775 20.2137L30.3498 27.0589C29.6844 27.3791 29.2683 28.0072 29.2683 28.6914V45.9306C29.2683 47.3348 30.9244 48.2255 32.279 47.5497L46.5066 40.4509C47.1568 40.1265 47.561 39.5059 47.561 38.8317V21.8462ZM43.4362 18.2547C46.4143 16.8219 50 18.7839 50 21.8462V38.8317C50 40.3148 49.1109 41.6802 47.6804 42.3939L33.4527 49.4927C30.4727 50.9795 26.8292 49.02 26.8292 45.9306V28.6914C26.8292 27.1862 27.7448 25.8043 29.2087 25.1L43.4362 18.2547Z" fill="url(#paint0_linear_573_1016)"/>
+									</g>
+									<defs>
+									<linearGradient id="paint0_linear_573_1016" x1="-1.20543e-07" y1="24.4444" x2="50" y2="24.4444" gradientUnits="userSpaceOnUse">
+									<stop stop-color="#C8F169"/>
+									<stop offset="1" stop-color="#039397"/>
+									</linearGradient>
+									<clipPath id="clip0_573_1016">
+									<rect width="50" height="50" fill="white"/>
+									</clipPath>
+									</defs>
+								</svg>
+							</div>
+							<div class="content-box">
+								<h4 class="contact-title"><a href="{% url 'template-service-details' %}">Employee Benefits Consulting</a></h4>
+								<ul class="feature-list">
+									<li>Insurance Regulation</li>
+									<li>Insurer Reputation</li>
+									<li>Tailored insurance</li>
+									<li>Consultants Ensure</li>
+									<li>Benefit Packages</li>
+								</ul>
+							</div>
+							<div class="arrow-shape-2 float-bob-x">
+								<img src="{% static 'images/home-6/service/arrow-shape.png' %}" alt="img">
+							</div>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--End Service Section Three-->
+	
+	<!-- Why Choose Us Section Three Start -->
+	<section class="why-choose-section-3 parallaxie fix" id="about">
+		<div class="bg-image wow tm-gsap-img-parallax fix">
+			<img class="img-fit-cover" src="{% static 'images/home-6/choose/choose-us-image.jpg' %}" alt="">
+		</div>
+		<div class="outer-box">
+			<div class="choose-content">
+				<div class="inner-box">
+					<div class="sec-title mb-30">
+						<h6 class="sub-title text-white">
+							<span class="triangle triangle1"></span>
+							<span class="triangle triangle2"></span>
+							Who We Are
+						</h6>
+						<h2 class="title text-white wow fadeInUp" data-wow-delay=".2s">The Top Choice for All  Insurance Needs</h2>
+					</div>
+					<div class="row">
+						<div class="col-md-6 wow fadeInUp" data-wow-delay=".4s">
+							<h4 class="content-title">With 30 Years of Experience</h4>
+							<div class="content-text">Our Mission To deliver peace of mind through customized insurance</div>
+							<div class="choose-us-box">
+								<div class="icon-box">
+									<svg class="icon" width="51" height="49" viewBox="0 0 51 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_573_967)">
+										<path d="M9.22266 0.532715H50.4567V39.9458H9.22266V0.532715Z" stroke="white"/>
+										<path d="M0.542969 7.98926H41.777V48.4675H0.542969V7.98926Z" stroke="white"/>
+										</g>
+										<defs>
+										<clipPath id="clip0_573_967">
+										<rect width="51" height="49" fill="white"/>
+										</clipPath>
+										</defs>
+									</svg>
+								</div>
+								<div class="content-box">
+									<span>Our Target</span>
+									<h5>Deliver Exceptional Service</h5>
+								</div>
+							</div>
+							<div class="choose-us-box">
+								<div class="icon-box">
+									<svg class="icon" width="59" height="50" viewBox="0 0 59 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_573_959)">
+										<path d="M35.7268 0.419922C40.2472 0.419922 44.6661 1.77701 48.4247 4.31958C52.1833 6.86215 55.1128 10.476 56.8426 14.7041C58.5725 18.9323 59.0252 23.5848 58.1433 28.0734C57.2614 32.5619 55.0846 36.6849 51.8882 39.921C48.6917 43.1571 44.6192 45.3609 40.1857 46.2537C35.7521 47.1466 31.1566 46.6883 26.9803 44.937C22.8039 43.1856 19.2344 40.2198 16.723 36.4146C14.2116 32.6094 12.8711 28.1356 12.8711 23.5591C12.8711 17.4222 15.2791 11.5367 19.5654 7.19724C23.8516 2.8578 29.6651 0.419922 35.7268 0.419922Z" stroke="white"/>
+										<path d="M23.2697 3.30078C27.7902 3.30078 32.2091 4.65787 35.9677 7.20044C39.7263 9.74301 42.6557 13.3569 44.3856 17.585C46.1155 21.8131 46.5681 26.4657 45.6862 30.9542C44.8043 35.4428 42.6276 39.5658 39.4311 42.8019C36.2347 46.038 32.1622 48.2418 27.7287 49.1346C23.2951 50.0274 18.6996 49.5692 14.5232 47.8178C10.3469 46.0665 6.77735 43.1007 4.26594 39.2954C1.75452 35.4902 0.414063 31.0165 0.414062 26.44C0.414063 20.3031 2.82206 14.4175 7.10833 10.0781C11.3946 5.73865 17.208 3.30078 23.2697 3.30078Z" stroke="white"/>
+										<path d="M29.9304 14.8555L38.6195 24.1048H12.9766" stroke="white"/>
+										</g>
+										<defs>
+										<clipPath id="clip0_573_959">
+										<rect width="59" height="50" fill="white"/>
+										</clipPath>
+										</defs>
+									</svg>
+								</div>
+								<div class="content-box">
+									<span>Our Growth</span>
+									<h5>Rich industry experience</h5>
+								</div>
+							</div>
+							<div class="btn-box">
+								<a href="{% url 'template-contact' %}" class="theme-btn btn-style-two">
+									Get Started
+									<span class="icon"><i class="flaticon-finance-arrow-right-svgrepo-com1-2"></i></span>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-6 wow fadeInUp" data-wow-delay=".6s">
+							<div class="process-bar">
+								<img src="{% static 'images/home-6/choose/process-bar.jpg' %}" alt="">
+							</div>
+						</div>
+					</div>
+				</div>							
+			</div>
+		</div>
+	</section>
+
+	<!-- Case Section Start -->
+	<section class="case-section section-padding">
+		<div class="auto-container">
+			<div class="row g-4 justify-content-between">
+				<div class="col-xxl-4 col-lg-5 col-md-8">
+					<div class="case-title-box sticky-style">
+						<div class="sec-title mb-0">
+							<h6 class="sub-title wow fadeInUp">
+								<span class="triangle triangle1"></span>
+								<span class="triangle triangle2"></span>
+								Case Studies
+							</h6>
+							<h2 class="text-anim wow fadeInUp" data-wow-delay=".3s">Recent Solutions in Action</h2>
+						</div>
+						<p class="title-text wow fadeInUp mb-30" data-wow-delay=".4s">The client experienced rapid growth and needed to reassess its insurance coverage. Their existing policies lacked clarity and they faced</p>
+						<a href="{% url 'template-services' %}" class="theme-btn btn-style-two wow fadeInUp" data-wow-delay=".5s">
+							Show More
+							<span class="icon"><i class="flaticon-finance-arrow-right-svgrepo-com1-2"></i></span>
+						</a>
+					</div>
+				</div>
+				<div class="col-xxl-7 col-xl-7 col-lg-7">
+					<div class="case-block-one mb-50 wow fadeInUp" data-wow-delay="0s">
+						<div class="inner-box" style="background-image: url('{% static "images/home-6/case/case-image-1.jpg" %}');">
+							<h3 class="case-title"><a href="{% url 'template-service-details' %}">Strategic Insurance Advisor</a></h3>
+							<div class="content">
+								<div class="sl-number">01</div>
+								<a href="{% url 'template-service-details' %}" class="icon"><i class="fa-regular fa-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="case-block-one mb-50 wow fadeInUp" data-wow-delay=".2s">
+						<div class="inner-box" style="background-image: url('{% static "images/home-6/case/case-image-2.jpg" %}');">
+							<h3 class="case-title"><a href="{% url 'template-service-details' %}">Operational Efficiency Consultant</a></h3>
+							<div class="content">
+								<div class="sl-number">02</div>
+								<a href="{% url 'template-service-details' %}" class="icon"><i class="fa-regular fa-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="case-block-one mb-50 wow fadeInUp" data-wow-delay=".3s">
+						<div class="inner-box" style="background-image: url('{% static "images/home-6/case/case-image-3.jpg" %}');">
+							<h3 class="case-title"><a href="{% url 'template-service-details' %}">Claims Management Support</a></h3>
+							<div class="content">
+								<div class="sl-number">03</div>
+								<a href="{% url 'template-service-details' %}" class="icon"><i class="fa-regular fa-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="case-block-one wow fadeInUp" data-wow-delay=".4s">
+						<div class="inner-box" style="background-image: url('{% static "images/home-6/case/case-image-4.jpg" %}');">
+							<h3 class="case-title"><a href="{% url 'template-service-details' %}">Insurance Provider Evaluation</a></h3>
+							<div class="content">
+								<div class="sl-number">04</div>
+								<a href="{% url 'template-service-details' %}" class="icon"><i class="fa-regular fa-arrow-right"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Marquee Section Start -->
+	<div class="marquee-section fix section-padding pt-0">
+		<div class="marquee mb-50">
+			<div class="marquee-group">
+				<div class="stroke-text">Risk Management</div>
+				<div class="text">
+					<img src="{% static 'images/home-1/dawn.png' %}" alt="img">
+				</div>
+				<div class="text">Finance Consultation</div>
+				<div class="text">
+					<img src="{% static 'images/home-1/dawn.png' %}" alt="img">
+				</div>
+				<div class="stroke-text">Investment Consulting</div>
+				<div class="text">
+					<img src="{% static 'images/home-1/dawn.png' %}" alt="img">
+				</div>
+				<div class="text">Risk Management</div>
+				<div class="text">
+					<img src="{% static 'images/home-1/dawn.png' %}" alt="img">
+				</div>
+				<div class="stroke-text">Finance Consultation</div>
+				<div class="text">
+					<img src="{% static 'images/home-1/dawn.png' %}" alt="img">
+				</div>
+				<div class="text">Investment Consulting</div>
+				<div class="text">
+					<img src="{% static 'images/home-1/dawn.png' %}" alt="img">
+				</div>
+			</div>
+			<div class="marquee-group">
+				<div class="stroke-text">Risk Management</div>
+				<div class="text">
+					<img src="{% static 'images/home-1/dawn.png' %}" alt="img">
+				</div>
+				<div class="text">Finance Consultation</div>
+				<div class="text">
+					<img src="{% static 'images/home-1/dawn.png' %}" alt="img">
+				</div>
+				<div class="stroke-text">Investment Consulting</div>
+				<div class="text">
+					<img src="{% static 'images/home-1/dawn.png' %}" alt="img">
+				</div>
+				<div class="text">Risk Management</div>
+				<div class="text">
+					<img src="{% static 'images/home-1/dawn.png' %}" alt="img">
+				</div>
+				<div class="stroke-text">Finance Consultation</div>
+				<div class="text">
+					<img src="{% static 'images/home-1/dawn.png' %}" alt="img">
+				</div>
+				<div class="text">Investment Consulting</div>
+				<div class="text">
+					<img src="{% static 'images/home-1/dawn.png' %}" alt="img">
+				</div>
+			</div>
+		</div>
+		<div class="marquee slide-right">
+			<div class="marquee-group">
+				<div class="stroke-text">Strategic Planning</div>
+				<div class="text">
+					<img src="{% static 'images/home-1/dawn.png' %}" alt="img">
+				</div>
+				<div class="text">Expert Guidance</div>
+				<div class="text">
+					<img src="{% static 'images/home-1/dawn.png' %}" alt="img">
+				</div>
+				<div class="stroke-text">Initial Consultation</div>
+				<div class="text">
+					<img src="{% static 'images/home-1/dawn.png' %}" alt="img">
+				</div>
+				<div class="text">Strategic Planning</div>
+				<div class="text">
+					<img src="{% static 'images/home-1/dawn.png' %}" alt="img">
+				</div>
+				<div class="stroke-text">Expert Guidance</div>
+				<div class="text">
+					<img src="{% static 'images/home-1/dawn.png' %}" alt="img">
+				</div>
+				<div class="text">Initial Consultation</div>
+				<div class="text">
+					<img src="{% static 'images/home-1/dawn.png' %}" alt="img">
+				</div>
+			</div>
+			<div class="marquee-group">
+				<div class="stroke-text">Strategic Planning</div>
+				<div class="text">
+					<img src="{% static 'images/home-1/dawn.png' %}" alt="img">
+				</div>
+				<div class="text">Expert Guidance</div>
+				<div class="text">
+					<img src="{% static 'images/home-1/dawn.png' %}" alt="img">
+				</div>
+				<div class="stroke-text">Initial Consultation</div>
+				<div class="text">
+					<img src="{% static 'images/home-1/dawn.png' %}" alt="img">
+				</div>
+				<div class="text">Strategic Planning</div>
+				<div class="text">
+					<img src="{% static 'images/home-1/dawn.png' %}" alt="img">
+				</div>
+				<div class="stroke-text">Expert Guidance</div>
+				<div class="text">
+					<img src="{% static 'images/home-1/dawn.png' %}" alt="img">
+				</div>
+				<div class="text">Initial Consultation</div>
+				<div class="text">
+					<img src="{% static 'images/home-1/dawn.png' %}" alt="img">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- choose-area-start -->
+	<div class="ks-choose-2-area" style="background-image: url('{% static "images/home-6/background/choose-us.png" %}');" >
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-6 col-lg-6">
+					<div class="ks-choose-2-content">
+						<div class="sec-title">
+							<h6 class="sub-title light wow fadeInUp" data-wow-delay=".2s">
+								<span class="triangle triangle1"></span>
+								<span class="triangle triangle2"></span>
+								why choose us
+							</h6>
+							<h2 class="title light text-anim wow fadeInUp" data-wow-delay=".3s">Why You Should Choose Our Company?</h2>
+						</div>
+						<p class="text wow fadeInUp" data-wow-delay=".4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout The point of using Lorem Ipsum</p>
+						<div class="ks-choose-2-more-wrap flex-wrap d-sm-flex align-items-center wow fadeInUp" data-wow-delay=".5">
+							<div class="ks-choose-2-more-info d-flex align-items-center">
+								<span class="icon">
+									<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_125_72)">
+											<path d="M14.998 0C10.3133 0 6.50195 3.81135 6.50195 8.49609C6.50195 13.1808 10.3133 16.9922 14.998 16.9922C19.6828 16.9922 23.4941 13.1808 23.4941 8.49609C23.4941 3.81135 19.6828 0 14.998 0ZM15.877 12.7395V13.7695H14.1191V12.8185L12.8722 12.7116L13.0224 10.9602L14.9509 11.1255C15.0159 11.1311 15.0711 11.131 15.1151 11.1252C15.5494 11.0681 15.877 10.6935 15.877 10.2538C15.877 9.76922 15.4827 9.37494 14.9981 9.37494C13.5442 9.37494 12.3614 8.19211 12.3614 6.73822C12.3614 6.14912 12.5515 5.59184 12.9112 5.12654C13.2229 4.7233 13.6458 4.42934 14.1192 4.26627V3.22266H15.877V4.21822L17.1732 4.40338L16.9246 6.1435L15.1279 5.88686C14.8045 5.84063 14.4878 5.96127 14.302 6.20168C14.1824 6.35631 14.1192 6.54187 14.1192 6.73828C14.1192 7.22291 14.5135 7.61719 14.9981 7.61719C16.452 7.61719 17.6348 8.80002 17.6348 10.2539C17.6348 11.3859 16.9087 12.3737 15.877 12.7395Z"
+												fill="white" />
+											<path d="M29.4383 16.0737C28.6565 15.2614 27.3365 15.2766 26.5394 16.0738L22.3852 20.228C22.2182 20.395 22.0887 20.5948 21.9985 20.8129C21.4327 22.1806 20.0843 23.1454 18.5145 23.1454H12.6513V21.3875H18.5146C19.625 21.3875 20.5252 20.4874 20.5252 19.377C20.5252 18.6565 20.146 18.025 19.5766 17.6699C18.1981 18.3605 16.6436 18.75 14.9997 18.75C12.2132 18.75 9.68322 17.6322 7.83324 15.8221C6.64549 15.9497 5.50303 16.4724 4.61398 17.3614L0.00195312 21.9757L8.02625 30C9.44234 28.5839 11.363 27.7884 13.3656 27.7884H18.051C19.6563 27.7884 21.1954 27.1485 22.3274 26.0104L29.4108 18.8891C30.1868 18.1132 30.1959 16.8608 29.4383 16.0737Z"
+												fill="white" />
+										</g>
+										<defs>
+											<clipPath id="clip0_125_72">
+												<rect width="30" height="30" fill="white" />
+											</clipPath>
+										</defs>
+									</svg>
+								</span>
+								<b>Less Pay Get <br> More Benefits</b>
+							</div>
+							<p class="text2">The point using Lorem Ipsum is that it has a more.</p>
+						</div>
+						<div class="ks_fade_anim wow fadeInUp" data-wow-delay=".6">
+							<a href="{% url 'template-contact' %}" class="theme-btn btn-style-two">
+								Get In Touch
+								<span class="icon"><i class="flaticon-finance-arrow-right-svgrepo-com1-2"></i></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-6 col-lg-6 col-md-10">
+					<div class="ks-choose-2-thumb-wrap ks_fade_anim" data-fade-from="right" data-delay=".4">
+						<div class="ks-choose-2-icon">
+							<img src="{% static 'images/home-6/choose/favicon.png' %}" alt="">
+						</div>
+						<div class="row gx-0">
+							<div class="col-lg-6 col-md-6 col-6">
+								<div class="ks-choose-2-thumb">
+									<img src="{% static 'images/home-6/choose/choose-2-1.jpg' %}" alt="">
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-6">
+								<div class="ks-choose-2-circle">
+									<h3 class="title text-white"> Insurance <br>Managements</h3>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-6">
+								<div class="ks-choose-2-circle style-2">
+									<h3 class="title text-white"> Strategic <br>Investments</h3>
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-6">
+								<div class="ks-choose-2-thumb style-2">
+									<img src="{% static 'images/home-6/choose/choose-2-2.jpg' %}" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- choose-area-end -->
+
+	<!-- Pricing Section Three -->
+	<section class="pricing-section-three" id="pricing">
+		<div class="auto-container">
+			<div class="sec-title text-center mb-50">
+				<h6 class="sub-title wow fadeInUp">
+					<span class="triangle triangle1"></span>
+					<span class="triangle triangle2"></span>
+					Pricing Plan
+				</h6>
+				<h2 class="text-anim wow fadeInUp" data-wow-delay=".3s">our popular pricing plan <br>by company</h2>
+			</div>
+			<div class="row">
+				<!-- Pricing Block -->
+				<div class="pricing-block-three col-xl-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".3s">
+					<div class="inner-box">
+						<div class="pricing-icon">
+							<svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<mask id="mask0_616_546" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="54" height="54">
+									<rect width="54" height="54" fill="url(#pattern0_616_546)"/>
+								</mask>
+								<g mask="url(#mask0_616_546)">
+									<rect width="54" height="54" fill="white"/>
+								</g>
+								<defs>
+									<pattern id="pattern0_616_546" patternContentUnits="objectBoundingBox" width="1" height="1">
+										<use xlink:href="#image0_616_546" transform="scale(0.00285714)"/>
+									</pattern>
+									<image id="image0_616_546" width="350" height="350" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+								</defs>
+							</svg>
+						</div>
+						<div class="content">
+							<div class="bg-layer"></div>
+							<div class="pricing-box">
+								<div class="price"><sub>$</sub> 50 <sup>.99</sup></div>
+								<span class="time">Monthly</span>
+							</div>
+							<h4 class="pricing-title">Personal Plan</h4>
+							<div class="text">There are many variation of passages of Lorem Ipsum available form.</div>
+							<ul class="list-style-three">
+								<li>
+									<div class="icon"><img src="{% static 'images/home-1/check-mark-dark.png' %}" alt=""></div>
+									Unlimited features
+								</li>
+								<li>
+									<div class="icon"><img src="{% static 'images/home-1/check-mark-dark.png' %}" alt=""></div>
+									Multi language content
+								</li>
+								<li>
+									<div class="icon"><img src="{% static 'images/home-1/check-mark-dark.png' %}" alt=""></div>
+									30 Days free trial features
+								</li>
+								<li class="disable-color">
+									<div class="icon"><img src="{% static 'images/home-1/check-mark-dark.png' %}" alt=""></div>
+									Data backup and recovery
+								</li>
+								<li class="disable-color">
+									<div class="icon"><img src="{% static 'images/home-1/check-mark-dark.png' %}" alt=""></div>
+									Updates via dashboard & slack
+								</li>
+							</ul>
+							<div class="btn-box">
+								<a href="#" class="theme-btn btn-style-two"><span class="btn-title">Get Started Now</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Pricing Block -->
+				<div class="pricing-block-three col-xl-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".5s">
+					<div class="inner-box">
+						<div class="pricing-icon">
+							<svg width="54" height="44" viewBox="0 0 54 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M52.0773 7.10221L45.0811 0.868389C44.5331 0.370477 43.6699 0.0107422 42.8417 0.0107422H11.1723C10.8625 0.0107422 10.5608 0.0663305 10.267 0.145742C10.2169 0.145742 10.155 0.177507 10.1399 0.177507C9.65231 0.356978 9.34975 0.495154 8.9249 0.860448C8.67396 1.08439 2.07881 6.95927 1.84137 7.19751C0.602544 8.35374 0.475485 10.2811 1.45225 11.6128C25.7062 44.5337 24.3832 42.8796 24.974 43.2981C26.1827 44.2328 27.8725 44.2002 29.024 43.314C29.6593 42.8375 27.971 44.9912 52.5458 11.6128C53.6401 10.1524 53.2724 8.16157 52.0773 7.10221ZM43.7708 1.86104C43.9963 2.00398 51.0719 8.33151 51.1799 8.46016H37.4814L43.7708 1.86104ZM41.8252 1.59898L35.5675 8.16633L28.9287 1.59898H41.8252ZM33.6061 8.46016H20.392L26.999 1.92457L33.6061 8.46016ZM25.0693 1.59898L18.4305 8.16633L12.1728 1.59898H25.0693ZM2.9849 8.29339C3.13578 8.15839 10.0565 1.96586 10.2352 1.86898L16.5167 8.46016H2.82607C2.87372 8.40457 2.92137 8.34104 2.9849 8.29339ZM2.73078 10.6678C2.59578 10.4852 2.50049 10.2787 2.4449 10.0643H17.827L24.1878 39.796L2.73078 10.6678ZM27.682 42.2102C27.2658 42.4595 26.7131 42.4484 26.332 42.2102L19.447 10.0643H34.5511L27.682 42.2102ZM51.2752 10.6678H51.2673L29.8181 39.796L36.179 10.0643H51.5611C51.5055 10.2787 51.4102 10.4852 51.2752 10.6678Z" fill="white"/>
+							</svg>
+						</div>
+						<div class="content">
+							<div class="bg-layer"></div>
+							<div class="pricing-box">
+								<div class="price"><sub>$</sub> 60 <sup>.99</sup></div>
+								<span class="time">Monthly</span>
+							</div>
+							<h4 class="pricing-title">Premium Plan</h4>
+							<div class="text">There are many variation of passages of Lorem Ipsum available form.</div>
+							<ul class="list-style-three">
+								<li>
+									<div class="icon"><img src="{% static 'images/home-1/check-mark-dark.png' %}" alt=""></div>
+									Unlimited features
+								</li>
+								<li>
+									<div class="icon"><img src="{% static 'images/home-1/check-mark-dark.png' %}" alt=""></div>
+									Multi language content
+								</li>
+								<li>
+									<div class="icon"><img src="{% static 'images/home-1/check-mark-dark.png' %}" alt=""></div>
+									30 Days free trial features
+								</li>
+								<li>
+									<div class="icon"><img src="{% static 'images/home-1/check-mark-dark.png' %}" alt=""></div>
+									Data backup and recovery
+								</li>
+								<li class="disable-color">
+									<div class="icon"><img src="{% static 'images/home-1/check-mark-dark.png' %}" alt=""></div>
+									Updates via dashboard & slack
+								</li>
+							</ul>
+							<div class="btn-box">
+								<a href="#" class="theme-btn btn-style-two"><span class="btn-title">Get Started Now</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Pricing Block -->
+				<div class="pricing-block-three col-xl-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".7s">
+					<div class="inner-box">
+						<div class="pricing-icon">
+							<svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<mask id="mask0_616_629" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="54" height="54">
+									<path d="M0 0.000152588H53.9998V54H0V0.000152588Z" fill="white"/>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M53.9998 0.000156403H0V54H53.9998V0.000156403ZM52.4178 52.418H1.58203V1.58219H52.4178V52.418Z" fill="white"/>
+								</mask>
+								<g mask="url(#mask0_616_629)">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M39.1917 53.0597C39.3979 53.2083 39.6631 53.2488 39.9043 53.1684L52.5605 48.9496C52.8835 48.842 53.1014 48.5397 53.1014 48.1992V29.1094C53.1014 28.8552 52.9792 28.6164 52.7729 28.4677C52.5666 28.3191 52.3015 28.2786 52.0602 28.359L39.404 32.5778C39.081 32.6854 38.8632 32.9877 38.8632 33.3282V52.418C38.8632 52.6722 38.9854 52.911 39.1917 53.0597ZM40.4452 51.3205V33.8983L51.5194 30.2069V47.6291L40.4452 51.3205Z" fill="white"/>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M40.1167 53.0597C40.3229 52.911 40.4452 52.6722 40.4452 52.418V33.3282C40.4452 32.9877 40.2273 32.6854 39.9043 32.5778L27.2481 28.359C27.0068 28.2786 26.7417 28.3191 26.5354 28.4677C26.3291 28.6164 26.2069 28.8552 26.2069 29.1094V48.1992C26.2069 48.5397 26.4248 48.842 26.7478 48.9496L39.404 53.1684C39.6452 53.2488 39.9104 53.2083 40.1167 53.0597ZM27.7889 47.6291V30.2069L38.8631 33.8983V51.3205L27.7889 47.6291Z" fill="white"/>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M39.404 34.0785C39.5664 34.1327 39.7419 34.1327 39.9043 34.0785L52.5605 29.8598C52.8835 29.7521 53.1014 29.4499 53.1014 29.1094C53.1014 28.7689 52.8835 28.4666 52.5605 28.359L39.9043 24.1402C39.7419 24.0861 39.5664 24.0861 39.404 24.1402L26.7478 28.359C26.4248 28.4666 26.2069 28.7689 26.2069 29.1094C26.2069 29.4499 26.4248 29.7521 26.7478 29.8598L39.404 34.0785ZM29.4993 29.1094L39.6541 25.7245L49.8089 29.1094L39.6541 32.4943L29.4993 29.1094Z" fill="white"/>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M13.8793 53.0597C14.0856 53.2083 14.3507 53.2488 14.5919 53.1684L27.2482 48.9496C27.5712 48.842 27.789 48.5397 27.789 48.1992V29.1094C27.789 28.8552 27.6668 28.6164 27.4605 28.4677C27.2543 28.3191 26.9891 28.2786 26.7479 28.359L14.0917 32.5778C13.7687 32.6854 13.5508 32.9877 13.5508 33.3282V52.418C13.5508 52.6722 13.673 52.911 13.8793 53.0597ZM15.1328 51.3205V33.8983L26.207 30.2069V47.6291L15.1328 51.3205Z" fill="white"/>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M14.8043 53.0597C15.0105 52.911 15.1328 52.6722 15.1328 52.418V33.3282C15.1328 32.9877 14.9149 32.6854 14.5919 32.5778L1.93569 28.359C1.69447 28.2786 1.4293 28.3191 1.22303 28.4677C1.01676 28.6164 0.894531 28.8552 0.894531 29.1094V48.1992C0.894531 48.5397 1.1124 48.842 1.43541 48.9496L14.0916 53.1684C14.3328 53.2488 14.598 53.2083 14.8043 53.0597ZM2.47656 47.6291V30.2069L13.5507 33.8983V51.3205L2.47656 47.6291Z" fill="white"/>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M14.0916 34.0785C14.254 34.1327 14.4295 34.1327 14.5919 34.0785L27.2481 29.8598C27.5711 29.7521 27.789 29.4499 27.789 29.1094C27.789 28.7689 27.5711 28.4666 27.2481 28.359L14.5919 24.1402C14.4295 24.0861 14.254 24.0861 14.0916 24.1402L1.43541 28.359C1.1124 28.4666 0.894531 28.7689 0.894531 29.1094C0.894531 29.4499 1.1124 29.7521 1.43541 29.8598L14.0916 34.0785ZM4.18696 29.1094L14.3418 25.7245L24.4966 29.1094L14.3418 32.4943L4.18696 29.1094Z" fill="white"/>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M26.5354 29.7511C26.7417 29.8997 27.0068 29.9402 27.2481 29.8598L39.9043 25.6411C40.2273 25.5334 40.4452 25.2311 40.4452 24.8906V5.80084C40.4452 5.54658 40.3229 5.30781 40.1167 5.15914C39.9104 5.01047 39.6452 4.97001 39.404 5.05042L26.7478 9.26916C26.4248 9.37683 26.2069 9.6791 26.2069 10.0196V29.1094C26.2069 29.3636 26.3291 29.6024 26.5354 29.7511ZM27.7889 28.0119V10.5897L38.8631 6.89832V24.3205L27.7889 28.0119Z" fill="white"/>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M27.4605 29.7511C27.6668 29.6024 27.789 29.3636 27.789 29.1094V10.0196C27.789 9.6791 27.5712 9.37683 27.2482 9.26916L14.5919 5.05042C14.3507 4.97001 14.0856 5.01047 13.8793 5.15914C13.673 5.30781 13.5508 5.54658 13.5508 5.80084V24.8906C13.5508 25.2311 13.7687 25.5334 14.0917 25.6411L26.7479 29.8598C26.9891 29.9402 27.2543 29.8997 27.4605 29.7511ZM15.1328 24.3205V6.89832L26.207 10.5897V28.0119L15.1328 24.3205Z" fill="white"/>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M26.7479 10.77C26.9102 10.8241 27.0858 10.8241 27.2482 10.77L39.9044 6.55122C40.2274 6.44355 40.4452 6.14127 40.4452 5.80079C40.4452 5.46032 40.2274 5.15804 39.9044 5.05037L27.2482 0.831634C27.0858 0.77751 26.9102 0.77751 26.7479 0.831634L14.0917 5.05037C13.7687 5.15804 13.5508 5.46032 13.5508 5.80079C13.5508 6.14127 13.7687 6.44355 14.0917 6.55122L26.7479 10.77ZM16.8432 5.80079L26.998 2.41586L37.1528 5.80079L26.998 9.18573L16.8432 5.80079Z" fill="white"/>
+								</g>
+							</svg>
+						</div>
+						<div class="content">
+							<div class="bg-layer"></div>
+							<div class="pricing-box">
+								<div class="price"><sub>$</sub> 70 <sup>.99</sup></div>
+								<span class="time">Monthly</span>
+							</div>
+							<h4 class="pricing-title">Standard Plan</h4>
+							<div class="text">There are many variation of passages of Lorem Ipsum available form.</div>
+							<ul class="list-style-three">
+								<li>
+									<div class="icon"><img src="{% static 'images/home-1/check-mark-dark.png' %}" alt=""></div>
+									Unlimited features
+								</li>
+								<li>
+									<div class="icon"><img src="{% static 'images/home-1/check-mark-dark.png' %}" alt=""></div>
+									Multi language content
+								</li>
+								<li>
+									<div class="icon"><img src="{% static 'images/home-1/check-mark-dark.png' %}" alt=""></div>
+									30 Days free trial features
+								</li>
+								<li>
+									<div class="icon"><img src="{% static 'images/home-1/check-mark-dark.png' %}" alt=""></div>
+									Data backup and recovery
+								</li>
+								<li>
+									<div class="icon"><img src="{% static 'images/home-1/check-mark-dark.png' %}" alt=""></div>
+									Updates via dashboard & slack
+								</li>
+							</ul>
+							<div class="btn-box">
+								<a href="#" class="theme-btn btn-style-two"><span class="btn-title">Get Started Now</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Pricing Section -->
+
+	<!-- Faq Section Three Start -->
+	<section class="faq-section-three">
+		<div class="bg-layer" style="background-image: url('{% static "images/home-6/background/faq-bg.png" %}');"></div>
+		<div class="auto-container">
+			<div class="row g-4 justify-content-between align-items-flex-start">
+				<div class="col-xl-5 col-lg-6">
+					<div class="faq-left-items-2">
+						<div class="faq-image">
+							<img src="{% static 'images/home-6/faq/faq-image.jpg' %}" alt="img" class="wow img-custom-anim-left">
+						</div>
+						<div class="info-box">
+							<div class="icon-box">
+								<svg class="icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_616_459)">
+								<path d="M26.2378 23.7649C25.856 23.3831 25.2378 23.3831 24.856 23.7649C24.4751 24.1458 24.4751 24.7639 24.856 25.1457C25.2378 25.5266 25.856 25.5266 26.2378 25.1457C26.6186 24.7639 26.6186 24.1458 26.2378 23.7649Z" fill="white"/>
+								<path d="M38.665 11.3354C36.7568 9.42731 33.6677 9.42721 31.7594 11.3354C29.8562 13.2386 29.8561 16.3363 31.7597 18.2411C33.6636 20.1438 36.7613 20.1446 38.665 18.2409C40.573 16.3329 40.5734 13.2437 38.665 11.3354ZM37.2839 16.8597C36.1421 18.0017 34.2833 18.0017 33.1408 16.8599C31.9987 15.7171 31.9986 13.8584 33.1406 12.7165C34.2854 11.5716 36.1389 11.5714 37.2839 12.7165C38.4288 13.8612 38.429 15.7148 37.2839 16.8597Z" fill="white"/>
+								<path d="M49.712 0.286044C49.5202 0.0943453 49.2585 -0.00956072 48.9865 0.000693163C48.7657 0.0086033 43.5083 0.219931 37.2588 2.42881C32.251 4.19697 28.0769 6.72851 24.8524 9.95312C24.1299 10.6757 23.4267 11.4419 22.754 12.2379C19.5657 10.3611 17.0108 10.9496 15.3957 11.814C11.6769 13.8042 9.375 19.2081 9.375 23.0733C9.37529 23.4682 9.61328 23.8244 9.97812 23.9755C10.0989 24.0255 10.2259 24.0499 10.3517 24.0499C10.6059 24.0499 10.8556 23.9505 11.0424 23.7638C13.0036 21.8026 15.4226 21.9253 16.2129 22.0292L16.5549 22.3712C15.8818 23.9727 15.3396 25.5653 14.942 27.1142C14.7984 27.6748 14.8469 28.2679 15.0602 28.8105C14.12 29.2438 13.2129 29.88 12.423 30.6699C9.90928 33.1837 9.39883 39.3101 9.37832 39.5697C9.35586 39.8545 9.45918 40.135 9.66123 40.337C9.84512 40.5208 10.0938 40.6231 10.3517 40.6231C10.3772 40.6231 10.4029 40.6221 10.4286 40.62C10.6882 40.5996 16.8147 40.0892 19.3285 37.5754C20.118 36.7859 20.7542 35.8788 21.1875 34.9388C21.7619 35.1647 22.3531 35.1925 22.8847 35.0563C24.433 34.6587 26.0254 34.1167 27.6271 33.4436L27.9691 33.7856C28.0729 34.5759 28.1956 36.995 26.2344 38.956C25.9552 39.2353 25.8716 39.6553 26.0228 40.0201C26.1739 40.3851 26.5299 40.623 26.925 40.623C30.7902 40.623 36.194 38.3211 38.1842 34.6023C39.0486 32.9874 39.6371 30.4325 37.7603 27.2441C38.5559 26.5716 39.3222 25.8685 40.0451 25.1457C43.2697 21.9211 45.8011 17.7469 47.5693 12.7395C49.7782 6.48974 49.9895 1.23233 49.9974 1.01163C50.0072 0.740633 49.9037 0.477841 49.712 0.286044ZM11.5584 20.9728C12.165 18.037 13.927 14.8154 16.3177 13.5359C17.9152 12.681 19.6614 12.7648 21.518 13.7811C19.9363 15.8614 18.5612 18.1026 17.415 20.4693C17.4005 20.4603 17.2247 20.2393 16.8981 20.1657C16.7639 20.1353 14.18 19.5796 11.5584 20.9728ZM17.9474 36.1943C16.6047 37.537 13.4548 38.2452 11.4639 38.5344C11.7531 36.5434 12.4614 33.3936 13.8041 32.0509C14.556 31.299 15.4279 30.7289 16.3043 30.4078L19.5906 33.6941C19.2695 34.5705 18.6995 35.4423 17.9474 36.1943ZM22.3996 33.1643C22.117 33.2367 21.7896 33.1304 21.5463 32.8874C20.2829 31.6241 19.7887 31.1298 19.6336 30.9749C19.3492 30.6905 18.6518 29.9931 17.1115 28.4527C16.868 28.2086 16.7617 27.8814 16.8339 27.5993C17.1467 26.3811 17.5557 25.1313 18.0532 23.8695L26.1289 31.9452C24.8669 32.4427 23.6173 32.8517 22.3996 33.1643ZM36.4625 33.6807C35.183 36.0712 31.9615 37.8333 29.0257 38.4399C29.9618 36.6785 30.1681 34.4362 29.8261 33.0765C29.7467 32.7607 29.5407 32.6019 29.5292 32.5832C31.8957 31.4371 34.1368 30.062 36.2172 28.4802C37.2335 30.3371 37.3172 32.0834 36.4625 33.6807ZM38.6642 23.7646C37.7842 24.6445 36.8367 25.4946 35.8478 26.2912C33.4707 28.2052 30.8543 29.8265 28.0629 31.1171L18.8812 21.9357C20.1719 19.1441 21.7931 16.5277 23.707 14.1509C24.5043 13.1613 25.3543 12.2137 26.2339 11.3342C29.1269 8.44101 32.8607 6.13847 37.3345 4.48106L45.5173 12.6639C43.8601 17.1376 41.5576 20.8714 38.6642 23.7646ZM46.22 10.6042L39.3942 3.77842C43.113 2.62334 46.3483 2.19083 47.9631 2.03536C47.8075 3.65049 47.3749 6.88574 46.22 10.6042Z" fill="white"/>
+								<path d="M23.4756 40.3367C23.0941 39.9553 22.4757 39.9555 22.0945 40.3369L19.3328 43.0996C18.9515 43.481 18.9516 44.0994 19.3329 44.4806C19.7145 44.8619 20.3328 44.8619 20.7141 44.4804L23.4758 41.7177C23.8571 41.3363 23.857 40.7179 23.4756 40.3367Z" fill="white"/>
+								<path d="M9.66427 26.5263C9.28302 26.1449 8.66476 26.1449 8.28322 26.5261L5.52053 29.2879C5.13909 29.6691 5.13899 30.2875 5.52024 30.6689C5.90139 31.0502 6.51965 31.0506 6.90129 30.6691L9.66398 27.9074C10.0454 27.5261 10.0455 26.9078 9.66427 26.5263Z" fill="white"/>
+								<path d="M16.5675 41.7186C16.1864 41.3373 15.5679 41.3373 15.1865 41.7185L8.57125 48.3328C8.18981 48.7141 8.18981 49.3325 8.57115 49.7138C8.95231 50.0952 9.57076 50.0954 9.95221 49.7139L16.5674 43.0997C16.9489 42.7183 16.9489 42.1 16.5675 41.7186Z" fill="white"/>
+								<path d="M8.75503 41.7186C8.37378 41.3373 7.75532 41.3373 7.37397 41.7185L0.758752 48.3328C0.377307 48.7141 0.377307 49.3325 0.758654 49.7138C1.13981 50.0952 1.75826 50.0954 2.13971 49.7139L8.75493 43.0997C9.13637 42.7183 9.13637 42.1 8.75503 41.7186Z" fill="white"/>
+								<path d="M8.28142 33.4314C7.90017 33.0502 7.28171 33.0502 6.90037 33.4315L0.28612 40.0468C-0.0952269 40.4282 -0.0952269 41.0465 0.286218 41.4279C0.667565 41.8092 1.28592 41.8092 1.66727 41.4278L8.28152 34.8126C8.66286 34.4311 8.66286 33.8129 8.28142 33.4314Z" fill="white"/>
+								<path d="M30.38 19.621C29.9986 19.2396 29.3804 19.2396 28.9989 19.621L27.618 21.0018C27.2367 21.3832 27.2367 22.0015 27.618 22.383C27.9995 22.7643 28.6177 22.7643 28.9992 22.383L30.38 21.0021C30.7614 20.6208 30.7614 20.0024 30.38 19.621Z" fill="white"/>
+								</g>
+								<defs>
+								<clipPath id="clip0_616_459">
+								<rect width="50" height="50" fill="white"/>
+								</clipPath>
+								</defs>
+								</svg>
+							</div>
+							<div class="content-box">
+								<div class="content-icon">
+									<i class="icon fa-regular fa-arrow-right"></i>
+								</div>
+								<div class="content">
+									<h5 class="content-title">To Get Your Answer</h5>
+									<span class="content-text">20.57% Growth per year</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-6 col-lg-6">
+					<div class="sec-title mb-0">
+						<h6 class="sub-title wow fadeInUp">
+							<span class="triangle triangle1"></span>
+							<span class="triangle triangle2"></span>
+							FAQ’S
+						</h6>
+						<h2 class="wow fadeInUp" data-wow-delay=".2s">
+							Top Questions Answered Your Quick Guide
+						</h2>						
+					</div>
+					<div class="text mb-20">Lorem ipsum dolor sit amet consectetur adipiscing elit commodo hendrerit morbi non at metus nisi condimentum cubilia nulla</div>
+					<div class="faq-content-1">
+						<ul class="accordion-box">
+							<!--Block-->
+							<li class="accordion block active-block wow fadeInUp">
+								<div class="acc-btn active">How Can Insurance Consulting Benefit My Company?
+									<i class="arrow-icon fa-solid fa-angle-right"></i>
+								</div>
+								<div class="acc-content current">
+									<div class="content">
+										<div class="text">It is widely recognized that a reader's attention can be diverted by the content layout of a page. Many desktop publishing software and website editors now use Lorem Ipsum as</div>
+									</div>
+								</div>
+							</li>
+							<!--Block-->
+							<li class="accordion block wow fadeInUp" data-wow-delay=".2s">
+								<div class="acc-btn">What Are the Costs of Your Consulting Services?
+									<i class="arrow-icon fa-solid fa-angle-right"></i>
+								</div>
+								<div class="acc-content">
+									<div class="content">
+										<div class="text">It is widely recognized that a reader's attention can be diverted by the content layout of a page. Many desktop publishing software and website editors now use Lorem Ipsum as</div>
+									</div>
+								</div>
+							</li>
+							<!--Block-->
+							<li class="accordion block wow fadeInUp" data-wow-delay=".4s">
+								<div class="acc-btn">How Do You Measure the Success of a Project?
+									<i class="arrow-icon fa-solid fa-angle-right"></i>
+								</div>
+								<div class="acc-content">
+									<div class="content">
+										<div class="text">It is widely recognized that a reader's attention can be diverted by the content layout of a page. Many desktop publishing software and website editors now use Lorem Ipsum as</div>
+									</div>
+								</div>
+							</li>
+							<!--Block-->
+							<li class="accordion block wow fadeInUp" data-wow-delay=".6s">
+								<div class="acc-btn">Do You Provide Remote Consulting Services?
+									<i class="arrow-icon fa-solid fa-angle-right"></i>
+								</div>
+								<div class="acc-content">
+									<div class="content">
+										<div class="text">It is widely recognized that a reader's attention can be diverted by the content layout of a page. Many desktop publishing software and website editors now use Lorem Ipsum as</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Testimonial Section Start -->
+	<section class="testimonial-section-2 section-padding fix section-bg-2" id="testimonial">
+		<div class="auto-container">
+			<div class="sec-title">
+				<div class="row g-4 justify-content-between">
+					<div class="col-lg-5">
+						<h6 class="sub-title wow fadeInUp">
+							<span class="triangle triangle1"></span>
+							<span class="triangle triangle2"></span>
+							Testimonials
+						</h6>
+						<h2 class="title text-white wow fadeInUp" data-wow-delay=".2s">What our Client <br>Says About our <br>Services</h2>
+					</div>
+					<div class="col-lg-7">
+						<div class="testimonial-top-right">
+							<div class="bg-shape">
+								<img src="{% static 'images/home-2/testimonial/bg-shape.png' %}" alt="img">
+							</div>
+							<div class="client-1">
+								<img src="{% static 'images/home-2/testimonial/client-4.png' %}" alt="img">
+							</div>
+							<div class="client-2">
+								<img src="{% static 'images/home-2/testimonial/client-5.png' %}" alt="img">
+							</div>
+							<div class="client-3">
+								<img src="{% static 'images/home-2/testimonial/client-6.png' %}" alt="img">
+							</div>
+							<div class="client-4">
+								<img src="{% static 'images/home-2/testimonial/client-7.png' %}" alt="img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="testimonial-wrapper-2">
+			<div class="swiper testimonial-slider-2">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="testimonial-card-item">
+							<div class="box-shape">
+								<img src="{% static 'images/home-2/testimonial/box-shape.png' %}" alt="img">
+							</div>
+							<div class="client-item">
+								<div class="client-image">
+									<img src="{% static 'images/home-2/testimonial/client-2.png' %}" alt="img">
+								</div>
+								<div class="info-text">
+									<h5>Esther Howard</h5>
+									<span>team Manager</span>
+								</div>
+							</div>
+							<div class="content">
+								<div class="quote-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+										<path d="M27.4984 14.5629H20.2484C18.3359 14.5629 17.0234 13.1129 17.0234 11.3379V7.31284C17.0234 5.53784 18.3359 4.08789 20.2484 4.08789H24.2734C26.0484 4.08789 27.4984 5.53784 27.4984 7.31284V14.5629Z" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M27.5004 14.5625C27.5004 22.125 26.0879 23.3749 21.8379 25.8999" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M12.9633 14.5629H5.71328C3.80078 14.5629 2.48828 13.1129 2.48828 11.3379V7.31284C2.48828 5.53784 3.80078 4.08789 5.71328 4.08789H9.75078C11.5258 4.08789 12.9758 5.53784 12.9758 7.31284V14.5629" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M12.9633 14.5625C12.9633 22.125 11.5508 23.3749 7.30078 25.8999" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<div class="arrow-shape">
+										<img src="{% static 'images/home-2/testimonial/shape.png' %}" alt="image">
+									</div>
+								</div>
+								<div class="star">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<p>
+									It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="testimonial-card-item">
+							<div class="box-shape">
+								<img src="{% static 'images/home-2/testimonial/box-shape.png' %}" alt="img">
+							</div>
+							<div class="client-item">
+								<div class="client-image">
+									<img src="{% static 'images/home-2/testimonial/client-1.png' %}" alt="img">
+								</div>
+								<div class="info-text">
+									<h5>Esther Howard</h5>
+									<span>team Manager</span>
+								</div>
+							</div>
+							<div class="content">
+								<div class="quote-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+										<path d="M27.4984 14.5629H20.2484C18.3359 14.5629 17.0234 13.1129 17.0234 11.3379V7.31284C17.0234 5.53784 18.3359 4.08789 20.2484 4.08789H24.2734C26.0484 4.08789 27.4984 5.53784 27.4984 7.31284V14.5629Z" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M27.5004 14.5625C27.5004 22.125 26.0879 23.3749 21.8379 25.8999" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M12.9633 14.5629H5.71328C3.80078 14.5629 2.48828 13.1129 2.48828 11.3379V7.31284C2.48828 5.53784 3.80078 4.08789 5.71328 4.08789H9.75078C11.5258 4.08789 12.9758 5.53784 12.9758 7.31284V14.5629" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M12.9633 14.5625C12.9633 22.125 11.5508 23.3749 7.30078 25.8999" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<div class="arrow-shape">
+										<img src="{% static 'images/home-2/testimonial/shape.png' %}" alt="image">
+									</div>
+								</div>
+								<div class="star">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<p>
+									It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="testimonial-card-item">
+							<div class="box-shape">
+								<img src="{% static 'images/home-2/testimonial/box-shape.png' %}" alt="img">
+							</div>
+							<div class="client-item">
+								<div class="client-image">
+									<img src="{% static 'images/home-2/testimonial/client-2.png' %}" alt="img">
+								</div>
+								<div class="info-text">
+									<h5>Esther Howard</h5>
+									<span>team Manager</span>
+								</div>
+							</div>
+							<div class="content">
+								<div class="quote-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+										<path d="M27.4984 14.5629H20.2484C18.3359 14.5629 17.0234 13.1129 17.0234 11.3379V7.31284C17.0234 5.53784 18.3359 4.08789 20.2484 4.08789H24.2734C26.0484 4.08789 27.4984 5.53784 27.4984 7.31284V14.5629Z" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M27.5004 14.5625C27.5004 22.125 26.0879 23.3749 21.8379 25.8999" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M12.9633 14.5629H5.71328C3.80078 14.5629 2.48828 13.1129 2.48828 11.3379V7.31284C2.48828 5.53784 3.80078 4.08789 5.71328 4.08789H9.75078C11.5258 4.08789 12.9758 5.53784 12.9758 7.31284V14.5629" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M12.9633 14.5625C12.9633 22.125 11.5508 23.3749 7.30078 25.8999" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<div class="arrow-shape">
+										<img src="{% static 'images/home-2/testimonial/shape.png' %}" alt="image">
+									</div>
+								</div>
+								<div class="star">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<p>
+									It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="testimonial-card-item">
+							<div class="box-shape">
+								<img src="{% static 'images/home-2/testimonial/box-shape.png' %}" alt="img">
+							</div>
+							<div class="client-item">
+								<div class="client-image">
+									<img src="{% static 'images/home-2/testimonial/client-3.png' %}" alt="img">
+								</div>
+								<div class="info-text">
+									<h5>Esther Howard</h5>
+									<span>team Manager</span>
+								</div>
+							</div>
+							<div class="content">
+								<div class="quote-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+										<path d="M27.4984 14.5629H20.2484C18.3359 14.5629 17.0234 13.1129 17.0234 11.3379V7.31284C17.0234 5.53784 18.3359 4.08789 20.2484 4.08789H24.2734C26.0484 4.08789 27.4984 5.53784 27.4984 7.31284V14.5629Z" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M27.5004 14.5625C27.5004 22.125 26.0879 23.3749 21.8379 25.8999" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M12.9633 14.5629H5.71328C3.80078 14.5629 2.48828 13.1129 2.48828 11.3379V7.31284C2.48828 5.53784 3.80078 4.08789 5.71328 4.08789H9.75078C11.5258 4.08789 12.9758 5.53784 12.9758 7.31284V14.5629" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path d="M12.9633 14.5625C12.9633 22.125 11.5508 23.3749 7.30078 25.8999" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									<div class="arrow-shape">
+										<img src="{% static 'images/home-2/testimonial/shape.png' %}" alt="image">
+									</div>
+								</div>
+								<div class="star">
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+								</div>
+								<p>
+									It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-dot mt-5 mb-0">
+					<div class="dot2"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- News Section Start -->
+	<section class="news-secton section-padding fix" id="news">
+		<div class="auto-container">
+			<div class="sec-title text-center">
+				<h6 class="sub-title wow fadeInUp">
+					<span class="triangle triangle1"></span>
+					<span class="triangle triangle2"></span>
+					Our Blog
+				</h6>
+				<h2 class="wow fadeInUp" data-wow-delay=".3s">Insights from Latest Blog </h2>
+			</div>
+			<div class="row">
+				<div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+					<div class="news-box-items">
+						<div class="news-image">
+							<img src="{% static 'images/home-1/news/news-01.jpg' %}" alt="img">
+							<img src="{% static 'images/home-1/news/news-01.jpg' %}" alt="img">
+							<span class="post-box">
+								<span class="date">20</span>
+								<span class="month">March</span>
+							</span>
+						</div>
+						<div class="news-content">
+							<ul class="comments-list">
+								<li>
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+										<path opacity="0.5" d="M9 9C10.2426 9 11.25 7.99264 11.25 6.75C11.25 5.50736 10.2426 4.5 9 4.5C7.75736 4.5 6.75 5.50736 6.75 6.75C6.75 7.99264 7.75736 9 9 9Z" stroke="#144443"/>
+										<path d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z" stroke="#144443"/>
+										<path opacity="0.5" d="M13.4772 15C13.3579 12.8314 12.6939 11.25 9.00029 11.25C5.30678 11.25 4.6428 12.8314 4.52344 15" stroke="#144443" stroke-linecap="round"/>
+									</svg>
+									Admin
+								</li>
+								<li>
+									<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M8.42865 5.05957H14.5696C16.4442 5.07375 17.9525 6.60465 17.9387 8.47921V12.6312C17.9453 13.5316 17.594 14.3977 16.9619 15.039C16.33 15.6802 15.4691 16.0443 14.5687 16.0508H8.42865L5.05869 17.9396V8.47921C5.05207 7.57884 5.40341 6.71274 6.0354 6.07142C6.66741 5.43011 7.52828 5.06613 8.42865 5.05957Z" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M6.90039 10.5802C6.90039 10.072 7.31229 9.66016 7.82039 9.66016C8.3285 9.66016 8.74039 10.072 8.74039 10.5802C8.74039 11.0883 8.3285 11.5002 7.82039 11.5002C7.5764 11.5002 7.34239 11.4032 7.16985 11.2307C6.99732 11.0582 6.90039 10.8241 6.90039 10.5802Z" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M10.5801 10.5802C10.5801 10.072 10.992 9.66016 11.5001 9.66016C12.0082 9.66016 12.4201 10.072 12.4201 10.5802C12.4201 11.0883 12.0082 11.5002 11.5001 11.5002C10.992 11.5002 10.5801 11.0883 10.5801 10.5802Z" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M14.2598 10.5802C14.2598 10.072 14.6716 9.66016 15.1798 9.66016C15.6879 9.66016 16.0998 10.072 16.0998 10.5802C16.0998 11.0883 15.6879 11.5002 15.1798 11.5002C14.6716 11.5002 14.2598 11.0883 14.2598 10.5802Z" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									3 Comments
+								</li>
+							</ul>
+							<h3>
+								<a href="{% url 'template-news-details' %}">Errors with financial 
+									consequences in tax ?</a>
+							</h3>
+                  <a href="{% url 'template-news-details' %}" class="link-btn">
+                    Learn More
+                    <span class="icon"><i class="lnr-icon-arrow-right"></i></span>
+                  </a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+					<div class="news-box-items">
+						<div class="news-image">
+							<img src="{% static 'images/home-1/news/news-02.jpg' %}" alt="img">
+							<img src="{% static 'images/home-1/news/news-02.jpg' %}" alt="img">
+							<span class="post-box">
+								<span class="date">25</span>
+								<span class="month">March</span>
+							</span>
+						</div>
+						<div class="news-content">
+							<ul class="comments-list">
+								<li>
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+										<path opacity="0.5" d="M9 9C10.2426 9 11.25 7.99264 11.25 6.75C11.25 5.50736 10.2426 4.5 9 4.5C7.75736 4.5 6.75 5.50736 6.75 6.75C6.75 7.99264 7.75736 9 9 9Z" stroke="#144443"/>
+										<path d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z" stroke="#144443"/>
+										<path opacity="0.5" d="M13.4772 15C13.3579 12.8314 12.6939 11.25 9.00029 11.25C5.30678 11.25 4.6428 12.8314 4.52344 15" stroke="#144443" stroke-linecap="round"/>
+									</svg>
+									Admin
+								</li>
+								<li>
+									<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M8.42865 5.05957H14.5696C16.4442 5.07375 17.9525 6.60465 17.9387 8.47921V12.6312C17.9453 13.5316 17.594 14.3977 16.9619 15.039C16.33 15.6802 15.4691 16.0443 14.5687 16.0508H8.42865L5.05869 17.9396V8.47921C5.05207 7.57884 5.40341 6.71274 6.0354 6.07142C6.66741 5.43011 7.52828 5.06613 8.42865 5.05957Z" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M6.90039 10.5802C6.90039 10.072 7.31229 9.66016 7.82039 9.66016C8.3285 9.66016 8.74039 10.072 8.74039 10.5802C8.74039 11.0883 8.3285 11.5002 7.82039 11.5002C7.5764 11.5002 7.34239 11.4032 7.16985 11.2307C6.99732 11.0582 6.90039 10.8241 6.90039 10.5802Z" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M10.5801 10.5802C10.5801 10.072 10.992 9.66016 11.5001 9.66016C12.0082 9.66016 12.4201 10.072 12.4201 10.5802C12.4201 11.0883 12.0082 11.5002 11.5001 11.5002C10.992 11.5002 10.5801 11.0883 10.5801 10.5802Z" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M14.2598 10.5802C14.2598 10.072 14.6716 9.66016 15.1798 9.66016C15.6879 9.66016 16.0998 10.072 16.0998 10.5802C16.0998 11.0883 15.6879 11.5002 15.1798 11.5002C14.6716 11.5002 14.2598 11.0883 14.2598 10.5802Z" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									3 Comments
+								</li>
+							</ul>
+							<h3>
+								<a href="{% url 'template-news-details' %}">Achieving Work Life Balance in a Hectic World</a>
+							</h3>
+                  <a href="{% url 'template-news-details' %}" class="link-btn">
+                    Learn More
+                    <span class="icon"><i class="lnr-icon-arrow-right"></i></span>
+                  </a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+					<div class="news-box-items">
+						<div class="news-image">
+							<img src="{% static 'images/home-1/news/news-03.jpg' %}" alt="img">
+							<img src="{% static 'images/home-1/news/news-03.jpg' %}" alt="img">
+							<span class="post-box">
+								<span class="date">30</span>
+								<span class="month">March</span>
+							</span>
+						</div>
+						<div class="news-content">
+							<ul class="comments-list">
+								<li>
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+										<path opacity="0.5" d="M9 9C10.2426 9 11.25 7.99264 11.25 6.75C11.25 5.50736 10.2426 4.5 9 4.5C7.75736 4.5 6.75 5.50736 6.75 6.75C6.75 7.99264 7.75736 9 9 9Z" stroke="#144443"/>
+										<path d="M9 16.5C13.1421 16.5 16.5 13.1421 16.5 9C16.5 4.85786 13.1421 1.5 9 1.5C4.85786 1.5 1.5 4.85786 1.5 9C1.5 13.1421 4.85786 16.5 9 16.5Z" stroke="#144443"/>
+										<path opacity="0.5" d="M13.4772 15C13.3579 12.8314 12.6939 11.25 9.00029 11.25C5.30678 11.25 4.6428 12.8314 4.52344 15" stroke="#144443" stroke-linecap="round"/>
+									</svg>
+									Admin
+								</li>
+								<li>
+									<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M8.42865 5.05957H14.5696C16.4442 5.07375 17.9525 6.60465 17.9387 8.47921V12.6312C17.9453 13.5316 17.594 14.3977 16.9619 15.039C16.33 15.6802 15.4691 16.0443 14.5687 16.0508H8.42865L5.05869 17.9396V8.47921C5.05207 7.57884 5.40341 6.71274 6.0354 6.07142C6.66741 5.43011 7.52828 5.06613 8.42865 5.05957Z" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M6.90039 10.5802C6.90039 10.072 7.31229 9.66016 7.82039 9.66016C8.3285 9.66016 8.74039 10.072 8.74039 10.5802C8.74039 11.0883 8.3285 11.5002 7.82039 11.5002C7.5764 11.5002 7.34239 11.4032 7.16985 11.2307C6.99732 11.0582 6.90039 10.8241 6.90039 10.5802Z" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M10.5801 10.5802C10.5801 10.072 10.992 9.66016 11.5001 9.66016C12.0082 9.66016 12.4201 10.072 12.4201 10.5802C12.4201 11.0883 12.0082 11.5002 11.5001 11.5002C10.992 11.5002 10.5801 11.0883 10.5801 10.5802Z" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M14.2598 10.5802C14.2598 10.072 14.6716 9.66016 15.1798 9.66016C15.6879 9.66016 16.0998 10.072 16.0998 10.5802C16.0998 11.0883 15.6879 11.5002 15.1798 11.5002C14.6716 11.5002 14.2598 11.0883 14.2598 10.5802Z" stroke="#144443" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+									3 Comments
+								</li>
+							</ul>
+							<h3>
+								<a href="{% url 'template-news-details' %}">Mastering Work-Life On
+									Target Business Goal </a>
+							</h3>
+                  <a href="{% url 'template-news-details' %}" class="link-btn">
+                    Learn More
+                    <span class="icon"><i class="lnr-icon-arrow-right"></i></span>
+                  </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer Section Start -->
+	<footer class="footer-section-2 fix footer-bg">
+		<div class="bg-color">
+			<img src="{% static 'images/home-2/footer-bg-color.png' %}" alt="img">
+		</div>
+		<div class="footer-shape">
+			<img src="{% static 'images/home-2/footer-shape.png' %}" alt="img">
+		</div>
+		<div class="auto-container">
+			<div class="footer-top-wrapper">
+				<a href="{% url 'template-index' %}" class="footer-logo wow fadeInUp" data-wow-delay=".3s">
+					<img src="{% static 'images/white-logo.png' %}" alt="img">
+				</a>
+				<div class="social-icon wow fadeInUp" data-wow-delay=".5s">
+					<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+					<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="#"><i class="fa-brands fa-pinterest"></i></a>
+					<a href="#"><i class="fa-brands fa-instagram"></i></a>
+				</div>
+			</div>
+			<div class="footer-widget-wrapper style-2">
+				<div class="row justify-content-between">
+					<div class="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+						<div class="footer-widget-items mt-30">
+							<div class="widget-title mb-25">
+								<h3 class="font-size-24 text-white font-weight-500">Head office</h3>
+							</div>
+							<div class="footer-content">
+								<p class="text-white">2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
+								<ul class="contact-list-2">
+									<li>
+										<a href="tel:+123456-7890">+ (123) 456-7890</a>
+									</li>
+									<li>
+										<a href="/cdn-cgi/l/email-protection#85fceaf0f7e6eae8f5e4ebfcc5e0fde4e8f5e9e0abe6eae8"><span class="__cf_email__" data-cfemail="88d1e7fdfaebe7e5f8e9e6f1c8edf0e9e5f8e4eda6ebe7e5">[email&#160;protected]</span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-2 d-none d-xl-block"></div>
+					<div class="col-xl-3 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+						<div class="footer-widget-items mt-30">
+							<div class="widget-title mb-25">
+								<h3 class="font-size-24 text-white font-weight-500">Quick Link</h3>
+							</div>
+							<div class="user-links-area">
+								<ul class="user-links">
+									<li><a href="{% url 'template-about' %}">About Us</a></li>
+									<li><a href="{% url 'template-team' %}">Our Team</a></li>
+									<li><a href="{% url 'template-projects' %}">Our Portfolio</a></li>
+									<li><a href="{% url 'template-contact' %}">Careers</a></li>
+									<li><a href="{% url 'template-contact' %}">Contact Us</a></li>
+								</ul>
+								<ul class="user-links">
+									<li><a href="{% url 'template-services' %}">Works</a></li>
+									<li><a href="{% url 'template-services' %}">Expertise</a></li>
+									<li><a href="{% url 'template-news-grid' %}">Blog</a></li>
+									<li><a href="{% url 'template-about' %}">Awards</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+						<div class="footer-widget-items mt-30">
+							<div class="widget-title mb-25">
+								<h3 class="font-size-24 text-white font-weight-500">Our Solutions</h3>
+							</div>
+							<ul class="user-links">
+								<li><a href="{% url 'template-service-details' %}">Web Development</a></li>
+								<li><a href="{% url 'template-service-details' %}">UI/UX Design</a></li>
+								<li><a href="{% url 'template-service-details' %}">Mobile Application</a></li>
+								<li><a href="{% url 'template-service-details' %}">Cloud Service</a></li>
+								<li><a href="{% url 'template-service-details' %}">Cyber Security </a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="footer-text wow fadeInUp" data-wow-delay=".3s">Copyright © 2025 Finclix.  All Rights Reserved</p>
+		</div>
+	</footer>	
+
+</div><!-- End Page Wrapper -->
+
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="{% static 'js/jquery.js' %}"></script> 
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.js' %}"></script>
+<script src="{% static 'js/jquery-ui.js' %}"></script>
+<script src="{% static 'js/gsap.js' %}"></script>
+<script src="{% static 'js/gsap-scroll-to-plugin.js' %}"></script>
+<script src="{% static 'js/gsap-scroll-smoother.js' %}"></script>
+<script src="{% static 'js/gsap-scroll-trigger.js' %}"></script>
+<script src="{% static 'js/gsap-split-text.js' %}"></script>
+<script src="{% static 'js/split-type.min.js' %}"></script>
+<script src="{% static 'js/parallaxie.js' %}"></script>
+<script src="{% static 'js/wow.js' %}"></script>
+<script src="{% static 'js/bxslider.js' %}"></script>
+<script src="{% static 'js/nice-select.min.js' %}"></script>
+<script src="{% static 'js/knob.js' %}"></script>
+<script src="{% static 'js/appear.js' %}"></script>
+<script src="{% static 'js/swiper.min.js' %}"></script>
+<script src="{% static 'js/mixitup.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

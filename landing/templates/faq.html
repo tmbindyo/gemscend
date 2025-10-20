@@ -1,0 +1,664 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Gemscend - FAQ </title>
+<!-- Stylesheets -->
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+<link rel="icon" href="images/favicon.svg" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.flag-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+</style>
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="spinner">                
+            </div>
+            <div class="txt-loading">
+                <span data-text-preloader="G" class="letters-loading">
+                    G
+                </span>
+                <span data-text-preloader="E" class="letters-loading">
+                    E
+                </span>
+                <span data-text-preloader="M" class="letters-loading">
+                    M
+                </span>
+                <span data-text-preloader="S" class="letters-loading">
+                    S
+                </span>
+                <span data-text-preloader="C" class="letters-loading">
+                    C
+                </span>
+                <span data-text-preloader="E" class="letters-loading">
+                    E
+                </span>
+                <span data-text-preloader="N" class="letters-loading">
+                    N
+                </span>
+                <span data-text-preloader="D" class="letters-loading">
+                    D
+                </span>
+            </div>
+            <p class="text-center">Loading</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll To Top -->
+    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+    <!-- Main Header-->
+    <header class="main-header header-style-one header-5">
+        <!-- Header Lower -->
+        <div class="header-lower header-lower5 show-header-section">
+            <!-- Main box -->
+            <div class="main-box">				
+                <!--Nav Box-->
+                <div class="nav-outer">
+                    <div class="logo-box">
+                        <div class="logo"><a href="{% url 'template-index' %}"><img src="{% static 'images/gemscend/logo.png' %}" alt="" style="max-width:350px; height:auto;" title="finclix"></a></div>
+                    </div>
+                    <nav class="nav main-menu">
+                        <ul class="navigation">
+                            <li><a style="color: #231F20;" href="{% url 'index' %}">Home</a></li>
+                            <li><a style="color: #231F20;" href="#home">How It Works</a></li>
+                            <li><a style="color: #231F20;" href="#home">Pricing</a></li>
+                            <li><a style="color: #231F20;" href="{% url 'faqs' %}">FAQ's</a></li>
+                            <li><a style="color: #231F20;" href="{% url 'refer_and_earn' %}"">Refer & Earn</a></li>
+                            <li class="dropdown">
+                                <a href="#">
+                                    <img src="https://flagcdn.com/48x36/gb.png" alt="English" class="flag-icon">
+                                    EN
+                                    <span style="color: #231F20;" class="chevron">▼</span>
+                                </a>
+                                <ul>
+                                    <li>
+                                    <a href="#"><img src="https://flagcdn.com/48x36/fr.png" class="flag-icon"> FR</a>
+                                    </li>
+                                    <li>
+                                    <a href="#"><img src="https://flagcdn.com/48x36/de.png" class="flag-icon"> DE</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                        </ul>
+                    </nav>
+                    <!-- Main Menu End-->
+                    <div class="outer-box">
+                        <a href="{% url 'template-contact' %}" class="theme-btn btn-style-four btn-outline">
+                            Log-In
+                        </a>
+                        <a href="{% url 'template-contact' %}" class="theme-btn btn-style-four btn-solid">
+                            Register Now
+                        </a>
+                        <!-- Mobile Nav toggler -->
+                        <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Header Lower -->
+
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+
+            <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+            <nav class="menu-box">
+                <div class="upper-box">
+                    <div class="nav-logo"><a href="{% url 'template-index' %}"><img src="{% static 'images/white-logo.png' %}" alt=""></a></div>
+                    <div class="close-btn"><i class="icon fa fa-times"></i></div>
+                </div>
+
+                <ul class="navigation clearfix">
+                    <!--Keep This Empty / Menu will come through Javascript-->
+                </ul>
+                <ul class="contact-list-one">
+                    <li>
+                        <!-- Contact Info Box -->
+                        <div class="contact-info-box">
+                            <i class="icon lnr-icon-phone-handset"></i>
+                            <span class="title">Call Now</span>
+                            <a href="tel:+92880098670">+92 (8800) - 98670</a>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- Contact Info Box -->
+                        <div class="contact-info-box">
+                            <span class="icon lnr-icon-envelope1"></span>
+                            <span class="title">Send Email</span>
+                            <a href="/cdn-cgi/l/email-protection#670f020b172704080a1706091e4904080a"><span class="__cf_email__" data-cfemail="3a525f564a7a5955574a5b544314595557">[email&#160;protected]</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- Contact Info Box -->
+                        <div class="contact-info-box">
+                            <span class="icon lnr-icon-clock"></span>
+                            <span class="title">Send Email</span>
+                            Mon - Sat 8:00 - 6:30, Sunday - CLOSED
+                        </div>
+                    </li>
+                </ul>
+
+
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </nav>
+        </div><!-- End Mobile Menu -->
+
+        <!-- Header Search -->
+        <div class="search-popup">
+          <span class="search-back-drop"></span>
+          <button class="close-search"><span class="fa fa-times"></span></button>
+          <div class="search-inner">
+            <form method="post" action="index.html">
+              <div class="form-group">
+                <input type="search" name="search-field" value="" placeholder="Search..." required="">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- End Header Search -->
+
+        <!-- Sticky Header  -->
+        <div class="sticky-header">
+            <div class="auto-container">
+                <div class="inner-container">
+                    <!--Logo-->
+                    <div class="logo">
+                        <a href="{% url 'template-index' %}"><img src="{% static 'images/black-logo.png' %}" alt="img"></a>
+                    </div>
+
+                    <!--Right Col-->
+                    <div class="nav-outer">
+                        <!-- Main Menu -->
+                        <nav class="main-menu">
+                            <div class="navbar-collapse show collapse clearfix">
+                                <ul class="navigation clearfix">
+                                    <!--Keep This Empty / Menu will come through Javascript-->
+                                </ul>
+                            </div>
+                        </nav><!-- Main Menu End-->
+
+                        <!--Mobile Navigation Toggler-->
+                        <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End Sticky Menu -->
+    </header>
+    <!--End Main Header -->
+
+
+    
+
+    <!-- Featured Section Start -->
+    <section class="feature-section pt-120 pb-90 fix">
+        <div class="sec-title text-center">
+                <h2 class="sub-title wow fadeInUp text-gemscend-dark-emerald-75">
+                    Explore Gemscend's FAQ's for all you queries
+                </h2>
+                <h3 class="wow fadeInUp journey-heading text-gemscend-dark-emerald-75" data-wow-delay=".3s">Home | FAQ's </h3>
+            </div>
+    </section>
+    <div class="green-line"></div>
+
+
+
+
+    <!-- Feature Section with Bootstrap Pills -->
+    <section class="feature-section pt-120 pb-90 fix">
+        <div class="auto-container">
+                <div class="sec-title text-center">
+                    <h2 class="sub-title wow fadeInUp text-gemscend-dark-emerald-75">
+                        Frequently Asked Questions
+                    </h2>
+                    
+                </div>
+            <div class="row">
+            
+                <!-- Sidebar Nav Pills -->
+                <div class="col-xl-3 col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <div class="nav flex-column nav-pills" id="feature-tabs" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active" id="tab-1" data-bs-toggle="pill" data-bs-target="#pane-1" type="button" role="tab" aria-controls="pane-1" aria-selected="true">
+                        Trading Rules
+                    </button>
+                    <button class="nav-link" id="tab-2" data-bs-toggle="pill" data-bs-target="#pane-2" type="button" role="tab" aria-controls="pane-2" aria-selected="false">
+                        Funded Accounts
+                    </button>
+                    <button class="nav-link" id="tab-3" data-bs-toggle="pill" data-bs-target="#pane-3" type="button" role="tab" aria-controls="pane-3" aria-selected="false">
+                        General Questions
+                    </button>
+                    <button class="nav-link" id="tab-4" data-bs-toggle="pill" data-bs-target="#pane-4" type="button" role="tab" aria-controls="pane-4" aria-selected="false">
+                        Prohibited & Restricted Trading
+                    </button>
+                    <button class="nav-link" id="tab-4" data-bs-toggle="pill" data-bs-target="#pane-5" type="button" role="tab" aria-controls="pane-4" aria-selected="false">
+                        Accounts & Registration
+                    </button>
+                    <button class="nav-link" id="tab-4" data-bs-toggle="pill" data-bs-target="#pane-6" type="button" role="tab" aria-controls="pane-4" aria-selected="false">
+                        Limits, Allocation & Fees
+                    </button>
+                    <button class="nav-link" id="tab-4" data-bs-toggle="pill" data-bs-target="#pane-7" type="button" role="tab" aria-controls="pane-4" aria-selected="false">
+                        Profits & Withdrawals
+                    </button>
+                    <button class="nav-link" id="tab-4" data-bs-toggle="pill" data-bs-target="#pane-8" type="button" role="tab" aria-controls="pane-4" aria-selected="false">
+                        Taxes & Affiliates
+                    </button>
+                    </div>
+                </div>
+
+                <!-- Tab Content Area -->
+                <div class="col-xl-9 col-lg-8 col-md-12">
+                    <div class="tab-content" id="feature-tabs-content">
+                    
+                    <div class="tab-pane fade show active" id="pane-1" role="tabpanel" aria-labelledby="tab-1">
+                        <h3 class="fw-bold text-success">Trading Rules</h3>
+                        <p class="gemscend-bold-text">What is the difference between a Hard Breach and Soft Breach rule?</p>
+
+                        <ul class="">
+                            <li class="">Soft breach means that we will close all trades that have violated the rule. However, you can continue trading in your Assessment or Funded Account.</li>
+
+                            <li class="">Hard breach means that you violated either the Daily Loss Limit or Max Drawdown rule. Both rules constitute a hard breach. In the event you have a hard breach, you will fail the Assessment or have your Funded Account taken away.</li>
+                        </ul>
+
+                        <p class="gemscend-bold-text">How do you calculate the Daily Loss Limit?</p>
+                        
+                        <ul class="">
+                            <li class="">The Daily Loss Limit is the maximum your account can lose in any given day. Daily Loss Limit is calculated using the previous day balance which resets at 5 PM EST. Daily Stop compounds with the increase in your account.</li>
+
+                            <li class="">Example: if your prior day's end of day balance (5pm EST) was $100,000, your account would violate the daily stop loss limit if your equity reached $95,000 during the day. If your floating equity is +$6,000 on a $100,000 account, your new- day (5pm EST) max loss is based on your balance from the previous day ($100,000). So, your daily loss limit would still be $95,000.</li>
+                        </ul>
+
+                        <p class="gemscend-bold-text">How do you calculate the Max Drawdown?</p>
+
+                         <ul class="">
+                            <li class="">Maximum drawdown is the maximum your account can drawdown before you would hard breach your account. When you open the account, your Maximum Drawdown is set at 8% of your starting balance.</li>
+
+                            <li class="text-gemscend-emerald">This 8% is static and does not trail.</li>
+                        </ul>
+
+                        <p class="gemscend-bold-text">Can I hold positions over the weekend?</p>
+
+                        <ul class="">
+                            <li class="">Positions can be held over the weekend although only Crypto allows weekend trading.</li>
+                        </ul>
+
+                        <p class="gemscend-bold-text">What is 1 lot equal to on the Trading Platform?</p>
+
+
+
+
+
+                        <p class="text-gemscend-emerald">● Forex - 1 lot = $100k notional</p>
+                        <p class="text-gemscend-emerald">● Index - 1 lot = 1 Contracts</p>
+
+                        <p class="gemscend-bold-text">Exceptions:</p>
+
+                        <p class="">SPX500: 1 lot = 10 contracts</p>
+                        <p class="">JPN225: 1 lot = 500 contracts</p>
+
+                        <p class="text-gemscend-emerald">● Cryptos - 1 lot = 1 coin</p>
+                        <p class="text-gemscend-emerald">● Silver - 1 lot = 5000 ounces </p>
+                        <p class="text-gemscend-emerald">● Gold - 1 lot = 100 ounces </p>
+                        <p class="text-gemscend-emerald">● Oil - 1 lot = 100 barrels</p>
+
+                        <p class="gemscend-bold-text">Is there a breach for inactivity?</p>
+                        
+                        <ul class="">
+                            <li class="">Yes. We will consider you inactive and your account will be breached if you do not have any trading activity on your account for 30 consecutive days..</li>
+                        </ul>
+
+
+                        
+                    </div>
+                    
+                    <div class="tab-pane fade" id="pane-2" role="tabpanel" aria-labelledby="tab-2">
+                        <h3 class="fw-bold text-success">Funded Accounts</h3>
+                        <p class="gemscend-bold-text">How Long does it take to receive my funded account?</p>
+                        <p class="">Upon passing your Assessment, you will receive an email with instructions on how to access and complete both your “Know Your Customer” verification and your “Trader Agreement”. Once both are completed and supporting documentation is provided, your Funded Account will be created, funded and issued to you typically within 24-48 business hours. You will receive a confirmation email once this account is being enabled.</p>
+
+
+                        <p class="gemscend-bold-text">Once I pass the Assessment am I provided with a demo or funded account?</p>
+                        <p class="">Once you pass the Assessment, we provide you with a funded account, backed by our capital. The capital in your funded Account is notional and may not match the amount of capital on deposit with the Liquidity Provider. A Funded Account is notionally funded when actual funds in the account (i.e., the equity in a Funded Account represented by the amount of capital) differs from the nominal account size (i.e., the size of the Funded Account that establishes the initial account value and level of trading). Notional funds are the difference between nominal account size and actual capital in a funded account. Use of notional funding does not impact your trading conditions in any way.</p>
+
+                        <p class="gemscend-bold-text">Do we manipulate the pricing or executions you receive in your Funded Account?</p>
+                        <p class="">No. We do not have any control over pricing from the liquidity provider or on the executions on your trades.</p>
+
+
+                        <p class="gemscend-bold-text">Who is the counterparty to my trades?</p>
+                        <p class="">For purposes of managing risk and minimizing transaction costs, we may offset or negate market risk and act as the direct counterparty to certain trades initiated in the Account. Such trades are executed at prices provided by arm’s length third parties. This framework is intended to ensure you receive real market execution on your trades, while simultaneously allowing us to manage risk dynamically by routing existing positions or future orders to third parties for execution as we deem appropriate.</p>
+                        <p class="">We believe that such real market execution and dynamic risk management would not be possible or as cost-effective if trades were executed in simulated accounts. Regardless of whether we act as counterparty to your trades, the gain or loss on your funded account is not calculated differently. However, when we act as the counterparty to your trades, there is an inherent potential conflict of interest because your trades do not result in net gain or loss to us, as your trades would if we were not the direct counterparty.</p>
+
+                        <p class="gemscend-bold-text">Am I subject to any position limits?</p>
+                        <p class="">The maximum position that you may open is determined by your available margin. We reserve the right to increase the margin requirement, limit the number of open positions you may enter or maintain in the Funded Account at any time, and to revise in response to market conditions the drawdown levels at which trading in the funded account will be halted. We or the Liquidity Provider reserve the right to refuse to accept any order.</p>
+
+                        <p class="gemscend-bold-text">What are the rules for the funded account?</p>
+                        <p class="">The rules for the funded account are exactly the same as your Assessment account. However, with a funded account, there is no profit target.</p>
+
+                        <p class="gemscend-bold-text">If I have a hard breach in my funded account and there are gains in the account, do I forfeit those gains?</p>
+                        <p class="">If you have gains in your funded account at the time of a hard breach, you will still receive your portion of those gains.</p>
+                        <p class="">For example, if you have a $100,000 account and you grow that account to $110,000. Should you then have a hard breach we would close the account. Of the $10,000 in gains in your funded account, you would be paid your portion thereof.</p>
+
+
+                        <p class="gemscend-bold-text">How do I withdraw the gains in my funded account?</p>
+                        <p class="">Traders can request a withdrawal of the gains in their funded account at any time in their trader dashboard, but no more frequently than once per thirty (30) days. So, if you make gain in your funded account, you can request a withdrawal. When you are ready to withdraw the gains from your funded account, click the Withdraw Profits button in your trader dashboard and enter the amount to withdraw.</p>
+                        <p class="">All such gains are distributed via the available outbound payment solutions offered from time to time. Once your withdrawal request is approved, we will pay the monies owed to you. We reserve the right to change the withdrawal methods and options at any time.</p>
+
+
+                        <p class="gemscend-bold-text">When can I withdraw the gains in my funded account and how does that affect my Maximum Drawdown?</p>
+                        <p class="">Your first withdrawal can be requested at any time, subject to an 80/20 profit split. Thereafter, you can request a withdrawal of the gains in your account every 30 days. When a withdrawal is approved, we will also withdraw our share of the gains. The drawdown does not reset when you request a withdrawal.</p>
+                        <p class="">Example: You have taken an account from $100,000 to $120,000. You then request a withdrawal of $16,000. In this scenario, you will receive $12,800 and we would retain $3,200. This would also take the balance of the account down to $104,000, and your Maximum Drawdown will remain $92,000. So, you would have $12,000 maximum you could lose on the account before it would violate the Maximum Drawdown rule. If you take a full withdrawal of the gains in your Funded Account, the Maximum Drawdown will still remain at $92,000.</p>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="pane-3" role="tabpanel" aria-labelledby="tab-3">
+                        <h3 class="fw-bold text-success">General Questions</h3>
+
+                        <p class="gemscend-bold-text">Do I have to use one of your accounts for the Assessment or can I use my own?</p>
+                        <p class="">We have risk management software that is synced with the accounts we create. This allows us to analyze your performance in real time for achievements or rule violations. As such, you must use an account that we provide to you.</p>
+
+                        <p class="gemscend-bold-text">What Countries are accepted?</p>
+                        <p class="">Subject to compliance with applicable laws and regulations, traders from all countries, excluding OFAC listed countries, can take part in our program, unless otherwise limited at the Company’s discretion.</p>
+
+                        <p class="gemscend-bold-text">What is the minimum age I must be to be part of your program?</p>
+                        <p class="">You must be at least 18 years of age, or the applicable minimum legal age in your country, to purchase an assessment.</p>
+
+                        <p class="gemscend-bold-text">Where do I track the progress of my account?</p>
+                        <p class="">Upon purchasing an Assessment, you will receive access to a trader dashboard where you can monitor your Assessment and Funded Accounts. The dashboard is updated every time we calculate metrics, which occurs roughly every 60 seconds. It is your responsibility to monitor your breach levels.</p>
+
+                        <p class="gemscend-bold-text">What Platform can I trade on?</p>
+                        <p class="">Our technology is currently integrated with DXtrade, MatchTrader & cTrader platforms via GooeyTrade.</p>
+
+                        <p class="gemscend-bold-text">What products can I trade?</p>
+                        <p class="">You can trade any products streamed by the Liquidity Provider into the available platforms, as such products may change from time to time. This includes FX pairs and CFD Indices, Commodities, Metals, and Cryptocurrencies.</p>
+
+                        <p class="gemscend-bold-text">What is the leverage?</p>
+                        <p class="">We offer up to 50:1 leverage on Forex and Metals, up to 10:1 leverage on Indices, up to 5:1 leverage on Oil and up to 2:1 leverage on Cryptocurrencies.</p>
+
+                        <p class="gemscend-bold-text">What are the trading hours?</p>
+                        <p class="">Trading hours are generally set by the Liquidity Provider, unless set by our rules. We do not have any control over the trading hours. You can see the trading hours for each product by using the following methods:</p>
+                        <p class="text-gemscend-emerald">DXtrade – Right click symbol, select “Instrument Info”</p>
+                        <p class="text-gemscend-emerald">MatchTrader – Click symbol to expand, select “Info”</p>
+                        <p class="text-gemscend-emerald">cTrader – Navigate to Symbol Window, scroll down to see “Market Hours” for selected symbol</p>
+
+                        <p class="">Please note that holidays can have an impact on available trading hours.</p>
+
+                        <p class="gemscend-bold-text">Do your accounts charge commissions?</p>
+                        <p class="">Funded accounts receive the same pricing and commissions as charged by our Liquidity Provider to other, self-funded, retail trading accounts.</p>
+
+                        <p class="gemscend-bold-text">Can I use an automated strategy?</p>
+                        <p class="">Subject to our policy on Prohibited Trading as described below, you can trade using an automated strategy.</p>
+
+                    </div>
+                    
+                    <div class="tab-pane fade" id="pane-4" role="tabpanel" aria-labelledby="tab-4">
+                        <h3 class="fw-bold text-success">Prohibited & Restricted Trading</h3>
+
+                        <p class="gemscend-bold-text">What is the policy on Prohibited Trading Activity?</p>
+                        <p class="">You are also prohibited from using any trading strategy that is expressly prohibited by the Company or the Liquidity Providers it uses. Such prohibited trading (“Prohibited Trading”) shall include, but not be limited to:</p>
+
+                        <ul class="">
+                            <li class="">Exploiting errors or latency in the pricing and/or platform(s) provided by the Liquidity Provider</li>
+                            <li class="">Utilizing non-public and/or insider information</li>
+                            <li class="">Front-running of trades placed elsewhere</li>
+                            <li class="">Trading in any way that jeopardizes the relationship that the Company has with a Liquidity Provider or may result in the canceling of trades</li>
+                            <li class="">Trading in any way that creates regulatory issues for the Liquidity Provider</li>
+                            <li class="">Utilizing any third-party strategy, off-the-shelf strategy or one marketed to pass challenge accounts</li>
+                            <li class="">Utilizing one strategy to pass an assessment and then utilizing a different strategy in a funded account, as determined by the Company in cooperation with Forest Park FX LTD at their discretion</li>
+                            <li class="">Attempting to arbitrage an assessment account with another account with the Company or any third-party company, as determined by the Company in its sole and absolute discretion.</li>
+                        </ul>
+
+                        <p class="">If we detect that your trading constitutes Prohibited Trading, your participation in the program will be terminated and may include forfeiture of any fees paid to us. Additionally, and before you shall receive a funded account, the trading activity of the Trader under these Terms and Conditions shall be reviewed by us to determine whether such trading activity constitutes Prohibited Trading. In the case of Prohibited Trading, the Trader shall not receive a Funded Account.</p>
+                        <p class="">Additionally, we reserve the right to disallow or block You from participating in the program for any reason, in our sole and absolute discretion.</p>
+
+                        <p class="gemscend-bold-text">Is Gambling Prohibited in Trading Practices?</p>
+                        <p class="">Engaging in inappropriate risk management practices, such as gambling, “all-in” trading, or excessively leveraging positions, is strictly prohibited. Trading activity that resembles gambling such as consistently placing trades prior to news releases or other binary events—will not be tolerated.</p>
+                        <p class="">Excessive risk-taking and gambling are defined by the percentage of an account risked in a single trade or across a series of trades or positions. An “all-in” trade refers to committing all or a substantial portion of available capital or margin to a single trade. Similarly, excessive and improper use of leverage occurs when a trader risks a significant portion of their account in one trade or across a series of one-directional trades and positions.</p>
+                        <p class="">If you are found to be engaging in such activities, the Company reserves the right to immediately close your account and such closure may include the forfeiture of any fees owed to you by the Company, in the Company’s sole discretion.</p>
+
+                        <p class="gemscend-bold-text">Is Copy Trading Allowed?</p>
+                        <p class="">Copy trading from one account to another is only permitted if the trader owns all the accounts in question.</p>
+                        <p class="">Group trading, signal services, passing services, or any other methods that bypass individual strategy are not allowed.</p>
+                        <p class="">Engaging in trades that mirror or closely align with another trader or group of traders across multiple accounts is strictly prohibited.</p>
+                        <p class="">Using automated trading systems (EAs) or third-party trading strategies that facilitate copy trading is strictly prohibited.</p>
+
+                        <p class="gemscend-bold-text">Is Reverse Trading or Group Hedging Permitted?</p>
+                        <p class="">Hedging or executing reverse trades within a single account is not a prohibited trading activity.</p>
+                        <p class="">Executing a buy trade on one account and a sell trade on another account, or vice versa, is strictly prohibited.</p>
+                        <p class="">Group hedging across multiple accounts and/or coordinating opposing positions at one or multiple prop firms practice is strictly prohibited.</p>
+
+                        <p class="gemscend-bold-text">Can I trade during News Events?</p>
+                        <p class="">Trading within 3 minutes before or after a News Event is prohibited. If the Company determines that trading has, in fact, occurred during the News Event. Any traders identified as having trading during a News Event during the challenge phase are subject to having those trades removed, having the leverage on their account reduced or having their account breached altogether. The Company has sole and absolute discretion in determining what constitutes a News Event.</p>
+
+                    </div>
+                    <div class="tab-pane fade" id="pane-5" role="tabpanel" aria-labelledby="tab-5">
+                        <h3 class="fw-bold text-success">Accounts & Registration</h3>
+
+                        <p class="gemscend-bold-text">How Do I Create an Account?</p>
+                        <p class="">In order to register as a Trader, you will be asked to provide personal information, including, but not limited to your name, email address, mailing address, phone number, date of birth and a username and password for an account that is unique to you. The information provided is subject to the Company’s privacy policy accessible here.</p>
+                        <p class="">The account will be personal to You, and You cannot share it with anybody else. You will be responsible for maintaining the confidentiality of your username and password. If you suspect that your account has been breached, you must immediately notify The Company.</p>
+                        <p class="">Traders are limited to one active account per assessment level, (any individual registering under a corporate entity is barred from registering an individual account at the same time) absent prior written approval.</p>
+
+                        <p class="gemscend-bold-text">What Are the Rules on Purchases and Refunds?</p>
+                        <p class="">The Company may provide products, services, subscriptions, or access to certain portions to the Company’s website at a monetary cost. Prices and availability are subject to change without notice. The Company may allow for such purchases within its website or via a white label affiliate. It is your responsibility to thoroughly read and understand any such terms and conditions. By making any such purchases, you agree that the Company has no responsibility and acquires no liability for any claim related to your purchases.</p>
+                        <p class="">Upon the complete purchase of a product, service, subscription, or access to certain portions of the Company website, the Company will make any said product, service, or access will be available to you following the approved transaction.</p>
+                        <p class="">There are no refunds on any Services purchased from the Company.</p>
+                    </div>
+                    <div class="tab-pane fade" id="pane-6" role="tabpanel" aria-labelledby="tab-6">
+                        <h3 class="fw-bold text-success">Limits, Allocation & Fees</h3>
+                        
+                        <p class="gemscend-bold-text">What Are the Evaluation Limits?</p>
+                        <p class="">You are permitted to purchase and participate in only one evaluation of a specific account size and a specific plan type at a time, regardless of trading platform.</p>
+                        <p class="">Example: You can have one 100k One Step Plan and one 100k Two Step Plan active, simultaneously. However, you cannot have one 100k One Step Plan on DXtrade and another 100k One Step Plan, regardless of platform.</p>
+                        <p class="">The limits of plans or funded accounts are determined by the Company and may be adjusted periodically to account for various aggregate or individualized risk scenarios.</p>
+
+                        <p class="gemscend-bold-text">What Is the Maximum Allocation Limit?</p>
+                        <p class="">A maximum of $1 million in active evaluation or funded plans per person is permitted. This can be composed of multiple assessments or funded accounts.</p>
+
+                        <p class="gemscend-bold-text">What Commissions and Fees Apply?</p>
+                        <p class="">Commissions or commission-equivalents may be charged in connection with your trading activity. Rates and methods of application can vary by asset class and are determined by our liquidity providers, and may be adjusted periodically to reflect market conditions. In addition, it’s important to note that positions held overnight may incur swap rates. These rates vary by asset class and are subject to change.</p>
+
+                        <p class="gemscend-bold-text">What Are the Margin Rules?</p>
+                        <p class="">While our current leverages and margin requirements are fixed, we reserve the right to implement tiered or variable margin requirements at our discretion, and such changes may be made without prior notice.</p>
+                    </div>
+                    <div class="tab-pane fade" id="pane-7" role="tabpanel" aria-labelledby="tab-7">
+                        <h3 class="fw-bold text-success">Profits & Withdrawals</h3>
+
+                        <p class="gemscend-bold-text">What Happens to Profit Withdrawals on Breached Accounts?</p>
+                        <p class="">For breached accounts with withdraw-able profits, traders have 60 days from the breach date to submit a withdrawal request. If no request is received within that window, the profit balance will be reset to zero and the funds forfeited.</p>
+                    </div>
+                    <div class="tab-pane fade" id="pane-8" role="tabpanel" aria-labelledby="tab-8">
+                        <h3 class="fw-bold text-success">Taxes & Affiliates</h3>
+                        
+                        <p class="gemscend-bold-text">How are taxes handled?</p>
+                        <p class="">When trading a Funded Account for our firm, you are treated as an independent contractor. As a result, you are responsible for any and all taxes on your gains.</p>
+
+                        <p class="gemscend-bold-text">How are affiliates credited?</p>
+                        <p class="">Affiliates are credited for referrals when a user creates an account using a link or discount code provided by the Affiliate.</p>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="white-section">
+    </section>
+
+    <!-- Footer Section Start -->
+      <footer class="footer-section-1 fix footer-bg bg-cover" style="background-color: #eef8f0;">
+        <div class="container-fluid"> 
+            <div class="row text-center">
+                <div class="footer-widget-wrapper">
+                    <div class="row justify-content-between">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="footer-widget-items mt-30">
+                        <div class="widget-title mb-25">
+                            <a href="{% url 'template-index' %}" class="footer-logo">
+                            <img src="{% static 'images/gemscend/logo.png' %}" alt="img" />
+                            </a>
+                        </div>
+                        <div class="footer-content">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="footer-widget-items mt-30">
+                        <div class="widget-title mb-25">
+                            <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Postal Address</h3>
+                        </div>
+                        <p class="font-size-15 text-gemscend-emerald font-weight-500">Top Floor, Rodney Court Building, Rodney Bay, Gros Islet, Saint Lucia, LC01 401</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".6s">
+                        <div class="footer-widget-items mt-30">
+                        
+                            <div class="widget-title mb-25">
+                                <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Contact Details</h3>
+                                <p class="font-size-15 text-gemscend-emerald font-weight-500">support@gemscend.com</p>
+                            </div>
+                            <div class="widget-title mb-25">
+                                <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Registration Number</h5>
+                                <p class="font-size-15 text-gemscend-emerald font-weight-500">2025-00572</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".8s">
+                        <div class="footer-widget-items mt-30">
+                            <div class="widget-title mb-25" style="display:flex; justify-content:center;">
+                            <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75" 
+                                style="text-align:left;">
+                                Socials
+                            </h3>
+                            </div>
+
+                            <!-- wrapper only for ul -->
+                            <div style="display:flex; justify-content:center;">
+                            <ul class="contact-list" 
+                                style="display:flex; flex-direction:column; align-items:flex-start; gap:8px; padding:0; margin:0;">
+                                
+                                <li style="display:flex; align-items:center; gap:8px; list-style:none;">
+                                <i class="fa-brands fa-facebook-f text-gemscend-dark-emerald-75" style="font-size:18px;"></i>
+                                <a href="https://facebook.com" style="font-size:16px; text-decoration:none;" class="text-gemscend-emerald">
+                                    Facebook
+                                </a>
+                                </li>
+
+                                <li style="display:flex; align-items:center; gap:8px; list-style:none;">
+                                <i class="fa-brands fa-instagram text-gemscend-dark-emerald-75" style="font-size:18px;"></i>
+                                <a href="https://instagram.com" style="font-size:16px; text-decoration:none;" class="text-gemscend-emerald">
+                                    Instagram
+                                </a>
+                                </li>
+
+                                <li style="display:flex; align-items:center; gap:8px; list-style:none;">
+                                <i class="fa-brands fa-twitter text-gemscend-dark-emerald-75" style="font-size:18px;"></i>
+                                <a href="https://x.com" style="font-size:16px; text-decoration:none;" class="text-gemscend-emerald">
+                                    X
+                                </a>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <div class="footer-bottom">
+            <div class="auto-container" style="display:flex; justify-content:center; flex-wrap:wrap; align-items:center; text-align:center; gap:40px;">
+                <p class="wow fadeInUp text-white" data-wow-delay=".3s" style="margin:0;">
+                    © Gemscend Limited. All Rights Reserved
+                </p>
+
+
+                <p class="wow fadeInUp" data-wow-delay=".3s" style="margin-left:60px;"><a href="{% url 'about-us' %}" class="text-white">About Us</a></p>
+                <p class="wow fadeInUp" data-wow-delay=".3s"><a href="{% url 'legal' %}#privacy_policy" class="text-white">Privacy Policy</a></p>
+                <p class="wow fadeInUp" data-wow-delay=".3s"><a href="{% url 'legal' %}#disclaimer" class="text-white">Disclaimer</a></p>
+                <p class="wow fadeInUp" data-wow-delay=".3s"><a href="{% url 'legal' %}#terms_and_conditions" class="text-white">Terms and Conditions</a></p>
+            </div>
+
+        </div>
+      </footer>
+
+</div><!-- End Page Wrapper -->
+
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="{% static 'js/jquery.js' %}"></script> 
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.js' %}"></script>
+<script src="{% static 'js/jquery-ui.js' %}"></script>
+<script src="{% static 'js/gsap.js' %}"></script>
+<script src="{% static 'js/gsap-scroll-to-plugin.js' %}"></script>
+<script src="{% static 'js/gsap-scroll-smoother.js' %}"></script>
+<script src="{% static 'js/gsap-scroll-trigger.js' %}"></script>
+<script src="{% static 'js/gsap-split-text.js' %}"></script>
+<script src="{% static 'js/split-type.min.js' %}"></script>
+<script src="{% static 'js/parallaxie.js' %}"></script>
+<script src="{% static 'js/wow.js' %}"></script>
+<script src="{% static 'js/bxslider.js' %}"></script>
+<script src="{% static 'js/nice-select.min.js' %}"></script>
+<script src="{% static 'js/knob.js' %}"></script>
+<script src="{% static 'js/appear.js' %}"></script>
+<script src="{% static 'js/swiper.min.js' %}"></script>
+<script src="{% static 'js/mixitup.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

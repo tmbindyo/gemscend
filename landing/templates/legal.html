@@ -1,0 +1,666 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Gemscend - Legal </title>
+<!-- Stylesheets -->
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+<link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+<link rel="icon" href="images/favicon.svg" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.flag-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+</style>
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="spinner">                
+            </div>
+            <div class="txt-loading">
+                <span data-text-preloader="G" class="letters-loading">
+                    G
+                </span>
+                <span data-text-preloader="E" class="letters-loading">
+                    E
+                </span>
+                <span data-text-preloader="M" class="letters-loading">
+                    M
+                </span>
+                <span data-text-preloader="S" class="letters-loading">
+                    S
+                </span>
+                <span data-text-preloader="C" class="letters-loading">
+                    C
+                </span>
+                <span data-text-preloader="E" class="letters-loading">
+                    E
+                </span>
+                <span data-text-preloader="N" class="letters-loading">
+                    N
+                </span>
+                <span data-text-preloader="D" class="letters-loading">
+                    D
+                </span>
+            </div>
+            <p class="text-center">Loading</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll To Top -->
+    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+    <!-- Main Header-->
+    <header class="main-header header-style-one header-5">
+        <!-- Header Lower -->
+        <div class="header-lower header-lower5 show-header-section">
+            <!-- Main box -->
+            <div class="main-box">				
+                <!--Nav Box-->
+                <div class="nav-outer">
+                    <div class="logo-box">
+                        <div class="logo"><a href="{% url 'template-index' %}"><img src="{% static 'images/gemscend/logo.png' %}" alt="" style="max-width:350px; height:auto;" title="finclix"></a></div>
+                    </div>
+                    <nav class="nav main-menu">
+                        <ul class="navigation">
+                            <li><a style="color: #231F20;" href="{% url 'index' %}">Home</a></li>
+                            <li><a style="color: #231F20;" href="#home">How It Works</a></li>
+                            <li><a style="color: #231F20;" href="#home">Pricing</a></li>
+                            <li><a style="color: #231F20;" href="{% url 'faqs' %}">FAQ's</a></li>
+                            <li><a style="color: #231F20;" href="{% url 'refer_and_earn' %}"">Refer & Earn</a></li>
+                            <li class="dropdown">
+                                <a href="#">
+                                    <img src="https://flagcdn.com/48x36/gb.png" alt="English" class="flag-icon">
+                                    EN
+                                    <span class="chevron">▼</span>
+                                </a>
+                                <ul>
+                                    <li>
+                                    <a href="#"><img src="https://flagcdn.com/48x36/fr.png" class="flag-icon"> FR</a>
+                                    </li>
+                                    <li>
+                                    <a href="#"><img src="https://flagcdn.com/48x36/de.png" class="flag-icon"> DE</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                        </ul>
+                    </nav>
+                    <!-- Main Menu End-->
+                    <div class="outer-box">
+                        <a href="{% url 'template-contact' %}" class="theme-btn btn-style-four btn-outline">
+                            Log-In
+                        </a>
+                        <a href="{% url 'template-contact' %}" class="theme-btn btn-style-four btn-solid">
+                            Register Now
+                        </a>
+                        <!-- Mobile Nav toggler -->
+                        <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Header Lower -->
+
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+
+            <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+            <nav class="menu-box">
+                <div class="upper-box">
+                    <div class="nav-logo"><a href="{% url 'template-index' %}"><img src="{% static 'images/white-logo.png' %}" alt=""></a></div>
+                    <div class="close-btn"><i class="icon fa fa-times"></i></div>
+                </div>
+
+                <ul class="navigation clearfix">
+                    <!--Keep This Empty / Menu will come through Javascript-->
+                </ul>
+                <ul class="contact-list-one">
+                    <li>
+                        <!-- Contact Info Box -->
+                        <div class="contact-info-box">
+                            <i class="icon lnr-icon-phone-handset"></i>
+                            <span class="title">Call Now</span>
+                            <a href="tel:+92880098670">+92 (8800) - 98670</a>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- Contact Info Box -->
+                        <div class="contact-info-box">
+                            <span class="icon lnr-icon-envelope1"></span>
+                            <span class="title">Send Email</span>
+                            <a href="/cdn-cgi/l/email-protection#670f020b172704080a1706091e4904080a"><span class="__cf_email__" data-cfemail="3a525f564a7a5955574a5b544314595557">[email&#160;protected]</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- Contact Info Box -->
+                        <div class="contact-info-box">
+                            <span class="icon lnr-icon-clock"></span>
+                            <span class="title">Send Email</span>
+                            Mon - Sat 8:00 - 6:30, Sunday - CLOSED
+                        </div>
+                    </li>
+                </ul>
+
+
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </nav>
+        </div><!-- End Mobile Menu -->
+
+        <!-- Header Search -->
+        <div class="search-popup">
+          <span class="search-back-drop"></span>
+          <button class="close-search"><span class="fa fa-times"></span></button>
+          <div class="search-inner">
+            <form method="post" action="index.html">
+              <div class="form-group">
+                <input type="search" name="search-field" value="" placeholder="Search..." required="">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- End Header Search -->
+
+        <!-- Sticky Header  -->
+        <div class="sticky-header">
+            <div class="auto-container">
+                <div class="inner-container">
+                    <!--Logo-->
+                    <div class="logo">
+                        <a href="{% url 'template-index' %}"><img src="{% static 'images/black-logo.png' %}" alt="img"></a>
+                    </div>
+
+                    <!--Right Col-->
+                    <div class="nav-outer">
+                        <!-- Main Menu -->
+                        <nav class="main-menu">
+                            <div class="navbar-collapse show collapse clearfix">
+                                <ul class="navigation clearfix">
+                                    <!--Keep This Empty / Menu will come through Javascript-->
+                                </ul>
+                            </div>
+                        </nav><!-- Main Menu End-->
+
+                        <!--Mobile Navigation Toggler-->
+                        <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End Sticky Menu -->
+    </header>
+    <!--End Main Header -->
+
+
+    
+
+    <!-- Featured Section Start -->
+    <br>
+    <section class="feature-section pt-120 pb-90 fix">
+        <div class="sec-title text-center">
+                <h2 class="sub-title wow fadeInUp text-gemscend-dark-emerald-75">
+                    Explore Gemscend's Legal Documents
+                </h2>
+                <h3 class="wow fadeInUp journey-heading text-gemscend-dark-emerald-75" data-wow-delay=".3s">Home | Legal </h3>
+            </div>
+    </section>
+    <div class="green-line"></div>
+
+
+
+
+    <!-- Feature Section with Bootstrap Pills -->
+    <section class="feature-section pt-120 pb-90 fix">
+        <div class="auto-container">
+                <div class="sec-title text-center">
+                    <h2 class="sub-title wow fadeInUp text-gemscend-dark-emerald-75">
+                        Legal
+                    </h2>
+                    
+                </div>
+            <div class="row">
+            
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button text-gemscend-dark-emerald-75" type="button" data-bs-toggle="collapse" data-bs-target="#terms_and_conditions" aria-expanded="true" aria-controls="collapseOne">
+                                Terms and Conditions
+                            </button>
+                        </h2>
+                        <div id="terms_and_conditions" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Welcome to GEMSCEND LIMITED incorporated in St Lucia with registration number 2025-00572 and with address at Top Floor, Rodney Court Building, Rodney Bay, Gros Islet, Saint Lucia., a trade name of Prop Account, LLC (the “Company”). The Company provides you (“you” or the “Trader”) with a limited license to use the services (the “Services”) offered by the Company subject to the terms and conditions contained herein (the “Agreement”).</p>
+
+                                <p>This Agreement is a legally binding contract, and you have a duty to read this Agreement before using and accessing the Services offered by the Company. By using the Services, you are agreeing to the terms and conditions contained within this Agreement.</p>
+
+                                <p>The Company reserves the right to suspend, replace, modify, amend, or terminate this Agreement at any time and within its sole and absolute discretion. In the event The Company replaces, modifies, or amends this Agreement, your continued use of the Services after a change in the Effective Date of said changes will constitute your agreement to any replacement, modification, or amendment to this Agreement.</p>
+
+                                <p>Trader Representations.</p>
+                                <p>By using the Services, you represent that you at least eighteen (18) years old and are of sound mind and that you have the capacity to agree to and uphold the terms and conditions contained within this Agreement. If you use the Services on behalf of a business entity or other third-party, then you represent that you have actual authority to act as an agent of that business entity or third-party, and that you have the right and ability to agree to and bind that third-party or business entity to the terms of this Agreement on its behalfBy using the Services, you represent that you at least eighteen (18) years old and are of sound mind and that you have the capacity to agree to and uphold the terms and conditions contained within this Agreement. If you use the Services on behalf of a business entity or other third-party, then you represent that you have actual authority to act as an agent of that business entity or third-party, and that you have the right and ability to agree to and bind that third-party or business entity to the terms of this Agreement on its behalf.</p>
+                                <p>You represent that your use of the Services does not violate any law, regulation, ordinance, statute, or treaty that is applicable to individuals or business entities located in the jurisdiction in which you live. You further represent that you are not prohibited from entering into this Agreement by the terms of any preexisting agreement.</p>
+                                <p>Upon passing an assessment, you will be invited to enter into a Trader Agreement with the Company, and to trade the Company’s money, pursuant to the Terms of the Trader Agreement.</p>
+
+                                <p>Limited License.</p>
+                                <p>The Company provides you with limited, non-exclusive, non-sublicensable, non-assignable, revocable, and royalty-free license to use the Services for its customary and intended purposes. You are expressly prohibited from scraping, framing, hacking, reverse engineering, crawling, or aggregating the Services, the Company Website, whether in whole or in part, without the prior written consent of the Company.</p>
+                                <p>This license is revocable at any time, and any rights not expressly granted in this Agreement are reserved for the Company.</p>
+
+                                <p class="text-gemscend-dark-emerald-75">Prohibited Uses</p>
+                                <p>You are expressly prohibited from using the Services to violate any law, statute, ordinance, regulation, or treaty, whether local, state, provincial, national, or international, or to violate the rights of a third-party, including, but not limited to intellectual property rights, privacy rights, rights of publicity, or other personal or proprietary rights.</p>
+                                <p>Additionally, you are expressly prohibited from scraping, crawling, framing, posting unauthorized links to, aggregating, hacking, performing denial of service (DOS) attacks on, reverse engineering, or circumventing technological protection measures of the Services or the Company website.</p>
+                                <p>You are also prohibited from using any trading strategy that is expressly prohibited by the Company or the Brokers it uses. Such prohibited trading (“Prohibited Trading”) shall include, but not be limited to:</p>
+                                
+                                <ul class="">
+                                    <li class="text-gemscend-dark-emerald-75">Exploiting errors or latency in the pricing and/or platform(s) provided by the Broker.</li>
+                                    <li class="text-gemscend-dark-emerald-75">Utilizing non-public and/or insider information.</li>
+                                    <li class="text-gemscend-dark-emerald-75">Front-running of trades placed elsewhere.</li>
+                                    <li class="text-gemscend-dark-emerald-75">Trading in any way that creates regulatory issues for the Broker.</li>
+                                    <li class="text-gemscend-dark-emerald-75">Utilizing any third-party strategy, off-the-shelf strategy or one marketed to pass challenge accounts.</li>
+                                    <li class="text-gemscend-dark-emerald-75">Utilizing one strategy to pass an assessment and then utilizing a different strategy in a funded account, as determined by the Company in cooperation with the Company at its discretion.</li>
+                                    <li class="text-gemscend-dark-emerald-75">Attempting to arbitrage an assessment account with another account with the Company or any third-party company, as determined by the Company in its sole and absolute discretion.</li>
+                                    <li class="text-gemscend-dark-emerald-75">Opening a position within 3 minutes before or after a News Event is prohibited. Any traders identified as having opened a position during a News Event are subject to having that position closed and the associated P&L removed from their account, having the leverage on their account reduced or having their account breached altogether. The Company has sole and absolute discretion in determining what constitutes a News Event. This rule is intended to protect the integrity of our program and is not meant to penalize traders who inadvertently trade through a news event.</li>
+                                    <li class="text-gemscend-dark-emerald-75">Attempting to arbitrage your account with another account with the Company or any third-party company, as determined by the Company in its sole and absolute discretion.</li>
+                                </ul>
+
+                                <p>If the Company detects that your trading constitutes Prohibited Trading, your participation in the program will be terminated and may include forfeiture of any fees paid to the Company or owed to you by the Company, in the Company’s sole discretion. Additionally, and before any Trader shall receive a funded account, the trading activity of the Trader under these Terms and Conditions shall be reviewed by both the Company and the Broker to determine whether such trading activity constitutes Prohibited Trading. In the case of Prohibited Trading, the Trader shall not receive a funded account.</p>
+
+                                <p>Additionally, the Company reserves the right to disallow or block any Trader from participating in the program for any reason, in the Company’s sole and absolute discretion.</p>
+
+                                <p>Prohibition of Gambling Practices:</p>
+                                <p>Engaging in inappropriate risk management practices, such as gambling, “all-in” trading, or excessively leveraging positions, is strictly prohibited. Trading activity that resembles gambling—such as consistently placing trades prior to news releases or other binary events—will not be tolerated.</p>
+                                <p>Excessive risk-taking and gambling are defined by the percentage of an account risked in a single trade or across a series of trades or positions. An “all-in” trade refers to committing all or a substantial portion of available capital or margin to a single trade. Similarly, excessive and improper use of leverage occurs when a trader risks a significant portion of their account in one trade or across a series of one-directional trades and positions.</p>
+                                <p>If you are found to be engaging in such activities, the Company reserves the right to immediately close your account and such closure may include the forfeiture of any fees owed to you by the Company, in the Company’s sole discretion.</p>
+
+                                <p>Copy Trading</p>
+                                <p>Copy trading from one account to another is only permitted if the trader owns all the accounts in question.</p>
+                                <p>Group trading, signal services, passing services, or any other methods that bypass individual strategy are not allowed.</p>
+                                <p>Engaging in trades that mirror or closely align with another trader or group of traders across multiple accounts is strictly prohibited.</p>
+                                <p>Using automated trading systems (EAs) or third-party trading strategies that facilitate copy trading is strictly prohibited.</p>
+
+                                <p class="text-gemscend-dark-emerald-75">Reverse Trading/Group Hedging</p>
+                                <p>Hedging or executing reverse trades within a single account is not a prohibited trading activity.</p>
+                                <p>Executing a buy trade on one account and a sell trade on another account, or vice versa, is strictly prohibited.</p>
+                                <p>Group hedging across multiple accounts and/or coordinating opposing positions at one or multiple prop firms practice is strictly prohibited.</p>
+
+                                <p class="text-gemscend-dark-emerald-75">Education</p>
+                                <p>The Company does not provide any trader education. The intent of The Company is to identify individuals with a talent for trading. No live trading is provided directly by the Company. Such Traders who pass an assessment offered by the Company shall be allocated capital to trade in a live account under the terms of the Trader Agreement.</p>
+                                <p>Although The Company may provide data, information, and content relating to investment approaches and opportunities to make trades, such data, information and content is provided solely for general informational and educational purposes. The Company does not invite the Trader to take any action based upon any of the information and materials provided on by the Company; you should not construe any such data, information, or content as investment, financial, tax, legal, or other kind of advice.</p>
+                                <p>The Company further does not make any representations that any data, information, and content on the Company website is accurate or complete. You alone will bear the sole responsibility of evaluating the merits and risks associated with using any such data, information, and content. As such, you agree not to hold the Company liable for any possible claims of damages that may arise from any decision that you make based upon the use of data, information, and content on the Company website.</p>
+                                <p>While the Company does not provide you with the opportunity to invest actual currency, the Company wants to make sure you understand the risks involved with traditional investing. You should be aware that the risk of trading and investing is high and substantial. It can work for you as well as against you. It may or may not lead to substantial losses. Additionally, past performance is not indicative of future results.</p>
+                                <p>As such, you should carefully consider whether trading and investing is right for you depending on your investment objectives, level of experience, and risk appetite. If you are unsure, you should consult with a financial advisor and/or tax advisor.</p>
+                                
+                                <p class="text-gemscend-dark-emerald-75">Account Creation</p>
+                                <p>In order to register as a Trader, you will be asked to provide personal information, including, but not limited to your name, email address, mailing address, phone number, date of birth and a username and password for an account that is unique to you. The information provided is subject to the Company’s privacy policy accessible here.</p>
+                                <p>The account will be personal to You, and You cannot share it with anybody else. You will be responsible for maintaining the confidentiality of your username and password. If you suspect that your account has been breached, you must immediately notify The Company.</p>
+                                <p>Traders are limited to one active account per assessment level, (any individual registering under a corporate entity is barred from registering an individual account at the same time) absent prior written approval.</p>
+                                
+                                <p class="text-gemscend-dark-emerald-75">Purchases and Refunds</p>
+                                <p>The Company may provide products, services, subscriptions, or access to certain portions to the Company’s website at a monetary cost. Prices and availability are subject to change without notice. The Company may allow for such purchases within its website or via a white label affiliate. It is your responsibility to thoroughly read and understand any such terms and conditions. By making any such purchases, you agree that the Company has no responsibility and acquires no liability for any claim related to your purchases.</p>
+                                <p>.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed text-gemscend-dark-emerald-75" type="button" data-bs-toggle="collapse" data-bs-target="#disclaimer" aria-expanded="false" aria-controls="collapseTwo">
+                                Disclaimer
+                            </button>
+                        </h2>
+                        <div id="disclaimer" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Gemscend Limited incorporated in St Lucia with registration number 2025-00572 and with address at Top Floor, Rodney Court Building, Rodney Bay, Gros Islet, Saint Lucia., a trade name of Prop Account, LLC (the “Company”) is an affiliate of Prop Account LTD. Prop Account LTD offers fee-based simulated trading assessments for Potential Traders. All funding assessments are provided by Prop Account LTD and all assessment fees are paid to Prop Account LTD. If you qualify for a Funded Account, you will be required to enter into a Trader Agreement with Prop Account LTD.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed text-gemscend-dark-emerald-75" type="button" data-bs-toggle="collapse" data-bs-target="#privacy_policy" aria-expanded="false" aria-controls="collapseThree">
+                                Privacy Policy
+                            </button>
+                        </h2>
+                        <div id="privacy_policy" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Gemscend Limited incorporated in St Lucia with registration number 2025-00572 and with address at Top Floor, Rodney Court Building, Rodney Bay, Gros Islet, Saint Lucia., a trade name of Prop Account, LLC (the “Company”)The Prop Account Group of Companies (“Prop Account, d/b/a Dashboard Analytix, Forest Park FX LTD, Prop Account LLC, Prop Account Cayman, LLC, CRM Solutions LLC, “we”, “our” or “us”) is the data controller responsible for your personal data and is the sole owner of our websites (“Website”), desktop applications, Prop Account Group services (each, a “Service”) and all of the information collected on it. We collect information from users in several ways (explained in detail in this Privacy Policy). If you need assistance in viewing this Privacy Policy, please contact us using the contact information at the end of this Privacy Policy
+                                    This Privacy Policy applies to personal data that we collect from you when you visit this Website, create an account, use our applications or services (“you” or “your” being interpreted accordingly). It provides information on what personal data we collect, why we collect personal data, how it is used, how it is stored, and how we share information.</p>
+                                    
+                                <p>As used in this Privacy Policy, “personal data” or “personal information” means any information that relates to you from which you can be identified.</p>
+
+                                <p class="text-gemscend-dark-emerald-75">Updates</p>
+                                <p>We may update this Privacy Policy at our discretion from time to time by posting a new version on our website. You should check our website occasionally to ensure any changes made are suitable for you. If required by applicable law, you will be informed of any significant changes made to this Privacy Policy.</p>
+
+                                <p class="text-gemscend-dark-emerald-75">Personal data that we collect</p>
+                                <p>We collect information about you in a variety of ways depending on how you interact with us and our websites and services, including:.</p>
+
+                                <ul class="">
+                                    <li class="text-gemscend-dark-emerald-75">Directly from you when you provide it to us, such as when you register for an account, sign up to receive communications from us, place an order/make a purchase, or contact us by phone, email, or otherwise.</li>
+                                    <li class="text-gemscend-dark-emerald-75">Automatically through the use of server logs, and other similar technologies when you interact with our websites, advertisements, and emails.</li>
+                                    <li class="text-gemscend-dark-emerald-75">From other sources, including, for example, our affiliates, business partners, service providers, and other third parties, or from publicly available sources. For example, if you submit a job application, or become an employee, we may conduct a background check.</li>
+                                </ul>
+
+
+                                <p>The following provides examples of the type of information that we collect in a variety of contexts and how we use that information.</p>
+
+                                <!-- TABLE START -->
+                                <div class="table-responsive">
+                                    <table class="table table-bordered align-middle table-custom">
+                                    <thead class="table-success text-gemscend-dark-emerald-75">
+                                        <tr>
+                                        <th scope="col">Context</th>
+                                        <th scope="col">Types of Personal Information</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <td>Account Registration and Profile Management</td>
+                                        <td>We collect your name and contact information, including your username, when you create an account. We also collect information relating to the actions that you perform while logged into your account.</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Application Programming Interface (“API”) Services</td>
+                                        <td>We collect various personal data, i.e., name, address, IP address, when you use our API services.</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Client Information</td>
+                                        <td>We may collect the name and contact information of our clients and their employees with whom we may interact.</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Your Use of Our Website</td>
+                                        <td>We may use technology to monitor how you interact with our website. This may include which links you click on, or information that you type into our online forms. Some of these technologies may use “cookies”. We also track your IP address, referral source, and device information.</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Demographic Information</td>
+                                        <td>We may collect personal information, such as your age or location.</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Distance Information</td>
+                                        <td>When you use one of our Apps we may collect your location from GPS, Wi-Fi, and/or cellular technology in your device to determine your location.</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Customer Service and Feedback</td>
+                                        <td>If you provide feedback or contact us for support, we will collect your name and email address, as well as any other content you send us, in order to reply.</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Mailing List</td>
+                                        <td>When you sign up for one of our email lists, we collect your email address or postal address.</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Order Placement</td>
+                                        <td>We may collect your name, billing address, shipping address, email address, phone number, and credit card number when you place an order.</td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+                                </div>
+                                <!-- TABLE END -->
+
+                                <p class="text-gemscend-dark-emerald-75">Cookies and other technologies</p>
+                                <p>We do use browser cookies (small text files placed on your device) to administer our websites. Please see our Cookie Policy contained in our Terms and Conditions.</p>
+                                <p>The Company’s website may use cookies. Cookies are small data files generally comprised of a string of text and numbers that assign your computer a unique identifier. They collect information from your computer and allow your computer to have a “dialogue” with the Company and gives you a more convenient and personalized experience with the Company’s website. If you do not want the Company to use cookies with your computer, then you must adjust your browser settings in order to disable them. Please note, however, that the disabling of cookies may prevent you from fully accessing all features of the Company’s website. If you require any assistance in disabling cookies, please contact your browser company.</p>
+
+                                <p class="text-gemscend-dark-emerald-75">Log files</p>
+                                <p>Like most websites, we use web server log files. Records in our log files include internet protocol (IP) addresses (see the “Device Information” section below for further details), browser types, internet service providers, referring pages, exit pages, platform types, and date/time stamps. We use web server log files to administer the site, provide broad traffic information for site planning purposes, and to ensure that our terms of service agreement is being adhered to.</p>
+
+                                <p class="text-gemscend-dark-emerald-75">Device information</p>
+                                <p>We collect the following information about the devices you use to interact with our services: IP address of the device (from which we can also infer the country you are connecting from), device type, operating system, application and browser version. We collect this information to prevent spam and abuse of our services. IP addresses may be considered personal data in certain jurisdictions, and will be treated in accordance with this Privacy Policy.</p>
+
+                                <p class="text-gemscend-dark-emerald-75">Data we receive from third parties</p>
+                                <p>When you sign in to your account using your internet service credentials, such service sends us your username and the email address associated with the credentials you’ve used. We neither control nor take any responsibility for the way third parties provide information about you and/or process your personal data.</p>
+
+                                <p class="text-gemscend-dark-emerald-75">User account deleting</p>
+                                <p>You may refuse to use our website and/or application and may ask us to delete your account in the Profile settings. Your account will be deleted after 30 days, provided there has been no activity on your account.</p>
+                                <p>Please note that if you have requested your account to be deleted, we will delete the subsequent personal data you have supplied us. However, some data, such as email address, user ID and certain personal data will be saved as they have already integrated into our system. This data must be stored to maintain the integrity of the platform, as well as for data governance protocols, including audits and security purposes.</p>
+
+                                <p class="text-gemscend-dark-emerald-75">Marketing</p>
+                                <p>We may send you marketing emails about our products or services that are similar to the products or services you are subscribed to, including information about events and other promotions we feel may interest you. This is unless you have indicated to us that you do not wish to receive communications in this manner. We will send you other promotional information by email only with your consent, which was given at the time you provided us with your personal data. Users can opt out of receiving marketing communications at any time by clicking “unsubscribe” in one of the emails.</p>
+
+                                <p class="text-gemscend-dark-emerald-75">Service-Related Announcements</p>
+                                <p>On rare occasions, it may be necessary to send out service-related announcements. For instance, if our service is interrupted for a prolonged period or a major functionality upgrade is released, we might send all users an email message.</p>
+
+                                <p class="text-gemscend-dark-emerald-75">Customer Service</p>
+                                <p>When you open a support ticket, we use your contact details as well as information about your device, server logs, a description of the problem, along with any other supporting materials (videos, screenshots, etc.) to help resolve the issue(s).</p>
+
+                                <p class="text-gemscend-dark-emerald-75">API</p>
+                                <p>If you are using our API (Application Programming Interface) services, then we may process your personal data in order to be able to provide and support those services.</p>
+
+                                <p class="text-gemscend-dark-emerald-75">Processes and Protocols</p>
+                                <p>We will process your personal data as necessary for certain processes and protocols, which include the following:</p>
+                                <ul class="">
+                                    <li class="text-gemscend-dark-emerald-75">where we are asked to respond to any of your inquiries, comments, or grievances;</li>
+                                    <li class="text-gemscend-dark-emerald-75">to administer our services in order to better understand how visitors interact with the Website and application, and ensure that they are presented in the most effective manner for you and your computer/ device;</li>
+                                    <li class="text-gemscend-dark-emerald-75">to develop and improve our applications and services;</li>
+                                    <li class="text-gemscend-dark-emerald-75">to share personal data among our affiliated businesses for administrative purposes, provide subscription services, and in relation to our sales and marketing activities, except where we require your consent, as described above;</li>
+                                    <li class="text-gemscend-dark-emerald-75">to send you information about our products or services that are similar to the products or services you subscribed to (unless you have refused or opted out of receiving these emails at the time you provided us with your email address or you have indicated to us that you do not wish to receive communications in this manner).</li>
+                                    <li class="text-gemscend-dark-emerald-75">we may anonymize and aggregate the data that we collect and use this data for our own internal business purposes, including sharing it with our business partners, our affiliated businesses, agents and other third parties for commercial, statistical and market research purposes. For example, to allow those parties to analyze patterns among groups of people and conducting research on demographics, interests, and behavior;</li>
+                                    <li class="text-gemscend-dark-emerald-75">for internal business/technical operations, including troubleshooting, data analysis, testing, research, statistical and survey purposes, and as part of our efforts to keep our website, network, and information systems secure; and</li>
+                                    <li class="text-gemscend-dark-emerald-75">to (a) comply with legal obligations, (b) respond to requests from regulatory authorities and law enforcement organizations; (c) enforce our Terms of Use or House Rules; (d) protect our operations or those of any of our affiliated businesses; (e) protect our rights, safety or property, and/or that of our affiliated businesses, you or others; and (f) enforce or defend legal rights, or prevent damage. This means we can store and disclose your information to law enforcement authorities, state, or government agencies if we establish that such disclosure is necessary to comply with the law. This includes responses to court orders or subpoenas, as well as other judicial or regulatory processes.</li>
+                                </ul>
+
+
+                                <p class="text-gemscend-dark-emerald-75">Third Party Sites</p>
+                                <p class="text-gemscend-dark-emerald-75">Links to other sites</p>
+                                <p>At our discretion we may add links (web links) to other websites from our website. These websites can be run by third parties with separate and independent privacy policies. We, therefore, have no responsibility nor are we liable for any content, activities or privacy policies of these linked sites. We suggest you read the privacy policy of each and every site that you visit.</p>
+
+                                <p class="text-gemscend-dark-emerald-75">United States data subject rights and information</p>
+                                <p>Some jurisdictions provide you with specific rights with respect to our collection and use of your personal information. To exercise one of these rights, see the section below on “Exercising data subject rights.”</p>
+                                <p>Please note, not all of the rights described below are absolute, and they do not apply in all circumstances. In some cases, we may limit or deny your request because the law permits or requires us to do so, or if we are unable to adequately verify your identity. We will not discriminate against individuals who exercise their privacy rights under applicable law.</p>
+
+                                <p>You may have the following rights:</p>
+                                <ul class="">
+                                    <li class="text-gemscend-dark-emerald-75">Right to request that we disclose certain information to you about our collection and use of your personal information. The list of categories of personal information collected and disclosed about consumers are enlisted in the section ‘Personal data that we collect’ and the list of categories of third parties to whom the personal information may be disclosed are enlisted in the section ‘When would we share personal information’. Please contact us to exercise a data portability request. Separately, we do not sell your personal information for money.</li>
+                                    <li class="text-gemscend-dark-emerald-75">Right to request deletion or modification of personal information we have collected from you.</li>
+                                    <li class="text-gemscend-dark-emerald-75">We do not engage in online tracking based targeted advertising (e.g., cookies).</li>
+                                </ul>
+
+                                <p class="text-gemscend-dark-emerald-75">California Shine the Light.</p>
+                                <p>If you would like more information concerning the categories of personal information (if any) we share with third parties or affiliates for those parties to use for direct marketing, please submit a written request to us using the information in the Contact information section below.</p>
+
+                                <p class="text-gemscend-dark-emerald-75">California Sensitive Information Disclosure.</p>
+                                <p>We collect the following categories of sensitive personal information (as defined under California law): a consumer’s account log-in, financial accounts, or credit card numbers in combination with any required password. This information is collected in order to process transactions, comply with laws, manage our business, or provide you with Services. Note that we do not use such information for any purposes that are not identified within the California Privacy Rights Act Section 1798.121.</p>
+
+                            </div>
+                    </div>
+                </div>
+
+
+                
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="white-section">
+    </section>
+
+    <!-- Footer Section Start -->
+      <footer class="footer-section-1 fix footer-bg bg-cover" style="background-color: #eef8f0;">
+        <div class="container-fluid"> 
+            <div class="row text-center">
+                <div class="footer-widget-wrapper">
+                    <div class="row justify-content-between">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="footer-widget-items mt-30">
+                        <div class="widget-title mb-25">
+                            <a href="{% url 'template-index' %}" class="footer-logo">
+                            <img src="{% static 'images/gemscend/logo.png' %}" alt="img" />
+                            </a>
+                        </div>
+                        <div class="footer-content">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="footer-widget-items mt-30">
+                        <div class="widget-title mb-25">
+                            <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Postal Address</h3>
+                        </div>
+                        <p class="font-size-15 text-gemscend-emerald font-weight-500">Top Floor, Rodney Court Building, Rodney Bay, Gros Islet, Saint Lucia, LC01 401</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".6s">
+                        <div class="footer-widget-items mt-30">
+                        
+                            <div class="widget-title mb-25">
+                                <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Contact Details</h3>
+                                <p class="font-size-15 text-gemscend-emerald font-weight-500">support@gemscend.com</p>
+                            </div>
+                            <div class="widget-title mb-25">
+                                <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Registration Number</h5>
+                                <p class="font-size-15 text-gemscend-emerald font-weight-500">2025-00572</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".8s">
+                        <div class="footer-widget-items mt-30">
+                            <div class="widget-title mb-25" style="display:flex; justify-content:center;">
+                            <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75" 
+                                style="text-align:left;">
+                                Socials
+                            </h3>
+                            </div>
+
+                            <!-- wrapper only for ul -->
+                            <div style="display:flex; justify-content:center;">
+                            <ul class="contact-list" 
+                                style="display:flex; flex-direction:column; align-items:flex-start; gap:8px; padding:0; margin:0;">
+                                
+                                <li style="display:flex; align-items:center; gap:8px; list-style:none;">
+                                <i class="fa-brands fa-facebook-f text-gemscend-dark-emerald-75" style="font-size:18px;"></i>
+                                <a href="https://facebook.com" style="font-size:16px; text-decoration:none;" class="text-gemscend-emerald">
+                                    Facebook
+                                </a>
+                                </li>
+
+                                <li style="display:flex; align-items:center; gap:8px; list-style:none;">
+                                <i class="fa-brands fa-instagram text-gemscend-dark-emerald-75" style="font-size:18px;"></i>
+                                <a href="https://instagram.com" style="font-size:16px; text-decoration:none;" class="text-gemscend-emerald">
+                                    Instagram
+                                </a>
+                                </li>
+
+                                <li style="display:flex; align-items:center; gap:8px; list-style:none;">
+                                <i class="fa-brands fa-twitter text-gemscend-dark-emerald-75" style="font-size:18px;"></i>
+                                <a href="https://x.com" style="font-size:16px; text-decoration:none;" class="text-gemscend-emerald">
+                                    X
+                                </a>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <div class="footer-bottom">
+            <div class="auto-container" style="display:flex; justify-content:center; flex-wrap:wrap; align-items:center; text-align:center; gap:40px;">
+                <p class="wow fadeInUp text-white" data-wow-delay=".3s" style="margin:0;">
+                    © Gemscend Limited. All Rights Reserved
+                </p>
+
+
+                <p class="wow fadeInUp" data-wow-delay=".3s" style="margin-left:60px;"><a href="{% url 'about-us' %}" class="text-white">About Us</a></p>
+                <p class="wow fadeInUp" data-wow-delay=".3s"><a href="{% url 'legal' %}#privacy_policy" class="text-white">Privacy Policy</a></p>
+                <p class="wow fadeInUp" data-wow-delay=".3s"><a href="{% url 'legal' %}#disclaimer" class="text-white">Disclaimer</a></p>
+                <p class="wow fadeInUp" data-wow-delay=".3s"><a href="{% url 'legal' %}#terms_and_conditions" class="text-white">Terms and Conditions</a></p>
+            </div>
+
+        </div>
+      </footer>
+
+</div><!-- End Page Wrapper -->
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const hash = window.location.hash;
+    if (hash) {
+        const target = document.querySelector(hash);
+        if (target && target.classList.contains("accordion-collapse")) {
+            // Collapse any open ones first
+            document.querySelectorAll('.accordion-collapse.show').forEach(el => {
+                new bootstrap.Collapse(el, { toggle: false }).hide();
+            });
+
+            // Open the targeted accordion
+            new bootstrap.Collapse(target, { toggle: true });
+
+            // Smooth scroll into view
+            setTimeout(() => {
+                target.scrollIntoView({ behavior: "smooth", block: "start" });
+            }, 300);
+        }
+    }
+});
+</script>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="{% static 'js/jquery.js' %}"></script> 
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.js' %}"></script>
+<script src="{% static 'js/jquery-ui.js' %}"></script>
+<script src="{% static 'js/gsap.js' %}"></script>
+<script src="{% static 'js/gsap-scroll-to-plugin.js' %}"></script>
+<script src="{% static 'js/gsap-scroll-smoother.js' %}"></script>
+<script src="{% static 'js/gsap-scroll-trigger.js' %}"></script>
+<script src="{% static 'js/gsap-split-text.js' %}"></script>
+<script src="{% static 'js/split-type.min.js' %}"></script>
+<script src="{% static 'js/parallaxie.js' %}"></script>
+<script src="{% static 'js/wow.js' %}"></script>
+<script src="{% static 'js/bxslider.js' %}"></script>
+<script src="{% static 'js/nice-select.min.js' %}"></script>
+<script src="{% static 'js/knob.js' %}"></script>
+<script src="{% static 'js/appear.js' %}"></script>
+<script src="{% static 'js/swiper.min.js' %}"></script>
+<script src="{% static 'js/mixitup.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
