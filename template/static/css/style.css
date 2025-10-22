@@ -3863,11 +3863,11 @@ Section Title
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  margin-bottom: 40px; /* Add space between title and bottom group */
+  
 }
 
 .gemscend-banner-title {
-  margin-bottom: 650px !important;
+  margin-bottom: 410px !important;
   font-size: 3rem;
   font-weight: 900;
   margin-bottom: 200px;
@@ -3968,6 +3968,14 @@ Section Title
 
 /* Responsive layout */
 @media (max-width: 768px) {
+  .gemscend-banner-title {
+    margin-bottom: 100px !important; /* or 0 */
+    font-size: 1.8rem;
+    line-height: 1.2;
+    color: #fff; /* you currently have 'color: 000;' which is invalid */
+    text-align: center;
+  }
+
   .gemscend-glassbar-inner {
     flex-direction: column;
     align-items: center;
@@ -4014,7 +4022,7 @@ Section Title
   
   .gemscend-banner-title {
     font-size: 2rem;
-    color: 000;
+    /* color: #000; */
   }
   
   .gemscend-glass-items {
