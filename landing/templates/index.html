@@ -373,7 +373,7 @@
                             
                             <!-- Account Size Options -->
                             <div class="d-flex justify-content-between mb-4">
-                                <button class="btn btn-outline-success account-option active" data-value="5000">$5K</button>
+                                <button class="btn btn-outline-success account-option" data-value="5000">$5K</button>
                                 <button class="btn btn-outline-success account-option" data-value="50000">$50K</button>
                                 <button class="btn btn-outline-success account-option" data-value="100000">$100K</button>
                             </div>
@@ -405,8 +405,8 @@
 
                         <!-- Results Section -->
                         <div class="text-center">
-                            <p class="fw-semibold text-muted mb-3" style="font-size: 18px;">Net Trader Take Home 80%</p>
-                            <div class="bg-dark text-white rounded-3 p-4 earnings-box" style="border-radius: 15px !important;">
+                            <p class="text-dark text-gemscend-black mb-3" style="font-size: 30px; ">Net Trader Take Home 80%</p>
+                            <div class="bg-dark text-white rounded-3 p-1 earnings-box" style="border-radius: 15px !important;">
                                 <h2 class="mb-0 fw-bold text-white" id="monthlyEarnings">$2,000<span class="fs-5">/Month</span></h2>
                             </div>
                         </div>
@@ -455,9 +455,8 @@
                                 <th class="">
                                     <div class="">
                                         <a href="#" class="gemscend-price-header-btn">
-                                            <span style="font-size: 13px;" class="label">Most Popular</span>
-                                            <br>
-                                            $ 10,000
+                                            <span class="label">Most Popular</span>
+                                            <span class="amount">$10,000</span>
                                         </a>
                                     </div>
                                 </th>
@@ -828,8 +827,6 @@
             </div>
 
 
-
-            
           </div>
         </div>
     </section>
@@ -841,70 +838,63 @@
 
 
     <!-- Journey Section Start -->
-    <section class="journey-secton section-padding fix journey-custom-bg" style="background-color: #000;">
+    <section class="journey-section fix" style="background: linear-gradient(135deg, #002a1c, #000);">
         <div class="auto-container">
-            <div class="sec-title text-center">
-                <h2 class="sub-title wow fadeInUp">
-                    The Journey Starts Now
-                </h2>
-                <h3 class="wow fadeInUp journey-heading" data-wow-delay=".3s">Whether you are just starting out or you are a seasoned pro, Gemscend is built for all experience levels. Start trading with confidence, no matter where you begin. </h3>
-            </div>
-            <div class="row">
-
-            <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-              <div class="journey-box-items">
-                <div class="journey-image">
-                  <img src="{% static 'gifs/Beginner.gif' %}" alt="img" />
-                </div>
-                <div class="journey-content">
-                    <h3 class="text-gemscend-dark-emerald-75" style="font-weight: 900">Beginer Traders</h3>
-                    <h3 class="text-gemscend-emerald" style="font-weight: 400">New to trading, learning skills.</h3>
-                    <p class="text-gemscend-dark-grey" style="font-weight: 400">Need funding to test strategies without personal risk.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-              <div class="journey-box-items">
-                <div class="journey-image">
-                  <img src="{% static 'gifs/Professional.gif' %}" alt="img" />
-                </div>
-                <div class="journey-content">
-                    <h3 class="text-gemscend-dark-emerald-75" style="font-weight: 900">Professional Traders</h3>
-                    <h3 class="text-gemscend-emerald" style="font-weight: 400">Highly Skilled, often former prop traders</h3>
-                    <p class="text-gemscend-dark-grey" style="font-weight: 400">Looking for larger capital to trade full-time</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-              <div class="journey-box-items">
-                <div class="journey-image">
-                  <img src="{% static 'gifs/Retail.gif' %}" alt="img" />
-                </div>
-                <div class="journey-content">
-                    <h3 class="text-gemscend-dark-emerald-75" style="font-weight: 900">Retail Traders</h3>
-                    <h3 class="text-gemscend-emerald" style="font-weight: 400">Active in forex, stocks and crypto markets</h3>
-                    <p class="text-gemscend-dark-grey" style="font-weight: 400">Want a risk-free way to scale their trading operations</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-              <div class="journey-box-items">
-                <div class="journey-image">
-                  <img src="{% static 'gifs/Enthusiast.gif' %}" alt="img" />
-                </div>
-                <div class="journey-content">
-                    <h3 class="text-gemscend-dark-emerald-75" style="font-weight: 900">Trading Enthusiast</h3>
-                    <h3 class="text-gemscend-emerald" style="font-weight: 400">Familiar with prop firm models</h3>
-                    <p class="text-gemscend-dark-grey" style="font-weight: 400">Prefer profit splits over investing their own money</p>
-                </div>
-              </div>
-            </div>
-
-
+            <div class="journey-layout">
             
-          </div>
+            <!-- Left Column -->
+            <div class="journey-left wow fadeInUp" data-wow-delay=".1s">
+                <h2 class="sub-title text-white">Why Gemscend?</h2>
+            </div>
+            
+            <!-- Right Column -->
+            <div class="journey-right">
+                <div class="journey-grid">
+                
+                <div class="journey-card wow fadeInUp" data-wow-delay=".1s">
+                    <div class="icon"><img src="{% static 'images/gemscend/demand.png' %}" alt="Payout Icon"></div>
+                    <h4>First Payout on Demand</h4>
+                    <p>Your first withdrawal can be requested at any time, subject to an 80/20 profit split.</p>
+                </div>
+
+                <div class="journey-card wow fadeInUp" data-wow-delay=".2s">
+                    <div class="icon"><img src="{% static 'images/gemscend/limits.png' %}" alt="No Time Limits Icon"></div>
+                    <h4>No Time Limits</h4>
+                    <p>Trade freely without any minimum trading day requirements or restrictions.</p>
+                </div>
+
+                <div class="journey-card wow fadeInUp" data-wow-delay=".3s">
+                    <div class="icon"><img src="{% static 'images/gemscend/minimum.png' %}" alt="Trading Days Icon"></div>
+                    <h4>No Minimum Trading Days</h4>
+                    <p>Trade at your own pace. No deadlines, no pressure.</p>
+                </div>
+
+                <div class="journey-card wow fadeInUp" data-wow-delay=".4s">
+                    <div class="icon"><img src="{% static 'images/gemscend/maximum.png' %}" alt="Funding Icon"></div>
+                    <h4>Maximum of $1 Million</h4>
+                    <p>A maximum of $1 million in active evaluation or funded plans per person is permitted.</p>
+                </div>
+
+                <div class="journey-card wow fadeInUp" data-wow-delay=".5s">
+                    <div class="icon"><img src="{% static 'images/gemscend/position.png' %}" alt="Weekend Icon"></div>
+                    <h4>Weekend Position Holding</h4>
+                    <p>Hold positions over the weekend with complete flexibility.</p>
+                </div>
+
+                <div class="journey-card wow fadeInUp" data-wow-delay=".6s">
+                    <div class="icon"><img src="{% static 'images/gemscend/transparency_2.png' %}" alt="Transparency Icon"></div>
+                    <h4>Full Transparency</h4>
+                    <p>Benefit from clear trading rules, transparent profit sharing, and absolutely no hidden restrictions.</p>
+                </div>
+
+                </div>
+            </div>
+
+            </div>
         </div>
-    </section>
+        </section>
+
+
 
     <section class="white-section">
     </section>
@@ -931,7 +921,7 @@
                         <div class="widget-title mb-25">
                             <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Postal Address</h3>
                         </div>
-                        <p class="font-size-15 text-gemscend-emerald font-weight-500">Top Floor, Rodney Court Building, Rodney Bay, Gros Islet, Saint Lucia, LC01 401</p>
+                        <p class="font-size-15 text-gemscend-emerald font-weight-500" style="text-align: left;">Top Floor, Rodney Court Building, Rodney Bay, Gros Islet, Saint Lucia, LC01 401</p>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".6s">
@@ -958,32 +948,42 @@
                             </div>
 
                             <!-- wrapper only for ul -->
-                            <div style="display:flex; justify-content:center;">
-                            <ul class="contact-list" 
-                                style="display:flex; flex-direction:column; align-items:flex-start; gap:8px; padding:0; margin:0;">
-                                
-                                <li style="display:flex; align-items:center; gap:8px; list-style:none;">
-                                <i class="fa-brands fa-facebook-f text-gemscend-dark-emerald-75" style="font-size:18px;"></i>
-                                <a href="https://facebook.com" style="font-size:16px; text-decoration:none;" class="text-gemscend-emerald">
-                                    Facebook
+                            <div class="social-link" style="display:flex; align-items:left; justify-content:center; gap:8px;">
+                                <img src="{% static 'images/gemscend/instagram.png' %}" 
+                                    alt="Facebook Icon" 
+                                    style="width:20px; height:20px;">
+                                <a href="https://facebook.com/gemscend" 
+                                target="_blank" 
+                                class="text-gemscend-dark-emerald-75"
+                                style="font-weight:500; text-decoration:none;">
+                                Instagram
                                 </a>
-                                </li>
-
-                                <li style="display:flex; align-items:center; gap:8px; list-style:none;">
-                                <i class="fa-brands fa-instagram text-gemscend-dark-emerald-75" style="font-size:18px;"></i>
-                                <a href="https://instagram.com" style="font-size:16px; text-decoration:none;" class="text-gemscend-emerald">
-                                    Instagram
-                                </a>
-                                </li>
-
-                                <li style="display:flex; align-items:center; gap:8px; list-style:none;">
-                                <i class="fa-brands fa-twitter text-gemscend-dark-emerald-75" style="font-size:18px;"></i>
-                                <a href="https://x.com" style="font-size:16px; text-decoration:none;" class="text-gemscend-emerald">
-                                    X
-                                </a>
-                                </li>
-                            </ul>
                             </div>
+                            <div class="social-link" style="display:flex; align-items:left; justify-content:center; gap:8px;">
+                                <img src="{% static 'images/gemscend/facebook.png' %}" 
+                                    alt="Facebook Icon" 
+                                    style="width:20px; height:20px;">
+                                <a href="https://facebook.com/gemscend" 
+                                target="_blank" 
+                                class="text-gemscend-dark-emerald-75"
+                                style="font-weight:500; text-decoration:none;">
+                                Facebook
+                                </a>
+                            </div>
+                            
+                            <div class="social-link" style="display:flex; align-items:left; justify-content:center; gap:8px;">
+                                <img src="{% static 'images/gemscend/X_twitter.png' %}" 
+                                    alt="Facebook Icon" 
+                                    style="width:20px; height:20px;">
+                                <a href="https://facebook.com/gemscend" 
+                                target="_blank" 
+                                class="text-gemscend-dark-emerald-75"
+                                style="font-weight:500; text-decoration:none;">
+                                Twitter
+                                </a>
+                            </div>
+
+
                         </div>
                     </div>
 
@@ -1011,12 +1011,12 @@
 
 </div><!-- End Page Wrapper -->
 
-<a href="https://api.whatsapp.com/send?text=Hello&phone=+254709872000" 
+{% comment %} <a href="https://api.whatsapp.com/send?text=Hello&phone=+254709872000" 
    class="whatsapp-float" 
    target="_blank" 
    aria-label="Chat on WhatsApp">
    <img src="{% static 'images/gemscend/whatsapp-black.png' %}" alt="WhatsApp Chat">
-</a>
+</a> {% endcomment %}
 
 {% comment %} <script>
 document.addEventListener('DOMContentLoaded', function() {

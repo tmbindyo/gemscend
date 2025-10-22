@@ -72,6 +72,7 @@ License: copyright commercial
   --theme-color8: #163838;
   --theme-color-silver: #C4C4C4;
 
+  --gemscend-black: ##231F20;
   --gemscend-white: #fff;
   --gemscend-dark-emerald-25: #349351;
   --gemscend-dark-emerald-75: #2B8448;
@@ -295,12 +296,23 @@ p, .text {
 .text-gemscend-dark-emerald-75 {
   color: var(--gemscend-dark-emerald-75) !important;
 }
+.text-gemscend-dark-emerald-25 {
+  color: var(--gemscend-dark-emerald-25) !important;
+}
 .text-gemscend-emerald {
   color: var(--gemscend-emerald);
 }
 .text-gemscend-dark-grey {
   color: var(--gemscend-dark-grey);
 }
+.text-gemscend-black {
+  color: var(--gemscend-black);
+}
+.text-gemscend-white {
+  color: var(--gemscend-white);
+}
+
+
 
 /* -------- Headings ---------- */
 h1, h2, h3, h4, h5, h6 {
@@ -7540,7 +7552,12 @@ Section Title
 
 
 .dual-showcase-section {
-  background: linear-gradient(to bottom, #021a25 0%, #061f2b 40%, #e8edef 100%);
+  background: linear-gradient(to bottom, 
+    #000000 0%,     /* starts white */
+    #333 55%,    /* keeps white for half the section */
+    #fff 75%,    /* starts getting darker near the bottom */
+    #ffffff 100%    /* ends fully black */
+  );
   color: #fff;
   position: relative;
   padding: 120px 0;
@@ -7570,7 +7587,7 @@ Section Title
 
 .slider-tooltip {
   position: absolute;
-  top: -45px;
+  top: -33px;
   background: #00c46a;
   color: white;
   padding: 6px 12px;
@@ -7643,6 +7660,7 @@ Section Title
   font-weight: 600;
   transition: all 0.3s ease;
   background: white;
+  margin-bottom: 15px;
 }
 
 .account-option:hover,
@@ -11319,21 +11337,20 @@ Section Title
 
 ***/
 .marquee {
+  background-color: #000;
   padding-top: 30px;
   padding-bottom: 30px;
   position: relative;
   --duration: 30s;
   --gap: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   gap: 0;
-  background-color: #00150F;
+
+  /* 👇 The key part: fade edges using a mask gradient */
+  -webkit-mask-image: linear-gradient(to right, black, white 10%, white 90%, black);
+  mask-image: linear-gradient(to right, black, white 10%, white 90%, black);
 }
 .marquee.slide-right {
   -webkit-transform: scaleX(-1);
@@ -14184,6 +14201,12 @@ Section Title
 
 
 .gemscend-pricing-section {
+  background: linear-gradient(to bottom, 
+    #ffffff 0%,     /* starts white */
+    #fff 55%,    /* keeps white for half the section */
+    #333 75%,    /* starts getting darker near the bottom */
+    #000000 100%    /* ends fully black */
+  );
   position: relative;
   z-index: 9;
 }
@@ -14213,25 +14236,68 @@ Section Title
   text-align: center;
 }
 
+.gemscend-pricing-table th {
+  position: relative; /* ensures absolute child positions are relative to the cell */
+  padding: 0; /* remove extra space */
+  height: 120px; /* gives a consistent visual height (adjust as needed) */
+}
+
+.gemscend-pricing-table th > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* perfectly center content */
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .gemscend-pricing-table thead {
   color: #fff;
 }
 
 .gemscend-price-header-btn {
-  display: block;
-  background: #41A95C; /* button background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row; /* default: all others are in one line */
+  background: #41A95C;
   color: #fff;
   font-weight: 700;
   font-size: 22px;
-  padding: 5px 25px;
+  padding: 10px 25px;
   border-radius: 20px !important;
+  border: 2px solid #EEF8F1;
+  width: 90%;
+  height: 90%;
   text-align: center;
-  min-width: 120px;
-  border: 2px solid #EEF8F1; /* add this line */
-  width: 100%; /* span the header cell */
-  height: 100%;
   transition: all 0.3s ease;
 }
+
+/* only this one stacks vertically */
+.gemscend-price-header-btn.popular {
+  flex-direction: column; /* stack label and amount vertically */
+  background: #2B8448; /* darker emerald */
+  box-shadow: 0 0 10px rgba(43, 132, 72, 0.4);
+}
+
+/* label styling */
+.gemscend-price-header-btn .label {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0.9;
+  margin-bottom: 4px;
+}
+
+/* amount styling */
+.gemscend-price-header-btn .amount {
+  font-size: 22px;
+  font-weight: 700;
+}
+
 
 
 .gemscend-price-btn {
@@ -14262,7 +14328,7 @@ Section Title
 
 .gemscend-pricing-table thead th {
   background: none;
-  border: none;
+  border: 1px solid var(--gemscend-dark-emerald-75); /* use emerald borders */
   padding: 0;
 }
 
@@ -14274,7 +14340,7 @@ Section Title
 
 .gemscend-pricing-table tbody td {
   padding: 16px;
-  border: 1px solid #eee;
+  border: 1px solid var(--gemscend-dark-emerald-75); /* use emerald borders */
   font-size: 15px;
   font-weight: 500;
   color: #444;
@@ -14286,7 +14352,7 @@ Section Title
 
 .gemscend-pricing-table .plan-actions td {
   padding: 20px;
-  border: none;
+  border: 1px solid var(--gemscend-dark-emerald-75);
 }
 
 .gemscend-pricing-table .plan-actions a {
@@ -18064,7 +18130,7 @@ Section Title
 
 ***/
 .top-earner-custom-bg {
-  background-color: #00150F; /* your color */
+  background-color: #000; /* your color */
 }
 .top-earner-heading {
   color: #fff;
@@ -18238,185 +18304,161 @@ Section Title
 
 
 
-/*** 
 
-====================================================================
-    Journey Section
-====================================================================
 
-***/
-.journey-custom-bg {
-  background-color: #f0f0f0; /* your color */
+
+
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
 }
-.journey-heading {
+
+.social-link img {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.social-link a {
+  color: var(--gemscend-emerald);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-link a:hover {
+  color: #00c897; /* Gemscend emerald tone */
+}
+
+
+
+
+
+
+.journey-section {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #002a1c, #000);
   color: #fff;
 }
-.journey-box-items {
-  display: flex;                  /* enable flexbox */
-  align-items: center;            /* vertically align image + text */
-  gap: 20px;                      /* spacing between columns */
-  margin-top: 30px;
+
+.journey-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px; /* smaller gap to tighten layout */
+  max-width: 1400px; /* increased total width */
+  margin: 0 auto;
+  padding: 0 20px; /* moves closer to edges */
+}
+
+/* Left side */
+.journey-left {
+  flex: 0 0 20%; /* narrower left column */
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 40px; /* bring it near left edge */
+}
+
+.journey-left h2 {
+  font-size: 52px;
+  font-weight: 900;
+  color: #fff;
+  margin: 0;
+  line-height: 1.1;
+}
+
+/* Right side */
+.journey-right {
+  flex: 0 0 75%;
+}
+
+.journey-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* force 3 per row */
+  gap: 35px;
+}
+
+/* Cards */
+.journey-card {
+  background: rgba(0, 0, 0, 0);
   border-radius: 20px;
-  background: #fff;
-  -webkit-box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  border: 0.25px solid #41A95C;
-}
-[data-tm-layout=dark] .journey-box-items {
-  background-color: var(--dark-color2);
-}
-.journey-box-items .journey-image {
-  flex: 1;
-  max-width: 25%;
-}
-.journey-box-items .journey-image img {
-  width: 100%;
-  height: auto;          
-  display: block;
-  border-radius: 10px;
-  object-fit: cover;     
-}
-.journey-box-items .journey-image .post-box {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 70px;
-  height: 70px;
-  background: #144443;
-  text-align: center;
-  padding-top: 13px;
-}
-.journey-box-items .journey-image .post-box .date {
-  font-size: 24px;
-  font-family: var(--heading-font-family);
-  font-weight: 700;
-  color: var(--theme-color1);
-  line-height: 1;
-}
-.journey-box-items .journey-image .post-box .month {
-  display: block;
-  font-size: 12px;
-  font-weight: 400;
-  color: #fff;
-  font-family: var(--body-font);
-  line-height: 1;
-}
-.journey-box-items .journey-content {
-  flex: 3;
-  margin-top: 0;
+  padding: 30px 25px;
+  text-align: left;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
-@media (max-width: 768px) {
-  .journey-box-items {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .journey-box-items .journey-image,
-  .journey-box-items .journey-content {
-    max-width: 100%;
-  }
+.journey-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px);
 }
-.journey-box-items .journey-content .comments-list {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 100px;
-  background: #F5F5F5;
-  padding: 12px 17px;
-  line-height: 1;
-  gap: 24px;
+
+.journey-card .icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
   margin-bottom: 20px;
 }
-[data-tm-layout=dark] .journey-box-items .journey-content .comments-list {
-  background: rgb(var(--theme-color-white-rgb), 0.1);
+
+.journey-card .icon img {
+  width: 70px;
+  height: 70px;
 }
-@media (max-width: 1199.98px) {
-  .journey-box-items .journey-content .comments-list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 18px;
+
+.journey-card h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.journey-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .journey-grid {
+    grid-template-columns: repeat(2, 1fr); /* adapt gracefully */
   }
 }
-.journey-box-items .journey-content .comments-list li {
-  font-size: 14px;
-}
-.journey-box-items .journey-content .comments-list li i {
-  color: var(--headings-color);
-  margin-right: 5px;
-}
-.journey-box-items .journey-content .comments-list svg {
-  margin-right: 5px;
-}
-[data-tm-layout=dark] .journey-box-items .journey-content .comments-list svg path {
-  fill: #fff;
-}
-.journey-box-items .journey-content h3 {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-[data-tm-layout=dark] .journey-box-items .journey-content h3 {
-  border-color: rgb(var(--theme-color-white-rgb), 0.1);
-}
-@media (max-width: 1199.98px) {
-  .journey-box-items .journey-content h3 {
-    font-size: 20px;
+
+@media (max-width: 992px) {
+  .journey-layout {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 30px;
+  }
+
+  .journey-left {
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .journey-right {
+    width: 100%;
+  }
+
+  .journey-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
-.journey-box-items .journey-content h3 a {
-  background-position: 0 95%;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  display: inline;
-}
-.journey-box-items .journey-content h3 a:hover {
-  background-size: 100% 2px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--headings-color)), to(var(--headings-color)));
-  background-image: linear-gradient(180deg, var(--headings-color) 0%, var(--headings-color) 100%);
-}
-.journey-box-items .journey-content .link-btn {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #144443;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: var(--heading-font-family);
-  font-size: 16px;
-  font-weight: 600;
-  padding-top: 15px;
-}
-[data-tm-layout=dark] .journey-box-items .journey-content .link-btn {
-  color: var(--link-color);
-}
-.journey-box-items .journey-content .link-btn .icon {
-  background: linear-gradient(99deg, #C8F169 0%, #039397 93.92%);
-  border-radius: 26px;
-  color: var(--theme-color-white);
-  display: inline-block;
-  height: 26px;
-  line-height: 28px;
-  margin-left: 5px;
-  text-align: center;
-  width: 26px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-.journey-box-items .journey-content .link-btn .icon i {
-  display: inline-block;
-  font-size: 14px;
-}
-.journey-box-items .journey-content .link-btn:hover .icon {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
+
+
+
+
+
 /*** 
 
 ====================================================================
@@ -23309,6 +23351,8 @@ Sidebar
 
 .footer-widget-wrapper {
   padding: 30px 0 60px;
+  width: 80%;
+  margin: 0 auto; /* centers it horizontally */
 }
 .footer-widget-wrapper .footer-widget-items .footer-content p {
   color: #B4B4B4;
@@ -23601,6 +23645,7 @@ Sidebar
 .footer-section-1 {
   position: relative;
   z-index: 9;
+  
 }
 .footer-section-1 .circle-shape {
   display: inline-block;
