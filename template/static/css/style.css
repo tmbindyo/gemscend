@@ -3763,6 +3763,25 @@ Section Title
   width: 90%;
 }
 
+.gemscend-glassbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 40px;
+}
+
+.gemscend-glassbar .glass-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  flex-shrink: 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  padding-right: 40px;
+  white-space: nowrap;
+}
+
 .glass-title {
   font-size: 1.3rem;
   font-weight: 600;
@@ -3775,9 +3794,8 @@ Section Title
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: nowrap;
+  flex: 1;
   gap: 40px;
-  width: 100%;
 }
 
 .glass-item {
@@ -3789,17 +3807,13 @@ Section Title
 }
 
 .glass-item img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 12px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
 }
 
 .glass-item p {
   font-size: 0.95rem;
-  line-height: 1.3;
   color: #e5ffe5;
   margin: 0;
   font-weight: 500;
@@ -3808,6 +3822,32 @@ Section Title
 /* Button container */
 .gemscend-button-container {
   text-align: center;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .gemscend-glassbar-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .gemscend-glassbar .glass-title {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-right: 0;
+    padding-bottom: 10px;
+  }
+
+  .gemscend-glass-items {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .glass-item {
+    flex: 0 0 calc(50% - 20px);
+  }
 }
 
 @keyframes gemscend-pulse-background {
