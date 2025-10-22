@@ -126,10 +126,10 @@
                     </nav>
                     <!-- Main Menu End-->
                     <div class="outer-box">
-                        <a href="{% url 'template-contact' %}" class="theme-btn btn-style-four btn-outline">
+                        <a href="{% url 'template-contact' %}" class="theme-btn btn-style-login btn-outline">
                             Log-In
                         </a>
-                        <a href="{% url 'template-contact' %}" class="theme-btn btn-style-four btn-solid">
+                        <a href="{% url 'template-contact' %}" class="theme-btn btn-style-register btn-solid">
                             Register Now
                         </a>
                         <!-- Mobile Nav toggler -->
@@ -272,33 +272,32 @@
             <div class="gemscend-bottom-group">
                 <!-- Glass bar -->
                 <div class="gemscend-glassbar wow fadeInUp" data-wow-delay=".4s">
-                    <h3 class="glass-title">Why Gemscend?</h3>
-                    <div class="gemscend-glass-items">
-                        <div class="glass-item">
-                            <h3 class="glass-title">Why Gemscend?</h3>
-                        </div>
-                        <div class="glass-item">
-                            <img src="{% static 'gifs/payout.gif' %}" alt="Payout">
-                            <p>First Payout on Demand</p>
-                        </div>
-                        <div class="glass-item">
-                            <img src="{% static 'gifs/minimum.gif' %}" alt="Days">
-                            <p>No Minimum Trading Days</p>
-                        </div>
-                        <div class="glass-item">
-                            <img src="{% static 'gifs/limit.gif' %}" alt="Limits">
-                            <p>No Time Limits</p>
-                        </div>
-                        <div class="glass-item">
-                            <img src="{% static 'gifs/income.gif' %}" alt="Million">
-                            <p>Maximum of $1 Million</p>
+                    <div class="gemscend-glassbar-inner">
+                        <h3 class="glass-title">Why Gemscend?</h3>
+                        <div class="gemscend-glass-items">
+                            <div class="glass-item">
+                                <img src="{% static 'gifs/payout.gif' %}" alt="Payout">
+                                <p>First Payout on Demand</p>
+                            </div>
+                            <div class="glass-item">
+                                <img src="{% static 'gifs/minimum.gif' %}" alt="Days">
+                                <p>No Minimum Trading Days</p>
+                            </div>
+                            <div class="glass-item">
+                                <img src="{% static 'gifs/limit.gif' %}" alt="Limits">
+                                <p>No Time Limits</p>
+                            </div>
+                            <div class="glass-item">
+                                <img src="{% static 'gifs/income.gif' %}" alt="Million">
+                                <p>Maximum of $1 Million</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Button positioned immediately below -->
                 <div class="gemscend-button-container wow fadeInUp" data-wow-delay=".6s">
-                    <a href="{% url 'template-contact' %}" class="theme-btn btn-style-five-gemscend btn-outline">
+                    <a href="{% url 'template-contact' %}" class="theme-btn gemscend-get-started btn-outline">
                         Get Started Today!
                     </a>
                 </div>
@@ -356,7 +355,7 @@
             <div class="row align-items-center g-5">
                 <!-- LEFT: Video -->
                 <div class="col-lg-6 text-center text-lg-start">
-                    <h2 class="fw-bold text-white mb-4">How It Works</h2>
+                    <h2 class="fw-bold text-white text-center mb-4">How It Works</h2>
                     <div class="video-box border border-2 rounded-4 overflow-hidden" style="border-color: #00c96b;">
                         <iframe src="https://www.youtube.com/embed/edfHZq5lrTA" title="How It Works Video" class="w-100" style="aspect-ratio: 16/9;" allowfullscreen loading="lazy"></iframe>
                     </div>
@@ -364,8 +363,9 @@
 
                 <!-- RIGHT: Calculator -->
                 <div class="col-lg-6">
+                    <h2 class="fw-bold text-white text-center mb-4">How Much Can You Make</h2>
                     <div class="bg-white rounded-4 shadow p-5" style="border-radius: 20px !important;">
-                        <h3 class="fw-bold text-dark text-center mb-5" style="font-size: 28px;">How Much Can You Make</h3>
+                        {% comment %} <h3 class="fw-bold text-dark text-center mb-5" style="font-size: 28px;">How Much Can You Make</h3> {% endcomment %}
                         
                         <!-- Account Size Section -->
                         <div class="mb-5">
