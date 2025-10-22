@@ -1307,12 +1307,12 @@ Scroll To Top style
 
 /* Hover effects */
 .btn-style-login.btn-solid:hover {
-  background-color: var(--bg-theme-color1);
+  background-color: var(--gemscend-emerald);
   color: #fff;
 }
 
 .btn-style-login.btn-outline:hover {
-  background-color: var(--bg-theme-color2);
+  background-color: var(--gemscend-emerald);
   color: #fff;
 }
 
@@ -1352,13 +1352,13 @@ Scroll To Top style
 
 /* Hover effects */
 .btn-style-register.btn-solid:hover {
-  background-color: var(--bg-theme-color1);
-  color: #fff;
+  background-color: var(--gemscend-white);
+  color: var(--gemscend-emerald);
 }
 
 .btn-style-register.btn-outline:hover {
   background-color: var(--bg-theme-color2);
-  color: #fff;
+  color: var(--gemscend-emerald);
 }
 
 

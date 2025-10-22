@@ -72,6 +72,7 @@ License: copyright commercial
   --theme-color8: #163838;
   --theme-color-silver: #C4C4C4;
 
+  --gemscend-white: #fff;
   --gemscend-dark-emerald-25: #349351;
   --gemscend-dark-emerald-75: #2B8448;
   --gemscend-emerald: #41A95C;
@@ -1265,6 +1266,113 @@ Scroll To Top style
   transition: all 0.3s ease;
   width: 62px;
 }
+
+
+
+
+
+
+
+.btn-style-login {
+  background-color: var(--gemscend-white);
+  border-radius: 100px;
+  color: var(--theme-color1);
+  font-family: var(--gemscend-emerald);
+  font-weight: 700;
+  line-height: 1;
+  overflow: hidden;
+  padding: 20px 42px;
+  position: relative;
+  text-transform: capitalize;
+}
+@media (max-width: 768px) {
+  .outer-box a.theme-btn {
+    display: none;
+  }
+}
+
+/* Solid (Register) */
+.btn-style-login.btn-solid {
+  background-color: #41A95C;
+  color: #fff;
+  border: none;
+}
+
+/* Outline (Login) */
+.btn-style-login.btn-outline {
+  background-color: #fff;   /* white background */
+  border: 2px solid var(--bg-theme-color2);
+  color: var(--bg-theme-color2);
+}
+
+/* Hover effects */
+.btn-style-login.btn-solid:hover {
+  background-color: var(--gemscend-emerald);
+  color: #fff;
+}
+
+.btn-style-login.btn-outline:hover {
+  background-color: var(--gemscend-emerald);
+  color: #fff;
+}
+
+
+
+.btn-style-register {
+  background-color: var(--gemscend-emerald);
+  border-radius: 100px;
+  color: var(--gemscend-white);
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  line-height: 1;
+  overflow: hidden;
+  padding: 20px 42px;
+  position: relative;
+  text-transform: capitalize;
+}
+@media (max-width: 768px) {
+  .outer-box a.theme-btn {
+    display: none;
+  }
+}
+
+/* Solid (Register) */
+.btn-style-register.btn-solid {
+  background-color: #41A95C;
+  color: #fff;
+  border: none;
+}
+
+/* Outline (Login) */
+.btn-style-register.btn-outline {
+  background-color: #fff;   /* white background */
+  border: 2px solid var(--bg-theme-color2);
+  color: var(--bg-theme-color2);
+}
+
+/* Hover effects */
+.btn-style-register.btn-solid:hover {
+  background-color: var(--gemscend-white);
+  color: var(--gemscend-emerald);
+}
+
+.btn-style-register.btn-outline:hover {
+  background-color: var(--bg-theme-color2);
+  color: var(--gemscend-emerald);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .btn-style-four {
   background-color: var(--bg-theme-color2);
