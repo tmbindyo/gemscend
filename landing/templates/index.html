@@ -1133,7 +1133,6 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 
-
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const accountOptions = document.querySelectorAll('.account-option');
@@ -1154,10 +1153,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const sliderRect = slider.getBoundingClientRect();
         const tooltipWidth = tooltip.offsetWidth;
         const left = percent * (sliderRect.width - 24) + 12; // 24px is thumb width
-        
         tooltip.style.left = `${left}px`;
         
-        // Update tooltip text based on slider type
+        // Update tooltip text
         if (slider.id === 'accountRange') {
             const valueInK = value >= 1000 ? `$${(value/1000).toFixed(0)}K` : `$${value}`;
             tooltip.textContent = valueInK;
@@ -1168,32 +1166,33 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Calculate monthly earnings
     function calculateEarnings() {
-        const accountSize = parseInt(accountRange.value);
-        const profitPercent = parseInt(profitRange.value);
-        const traderTakeHome = 0.8; // 80%
-        
-        // Monthly earnings calculation: (accountSize * profitPercent / 100) * traderTakeHome
-        const monthlyProfit = (accountSize * profitPercent / 100) * traderTakeHome;
-        
-        // Format number with commas
+        const accountSize = parseFloat(accountRange.value);
+        const profitPercent = parseFloat(profitRange.value);
+        const traderTakeHomeRate = 0.8; // 80%
+
+        // Formula: ((Account Size × Profit Rate) / 100) × 80%
+        const traderTakeHome = ((accountSize * profitPercent) / 100) * traderTakeHomeRate;
+
+        // Format result
         const formattedEarnings = new Intl.NumberFormat('en-US', {
             style: 'currency',
             currency: 'USD',
             minimumFractionDigits: 0,
             maximumFractionDigits: 0
-        }).format(monthlyProfit);
-        
-        monthlyEarnings.innerHTML = `${formattedEarnings}<span class="fs-5">/Month</span>`;
+        }).format(traderTakeHome);
+
+        // Update UI with Trader Take Home label
+        monthlyEarnings.innerHTML = `
+            ${formattedEarnings}
+            <span class="fs-5">/Month</span><br>
+        `;
     }
     
     // Account size buttons functionality
     accountOptions.forEach(option => {
         option.addEventListener('click', function() {
-            // Remove active class from all buttons
             accountOptions.forEach(btn => btn.classList.remove('active'));
-            // Add active class to clicked button
             this.classList.add('active');
-            // Update slider value
             const value = this.getAttribute('data-value');
             accountRange.value = value;
             updateSliderTooltip(accountRange, accountTooltip);
@@ -1203,7 +1202,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Update on slider input
     accountRange.addEventListener('input', function() {
-        // Update active button based on value
         accountOptions.forEach(btn => {
             const btnValue = btn.getAttribute('data-value');
             btn.classList.toggle('active', parseInt(btnValue) === parseInt(this.value));
@@ -1229,6 +1227,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+
 
 
 
