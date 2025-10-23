@@ -32,56 +32,6 @@
 
 <div class="page-wrapper">
 
-    <!-- Preloader Start -->
-    <div id="preloader" class="preloader">
-        <div class="animation-preloader">
-            <div class="spinner">                
-            </div>
-            <div class="txt-loading">
-                <span data-text-preloader="G" class="letters-loading">
-                    G
-                </span>
-                <span data-text-preloader="E" class="letters-loading">
-                    E
-                </span>
-                <span data-text-preloader="M" class="letters-loading">
-                    M
-                </span>
-                <span data-text-preloader="S" class="letters-loading">
-                    S
-                </span>
-                <span data-text-preloader="C" class="letters-loading">
-                    C
-                </span>
-                <span data-text-preloader="E" class="letters-loading">
-                    E
-                </span>
-                <span data-text-preloader="N" class="letters-loading">
-                    N
-                </span>
-                <span data-text-preloader="D" class="letters-loading">
-                    D
-                </span>
-            </div>
-            <p class="text-center">Loading</p>
-        </div>
-        <div class="loader">
-            <div class="row">
-                <div class="col-3 loader-section section-left">
-                    <div class="bg"></div>
-                </div>
-                <div class="col-3 loader-section section-left">
-                    <div class="bg"></div>
-                </div>
-                <div class="col-3 loader-section section-right">
-                    <div class="bg"></div>
-                </div>
-                <div class="col-3 loader-section section-right">
-                    <div class="bg"></div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Scroll To Top -->
     <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
@@ -104,6 +54,7 @@
                             <li><a href="#home">Pricing</a></li>
                             <li><a href="{% url 'faqs' %}">FAQ's</a></li>
                             <li><a href="{% url 'refer_and_earn' %}">Refer & Earn</a></li>
+                            <li><a href="https://app.gemscend.com/">E-Learning</a></li>
                             <li class="dropdown">
                                 <a href="#">
                                     <img src="https://flagcdn.com/48x36/gb.png" alt="English" class="flag-icon">
@@ -125,10 +76,10 @@
                     </nav>
                     <!-- Main Menu End-->
                     <div class="outer-box">
-                        <a href="{% url 'template-contact' %}" class="theme-btn btn-style-four btn-outline">
+                        <a href="https://gemscenddashboard.propaccount.com/en/sign-in" class="theme-btn btn-style-login btn-outline">
                             Log-In
                         </a>
-                        <a href="{% url 'template-contact' %}" class="theme-btn btn-style-four btn-solid">
+                        <a href="https://gemscenddashboard.propaccount.com/en/sign-up" class="theme-btn btn-style-register btn-solid">
                             Register Now
                         </a>
                         <!-- Mobile Nav toggler -->
@@ -309,13 +260,18 @@
     </section> {% endcomment %}
 
     <section class="refer_and_earn-section">
+        
+        <div class="refer_and_earn-image"></div>
+        <div class="refer_and_earn-left"></div>
+        <div class="refer_and_earn-right"></div>
+
         <div class="refer_and_earn-banner-outer">
             <div class="refer_and_earn-hero-content">
                 <h1 class="refer_and_earn-banner-title wow fadeInUp" data-wow-delay=".2s">
                     Turn your network into rewards!
                 </h1>
                 <p class="refer_and_earn-subtext wow fadeInUp" data-wow-delay=".3s">
-                    Start earning up to <strong>5% commission</strong> on every referral.
+                    Start earning up to 5% commission on every referral.
                 </p>
             </div>
 
@@ -334,7 +290,7 @@
             <div class="refer_and_earn-bottom-group">
             <div class="refer_and_earn-content-left">
                 <h3 style="font-size: 32px;">
-                    By becoming an official <br> <span>Gemscend partner</span> you unlock:
+                    By becoming an official <br> Gemscend partner you unlock:
                 </h3>
                 <ul class="refer_and_earn-features">
                 <li>
@@ -539,32 +495,41 @@
                             </div>
 
                             <!-- wrapper only for ul -->
-                            <div style="display:flex; justify-content:center;">
-                            <ul class="contact-list" 
-                                style="display:flex; flex-direction:column; align-items:flex-start; gap:8px; padding:0; margin:0;">
-                                
-                                <li style="display:flex; align-items:center; gap:8px; list-style:none;">
-                                <i class="fa-brands fa-facebook-f text-gemscend-dark-emerald-75" style="font-size:18px;"></i>
-                                <a href="https://facebook.com" style="font-size:16px; text-decoration:none;" class="text-gemscend-emerald">
-                                    Facebook
+                            <div class="social-link" style="display:flex; align-items:left; justify-content:center; gap:8px;">
+                                <img src="{% static 'images/gemscend/instagram.png' %}" 
+                                    alt="Facebook Icon" 
+                                    style="width:20px; height:20px;">
+                                <a href="https://facebook.com/gemscend" 
+                                target="_blank" 
+                                class="text-gemscend-dark-emerald-75"
+                                style="font-weight:500; text-decoration:none;">
+                                Instagram
                                 </a>
-                                </li>
-
-                                <li style="display:flex; align-items:center; gap:8px; list-style:none;">
-                                <i class="fa-brands fa-instagram text-gemscend-dark-emerald-75" style="font-size:18px;"></i>
-                                <a href="https://instagram.com" style="font-size:16px; text-decoration:none;" class="text-gemscend-emerald">
-                                    Instagram
-                                </a>
-                                </li>
-
-                                <li style="display:flex; align-items:center; gap:8px; list-style:none;">
-                                <i class="fa-brands fa-twitter text-gemscend-dark-emerald-75" style="font-size:18px;"></i>
-                                <a href="https://x.com" style="font-size:16px; text-decoration:none;" class="text-gemscend-emerald">
-                                    X
-                                </a>
-                                </li>
-                            </ul>
                             </div>
+                            <div class="social-link" style="display:flex; align-items:left; justify-content:center; gap:8px;">
+                                <img src="{% static 'images/gemscend/facebook.png' %}" 
+                                    alt="Facebook Icon" 
+                                    style="width:20px; height:20px;">
+                                <a href="https://facebook.com/gemscend" 
+                                target="_blank" 
+                                class="text-gemscend-dark-emerald-75"
+                                style="font-weight:500; text-decoration:none;">
+                                Facebook
+                                </a>
+                            </div>
+                            
+                            <div class="social-link" style="display:flex; align-items:left; justify-content:center; gap:8px;">
+                                <img src="{% static 'images/gemscend/X_twitter.png' %}" 
+                                    alt="Facebook Icon" 
+                                    style="width:20px; height:20px;">
+                                <a href="https://facebook.com/gemscend" 
+                                target="_blank" 
+                                class="text-gemscend-dark-emerald-75"
+                                style="font-weight:500; text-decoration:none;">
+                                Twitter
+                                </a>
+                            </div>
+                            
                         </div>
                     </div>
 

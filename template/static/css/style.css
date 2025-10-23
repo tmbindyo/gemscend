@@ -72,6 +72,8 @@ License: copyright commercial
   --theme-color8: #163838;
   --theme-color-silver: #C4C4C4;
 
+  --gemscend-grey: #ADB1D95C;
+  --gemscend-mint: #EEF8F1;
   --gemscend-black: ##231F20;
   --gemscend-white: #fff;
   --gemscend-dark-emerald-25: #349351;
@@ -4074,11 +4076,7 @@ Section Title
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(
-      circle at 30% 20%,
-      rgba(3, 85, 47, 0.25) 0%,
-      rgba(0, 21, 15, 1) 80%
-  );
+  background: #000;
   color: #fff;
 }
 
@@ -4091,6 +4089,32 @@ Section Title
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.refer_and_earn-left,
+.refer_and_earn-right {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+  z-index: 2;
+}
+
+.refer_and_earn-left {
+  left: 0;
+  background-image: url(../images/gemscend/glow_left.svg);
+  background-position: left center;
+  animation: gemscend-float-left 8s ease-in-out infinite;
+}
+
+.refer_and_earn-right {
+  right: 0;
+  background-image: url(../images/gemscend/glow_right.svg);
+  background-position: right center;
+  animation: gemscend-float-right 8s ease-in-out infinite;
 }
 
 .refer_and_earn-hero-content {
@@ -4106,7 +4130,7 @@ Section Title
 
 .refer_and_earn-subtext {
   font-size: 30px;
-  color: #d8ffd8;
+  color: var(--gemscend-mint);
   margin-top: 0px;
 }
 
@@ -4169,8 +4193,8 @@ Section Title
 }
 
 .refer_and_earn-features .icon img {
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
 }
 
 .refer_and_earn-video {
@@ -4211,17 +4235,6 @@ Section Title
 }
 
 
-@keyframes pulse-bg {
-  0% {
-    background: radial-gradient(circle at 30% 20%, rgba(3, 85, 47, 0.25) 0%, rgba(0, 21, 15, 1) 80%);
-  }
-  50% {
-    background: radial-gradient(circle at 30% 20%, rgba(3, 85, 47, 0.4) 0%, rgba(0, 21, 15, 1) 80%);
-  }
-  100% {
-    background: radial-gradient(circle at 30% 20%, rgba(3, 85, 47, 0.25) 0%, rgba(0, 21, 15, 1) 80%);
-  }
-}
 
 
 
@@ -14385,15 +14398,10 @@ Section Title
 
 
 
-.how-it-works-css {
-  background: #000d0a; /* Deep emerald tone background */
-  padding: 100px 0;
-  position: relative;
-}
 
 /* Title */
 .how-it-works-css .sec-title h2 {
-  color: #6DDA9E;
+  color: var(--gemscend-emerald);
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -14413,16 +14421,7 @@ Section Title
   position: relative;
 }
 
-.number-box {
-  background: #F4F5F7;
-  color: #0C2E1E;
-  font-weight: 700;
-  font-size: 1.5rem;
-  padding: 15px 25px;
-  border-radius: 10px;
-  position: relative;
-  z-index: 2;
-}
+
 
 .line {
   flex: 1;
@@ -14440,7 +14439,7 @@ Section Title
 
 /* === Step Row === */
 .how-it-works-css {
-  background-color: #00150F;
+  background-color: #000;
   color: white;
   padding: 80px 0;
 }
@@ -14465,8 +14464,8 @@ Section Title
 
 /* Number circle */
 .number-box {
-  background-color: #EEF8F1;
-  color: #2B8448;
+  background-color: var(--gemscend-mint);
+  color: var(--gemscend-dark-emerald-75);
   font-size: 2rem;
   font-weight: 900;
   width: 60px;
@@ -14486,11 +14485,11 @@ Section Title
 
 /* Step card */
 .step {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--gemscend-grey);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   padding: 25px 20px;
-  width: 140px;
+  width: 150px;
   text-align: center;
   box-shadow: 0 0 15px rgba(43, 238, 153, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -14502,14 +14501,14 @@ Section Title
 }
 
 .step h4 {
-  color: #6DDA9E;
+  color: var(--gemscend-emerald);
   font-weight: 700;
   margin-top: 5px;
   margin-bottom: 10px;
 }
 
 .step p {
-  color: #E5E5E5;
+  color: var(--gemscend-white);
   font-size: 0.9rem;
   line-height: 1.5;
 }
