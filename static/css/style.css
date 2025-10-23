@@ -18347,8 +18347,8 @@ Section Title
 
 .journey-section {
   padding: 100px 0;
-  background-color: linear-gradient(180deg, #000, #002a1c);
-  color: #fff;
+  background: linear-gradient(180deg, #000, #002a1c);
+  /* color: #fff; */
 }
 
 .journey-layout {
