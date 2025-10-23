@@ -3852,8 +3852,8 @@ Section Title
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* Push everything to the bottom */
-  padding: 0 0 40px 0; /* Remove top padding, keep only bottom */
+  justify-content: space-between; /* Distribute space between top and bottom */
+  padding: 110px 0; /* Add padding to top and bottom */
 }
 
 .gemscend-hero-content {
@@ -3863,16 +3863,16 @@ Section Title
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  
+  /* Remove any margin-bottom that was pushing it down */
 }
 
 .gemscend-banner-title {
-  margin-bottom: 410px !important;
   font-size: 3rem;
   font-weight: 900;
-  margin-bottom: 200px;
   color: #fff;
   text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  margin: 0 !important; /* Remove all margins */
+  padding-top: 60px; /* Add padding from top instead of margin */
 }
 
 /* Bottom group container */
@@ -3880,12 +3880,11 @@ Section Title
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  margin-bottom: 2000px;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px; /* Small space from bottom */
+  /* Remove any excessive margins */
 }
 
 /* Glass bar */
