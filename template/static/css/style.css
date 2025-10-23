@@ -14335,7 +14335,7 @@ Section Title
 
 .gemscend-pricing-table thead th {
   background: none;
-  border: 1px solid var(--gemscend-dark-emerald-75); /* use emerald borders */
+  border: 0.1px solid var(--gemscend-dark-emerald-75); /* use emerald borders */
   padding: 0;
 }
 
