@@ -14335,7 +14335,7 @@ Section Title
 
 .gemscend-pricing-table thead th {
   background: none;
-  border: 0.1px solid var(--gemscend-dark-emerald-75); /* use emerald borders */
+  border: 0.5px solid var(--gemscend-dark-emerald-75); /* use emerald borders */
   padding: 0;
 }
 
@@ -14347,7 +14347,7 @@ Section Title
 
 .gemscend-pricing-table tbody td {
   padding: 16px;
-  border: 1px solid var(--gemscend-dark-emerald-75); /* use emerald borders */
+  border: 0.5px solid var(--gemscend-dark-emerald-75); /* use emerald borders */
   font-size: 15px;
   font-weight: 500;
   color: #444;
@@ -14359,7 +14359,7 @@ Section Title
 
 .gemscend-pricing-table .plan-actions td {
   padding: 20px;
-  border: 1px solid var(--gemscend-dark-emerald-75);
+  border: 0.5px solid var(--gemscend-dark-emerald-75);
 }
 
 .gemscend-pricing-table .plan-actions a {
