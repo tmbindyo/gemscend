@@ -45,7 +45,8 @@
                 <!--Nav Box-->
                 <div class="nav-outer">
                     <div class="logo-box">
-                        <div class="logo"><a href="{% url 'template-index' %}"><img src="{% static 'images/gemscend/logo_grey.png' %}" alt="" style="max-width:350px; height:auto;" title="finclix"></a></div>
+                        {% comment %} <div class="logo"><a href="{% url 'template-index' %}"><img src="{% static 'images/gemscend/logo.png' %}" alt="" style="max-width:350px; height:auto;" title="finclix"></a></div> {% endcomment %}
+                        <div class="logo"><a href="{% url 'index' %}"><img src="{% static 'images/gemscend/logo_grey.png' %}" alt="" style="max-width:350px; height:auto;" title="finclix"></a></div>
                     </div>
                     <nav class="nav main-menu">
                         <ul class="navigation">
@@ -159,105 +160,6 @@
     </header>
     <!--End Main Header -->
 
-    <!-- Hero Section Start -->
-    {% comment %} <section class="hero-section hero-5 parallaxie bg-cover" style="background-image: url('{% static 'images/header-image/gemscend _header_transparent_slice.png' %}');">
-        <div class="banner-outer">
-            <div class="hero-content">
-                <h1 class="banner-title wow fadeInUp" data-wow-delay=".2s">The Journey Starts Now!</h1>
-
-
-                <div class="info mt-50 wow fadeInUp" data-wow-delay=".2s">
-                    <a href="{% url 'template-contact' %}" class="theme-btn btn-style-five btn-outline">
-                        Get Started Today!
-                    </a>
-                </div>
-            </div>
-        </div>				
-    </section> {% endcomment %}
-	{% comment %} <section class="gemscend-hero-section">
-		<!-- Pulsing background layer -->
-		<div class="gemscend-hero-bg"></div>
-
-		<!-- Transparent main image layer -->
-		<div class="gemscend-hero-image"></div>
-
-		<!-- Glowing sides -->
-		<div class="gemscend-glow-left"></div>
-		<div class="gemscend-glow-right"></div>
-
-		<!-- Text content -->
-		<div class="gemscend-banner-outer">
-			<div class="gemscend-hero-content">
-			<h1 class="gemscend-banner-title wow fadeInUp" data-wow-delay=".2s">
-				The Journey Starts Now!
-			</h1>
-
-			<div class="gemscend-info mt-50 wow fadeInUp" data-wow-delay=".2s">
-				<a href="{% url 'template-contact' %}" class="theme-btn btn-style-five btn-outline">
-				Get Started Today!
-				</a>
-			</div>
-			</div>
-		</div>
-	</section> {% endcomment %}
-
-    {% comment %} <section class="refer_and_earn-section">
-        <!-- Background and glow layers -->
-        <div class="refer_and_earn-bg"></div>
-        <div class="refer_and_earn-image"></div>
-        <div class="refer_and_earn-glow-left"></div>
-        <div class="refer_and_earn-glow-right"></div>
-
-        <!-- Foreground content -->
-        <div class="refer_and_earn-banner-outer">
-            <div class="refer_and_earn-hero-content">
-                <h1 class="refer_and_earn-banner-title wow fadeInUp" data-wow-delay=".2s">
-                    Turn your network into rewards!
-                </h1>
-                <p class="refer_and_earn-subtext wow fadeInUp" data-wow-delay=".3s">
-                    Start earning up to <strong>5% commission</strong> on every referral.
-                </p>
-            </div>
-
-            <!-- Button group -->
-            <div class="refer_and_earn-buttons wow fadeInUp" data-wow-delay=".4s">
-                <a href="#" class="theme-btn btn-style-five">Become An Affiliate</a>
-                <a href="#" class="theme-btn btn-outline">Affiliate Login</a>
-            </div>
-
-            <!-- Bottom content group -->
-            <div class="refer_and_earn-bottom-group">
-                <div class="refer_and_earn-content-left">
-                    <h3>
-                        By becoming an official <span>Gemscend partner</span> you unlock:
-                    </h3>
-                    <ul class="refer_and_earn-features">
-                        <li>
-                            <div class="icon"><img src="{% static 'images/gemscend/partnership.gif' %}" alt="Affiliate Deals"></div>
-                            Custom Affiliate Deals
-                        </li>
-                        <li>
-                            <div class="icon"><img src="{% static 'images/gemscend/giveaway.gif' %}" alt="Giveaway Accounts"></div>
-                            Giveaway Accounts
-                        </li>
-                        <li>
-                            <div class="icon"><img src="{% static 'images/gemscend/exclusive.gif' %}" alt="Merch"></div>
-                            Exclusive Gemscend Merchandise
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="refer_and_earn-video">
-                    <iframe width="560" height="315"
-                        src="https://www.youtube.com/embed/example"
-                        title="Affiliate Program Overview"
-                        frameborder="0"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
-        </div>
-    </section> {% endcomment %}
 
     <section class="refer_and_earn-section">
         
@@ -326,49 +228,6 @@
 
 
 
-
-    <!-- Horizontal accordion area start here -->
-    {% comment %} <section class="dual-showcase-section">
-        <div class="container-fluid" style="max-width: 90%;">
-            <div class="row align-items-center g-5">
-				<!-- LEFT: Video -->
-				<div class="col-lg-6 text-center text-lg-start">
-					<h2 class="fw-bold text-white mb-4">How It Works</h2>
-					<div class="video-box border border-2 rounded-4 overflow-hidden" style="border-color: #00c96b;">
-						<iframe src="https://www.youtube.com/embed/edfHZq5lrTA" title="How It Works Video" class="w-100" style="aspect-ratio: 16/9;" allowfullscreen loading="lazy"></iframe>
-					</div>
-				</div>
-
-				<!-- RIGHT: Calculator -->
-				<div class="bg-white rounded-4 shadow p-4 mx-auto" style="max-width: 800px;">
-					<h5 class="fw-bold text-success text-center mb-4" style="font-size: 40px;">Choose Your Account Size</h5>
-					
-					<!-- Account Size Slider -->
-					<div class="slider-container mb-5">
-						<div class="d-flex justify-content-between small text-muted mb-2">
-						<span>$3K</span><span>$50K</span><span>$100K</span>
-						</div>
-						<input type="range" class="form-range" min="3000" max="100000" step="1000" id="accountRange" value="10000">
-						<div id="accountTooltip" class="slider-tooltip">$10,000</div>
-					</div>
-
-					<!-- Profit Percentage Slider -->
-					<div class="slider-container mb-4">
-						<input type="range" class="form-range" min="1" max="100" step="1" id="profitRange" value="12">
-						<div id="profitTooltip" class="slider-tooltip">12%</div>
-					</div>
-
-					<p class="fw-semibold text-muted text-center" style="font-size: 30px;">Net Trader Take Home 80%</p>
-					<div class="bg-dark text-white rounded-3 p-3 mt-3 text-center earnings-box">
-						<h3 class="mb-0 fw-bold text-white" style="font-size: 40px;">$25,000<span class="fs-5">/Month</span></h3>
-					</div>
-				</div>
-
-				
-
-            </div>
-        </div>
-    </section> {% endcomment %}
     <section class="how-it-works-css fix section-padding">
         <div class="auto-container">
             <div class="sec-title text-center">
@@ -444,6 +303,8 @@
     </section>
 
 
+    <section class="white-section">
+    </section>
 
 
     <!-- Footer Section Start -->
