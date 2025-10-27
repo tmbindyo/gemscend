@@ -1015,7 +1015,7 @@ Scroll To Top style
   color: #ffffff;
   text-align: center;
   cursor: pointer;
-  background-color: var(--theme-color2);
+  background-color: var(--gemscend-emerald);
   z-index: 100;
   display: none;
   border-radius: 50%;
@@ -1027,7 +1027,7 @@ Scroll To Top style
 }
 
 .scroll-to-top:hover {
-  background: var(--theme-color1);
+  background: var(--gemscend-dark-emerald-75);
   color: #000;
 }
 
@@ -1295,7 +1295,7 @@ Scroll To Top style
   font-weight: 700;
   line-height: 1;
   overflow: hidden;
-  padding: 20px 42px;
+  padding: 16px 32px;
   position: relative;
   text-transform: capitalize;
 }
@@ -1340,7 +1340,7 @@ Scroll To Top style
   font-weight: 700;
   line-height: 1;
   overflow: hidden;
-  padding: 20px 42px;
+  padding: 16px 32px;
   position: relative;
   text-transform: capitalize;
 }
@@ -3039,6 +3039,13 @@ Scroll To Top style
 .sticky-header .mobile-nav-toggler {
   color: var(--headings-color) !important;
 }
+
+.main-header .header-lower .logo-box img {
+  max-width: 350px;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
 
 /*** 
 
@@ -7686,7 +7693,7 @@ Section Title
 /* Account option buttons */
 .account-option {
   border: 2px solid #00c46a;
-  color: #00c46a;
+  color: var(--gemscend-emerald);
   border-radius: 25px;
   padding: 10px 25px;
   font-weight: 600;
@@ -17021,7 +17028,7 @@ Section Title
   }
 }
 .contact-image-1 img {
-  height: 40px;
+  height: 50px;
 }
 .contact-image-1 .contact-info-box {
   border-radius: 20px;
