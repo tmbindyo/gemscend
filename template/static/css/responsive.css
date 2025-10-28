@@ -1,5 +1,10 @@
 
 
+
+
+
+
+
 @media only screen and (max-width: 1700px){
 	.main-header .header-lower .outer-box .ui-btn-outer{
 		border-right: 0;
@@ -37,6 +42,14 @@
 	}
 	.btn-style-login {
 		padding: 16px 32px;
+	}
+
+	.gemscend-banner-title {
+		padding-top: 10px; /* Add padding from top instead of margin */
+	}
+
+	.gemscend-hero-image {
+		background-position: center 10px;
 	}
 
 	/* .project-section .carousel-outer{
@@ -94,7 +107,13 @@
 		padding: 12px 24px;
 	}
 
+	.gemscend-banner-title {
+		padding-top: 10px; /* Add padding from top instead of margin */
+	}
 
+	.gemscend-hero-image {
+		background-position: center 10px;
+	}
 	
 }
 
@@ -136,9 +155,14 @@
 		min-height: auto;
 	}
 
-	
+	.gemscend-banner-title {
+		padding-top: 25px; /* Add padding from top instead of margin */
+	}
 
-	
+	.gemscend-hero-image {
+		background-position: center 10px;
+	}
+
 }
 
 
@@ -199,6 +223,17 @@
 		justify-content: space-between;
 	}
 
+	.gemscend-banner-title {
+		font-weight: 900;
+		color: #fff;
+		text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+		margin: 0 !important; /* Remove all margins */
+		padding-top: 20px; /* Add padding from top instead of margin */
+	}
+
+	.gemscend-hero-image {
+		background-position: center 10px;
+	}
 
 }
 
@@ -224,6 +259,11 @@
 	
 	.main-header .header-lower .logo-box .logo img {
 		max-width: 140px;
+	}
+
+	.gemscend-banner-title {
+		
+		padding-top: 10px; /* Add padding from top instead of margin */
 	}
 	
 	

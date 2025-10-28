@@ -44,20 +44,21 @@
                 <!--Nav Box-->
                 <div class="nav-outer">
                     <div class="logo-box">
-                        <div class="logo"><a href="{% url 'template-index' %}"><img src="{% static 'images/gemscend/logo.png' %}" alt="" style="max-width:350px; height:auto;" title="finclix"></a></div>
+                        <div class="logo"><a href="{% url 'index' %}"><img src="{% static 'images/gemscend/logo_grey.png' %}" alt="" title="gemscend"></a></div>
                     </div>
                     <nav class="nav main-menu">
                         <ul class="navigation">
-                            <li><a style="color: #231F20;" href="{% url 'index' %}">Home</a></li>
-                            <li><a style="color: #231F20;" href="#home">How It Works</a></li>
-                            <li><a style="color: #231F20;" href="#home">Pricing</a></li>
-                            <li><a style="color: #231F20;" href="{% url 'faqs' %}">FAQ's</a></li>
-                            <li><a style="color: #231F20;" href="{% url 'refer_and_earn' %}"">Refer & Earn</a></li>
+                            <li><a style="color: #41A95C;" href="{% url 'index' %}">Home</a></li>
+                            <li><a style="color: #41A95C;" href="#how-it-works">How It Works</a></li>
+                            <li><a style="color: #41A95C;" href="#pricing">Pricing</a></li>
+                            <li><a style="color: #41A95C;" href="{% url 'faqs' %}">FAQ's</a></li>
+                            <li><a style="color: #41A95C;" href="{% url 'refer_and_earn' %}">Refer & Earn</a></li>
+                            <li><a style="color: #41A95C;" href="https://app.gemscend.com/">E-Learning</a></li>
                             <li class="dropdown">
-                                <a href="#">
+                                <a style="color: #41A95C;" href="#">
                                     <img src="https://flagcdn.com/48x36/gb.png" alt="English" class="flag-icon">
                                     EN
-                                    <span style="color: #231F20;" class="chevron">▼</span>
+                                    <span class="chevron">▼</span>
                                 </a>
                                 <ul>
                                     <li>
@@ -74,10 +75,10 @@
                     </nav>
                     <!-- Main Menu End-->
                     <div class="outer-box">
-                        <a href="{% url 'template-contact' %}" class="theme-btn btn-style-four btn-outline">
+                        <a href="https://gemscenddashboard.propaccount.com/en/sign-in" class="theme-btn btn-style-login btn-outline">
                             Log-In
                         </a>
-                        <a href="{% url 'template-contact' %}" class="theme-btn btn-style-four btn-solid">
+                        <a href="https://gemscenddashboard.propaccount.com/en/sign-up" class="theme-btn btn-style-register btn-solid">
                             Register Now
                         </a>
                         <!-- Mobile Nav toggler -->
@@ -157,7 +158,7 @@
                     </li>
                     <li>
                         <a href="#">
-                            <img src="{% static 'images/gemscend/pinterest.png' %}" alt="Pinterest" class="social-icon">
+                            <img src="{% static 'images/gemscend/tiktok.png' %}" alt="Tiktok" class="social-icon">
                         </a>
                     </li>
                     <li>
@@ -185,7 +186,34 @@
         </div>
         <!-- End Header Search -->
 
-        
+         <!-- Sticky Header  -->
+        <div class="sticky-header">
+          <div class="auto-container">
+            <div class="inner-container">
+              <!--Logo-->
+              <div class="logo">
+                <a href="{% url 'template-index' %}"><img src="{% static 'images/black-logo.png' %}" alt="img" /></a>
+              </div>
+
+              <!--Right Col-->
+              <div class="nav-outer">
+                <!-- Main Menu -->
+                <nav class="main-menu">
+                  <div class="navbar-collapse show collapse clearfix">
+                    <ul class="navigation clearfix">
+                      <!--Keep This Empty / Menu will come through Javascript-->
+                    </ul>
+                  </div>
+                </nav>
+                <!-- Main Menu End-->
+
+                <!--Mobile Navigation Toggler-->
+                <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Sticky Menu -->
     </header>
     <!--End Main Header -->
 

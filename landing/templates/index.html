@@ -47,7 +47,7 @@
                 <!--Nav Box-->
                 <div class="nav-outer">
                     <div class="logo-box">
-                        <div class="logo"><a href="{% url 'index' %}"><img src="{% static 'images/gemscend/logo_grey.png' %}" alt="" title="finclix"></a></div>
+                        <div class="logo"><a href="{% url 'index' %}"><img src="{% static 'images/gemscend/logo_grey.png' %}" alt="" title="gemscend"></a></div>
                     </div>
                     <nav class="nav main-menu">
                         <ul class="navigation">
@@ -130,7 +130,7 @@
                     </li>
                     <li>
                         <a href="#">
-                            <img src="{% static 'images/gemscend/pinterest.png' %}" alt="Pinterest" class="social-icon">
+                            <img src="{% static 'images/gemscend/tiktok.png' %}" alt="Tiktok" class="social-icon">
                         </a>
                     </li>
                     <li>
@@ -158,7 +158,44 @@
         </div>
         <!-- End Header Search -->
 
-        <!-- Sticky Header  -->
+         <!-- Sticky Header  -->
+        <div class="sticky-header">
+          <div class="auto-container">
+            <div class="inner-container">
+              <!--Logo-->
+              <div class="logo">
+                <a href="{% url 'index' %}"><img src="{% static 'images/gemscend/logo_grey.png' %}" alt="img" /></a>
+              </div>
+
+              <!--Right Col-->
+              <div class="nav-outer">
+                <!-- Main Menu -->
+                <nav class="main-menu">
+                  <div class="navbar-collapse show collapse clearfix">
+                    <ul class="navigation clearfix">
+                      <!--Keep This Empty / Menu will come through Javascript-->
+                    </ul>
+                  </div>
+                </nav>
+                <div class="outer-box">
+                        <a href="https://gemscenddashboard.propaccount.com/en/sign-in" class="theme-btn btn-style-login btn-outline">
+                            Log-In
+                        </a>
+                        <a href="https://gemscenddashboard.propaccount.com/en/sign-up" class="theme-btn btn-style-register btn-solid">
+                            Register Now
+                        </a>
+                        <!-- Mobile Nav toggler -->
+                        <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+                    </div>
+                <!-- Main Menu End-->
+
+                <!--Mobile Navigation Toggler-->
+                <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Sticky Menu -->
         
     </header>
     <!--End Main Header -->
@@ -357,7 +394,7 @@
 
                         <!-- Results Section -->
                         <div class="text-center">
-                            <p class="text-dark text-gemscend-black mb-3" style="font-size: 30px; ">Net Trader Take Home 80%</p>
+                            <p class="text-dark text-gemscend-black mb-3" style="font-size: 30px; ">Trader Take Home 80%</p>
                             <div class="bg-dark text-white rounded-3 p-1 earnings-box" style="border-radius: 15px !important;">
                                 <h2 class="mb-0 fw-bold text-white" id="monthlyEarnings">$2,000<span class="fs-5">/Month</span></h2>
                             </div>
@@ -390,114 +427,116 @@
 
             <div class="row">
                 <div class="gemscend-pricing-wrapper">
-                    <table class="gemscend-pricing-table">
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>
-                                    <div class="">
-                                        <a href="#" class="gemscend-price-header-btn">$ 3,000</a>
-                                    </div>
-                                </th>
-                                <th>
-                                    <div class="">
-                                    <a href="#" class="gemscend-price-header-btn">$ 5,000</a>
-                                    </div>
-                                </th>
-                                <th class="">
-                                    <div class="">
-                                        <a href="#" class="gemscend-price-header-btn">
-                                            <span class="label">Most Popular</span>
-                                            <span class="amount">$10,000</span>
-                                        </a>
-                                    </div>
-                                </th>
-                                <th>
-                                    <div class="">
-                                        <a href="#" class="gemscend-price-header-btn">$ 20,000</a>
-                                    </div>
-                                </th>
-                                <th>
-                                    <div class="">
-                                        <a href="#" class="gemscend-price-header-btn">$ 100,000</a>
-                                    </div>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <span class="info-tooltip" data-tooltip="The trader should achieve an 8% profit in Phase 1 to advance to Phase 2.">i</span>
-                                    Phase 1 Profit Target
-                                </td>
-                                <td>8%</td>
-                                <td>8%</td>
-                                <td>8%</td>
-                                <td>8%</td>
-                                <td>8%</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span class="info-tooltip" data-tooltip="The trader should achieve a 5% profit in Phase 2 to complete the challenge and receive a funded account.">i</span>
-                                    Phase 2 Profit Target
-                                </td>
-                                <td>5%</td>
-                                <td>5%</td>
-                                <td>5%</td>
-                                <td>5%</td>
-                                <td>5%</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span class="info-tooltip" data-tooltip="An equity-based restriction that ensures a trader cannot lose more than a fixed amount in a single trading day, calculated from the prior day's closing balance, and exceeding it results in a hard breach.">i</span>
-                                    Daily Loss Limit 5%
-                                </td>
-                                <td>$150</td>
-                                <td>$250</td>
-                                <td>$500</td>
-                                <td>$1,000</td>
-                                <td>$5,000</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span class="info-tooltip" data-tooltip="Profit split: 80% Trader / 20% Gemscend">i</span>
-                                    Profit Split
-                                </td>
-                                <td>80% Trader / 20% Gemscend</td>
-                                <td>80% Trader / 20% Gemscend</td>
-                                <td>80% Trader / 20% Gemscend</td>
-                                <td>80% Trader / 20% Gemscend</td>
-                                <td>80% Trader / 20% Gemscend</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span class="info-tooltip" data-tooltip="The trader should not lose more than the fixed maximum overall loss from the allocated capital.">i</span>
-                                    Maximum Drawdown
-                                </td>
-                                <td>8%</td>
-                                <td>8%</td>
-                                <td>8%</td>
-                                <td>8%</td>
-                                <td>8%</td>
-                            </tr>
-                            <tr>
-                                <td>Trading Fee</td>
-                                <td>$35</td>
-                                <td>$50</td>
-                                <td>$100</td>
-                                <td>$300</td>
-                                <td>$660</td>
-                            </tr>
-                            <tr class="plan-actions">
-                                <td></td>
-                                <td><a href="#" class="gemscend-price-btn">Select Plan</a></td>
-                                <td><a href="#" class="gemscend-price-btn">Select Plan</a></td>
-                                <td><a href="#" class="gemscend-price-btn popular">Select Plan</a></td>
-                                <td><a href="#" class="gemscend-price-btn">Select Plan</a></td>
-                                <td><a href="#" class="gemscend-price-btn">Select Plan</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="table-responsive">
+                        <table class="gemscend-pricing-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>
+                                        <div class="">
+                                            <a href="#" class="gemscend-price-header-btn">$ 3,000</a>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="">
+                                        <a href="#" class="gemscend-price-header-btn">$ 5,000</a>
+                                        </div>
+                                    </th>
+                                    <th class="">
+                                        <div class="">
+                                            <a href="#" class="gemscend-price-header-btn">
+                                                <span class="label">Most Popular</span>
+                                                <span class="amount">$10,000</span>
+                                            </a>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="">
+                                            <a href="#" class="gemscend-price-header-btn">$ 20,000</a>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="">
+                                            <a href="#" class="gemscend-price-header-btn">$ 100,000</a>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span class="info-tooltip" data-tooltip="The trader should achieve an 8% profit in Phase 1 to advance to Phase 2.">i</span>
+                                        Phase 1 Profit Target
+                                    </td>
+                                    <td>8%</td>
+                                    <td>8%</td>
+                                    <td>8%</td>
+                                    <td>8%</td>
+                                    <td>8%</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="info-tooltip" data-tooltip="The trader should achieve a 5% profit in Phase 2 to complete the challenge and receive a funded account.">i</span>
+                                        Phase 2 Profit Target
+                                    </td>
+                                    <td>5%</td>
+                                    <td>5%</td>
+                                    <td>5%</td>
+                                    <td>5%</td>
+                                    <td>5%</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="info-tooltip" data-tooltip="An equity-based restriction that ensures a trader cannot lose more than a fixed amount in a single trading day, calculated from the prior day's closing balance, and exceeding it results in a hard breach.">i</span>
+                                        Daily Loss Limit 5%
+                                    </td>
+                                    <td>$150</td>
+                                    <td>$250</td>
+                                    <td>$500</td>
+                                    <td>$1,000</td>
+                                    <td>$5,000</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="info-tooltip" data-tooltip="Profit split: 80% Trader / 20% Gemscend">i</span>
+                                        Profit Split
+                                    </td>
+                                    <td>80% Trader / 20% Gemscend</td>
+                                    <td>80% Trader / 20% Gemscend</td>
+                                    <td>80% Trader / 20% Gemscend</td>
+                                    <td>80% Trader / 20% Gemscend</td>
+                                    <td>80% Trader / 20% Gemscend</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="info-tooltip" data-tooltip="The trader should not lose more than the fixed maximum overall loss from the allocated capital.">i</span>
+                                        Maximum Drawdown
+                                    </td>
+                                    <td>8%</td>
+                                    <td>8%</td>
+                                    <td>8%</td>
+                                    <td>8%</td>
+                                    <td>8%</td>
+                                </tr>
+                                <tr>
+                                    <td>Trading Fee</td>
+                                    <td>$35</td>
+                                    <td>$50</td>
+                                    <td>$100</td>
+                                    <td>$300</td>
+                                    <td>$660</td>
+                                </tr>
+                                <tr class="plan-actions">
+                                    <td></td>
+                                    <td><a href="#" class="gemscend-price-btn">Select Plan</a></td>
+                                    <td><a href="#" class="gemscend-price-btn">Select Plan</a></td>
+                                    <td><a href="#" class="gemscend-price-btn popular">Select Plan</a></td>
+                                    <td><a href="#" class="gemscend-price-btn">Select Plan</a></td>
+                                    <td><a href="#" class="gemscend-price-btn">Select Plan</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -534,7 +573,33 @@
                 </div>
                 <div class="text"></div>
                 <div class="text">
-                    <img src="{% static 'images/gemscend/airtel.png' %}" alt="img" />
+                    <img src="{% static 'images/gemscend/airtel_logo.png' %}" alt="img" />
+                </div>
+
+
+                <div class="text"></div>
+                <div class="text">
+                    <img src="{% static 'images/gemscend/vodacom.png' %}" alt="img" />
+                </div>
+                <div class="text"></div>
+                <div class="text">
+                    <img src="{% static 'images/gemscend/mtn.png' %}" alt="img" />
+                </div>
+                <div class="text"></div>
+                <div class="text">
+                    <img src="{% static 'images/gemscend/tigo.png' %}" alt="img" />
+                </div>
+                <div class="text"></div>
+                <div class="text">
+                    <img src="{% static 'images/gemscend/bitcoin.png' %}" alt="img" />
+                </div>
+                <div class="text"></div>
+                <div class="text">
+                    <img src="{% static 'images/gemscend/etherium.png' %}" alt="img" />
+                </div>
+                <div class="text"></div>
+                <div class="text">
+                    <img src="{% static 'images/gemscend/usd_coin.png' %}" alt="img" />
                 </div>
             </div>
             <div class="marquee-group">
@@ -564,7 +629,33 @@
                 </div>
                 <div class="text"></div>
                 <div class="text">
-                    <img src="{% static 'images/gemscend/airtel.png' %}" alt="img" />
+                    <img src="{% static 'images/gemscend/airtel_logo.png' %}" alt="img" />
+                </div>
+
+
+                <div class="text"></div>
+                <div class="text">
+                    <img src="{% static 'images/gemscend/vodacom.png' %}" alt="img" />
+                </div>
+                <div class="text"></div>
+                <div class="text">
+                    <img src="{% static 'images/gemscend/mtn.png' %}" alt="img" />
+                </div>
+                <div class="text"></div>
+                <div class="text">
+                    <img src="{% static 'images/gemscend/tigo.png' %}" alt="img" />
+                </div>
+                <div class="text"></div>
+                <div class="text">
+                    <img src="{% static 'images/gemscend/bitcoin.png' %}" alt="img" />
+                </div>
+                <div class="text"></div>
+                <div class="text">
+                    <img src="{% static 'images/gemscend/etherium.png' %}" alt="img" />
+                </div>
+                <div class="text"></div>
+                <div class="text">
+                    <img src="{% static 'images/gemscend/usd_coin.png' %}" alt="img" />
                 </div>
             </div>
         </div>
@@ -868,15 +959,15 @@
                         </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".4s">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".4s" style="text-align: left;">
                         <div class="footer-widget-items mt-30">
-                        <div class="widget-title mb-25">
-                            <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Postal Address</h3>
-                        </div>
-                        <p class="font-size-15 text-gemscend-emerald font-weight-500" style="text-align: left;">Top Floor, Rodney Court Building, Rodney Bay, Gros Islet, Saint Lucia, LC01 401</p>
+                            <div class="widget-title mb-25">
+                                <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Postal Address</h3>
+                            </div>
+                            <p class="font-size-15 text-gemscend-emerald font-weight-500" style="text-align: left;">Top Floor, Rodney Court Building, Rodney Bay, Gros Islet, Saint Lucia, LC01 401</p>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".6s">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".6s" style="text-align: left;">
                         <div class="footer-widget-items mt-30">
                         
                             <div class="widget-title mb-25">
@@ -892,7 +983,7 @@
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".8s">
                         <div class="footer-widget-items mt-30">
-                            <div class="widget-title mb-25" style="display:flex; justify-content:center;">
+                            <div class="widget-title mb-25" style="display:flex; justify-content:left;">
                             <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75" 
                                 style="text-align:left;">
                                 Socials
@@ -900,7 +991,7 @@
                             </div>
 
                             <!-- wrapper only for ul -->
-                            <div class="social-link" style="display:flex; align-items:left; justify-content:center; gap:8px;">
+                            <div class="social-link" style="display:flex; align-items:left; justify-content:left; gap:8px;">
                                 <img src="{% static 'images/gemscend/instagram.png' %}" 
                                     alt="Facebook Icon" 
                                     style="width:20px; height:20px;">
@@ -911,7 +1002,7 @@
                                 Instagram
                                 </a>
                             </div>
-                            <div class="social-link" style="display:flex; align-items:left; justify-content:center; gap:8px;">
+                            <div class="social-link" style="display:flex; align-items:left; justify-content:left; gap:8px;">
                                 <img src="{% static 'images/gemscend/facebook.png' %}" 
                                     alt="Facebook Icon" 
                                     style="width:20px; height:20px;">
@@ -923,7 +1014,7 @@
                                 </a>
                             </div>
                             
-                            <div class="social-link" style="display:flex; align-items:left; justify-content:center; gap:8px;">
+                            <div class="social-link" style="display:flex; align-items:left; justify-content:left; gap:8px;">
                                 <img src="{% static 'images/gemscend/X_twitter.png' %}" 
                                     alt="Facebook Icon" 
                                     style="width:20px; height:20px;">
@@ -1001,6 +1092,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script> {% endcomment %}
 
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     // --- Account size buttons functionality ---
@@ -1048,7 +1140,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 
-    // --- Info tooltip system for table icons (arrow on right side) ---
+    // --- Info tooltip system (now shows tooltip on the RIGHT) ---
     const infoIcons = document.querySelectorAll('.info-tooltip');
     infoIcons.forEach(icon => {
         let tooltip;
@@ -1058,7 +1150,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (!text) return;
 
             tooltip = document.createElement('div');
-            tooltip.className = 'floating-tooltip arrow-right'; // 👈 pointer from the right
+            tooltip.className = 'floating-tooltip arrow-left'; // 👈 arrow points left → tooltip on the right
             tooltip.innerText = text;
             document.body.appendChild(tooltip);
 
@@ -1066,12 +1158,13 @@ document.addEventListener('DOMContentLoaded', function() {
             const tooltipWidth = tooltip.offsetWidth;
             const tooltipHeight = tooltip.offsetHeight;
 
-            // Position tooltip to the LEFT of the icon
-            const left = rect.left - tooltipWidth - 12; // 12px gap
+            // Position tooltip to the RIGHT of the icon
+            const left = rect.right + 12; // 12px gap
             const top = rect.top + rect.height / 2 - tooltipHeight / 2;
 
             tooltip.style.left = `${left}px`;
             tooltip.style.top = `${top}px`;
+            tooltip.style.zIndex = '999999'; // always on top
             tooltip.classList.add('visible');
         });
 
@@ -1084,6 +1177,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+
 
 
 <script>
