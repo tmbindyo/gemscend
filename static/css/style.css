@@ -2993,7 +2993,7 @@ Scroll To Top style
   padding: 10px 0;
 }
 .sticky-header .logo img {
-  max-height: 40px;
+  max-height: auto;
 }
 .sticky-header .nav-outer {
   background: none;
