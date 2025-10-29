@@ -4156,7 +4156,7 @@ Section Title
 .refer_and_earn-buttons {
   display: flex;
   gap: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
   flex-wrap: wrap;
   justify-content: center;
 }
