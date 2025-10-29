@@ -17745,55 +17745,33 @@ Section Title
 ***/
 
 .nav-pills .nav-link {
-  position: relative;
   border-radius: 0;
   padding: 15px 20px;
   color: #555;
   font-weight: 600;
-  border: none; /* remove old left border */
+  border-left: 4px solid transparent;
   text-align: left;
   transition: all 0.2s ease-in-out;
 }
 
-/* Add bullet-like dot before each link */
-.nav-pills .nav-link::before {
-  content: "•";
-  color: #ccc; /* default dot color */
-  font-size: 20px;
-  margin-right: 10px;
-  display: inline-block;
-  transition: color 0.2s ease;
-}
-
-/* Hover styles */
 .nav-pills .nav-link:hover {
   background-color: #f8f9fa;
   color: #28a745;
 }
 
-.nav-pills .nav-link:hover::before {
-  color: #28a745;
-}
-
-/* Active state */
 .nav-pills .nav-link.active {
   background-color: #fff;
   color: #28a745;
+  border-left: 4px solid #28a745;
   font-weight: 700;
 }
 
-/* Move the green bar to the right */
-.nav-pills .nav-link.active::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 4px;
-  height: 100%;
-  background-color: #28a745;
-  border-radius: 0 4px 4px 0;
+.tab-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
-
 
 
 /*** 
