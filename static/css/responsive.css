@@ -2,7 +2,13 @@
 
 
 
-
+@media only screen and (min-width: 1700px){
+	.sticky-logo-box {
+		margin-right: 30px;
+		max-width: 250px;
+		height: auto;
+	}
+}
 
 
 @media only screen and (max-width: 1700px){
@@ -24,6 +30,12 @@
 	
 	.main-menu .navigation>li {
 		margin-right: 40px;
+	}
+
+	.sticky-logo-box {
+		margin-right: 30px;
+		max-width: 250px;
+		height: auto;
 	}
 
 	.main-header .header-lower .logo-box {
@@ -85,6 +97,12 @@
 		padding-right: 30px;
 	} */
 
+	.sticky-logo-box {
+		margin-right: 30px;
+		max-width: 150px;
+		height: auto;
+	}
+
 	.main-header .header-lower .logo-box {
 		margin-right: 30px;
 		max-width: 150px;
@@ -122,6 +140,12 @@
 	.header-top{
 		margin-left: 0;
 		padding: 0;
+	}
+
+	.sticky-logo-box {
+		margin-right: 0px;
+		max-width: 150px;
+		height: auto;
 	}
 
 	.main-header .header-lower .logo-box {
@@ -196,6 +220,12 @@
 		display: block;
 	}
 
+	.sticky-logo-box {
+		min-width: auto;
+		margin-right: 0px;
+		max-width: 110px;
+	}
+
 	.main-header .header-lower .logo-box {
 		min-width: auto;
 		margin-right: 0px;
@@ -250,6 +280,12 @@
 		display: none;
 	}
 
+	.sticky-logo-box {
+		min-width: auto;
+		margin-right: 0px;
+		max-width: 140px;
+	}
+
 	.main-header .header-lower .logo-box {
 		min-width: auto;
 		margin-right: 0px;
@@ -279,6 +315,12 @@
 	
 
 	
+	.sticky-logo-box {
+		min-width: auto;
+		margin-right: 0px;
+		max-width: 80px;
+	}
+
 	.main-header .header-lower .logo-box {
 		min-width: auto;
 		margin-right: 0px;
