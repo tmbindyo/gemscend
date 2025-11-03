@@ -4257,6 +4257,7 @@ Section Title
 }
 
 .refer_and_earn-bottom-group {
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -5936,9 +5937,21 @@ Section Title
   border-radius: 2px;       /* optional, smooth edges */
 }
 
+
+
 .about-us {
-  margin: 30px 30px 0;
-  color: #333;
+  animation: pulse-bg 5s ease-in-out infinite;
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  color: #fff;
 }
 
 .about-us .sec-title h2 {

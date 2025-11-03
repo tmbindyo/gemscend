@@ -46,7 +46,7 @@
                 <div class="nav-outer">
                     <div class="logo-box">
                         {% comment %} <div class="logo"><a href="{% url 'template-index' %}"><img src="{% static 'images/gemscend/logo.png' %}" alt="" style="max-width:350px; height:auto;" title="finclix"></a></div> {% endcomment %}
-                        <div class="logo"><a href="{% url 'index' %}"><img src="{% static 'images/gemscend/gemscend_grey_logo.png' %}" alt="" title="gemscend"></a></div>
+                        <div class="logo"><a href="https://app.gemscend.com/"><img src="{% static 'images/gemscend/gemscend_grey_logo.png' %}" alt="" title="gemscend"></a></div>
                     </div>
                     <nav class="nav main-menu">
                         <ul class="navigation">
@@ -97,7 +97,7 @@
             <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
             <nav class="menu-box">
                 <div class="upper-box">
-                    <div class="nav-logo"><a href="{% url 'index' %}"><img src="{% static 'images/gemscend/logo_grey.png' %}" alt=""></a></div>
+                    <div class="nav-logo"><a href="https://app.gemscend.com/"><img src="{% static 'images/gemscend/logo_grey.png' %}" alt=""></a></div>
                     <div class="close-btn"><i class="icon fa fa-times"></i></div>
                 </div>
 
@@ -194,7 +194,7 @@
               <!--Logo-->
                 <div class="sticky-logo-box">
                     <div class="logo">
-                        <a href="{% url 'index' %}"><img src="{% static 'images/gemscend/gemscend_dark_logo.png' %}" alt="img" /></a>
+                        <a href="https://app.gemscend.com/"><img src="{% static 'images/gemscend/gemscend_dark_logo.png' %}" alt="img" /></a>
                     </div>
                 </div>
 
@@ -251,35 +251,36 @@
 
             <!-- Bottom content group -->
             <div class="refer_and_earn-bottom-group">
-            <div class="refer_and_earn-content-left">
-                <h3 style="font-size: 32px;">
-                    By becoming an official <br> Gemscend partner you unlock:
-                </h3>
-                <ul class="refer_and_earn-features">
-                <li>
-                    <div class="icon"><img src="{% static 'images/gemscend/partnership.gif' %}" alt="Affiliate Deals"></div>
-                    Custom Affiliate Deals
-                </li>
-                <li>
-                    <div class="icon"><img src="{% static 'images/gemscend/giveaway.gif' %}" alt="Giveaway Accounts"></div>
-                    Giveaway Accounts
-                </li>
-                <li>
-                    <div class="icon"><img src="{% static 'images/gemscend/exclusive.gif' %}" alt="Merch"></div>
-                    Exclusive Gemscend Merchandise
-                </li>
-                </ul>
+                <div class="refer_and_earn-content-left">
+                    <h3 style="font-size: 32px;">
+                        By becoming an official <br> Gemscend partner you unlock:
+                    </h3>
+                    <ul class="refer_and_earn-features">
+                    <li>
+                        <div class="icon"><img src="{% static 'images/gemscend/partnership.gif' %}" alt="Affiliate Deals"></div>
+                        Custom Affiliate Deals
+                    </li>
+                    <li>
+                        <div class="icon"><img src="{% static 'images/gemscend/giveaway.gif' %}" alt="Giveaway Accounts"></div>
+                        Giveaway Accounts
+                    </li>
+                    <li>
+                        <div class="icon"><img src="{% static 'images/gemscend/exclusive.gif' %}" alt="Merch"></div>
+                        Exclusive Gemscend Merchandise
+                    </li>
+                    </ul>
+                </div>
+
+                <div class="refer_and_earn-video">
+                    <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/example"
+                    title="Affiliate Program Overview"
+                    frameborder="0"
+                    allowfullscreen>
+                    </iframe>
+                </div>
             </div>
 
-            <div class="refer_and_earn-video">
-                <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/example"
-                title="Affiliate Program Overview"
-                frameborder="0"
-                allowfullscreen>
-                </iframe>
-            </div>
-            </div>
         </div>
     </section>
 
@@ -289,12 +290,17 @@
 
 
 
-    <section class="how-it-works-css fix section-padding">
+    <section class="how-it-works-css fix ">
+
+        <div class="refer_and_earn-image"></div>
+        <div class="refer_and_earn-left"></div>
+        {% comment %} <div class="refer_and_earn-right"></div> {% endcomment %}
+
         <div class="auto-container">
             <div class="sec-title text-center">
-            <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                How Our Affiliate Model Works
-            </h2>
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                    How Our Affiliate Model Works
+                </h2>
             {% comment %} <h3 class="wow fadeInUp" data-wow-delay=".3s">
                 Join our <span class="text-gemscend-emerald">Gemscend Affiliate Program</span> today
             </h3> {% endcomment %}
@@ -302,15 +308,15 @@
 
             <!-- Combined Steps Row -->
             <div class="how-it-works-row">
-            <!-- Step 1 -->
-            <div class="step-group">
-                <div class="number-box">1</div>
-                <img src="{% static 'images/gemscend/down.gif' %}" alt="arrow down" class="arrow-down">
-                <div class="step">
-                <h4>Apply</h4>
-                <p>Apply for our Gemscend affiliate program</p>
+                <!-- Step 1 -->
+                <div class="step-group">
+                    <div class="number-box">1</div>
+                    <img src="{% static 'images/gemscend/down.gif' %}" alt="arrow down" class="arrow-down">
+                    <div class="step">
+                    <h4>Apply</h4>
+                    <p>Apply for our Gemscend affiliate program</p>
+                    </div>
                 </div>
-            </div>
 
             <img src="{% static 'images/gemscend/horizontal_image.gif' %}" alt="arrow" class="horizontal-arrow">
 
@@ -369,7 +375,7 @@
 
 
     <!-- Footer Section Start -->
-      <footer class="footer-section-1 fix footer-bg bg-cover" style="background-color: #eef8f0;">
+      <footer class="footer-section-1 fix footer-bg bg-cover" style="background-color: #00150F;">
         <div class="container-fluid"> 
             <div class="row text-center">
                 <div class="footer-widget-wrapper">
@@ -385,31 +391,32 @@
                         </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".4s">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".4s" style="text-align: left;">
                         <div class="footer-widget-items mt-30">
-                        <div class="widget-title mb-25">
-                            <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Postal Address</h3>
-                        </div>
-                        <p class="font-size-15 text-gemscend-emerald font-weight-500">Top Floor, Rodney Court Building, Rodney Bay, Gros Islet, Saint Lucia, LC01 401</p>
+                            <div class="widget-title mb-25">
+                                <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Quick Links</h3>
+                            </div>
+                            <ul class="user-links">
+                                <li><a style="color: white;" href="https://app.gemscend.com/">Select Plans</a></li>
+                                <li><a style="color: white;" href="https://app.gemscend.com/">E-Learning</a></li>
+                                <li><a style="color: white;" href="https://app.gemscend.com/">Our Pricing</a></li>
+                                <li><a style="color: white;" href="{% url 'refer_and_earn' %}">Refer and Earn</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".6s">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".6s" style="text-align: left;">
                         <div class="footer-widget-items mt-30">
                         
                             <div class="widget-title mb-25">
-                                <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Contact Details</h3>
-                                <p class="font-size-15 text-gemscend-emerald font-weight-500">support@gemscend.com</p>
-                            </div>
-                            <div class="widget-title mb-25">
-                                <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Registration Number</h5>
-                                <p class="font-size-15 text-gemscend-emerald font-weight-500">2025-00572</p>
+                                <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Get In Touch</h3>
+                                <p class="font-size-15 text-white font-weight-500">support@gemscend.com</p>
                             </div>
 
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".8s">
                         <div class="footer-widget-items mt-30">
-                            <div class="widget-title mb-25" style="display:flex; justify-content:center;">
+                            <div class="widget-title mb-25" style="display:flex; justify-content:left;">
                             <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75" 
                                 style="text-align:left;">
                                 Socials
@@ -417,41 +424,29 @@
                             </div>
 
                             <!-- wrapper only for ul -->
-                            <div class="social-link" style="display:flex; align-items:left; justify-content:center; gap:8px;">
-                                <img src="{% static 'images/gemscend/instagram.png' %}" 
-                                    alt="Facebook Icon" 
-                                    style="width:20px; height:20px;">
-                                <a href="https://facebook.com/gemscend" 
-                                target="_blank" 
-                                class="text-gemscend-dark-emerald-75"
-                                style="font-weight:500; text-decoration:none;">
-                                Instagram
+                            <div class="social-links-grid">
+                                <a href="https://instagram.com/gemscend" target="_blank" class="social-link">
+                                    <img src="{% static 'images/gemscend/instagram_white.png' %}" alt="Instagram Icon">
+                                </a>
+                                <a href="https://facebook.com/gemscend" target="_blank" class="social-link">
+                                    <img src="{% static 'images/gemscend/facebook_white.png' %}" alt="Facebook Icon">
+                                </a>
+                                <a href="https://twitter.com/gemscend" target="_blank" class="social-link">
+                                    <img src="{% static 'images/gemscend/twitter_white.png' %}" alt="Twitter Icon">
+                                </a>
+                                <a href="https://linkedin.com/company/gemscend" target="_blank" class="social-link">
+                                    <img src="{% static 'images/gemscend/linkedin_white.png' %}" alt="LinkedIn Icon">
+                                </a>
+                                <a href="https://youtube.com/@gemscend" target="_blank" class="social-link">
+                                    <img src="{% static 'images/gemscend/youtube_white.png' %}" alt="YouTube Icon">
+                                </a>
+                                <a href="https://tiktok.com/@gemscend" target="_blank" class="social-link">
+                                    <img src="{% static 'images/gemscend/tiktok_white.png' %}" alt="TikTok Icon">
                                 </a>
                             </div>
-                            <div class="social-link" style="display:flex; align-items:left; justify-content:center; gap:8px;">
-                                <img src="{% static 'images/gemscend/facebook.png' %}" 
-                                    alt="Facebook Icon" 
-                                    style="width:20px; height:20px;">
-                                <a href="https://facebook.com/gemscend" 
-                                target="_blank" 
-                                class="text-gemscend-dark-emerald-75"
-                                style="font-weight:500; text-decoration:none;">
-                                Facebook
-                                </a>
-                            </div>
-                            
-                            <div class="social-link" style="display:flex; align-items:left; justify-content:center; gap:8px;">
-                                <img src="{% static 'images/gemscend/X_twitter.png' %}" 
-                                    alt="Facebook Icon" 
-                                    style="width:20px; height:20px;">
-                                <a href="https://facebook.com/gemscend" 
-                                target="_blank" 
-                                class="text-gemscend-dark-emerald-75"
-                                style="font-weight:500; text-decoration:none;">
-                                Twitter
-                                </a>
-                            </div>
-                            
+
+
+
                         </div>
                     </div>
 

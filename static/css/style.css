@@ -1538,6 +1538,26 @@ Scroll To Top style
   }
 }
 
+.btn-style-refer-and-earn {
+  margin-top: 20px;
+  background-color: var(--bg-theme-color2);
+  border-radius: 20px;
+  color: var(--theme-color1);
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  line-height: 1;
+  overflow: hidden;
+  padding: 24px 60px;
+  position: relative;
+  text-transform: capitalize;
+}
+@media (max-width: 768px) {
+  .outer-box a.theme-btn {
+    display: none;
+  }
+}
+
+
 .btn-style-five {
   margin-top: 200px;
   background-color: var(--bg-theme-color2);
@@ -4237,6 +4257,7 @@ Section Title
 }
 
 .refer_and_earn-bottom-group {
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -5916,9 +5937,21 @@ Section Title
   border-radius: 2px;       /* optional, smooth edges */
 }
 
+
+
 .about-us {
-  margin: 30px 30px 0;
-  color: #333;
+  animation: pulse-bg 5s ease-in-out infinite;
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  color: #fff;
 }
 
 .about-us .sec-title h2 {
