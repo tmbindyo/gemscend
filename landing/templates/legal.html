@@ -581,7 +581,7 @@
     </section>
 
     <!-- Footer Section Start -->
-      <footer class="footer-section-1 fix footer-bg bg-cover" style="background-color: #eef8f0;">
+      <footer class="footer-section-1 fix footer-bg bg-cover" style="background-color: #00150F;">
         <div class="container-fluid"> 
             <div class="row text-center">
                 <div class="footer-widget-wrapper">
@@ -597,31 +597,32 @@
                         </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".4s">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".4s" style="text-align: left;">
                         <div class="footer-widget-items mt-30">
-                        <div class="widget-title mb-25">
-                            <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Postal Address</h3>
-                        </div>
-                        <p class="font-size-15 text-gemscend-emerald font-weight-500">Top Floor, Rodney Court Building, Rodney Bay, Gros Islet, Saint Lucia, LC01 401</p>
+                            <div class="widget-title mb-25">
+                                <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Quick Links</h3>
+                            </div>
+                            <ul class="user-links">
+                                <li><a style="color: white;" href="{% url 'index' %}">Select Plans</a></li>
+                                <li><a style="color: white;" href="{% url 'index' %}">E-Learning</a></li>
+                                <li><a style="color: white;" href="{% url 'index' %}">Our Pricing</a></li>
+                                <li><a style="color: white;" href="{% url 'index' %}">Refer and Earn</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".6s">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".6s" style="text-align: left;">
                         <div class="footer-widget-items mt-30">
                         
                             <div class="widget-title mb-25">
-                                <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Contact Details</h3>
-                                <p class="font-size-15 text-gemscend-emerald font-weight-500">support@gemscend.com</p>
-                            </div>
-                            <div class="widget-title mb-25">
-                                <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Registration Number</h5>
-                                <p class="font-size-15 text-gemscend-emerald font-weight-500">2025-00572</p>
+                                <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Get In Touch</h3>
+                                <p class="font-size-15 text-white font-weight-500">support@gemscend.com</p>
                             </div>
 
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".8s">
                         <div class="footer-widget-items mt-30">
-                            <div class="widget-title mb-25" style="display:flex; justify-content:center;">
+                            <div class="widget-title mb-25" style="display:flex; justify-content:left;">
                             <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75" 
                                 style="text-align:left;">
                                 Socials
@@ -629,32 +630,29 @@
                             </div>
 
                             <!-- wrapper only for ul -->
-                            <div style="display:flex; justify-content:center;">
-                            <ul class="contact-list" 
-                                style="display:flex; flex-direction:column; align-items:flex-start; gap:8px; padding:0; margin:0;">
-                                
-                                <li style="display:flex; align-items:center; gap:8px; list-style:none;">
-                                <i class="fa-brands fa-facebook-f text-gemscend-dark-emerald-75" style="font-size:18px;"></i>
-                                <a href="https://facebook.com" style="font-size:16px; text-decoration:none;" class="text-gemscend-emerald">
-                                    Facebook
+                            <div class="social-links-grid">
+                                <a href="https://instagram.com/gemscend" target="_blank" class="social-link">
+                                    <img src="{% static 'images/gemscend/instagram_white.png' %}" alt="Instagram Icon">
                                 </a>
-                                </li>
-
-                                <li style="display:flex; align-items:center; gap:8px; list-style:none;">
-                                <i class="fa-brands fa-instagram text-gemscend-dark-emerald-75" style="font-size:18px;"></i>
-                                <a href="https://instagram.com" style="font-size:16px; text-decoration:none;" class="text-gemscend-emerald">
-                                    Instagram
+                                <a href="https://facebook.com/gemscend" target="_blank" class="social-link">
+                                    <img src="{% static 'images/gemscend/facebook_white.png' %}" alt="Facebook Icon">
                                 </a>
-                                </li>
-
-                                <li style="display:flex; align-items:center; gap:8px; list-style:none;">
-                                <i class="fa-brands fa-twitter text-gemscend-dark-emerald-75" style="font-size:18px;"></i>
-                                <a href="https://x.com" style="font-size:16px; text-decoration:none;" class="text-gemscend-emerald">
-                                    X
+                                <a href="https://twitter.com/gemscend" target="_blank" class="social-link">
+                                    <img src="{% static 'images/gemscend/twitter_white.png' %}" alt="Twitter Icon">
                                 </a>
-                                </li>
-                            </ul>
+                                <a href="https://linkedin.com/company/gemscend" target="_blank" class="social-link">
+                                    <img src="{% static 'images/gemscend/linkedin_white.png' %}" alt="LinkedIn Icon">
+                                </a>
+                                <a href="https://youtube.com/@gemscend" target="_blank" class="social-link">
+                                    <img src="{% static 'images/gemscend/youtube_white.png' %}" alt="YouTube Icon">
+                                </a>
+                                <a href="https://tiktok.com/@gemscend" target="_blank" class="social-link">
+                                    <img src="{% static 'images/gemscend/tiktok_white.png' %}" alt="TikTok Icon">
+                                </a>
                             </div>
+
+
+
                         </div>
                     </div>
 
