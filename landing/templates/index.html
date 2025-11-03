@@ -347,8 +347,9 @@
                 <!-- LEFT: Video -->
                 <div class="col-lg-6 text-center text-lg-start">
                     <h2 class="fw-bold text-white text-center mb-4">How It Works</h2>
-                    <div class="video-box border border-2 rounded-4 overflow-hidden" style="border-color: #00c96b;">
-                        <iframe src="https://www.youtube.com/embed/edfHZq5lrTA" title="How It Works Video" class="w-100" style="aspect-ratio: 16/9;" allowfullscreen loading="lazy"></iframe>
+                    {% comment %} <div class="video-box border border-2 rounded-4 overflow-hidden" style="border-color: #00c96b;"> {% endcomment %}
+                    <div class="video-box border border-2 border-success rounded-4 overflow-hidden">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="How It Works Video" class="w-100" style="aspect-ratio: 16/9;" allowfullscreen loading="lazy"></iframe>
                     </div>
                 </div>
 
@@ -382,7 +383,7 @@
                         </div>
 
                         <!-- Profit Percentage Section -->
-                        <div class="mb-5">
+                        <div class="mb-1">
                             <div class="slider-container">
                                 <input type="range" class="form-range custom-slider" min="1" max="20" step="1" id="profitRange" value="4">
                                 <div class="slider-tooltip" id="profitTooltip">4%</div>
@@ -397,7 +398,7 @@
                         <!-- Results Section -->
                         <div class="text-center">
                             <p class="text-dark text-gemscend-black mb-1" style="font-size: 30px; ">Trader Take Home</p>
-                            <div class="bg-dark text-white rounded-3 p-1 earnings-box" style="border-radius: 15px !important;">
+                            <div class="bg-dark text-white rounded-3 p-1 earnings-box" style="border-radius: 35px !important;">
                                 <h2 class="mb-0 fw-bold text-white" id="monthlyEarnings">$2,000<span class="fs-5"></span></h2>
                             </div>
                         </div>
