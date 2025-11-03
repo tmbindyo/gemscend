@@ -74,7 +74,7 @@ License: copyright commercial
 
   --gemscend-grey: #ADB1D95C;
   --gemscend-mint: #EEF8F1;
-  --gemscend-black: ##231F20;
+  --gemscend-black: #231F20;
   --gemscend-white: #fff;
   --gemscend-dark-emerald-25: #349351;
   --gemscend-dark-emerald-75: #2B8448;
@@ -140,8 +140,16 @@ License: copyright commercial
 }
 
 
+.gemscend-heading-text {
+  font-weight: 700; /* or bold */
+  color: var(--gemscend-emerald);
+  font-size: 22px;
+}
+
 .gemscend-bold-text {
   font-weight: 700; /* or bold */
+  color: var(--gemscend-black);
+  font-size: 18px;
 }
 
 .btn-emerald {
@@ -816,6 +824,32 @@ li {
   background-color: var(--theme-color3) !important;
 }
 
+body.faq-page, 
+body.faq-page html {
+  margin: 0;
+  padding: 0;
+  background: none;
+  height: 100%;
+}
+
+
+body.faq-page .page-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0C342C, #1A6944, #1E6B3F, #08251F);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
+  margin: 0;
+  padding: 0;
+}
+
+/* Optional: subtle animated gradient */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
 .page-wrapper {
   position: relative;
   margin: 0 auto;
@@ -1030,6 +1064,39 @@ Scroll To Top style
   background: var(--gemscend-dark-emerald-75);
   color: #000;
 }
+
+
+
+
+
+
+
+.email-floating-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  height: 93px;
+  overflow: visible;
+  cursor: pointer;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.email-floating-btn img {
+  width: 93px;
+  height: 93px;
+  transition: width 0.35s ease-in-out, transform 0.35s ease-in-out;
+  transform-origin: right center; /* ensures it expands left */
+}
+
+.email-floating-btn:hover img {
+  content: url(../images/gemscend/on_click_1.png);
+  width: 282px; /* expand width smoothly */
+  transform: translateX(-5px); /* optional subtle motion */
+}
+
 
 .tabs-box {
   position: relative;
@@ -2743,6 +2810,14 @@ Scroll To Top style
   .header-style-one.header-7 .main-box .outer-box .btn-style-one {
     display: none;
   }
+}
+
+.flag-icon {
+  width: 24px;              /* adjust size as needed */
+  height: 24px;
+  border-radius: 50%;       /* makes it circular */
+  object-fit: cover;        /* ensures it fills the circle */
+  vertical-align: middle;   /* keeps it aligned with text */
 }
 
 .main-menu {
@@ -5856,9 +5931,9 @@ Section Title
 }
 .about-us .sec-title h4 {
   text-align: left;
-  font-size: 1.25rem;
-  font-weight: 500;
-  color: #555; /* subtle gray for secondary heading */
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--gemscend-emerald); /* subtle gray for secondary heading */
   margin-bottom: 5px;
   letter-spacing: 0.5px;
   position: relative;
@@ -5869,14 +5944,14 @@ Section Title
   font-size: 1rem;
   line-height: 1.8;
   margin-bottom: 15px;
-  color: #444;
+  color: #fff;
 }
 
 .about-us h4 {
-  font-size: 1.2rem;
+  font-size: 50px;
   font-weight: 700;
   margin-top: 25px;
-  color: #1a1a1a;
+  color: #1d7738;
 }
 
 .about-us .who-we-serve {
@@ -5885,7 +5960,7 @@ Section Title
 
 .about-us .who-we-serve h3 {
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 50px;
   margin-bottom: 30px;
 }
 
@@ -7589,7 +7664,6 @@ Section Title
 
 
 
-
 .dual-showcase-section {
   background: linear-gradient(to bottom, 
     #000000 0%,     /* starts white */
@@ -7602,87 +7676,125 @@ Section Title
   padding: 120px 0;
 }
 
+.responsive-heading {
+  font-size: clamp(22px, 4vw, 36px);
+  white-space: nowrap;
+}
+
 .dual-showcase-section .video-box iframe {
   border-radius: 16px;
 }
 
 .slider-container {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.slider-progress {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 12px; /* MUST match the height above */
+    background: var(--gemscend-emerald);
+    border-radius: 10px 0 0 10px;
+    pointer-events: none;
+    z-index: 1;
+    transform: translateY(-50%);
+    width: 0%;
 }
 
 /* Custom slider styling */
 .custom-slider {
-  width: 100%;
-  height: 8px;
-  -webkit-appearance: none;
-  appearance: none;
-  background: #e0e0e0;
-  border-radius: 10px;
-  outline: none;
-  margin: 20px 0;
+    width: 100%;
+    height: 100%; /* Take full height of container */
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    outline: none;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.slider-container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 12px; /* Match your desired slider height */
+    background: #e0e0e0;
+    border-radius: 10px;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.custom-slider::-webkit-slider-track {
+    width: 100%;
+    height: 100%; /* Full height */
+    background: transparent;
+    border: none;
+    border-radius: 10px;
 }
 
 .slider-tooltip {
-  position: absolute;
-  top: -33px;
-  background: var(--gemscend-emerald);
-  color: white;
-  padding: 6px 12px;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 14px;
-  transform: translateX(-50%);
-  white-space: nowrap;
-  pointer-events: none;
-  transition: left 0.1s ease;
+    position: absolute;
+    top: -38px;
+    background: var(--gemscend-emerald);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    pointer-events: none;
+    transition: left 0.1s ease;
+    z-index: 3;
 }
 
 .slider-tooltip::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 6px solid transparent;
-  border-top-color: var(--gemscend-emerald);
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: var(--gemscend-emerald);
 }
 
 .custom-slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 24px;
-  height: 24px;
-  background: var(--gemscend-emerald);
-  border-radius: 50%;
-  cursor: pointer;
-  border: 3px solid white;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  position: relative;
+    -webkit-appearance: none;
+    width: 28px;
+    height: 28px;
+    background: var(--gemscend-emerald);
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
-.custom-slider::-webkit-slider-thumb::after {
-  content: attr(data-value);
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--gemscend-emerald);
-  color: white;
-  padding: 4px 8px;
-  border-radius: 6px;
-  font-size: 12px;
-  font-weight: bold;
+.custom-slider::-moz-range-track {
+    width: 100%;
+    height: 100%; /* Full height */
+    background: transparent;
+    border: none;
+    border-radius: 10px;
 }
+
 
 .custom-slider::-moz-range-thumb {
-  width: 24px;
-  height: 24px;
-  background: var(--gemscend-emerald);
-  border-radius: 50%;
-  cursor: pointer;
-  border: none;
+    width: 28px;
+    height: 28px;
+    background: var(--gemscend-emerald);
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .slider-labels {
@@ -7693,7 +7805,7 @@ Section Title
 /* Account option buttons */
 .account-option {
   border: 2px solid var(--gemscend-emerald);
-  color: var(--gemscend-emerald);
+  color: var(--gemscend-black);
   border-radius: 25px;
   padding: 10px 25px;
   font-weight: 600;
@@ -14252,7 +14364,7 @@ Section Title
 
 .gemscend-pricing-section .gemscend-pricing-circle {
   position: absolute;
-  right: 30px;
+  right: 80px;
   top: 50px;
   z-index: -1;
 }
@@ -14299,20 +14411,47 @@ Section Title
 
 .gemscend-price-header-btn {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  flex-direction: row; /* default: all others are in one line */
-  background: #41A95C;
+  background: var(--gemscend-emerald);
   color: #fff;
-  font-weight: 700;
-  font-size: 22px;
   padding: 10px 25px;
   border-radius: 20px !important;
   border: 2px solid #EEF8F1;
   width: 90%;
   height: 90%;
+  font-weight: 700;
+  font-size: 22px;
+  text-decoration: none;
+  position: relative;
   text-align: center;
   transition: all 0.3s ease;
+}
+
+/* .gemscend-price-header-btn {
+  
+  
+  flex-direction: row;
+  background: #41A95C;
+
+  
+} */
+
+.popular-label {
+  position: absolute;
+  top: -10%; /* adjust how far above the button it sits */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffcc00;
+  color: #000;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  white-space: nowrap;
 }
 
 /* only this one stacks vertically */
@@ -14380,7 +14519,7 @@ Section Title
 .gemscend-pricing-table tbody td {
   padding: 16px;
   border: 0.5px solid var(--gemscend-dark-emerald-75); /* use emerald borders */
-  font-size: 15px;
+  font-size: 25px;
   font-weight: 500;
   color: #444;
 }
@@ -14400,6 +14539,7 @@ Section Title
   border-radius: 6px;
   font-weight: 600;
 }
+
 
 /* Make pricing table scrollable on smaller screens */
 .table-responsive {
@@ -18387,6 +18527,89 @@ faqs-background {
 
 
 
+.faq-search-wrapper {
+  display: flex;
+  justify-content: flex-end; /* Align to match tab-content width */
+}
+
+.faq-search-bar {
+  display: flex;
+  align-items: center;
+  width: 75%; /* Matches the width of the tab-content column (col-xl-9 / col-lg-8) */
+  max-width: 1100px;
+}
+
+.faq-search-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px;
+  font-size: 16px;
+  outline: none;
+}
+
+.faq-search-btn {
+  background-color: var(--gemscend-emerald);
+  color: white;
+  border: 1px solid var(--gemscend-emerald);
+  border-radius: 0 8px 8px 0;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-search-btn:hover {
+  background-color: var(--gemscend-dark-emerald-75);
+}
+
+@media (max-width: 992px) {
+  .faq-search-wrapper {
+    justify-content: center; /* center it under nav on tablets */
+  }
+  .faq-search-bar {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .faq-search-bar {
+    flex-direction: column; /* stack input and button */
+    align-items: stretch;
+  }
+  .faq-search-input {
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  .faq-search-btn {
+    border-radius: 8px;
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+
+
+
+
+.social-links-grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: left;
+  align-items: center;
+  column-gap: 30px; /* reduce horizontal spacing */
+  row-gap: 30px;   /* keep vertical spacing */
+}
+
+.social-link img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-link:hover img {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
 
 
 
@@ -18480,9 +18703,9 @@ faqs-background {
 }
 
 .journey-card .icon {
-  width: 60px;
-  height: 60px;
-  background: rgba(255, 255, 255, 0.08);
+  width: 120px;
+  height: 120px;
+  background: rgba(0, 0, 0, 0);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18491,8 +18714,8 @@ faqs-background {
 }
 
 .journey-card .icon img {
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
 }
 
 .journey-card h4 {
@@ -23298,6 +23521,11 @@ Sidebar
 
 .white-section {
   background: #fff;
+  height: 30px; /* adjust height as needed */
+}
+
+.black-section {
+  background: #00150F;
   height: 30px; /* adjust height as needed */
 }
 

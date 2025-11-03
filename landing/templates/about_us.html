@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 {% load static %}
-<html lang="en">
+<html lang="en" data-tm-layout="dark">
 <head>
 <meta charset="utf-8">
 <title>Gemscend - About Us </title>
@@ -9,6 +9,7 @@
 <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 <link href="{% static 'css/style.css' %}" rel="stylesheet">
 <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+<link href="{% static 'css/style-dark.css' %}" rel="stylesheet">
 
 <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
 <link rel="icon" href="images/favicon.svg" type="image/x-icon">
@@ -16,27 +17,18 @@
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-.flag-icon {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-right: 6px;
-  vertical-align: middle;
-}
-</style>
 </head>
 
 <body>
 
 <div class="page-wrapper">
 
-    <!-- Scroll To Top -->
-    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
 
-    <!-- Main Header-->
-    <header class="main-header header-style-one header-5">
+	<!-- Scroll To Top -->
+	<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+	<!-- Main Header-->
+	<header class="main-header header-style-one header-5">
         <!-- Header Lower -->
         <div class="header-lower header-lower5 show-header-section">
             <!-- Main box -->
@@ -185,67 +177,17 @@
         </div>
         <!-- End Header Search -->
 
-        <!-- Sticky Header  -->
-        <div class="sticky-header">
-          <div class="auto-container">
-            <div class="inner-container">
-              <!--Logo-->
-              <div class="sticky-logo-box">
-                <div class="logo">
-                    <a href="{% url 'index' %}"><img src="{% static 'images/gemscend/gemscend_dark_logo.png' %}" alt="img" /></a>
-                </div>
-            </div>
-
-              <!--Right Col-->
-              <div class="nav-outer">
-                <!-- Main Menu -->
-                <nav class="main-menu">
-                  <div class="navbar-collapse show collapse clearfix">
-                    <ul class="navigation clearfix">
-                      <!--Keep This Empty / Menu will come through Javascript-->
-                    </ul>
-                  </div>
-                </nav>
-                <!-- Main Menu End-->
-
-                <!--Mobile Navigation Toggler-->
-                <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- End Sticky Menu -->
-        
     </header>
-    <!--End Main Header -->
+	<!--End Main Header -->
 
-
-    
-
-    <!-- Featured Section Start -->
-    <section class="feature-section pt-120 pb-10 fix">
-
-        <div class="auto-container">
-                <div class="sec-title text-center">
-                    <h2 class="sub-title wow fadeInUp text-gemscend-dark-emerald-75">
-                        The Gemscend story.
-                    </h2>
-
-                </div>
-        </div>
-    </section>
-    <div class="green-line"></div>
-
-
-
-
-
-
-    <!-- About Us Section -->
-    <section class="about-us pt-20 pb-90 fix">
+	<!--Hero Section -->
+	<section class="about-us pt-150 pb-90 fix">
+        <div class="gemscend-glow-left"></div>
+        <div class="gemscend-glow-right"></div>
+        
         <div class="auto-container">
 
-            <h4 class="sub-title wow fadeInUp text-gemscend-dark-emerald-75">
+            <h4 class="sub-title wow fadeInUp">
                 WELCOME TO GEMSCEND
             </h4>
 
@@ -255,15 +197,15 @@
 
                 <p>So what did I do? I overtraded, I over-risked, I stressed out trying to make ends meet. Spoiler alert: that didn’t work out too well.</p>
 
-                <p>Then, I discovered something game-changing: prop trading. Imagine this, <strong class="text-gemscend-dark-emerald-75">you pay as little as $35, pass a trading challenge, and suddenly you’re handling a $3,000 account.</strong> My mind was blown. I thought: what if more traders knew about this? What if we could make the process easier, fun, and stress-free?</p>
+                <p>Then, I discovered something game-changing: prop trading. Imagine this, you pay as little as $35, pass a trading challenge, and suddenly you’re handling a $3,000 account. My mind was blown. I thought: what if more traders knew about this? What if we could make the process easier, fun, and stress-free?</p>
 
-                <p>That’s when my partners and I built Gemscend. A place where traders don’t just trade, they grow. Here, you train, prove your skills, and unlock access to trading accounts as large as <strong class="text-gemscend-dark-emerald-75">$1,000,000.</strong> No more tiny accounts, no more sleepless nights over blown balances, just pure trading growth.</p>
+                <p>That’s when my partners and I built Gemscend. A place where traders don’t just trade, they grow. Here, you train, prove your skills, and unlock access to trading accounts as large as <strong style="font-weight: 800; color: #fff">$1,000,000.</strong> No more tiny accounts, no more sleepless nights over blown balances, just pure trading growth.</p>
 
-                <h4><strong>Welcome to Gemscend. Your trading career, but levelled up.</strong></h4>
+                <p style="font-weight: 800; color: #fff">Welcome to Gemscend. Your trading career, but levelled up.</p>
             </div>
 
             <div class="who-we-serve mt-5">
-                <h3 class="text-gemscend-dark-emerald-75 mb-4">Who We Serve</h3>
+                <h3 class="text-gemscend-dark-emerald-75 mb-9">Who We Serve</h3>
                 <div class="row justify-content-center gy-4">
                     <div class="col-md-4 col-sm-6">
                         <div class="serve-card">
@@ -293,15 +235,8 @@
 
 
 
-
-
-
-
-    <section class="white-section">
-    </section>
-
-    <!-- Footer Section Start -->
-      <footer class="footer-section-1 fix footer-bg bg-cover" style="background-color: #eef8f0;">
+	<!-- Footer Section Start -->
+	<footer class="footer-section-1 fix">
         <div class="container-fluid"> 
             <div class="row text-center">
                 <div class="footer-widget-wrapper">
@@ -317,31 +252,32 @@
                         </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".4s">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".4s" style="text-align: left;">
                         <div class="footer-widget-items mt-30">
-                        <div class="widget-title mb-25">
-                            <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Postal Address</h3>
-                        </div>
-                        <p class="font-size-15 text-gemscend-emerald font-weight-500">Top Floor, Rodney Court Building, Rodney Bay, Gros Islet, Saint Lucia, LC01 401</p>
+                            <div class="widget-title mb-25">
+                                <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Quick Links</h3>
+                            </div>
+                            <ul class="user-links">
+                                <li><a style="color: white;" href="{% url 'index' %}">Select Plans</a></li>
+                                <li><a style="color: white;" href="{% url 'index' %}">E-Learning</a></li>
+                                <li><a style="color: white;" href="{% url 'index' %}">Our Pricing</a></li>
+                                <li><a style="color: white;" href="{% url 'index' %}">Refer and Earn</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".6s">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".6s" style="text-align: left;">
                         <div class="footer-widget-items mt-30">
                         
                             <div class="widget-title mb-25">
-                                <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Contact Details</h3>
-                                <p class="font-size-15 text-gemscend-emerald font-weight-500">support@gemscend.com</p>
-                            </div>
-                            <div class="widget-title mb-25">
-                                <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Registration Number</h5>
-                                <p class="font-size-15 text-gemscend-emerald font-weight-500">2025-00572</p>
+                                <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Get In Touch</h3>
+                                <p class="font-size-15 text-white font-weight-500">support@gemscend.com</p>
                             </div>
 
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".8s">
                         <div class="footer-widget-items mt-30">
-                            <div class="widget-title mb-25" style="display:flex; justify-content:center;">
+                            <div class="widget-title mb-25" style="display:flex; justify-content:left;">
                             <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75" 
                                 style="text-align:left;">
                                 Socials
@@ -349,30 +285,29 @@
                             </div>
 
                             <!-- wrapper only for ul -->
-                            <div style="display:flex; justify-content:center;">
-                                <ul class="contact-list" style="display:flex; flex-direction:column; align-items:flex-start; gap:8px; padding:0; margin:0;">
-                                    <li style="display:flex; align-items:center; gap:4px; padding:0; margin:0;">
-                                        <i class="fa-brands fa-facebook-f text-gemscend-dark-emerald-75" style="font-size:30px;"></i>
-                                        <a href="https://facebook.com" style="font-size:16px; text-decoration:none;" class="text-gemscend-emerald">
-                                            Facebook
-                                        </a>
-                                    </li>
-
-                                    <li style="display:flex; align-items:center; gap:4px; padding:0; margin:0;">
-                                        <i class="fa-brands fa-instagram text-gemscend-dark-emerald-75" style="font-size:30px;"></i>
-                                        <a href="https://instagram.com" style="font-size:16px; text-decoration:none;" class="text-gemscend-emerald">
-                                            Instagram
-                                        </a>
-                                    </li>
-
-                                    <li style="display:flex; align-items:center; gap:4px; padding:0; margin:0;">
-                                        <i class="fa-brands fa-twitter text-gemscend-dark-emerald-75" style="font-size:30px;"></i>
-                                        <a href="https://x.com" style="font-size:16px; text-decoration:none;" class="text-gemscend-emerald">
-                                            X
-                                        </a>
-                                    </li>
-                                </ul>
+                            <div class="social-links-grid">
+                                <a href="https://instagram.com/gemscend" target="_blank" class="social-link">
+                                    <img src="{% static 'images/gemscend/instagram_white.png' %}" alt="Instagram Icon">
+                                </a>
+                                <a href="https://facebook.com/gemscend" target="_blank" class="social-link">
+                                    <img src="{% static 'images/gemscend/facebook_white.png' %}" alt="Facebook Icon">
+                                </a>
+                                <a href="https://twitter.com/gemscend" target="_blank" class="social-link">
+                                    <img src="{% static 'images/gemscend/twitter_white.png' %}" alt="Twitter Icon">
+                                </a>
+                                <a href="https://linkedin.com/company/gemscend" target="_blank" class="social-link">
+                                    <img src="{% static 'images/gemscend/linkedin_white.png' %}" alt="LinkedIn Icon">
+                                </a>
+                                <a href="https://youtube.com/@gemscend" target="_blank" class="social-link">
+                                    <img src="{% static 'images/gemscend/youtube_white.png' %}" alt="YouTube Icon">
+                                </a>
+                                <a href="https://tiktok.com/@gemscend" target="_blank" class="social-link">
+                                    <img src="{% static 'images/gemscend/tiktok_white.png' %}" alt="TikTok Icon">
+                                </a>
                             </div>
+
+
+
                         </div>
                     </div>
 
@@ -398,6 +333,8 @@
 
         </div>
       </footer>
+
+	
 
 </div><!-- End Page Wrapper -->
 
