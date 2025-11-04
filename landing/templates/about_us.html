@@ -36,7 +36,7 @@
                 <!--Nav Box-->
                 <div class="nav-outer">
                     <div class="logo-box">
-                        <div class="logo"><a href="https://app.gemscend.com/"><img src="{% static 'images/gemscend/gemscend_dark_logo.png' %}" alt="" title="gemscend"></a></div>
+                        <div class="logo"><a href="{% url 'index' %}"><img src="{% static 'images/gemscend/gemscend_dark_logo.png' %}" alt="" title="gemscend"></a></div>
                     </div>
                     <nav class="nav main-menu">
                         <ul class="navigation">
@@ -258,9 +258,9 @@
                                 <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Quick Links</h3>
                             </div>
                             <ul class="user-links">
-                                <li><a style="color: white;" href="https://app.gemscend.com/">Select Plans</a></li>
+                                <li><a style="color: white;" href="{% url 'index' %}#pricing">Select Plans</a></li>
                                 <li><a style="color: white;" href="https://app.gemscend.com/">E-Learning</a></li>
-                                <li><a style="color: white;" href="https://app.gemscend.com/">Our Pricing</a></li>
+                                <li><a style="color: white;" href="{% url 'index' %}#how-it-works">How it Works</a></li>
                                 <li><a style="color: white;" href="{% url 'refer_and_earn' %}">Refer and Earn</a></li>
                             </ul>
                         </div>
