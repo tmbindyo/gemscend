@@ -10,8 +10,8 @@
 <link href="{% static 'css/style.css' %}" rel="stylesheet">
 <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
 
-<link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
-<link rel="icon" href="images/favicon.svg" type="image/x-icon">
+<link rel="shortcut icon" href="{% static 'images/gemscend/gemsend_favicon.png' %}" type="image/x-icon">
+<link rel="icon" href="{% static 'images/gemscend/gemsend_favicon.png' %}" type="image/x-icon">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -59,14 +59,14 @@
                                     EN
                                     <span class="chevron">▼</span>
                                 </a>
-                                <ul>
+                                {% comment %} <ul>
                                     <li>
                                     <a href="#"><img src="https://flagcdn.com/fr.svg" class="flag-icon"> FR</a>
                                     </li>
                                     <li>
                                     <a href="#"><img src="https://flagcdn.com/de.svg" class="flag-icon"> DE</a>
                                     </li>
-                                </ul>
+                                </ul> {% endcomment %}
                             </li>
 
 

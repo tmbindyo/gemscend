@@ -1499,12 +1499,14 @@ Scroll To Top style
 }
 
 
+
+
 .gemscend-get-started {
   margin-top: 2px;
   margin-bottom: 20px;
-  background-color: #fff;
+  background-color: #fff; /* Emerald green background */
   border-radius: 20px;
-  color: var(--gemscend-dark-emerald-25);
+  color: var(--gemscend-dark-emerald-25); /* White text for better contrast */
   font-family: var(--heading-font-family);
   font-weight: 700;
   line-height: 1;
@@ -1512,10 +1514,64 @@ Scroll To Top style
   padding: 24px 60px;
   position: relative;
   text-transform: capitalize;
+  border: none; /* Remove any default border */
+  transition: all 0.3s ease;
+  display: inline-block; /* Ensure proper button behavior */
+  text-decoration: none; /* Remove underline from link */
 }
+
+/* Hover effects */
+.gemscend-get-started:hover {
+  background-color: #2c7c44; /* Darker green on hover */
+  transform: translateY(-2px);
+  color: #fff; /* Maintain white text on hover */
+  text-decoration: none; /* Ensure no underline on hover */
+}
+
+/* ✨ Shimmer animation layer */
+.gemscend-get-started::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(52, 147, 81, 0) 0%,           /* --gemscend-dark-emerald-25 transparent */
+    rgba(65, 169, 92, 0.6) 50%,        /* --gemscend-emerald with opacity */
+    rgba(52, 147, 81, 0) 100%          /* --gemscend-dark-emerald-25 transparent */
+  );
+  transform: skewX(-20deg);
+  animation: shimmer 2.5s infinite;
+  z-index: 1;
+}
+
+/* Ensure text stays above shimmer */
+.gemscend-get-started span {
+  position: relative;
+  z-index: 2;
+}
+
+/* ✨ Keyframes for shimmer movement */
+@keyframes shimmer {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
 @media (max-width: 768px) {
   .outer-box a.theme-btn {
     display: none;
+  }
+  
+  /* Optional: Adjust button size for mobile */
+  .gemscend-get-started {
+    padding: 20px 40px;
+    font-size: 14px;
   }
 }
 
@@ -7735,9 +7791,11 @@ Section Title
     position: absolute;
     top: 50%;
     left: 0;
-    height: 12px; /* MUST match the height above */
+    /* ➡️ ADJUSTED: Match the height of ::before */
+    height: 28px; 
     background: var(--gemscend-emerald);
-    border-radius: 10px 0 0 10px;
+    /* ➡️ ADJUSTED: Ensure full roundness */
+    border-radius: 14px 0 0 14px; 
     pointer-events: none;
     z-index: 1;
     transform: translateY(-50%);
@@ -7763,9 +7821,10 @@ Section Title
     top: 50%;
     left: 0;
     width: 100%;
-    height: 12px; /* Match your desired slider height */
+    /* ➡️ ADJUSTED: Make the track thick */
+    height: 28px; 
     background: #e0e0e0;
-    border-radius: 10px;
+    border-radius: 14px; /* Half of the height for rounded ends */
     transform: translateY(-50%);
     z-index: 0;
 }
@@ -7806,13 +7865,15 @@ Section Title
 
 .custom-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
-    width: 28px;
-    height: 28px;
+    width: 38px; /* Slightly wider than the track height */
+    height: 38px;
     background: var(--gemscend-emerald);
     border-radius: 50%;
     cursor: pointer;
-    border: 3px solid white;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    /* ➡️ ADJUSTED: Add a clean white ring */
+    border: 5px solid white; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    margin-top: -5px; /* Adjust to center vertically, (Thumb Height - Track Height) / 2 */
 }
 
 .custom-slider::-moz-range-track {
@@ -7825,13 +7886,13 @@ Section Title
 
 
 .custom-slider::-moz-range-thumb {
-    width: 28px;
-    height: 28px;
+    width: 38px;
+    height: 38px;
     background: var(--gemscend-emerald);
     border-radius: 50%;
     cursor: pointer;
-    border: 3px solid white;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    border: 5px solid white; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .slider-labels {
@@ -7878,6 +7939,119 @@ Section Title
     padding: 8px 15px;
     font-size: 14px;
   }
+}
+
+
+/* Base calculator container and elements */
+.calculator-container {
+    border-radius: 20px !important;
+    padding: 30px !important; 
+    border: 1px solid #ddd;
+}
+
+/* Headings and regular text */
+.text-success {
+    color: var(--gemscend-emerald) !important; /* Ensure the green numbers use the bright green */
+}
+
+/* --- Slider Styling --- */
+
+/* Background for the entire track (used in the HTML via .slider-container::before) */
+.slider-container::before {
+    height: 12px;
+    background: #e0e0e0; /* Light gray background track */
+    border-radius: 10px;
+}
+
+/* Filled progress bar (The dark green fill on the left of the thumb) */
+.slider-progress {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 12px;
+    background: var(--gemscend-emerald); /* Bright green progress color */
+    border-radius: 10px 0 0 10px;
+    pointer-events: none;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+/* The thumb/handle */
+.custom-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 28px;
+    height: 28px;
+    background: var(--gemscend-emerald); /* Bright green thumb */
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+}
+.custom-slider::-moz-range-thumb {
+    width: 28px;
+    height: 28px;
+    background: var(--gemscend-emerald); /* Bright green thumb */
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+}
+
+/* Hiding the original tooltip */
+.slider-tooltip {
+    display: none; 
+}
+
+/* The labels below the Account Size slider */
+.slider-labels-image span {
+    color: var(--gemscend-emerald); /* Dark text for the labels */
+    font-size: 1rem;
+}
+
+/* --- Results Section Styling --- */
+
+/* Styling for the $25,000 box */
+.earnings-box-image {
+    background-color: var(--gemscend-mint); /* Light green background */
+    border-radius: 10px;
+}
+
+/* Styling for the Fee button */
+.fee-button-image {
+    background-color: var(--gemscend-emerald) !important;
+    border: none;
+    color: white !important;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    line-height: 1; 
+    display: block; 
+    width: 100%; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+}
+
+.custom-bottom-height {
+    /* Define padding that controls the height of both the button and the box */
+    padding: 1.5rem 1rem !important; /* Increase top/bottom padding */
+    display: flex; /* Use flexbox to vertically center content inside the earnings box */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.fee-button-image {
+    font-size: 1.8rem; /* Make button text slightly larger to better fill the height */
+    line-height: 1; /* Adjust line height to prevent extra spacing */
+    padding-top: 0.75rem !important; /* Override py-3 slightly for fine-tuning */
+    padding-bottom: 0.75rem !important;
+}
+/* Ensure the big numbers are the right size and color */
+#accountValue, #profitValue {
+    font-size: 2.5rem;
+}
+#monthlyEarnings {
+    font-size: 2.5rem;
+    color: var(--gemscend-emerald) !important;
+    margin: 0 !important; /* Critical: Remove all default h2 vertical margin */
 }
 
 /*** 
