@@ -14801,6 +14801,7 @@ Section Title
 .gemscend-pricing-table th {
   padding: 0;
   vertical-align: top;
+  border: 1px solid #e9ecef; /* Add this line */
 }
 
 .price-header {
@@ -14896,6 +14897,11 @@ Section Title
   box-shadow: 0 4px 12px rgba(255,255,255,0.3);
 }
 
+
+.gemscend-pricing-table thead td {
+  border: 1px solid #e9ecef;
+  color: #444;
+}
 
 .gemscend-pricing-table tbody td {
   padding: 18px 16px; /* Slightly reduced padding */
@@ -19227,7 +19233,7 @@ faqs-background {
 .social-links-grid {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   column-gap: 30px; /* reduce horizontal spacing */
   row-gap: 30px;   /* keep vertical spacing */
