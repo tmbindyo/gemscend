@@ -4038,6 +4038,23 @@ Section Title
   animation: gemscend-float-right 8s ease-in-out infinite;
 }
 
+@media (max-width: 768px) {
+  .gemscend-glow-left,
+  .gemscend-glow-right {
+    opacity: 0.3; /* Reduce visibility */
+  }
+}
+
+@media (max-width: 768px) {
+  .gemscend-glow-left {
+    left: -50px !important; /* Move further left */
+  }
+  
+  .gemscend-glow-right {
+    right: -50px !important; /* Move further right */
+  }
+}
+
 .gemscend-banner-outer {
   position: relative;
   z-index: 3;
@@ -7965,7 +7982,7 @@ Section Title
   );
   color: #fff;
   position: relative;
-  padding: 120px 0;
+  padding: 0px 0;
 }
 
 .responsive-heading {
@@ -8240,8 +8257,8 @@ Section Title
 .fee-button-image {
     font-size: 1.8rem; /* Make button text slightly larger to better fill the height */
     line-height: 1; /* Adjust line height to prevent extra spacing */
-    padding-top: 0.75rem !important; /* Override py-3 slightly for fine-tuning */
-    padding-bottom: 0.75rem !important;
+    padding-top: 2rem !important; /* Override py-3 slightly for fine-tuning */
+    padding-bottom: 2rem !important;
 }
 /* Ensure the big numbers are the right size and color */
 #accountValue, #profitValue {
@@ -14838,7 +14855,7 @@ Section Title
   font-weight: 600;
   font-size: 16px;
   border-radius: 0 0 8px 8px;
-  padding: 20px 0 16px 0;
+  padding: 10px 0px 5px 0;
   width: 100%;
   text-align: center;
   z-index: 1;

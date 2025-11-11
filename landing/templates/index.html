@@ -379,30 +379,13 @@
             <!-- Headings Row -->
             <div class="row mb-4">
                 <div class="col-lg-6">
-                    <h2 class="fw-bold text-white text-center mb-4">How <span class="text-gemscend-dark-emerald-75">Gemscend</span> Works?</h2>
+                    <h2 class="text-white text-center mb-8">How <span class="text-gemscend-dark-emerald-75">Gemscend</span> Works?</h2>
+                    <div class="video-box rounded-4 overflow-hidden flex-grow-1 d-flex align-items-start">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="How It Works Video" class="w-100 border border-2 border-success rounded-4" style="aspect-ratio: 16/9;" allowfullscreen loading="lazy"></iframe>
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <h2 class="fw-bold text-white text-center mb-4"><span class="text-gemscend-dark-emerald-75">How Much</span> Can You Make?</h2>
-                </div>
-            </div>
-
-            <!-- Content Row -->
-            <!-- Content Row - UPDATED -->
-            <div class="row align-items-start g-5">  <!-- Changed from align-items-center to align-items-start -->
-                <!-- LEFT: Video -->
-                <div class="col-lg-6 text-center text-lg-start d-flex flex-column">
-                    <div class="video-box rounded-4 overflow-hidden flex-grow-1 d-flex align-items-start">
-                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-                                title="How It Works Video" 
-                                class="w-100 border border-2 border-success rounded-4" 
-                                style="aspect-ratio: 16/9;" 
-                                allowfullscreen 
-                                loading="lazy"></iframe>
-                    </div>
-                </div>
-
-                <!-- RIGHT: Calculator -->
-                <div class="col-lg-6 d-flex flex-column">
                     <div class="bg-white rounded-4 shadow p-5 flex-grow-1 calculator-container">
                         <div class="mb-5">
                             <div class="d-flex justify-content-between align-items-baseline mb-3">
@@ -450,6 +433,20 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <!-- Content Row -->
+            <!-- Content Row - UPDATED -->
+            <div class="row align-items-start g-5">  <!-- Changed from align-items-center to align-items-start -->
+                <!-- LEFT: Video -->
+                <div class="col-lg-6 text-center text-lg-start d-flex flex-column">
+                    
+                </div>
+
+                <!-- RIGHT: Calculator -->
+                <div class="col-lg-6 d-flex flex-column">
+                    
                 </div>
                 {% comment %} <div class="col-lg-6 d-flex flex-column">
                     <div class="bg-white rounded-4 shadow p-5 flex-grow-1" style="border-radius: 20px !important;">
@@ -1185,7 +1182,7 @@
                         <div class="footer-widget-items mt-30">
                         <div class="widget-title mb-25">
                             <a href="{% url 'index' %}" class="footer-logo">
-                            <img src="{% static 'images/gemscend/logo.png' %}" alt="img" />
+                            <img style="padding-left: 20px;" src="{% static 'images/gemscend/gemscend_grey_logo.png' %}" alt="img" />
                             </a>
                         </div>
                         </div>
