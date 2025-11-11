@@ -80,6 +80,7 @@ License: copyright commercial
   --gemscend-dark-emerald-75: #2B8448;
   --gemscend-emerald: #41A95C;
   --gemscend-dark-grey: #A9AAAE;
+  --gemscend-dark-green: #00150F;
   
 
   --bg-theme-color1: var(--theme-color1);
@@ -7974,12 +7975,7 @@ Section Title
 
 
 .dual-showcase-section {
-  background: linear-gradient(to bottom, 
-    #000000 0%,     /* starts white */
-    #333 55%,    /* keeps white for half the section */
-    #fff 75%,    /* starts getting darker near the bottom */
-    #ffffff 100%    /* ends fully black */
-  );
+  background: var(--gemscend-dark-green);
   color: #fff;
   position: relative;
   padding: 0px 0;
@@ -11915,7 +11911,7 @@ Section Title
 
 ***/
 .marquee {
-  background-color: #000;
+  background-color: var(--gemscend-dark-green);
   padding-top: 30px;
   padding-bottom: 30px;
   position: relative;
@@ -14779,12 +14775,7 @@ Section Title
 
 
 .gemscend-pricing-section {
-  background: linear-gradient(to bottom, 
-    #ffffff 0%,
-    #fff 55%,
-    #333 75%,
-    #000000 100%
-  );
+  background: var(--gemscend-dark-green);
   position: relative;
   z-index: 9;
 }
@@ -18810,7 +18801,7 @@ faqs-background {
 
 ***/
 .top-earner-custom-bg {
-  background-color: #000; /* your color */
+  background-color: var(--gemscend-dark-green); /* your color */
 }
 .top-earner-heading {
   color: #fff;

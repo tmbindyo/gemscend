@@ -7975,12 +7975,7 @@ Section Title
 
 
 .dual-showcase-section {
-  background: linear-gradient(to bottom, 
-    #000000 0%,     /* starts white */
-    #333 55%,    /* keeps white for half the section */
-    #fff 75%,    /* starts getting darker near the bottom */
-    #ffffff 100%    /* ends fully black */
-  );
+  background: var(--gemscend-dark-green);
   color: #fff;
   position: relative;
   padding: 0px 0;
