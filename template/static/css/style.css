@@ -2514,7 +2514,7 @@ Scroll To Top style
   align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: right;
   width: 100%;
 }
 .header-style-one .main-box .outer-box {
@@ -3114,6 +3114,27 @@ Scroll To Top style
   top: 8px;
   width: 34px;
   z-index: 5;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between navigation and buttons */
+}
+
+.navigation {
+    display: flex;
+    align-items: right;
+    gap: 15px; /* Space between menu items */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between buttons */
 }
 
 .sticky-header {
@@ -3985,7 +4006,7 @@ Section Title
   width: 100%;
   height: 100%;
   background-image: url(../images/gemscend/gemscend_header_transparent_slice_2.png);
-  background-position: center -100px;
+  background-position: center -100px !important;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
@@ -18860,6 +18881,14 @@ faqs-background {
   /* color: #fff; */
 }
 
+.journey-auto-container {
+  position: static;
+  max-width: var(--container-width);
+  padding: 0px 95px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 .journey-layout {
   display: flex;
   justify-content: space-between;
@@ -18893,6 +18922,8 @@ faqs-background {
 }
 
 .journey-grid {
+  padding-left: clamp(20px, 5vw, 100px);
+  padding-right: clamp(20px, 5vw, 100px);
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* force 3 per row */
   gap: 35px;
@@ -24166,6 +24197,7 @@ Sidebar
 .footer-section-1 {
   position: relative;
   z-index: 9;
+  background-image: url(../images/gemscend/footer_image.png);
   
 }
 .footer-section-1 .circle-shape {

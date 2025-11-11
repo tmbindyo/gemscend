@@ -67,7 +67,6 @@
                                 <a href="#">
                                     <img src="https://flagcdn.com/gb.svg" alt="English" class="flag-icon">
                                     EN
-                                    <span class="chevron">▼</span>
                                 </a>
                                 {% comment %} <ul>
                                     <li>
@@ -79,11 +78,38 @@
                                 </ul> {% endcomment %}
                             </li>
 
+                            <div class="nav-buttons">
+                                <a href="https://gemscenddashboard.propaccount.com/en/sign-in" class="theme-btn btn-style-login btn-outline">
+                                    Log-In
+                                </a>
+                                <a href="https://gemscenddashboard.propaccount.com/en/sign-up" class="theme-btn btn-style-register btn-solid">
+                                    Register Now
+                                </a>
+                            </div>
+
+                            {% comment %} <li class="nav-buttons">
+                                <a href="https://gemscenddashboard.propaccount.com/en/sign-in" class="theme-btn btn-style-login btn-outline">
+                                    Log-In
+                                </a>
+                            </li>
+                            <li class="nav-buttons">
+                                <a href="https://gemscenddashboard.propaccount.com/en/sign-up" class="theme-btn btn-style-register btn-solid">
+                                    Register Now
+                                </a>
+                            </li> {% endcomment %}
+
+                            {% comment %} <a href="https://gemscenddashboard.propaccount.com/en/sign-in" class="theme-btn btn-style-login btn-outline">
+                                Log-In
+                            </a>
+                            <a href="https://gemscenddashboard.propaccount.com/en/sign-up" class="theme-btn btn-style-register btn-solid">
+                                Register Now
+                            </a> {% endcomment %}
+
 
                         </ul>
                     </nav>
                     <!-- Main Menu End-->
-                    <div class="outer-box">
+                    {% comment %} <div class="outer-box">
                         <a href="https://gemscenddashboard.propaccount.com/en/sign-in" class="theme-btn btn-style-login btn-outline">
                             Log-In
                         </a>
@@ -92,7 +118,7 @@
                         </a>
                         <!-- Mobile Nav toggler -->
                         <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
-                    </div>
+                    </div> {% endcomment %}
                 </div>
             </div>
         </div>
@@ -286,7 +312,7 @@
                                 <p>No Time Limits</p>
                             </div>
                             <div class="glass-item">
-                                <img src="{% static 'gifs/income.gif' %}" alt="Million">
+                                <img src="{% static 'gifs/splits.gif' %}" alt="Million">
                                 <p>80% Profit Split</p>
                             </div>
                         </div>
@@ -866,7 +892,7 @@
 
     <!-- Top earners Section Start -->
     <section class="top-earner-secton section-padding fix top-earner-custom-bg" >
-        <div class="auto-container">
+        <div class="journey-auto-container">
             <div class="sec-title text-center">
                 <h2 class="sub-title wow fadeInUp">
                     Some Of Our Top Earners
@@ -969,7 +995,7 @@
 
     <!-- Journey Section Start -->
     <section class="journey-section fix">
-        <div class="auto-container">
+        <div class="journey-auto-container">
             <div class="journey-layout">
             
             <!-- Left Column -->
@@ -981,48 +1007,48 @@
             <div class="journey-right">
                 <div class="journey-grid">
                 
-                <div class="journey-card wow fadeInUp" data-wow-delay=".1s">
-                    <div class="icon"><img src="{% static 'images/gemscend/first_payout_1.png' %}" alt="Payout Icon"></div>
-                    <h4>First Payout on Demand</h4>
-                    <p>Your first withdrawal can be requested at any time, subject to an 80/20 profit split.</p>
-                </div>
+                    <div class="journey-card wow fadeInUp" data-wow-delay=".1s">
+                        <div class="icon"><img src="{% static 'images/gemscend/first_payout_1.png' %}" alt="Payout Icon"></div>
+                        <h4>First Payout on Demand</h4>
+                        <p>Your first withdrawal can be requested at any time, subject to an 80/20 profit split.</p>
+                    </div>
 
-                <div class="journey-card wow fadeInUp" data-wow-delay=".2s">
-                    <div class="icon"><img src="{% static 'images/gemscend/no_time_limits.png' %}" alt="No Time Limits Icon"></div>
-                    <h4>No Time Limits</h4>
-                    <p>Trade freely without any minimum trading day requirements or restrictions.</p>
-                </div>
+                    <div class="journey-card wow fadeInUp" data-wow-delay=".2s">
+                        <div class="icon"><img src="{% static 'images/gemscend/no_time_limits.png' %}" alt="No Time Limits Icon"></div>
+                        <h4>No Time Limits</h4>
+                        <p>Trade freely without any minimum trading day requirements or restrictions.</p>
+                    </div>
 
-                <div class="journey-card wow fadeInUp" data-wow-delay=".3s">
-                    <div class="icon"><img src="{% static 'images/gemscend/no_minimum_trading_days.png' %}" alt="Trading Days Icon"></div>
-                    <h4>No Minimum Trading Days</h4>
-                    <p>Trade at your own pace. No deadlines, no pressure.</p>
-                </div>
+                    <div class="journey-card wow fadeInUp" data-wow-delay=".3s">
+                        <div class="icon"><img src="{% static 'images/gemscend/no_minimum_trading_days.png' %}" alt="Trading Days Icon"></div>
+                        <h4>No Minimum Trading Days</h4>
+                        <p>Trade at your own pace. No deadlines, no pressure.</p>
+                    </div>
 
-                <div class="journey-card wow fadeInUp" data-wow-delay=".4s">
-                    <div class="icon"><img src="{% static 'images/gemscend/maximum_of.png' %}" alt="Funding Icon"></div>
-                    <h4>Maximum of $1 Million</h4>
-                    <p>A maximum of $1 million in active evaluation or funded plans per person is permitted.</p>
-                </div>
+                    <div class="journey-card wow fadeInUp" data-wow-delay=".4s">
+                        <div class="icon"><img src="{% static 'images/gemscend/maximum_of.png' %}" alt="Funding Icon"></div>
+                        <h4>Maximum of $1 Million</h4>
+                        <p>A maximum of $1 million in active evaluation or funded plans per person is permitted.</p>
+                    </div>
 
-                <div class="journey-card wow fadeInUp" data-wow-delay=".5s">
-                    <div class="icon"><img src="{% static 'images/gemscend/weekend_position_holding.png' %}" alt="Weekend Icon"></div>
-                    <h4>Weekend Position Holding</h4>
-                    <p>Hold positions over the weekend with complete flexibility.</p>
-                </div>
+                    <div class="journey-card wow fadeInUp" data-wow-delay=".5s">
+                        <div class="icon"><img src="{% static 'images/gemscend/weekend_position_holding.png' %}" alt="Weekend Icon"></div>
+                        <h4>Weekend Position Holding</h4>
+                        <p>Hold positions over the weekend with complete flexibility.</p>
+                    </div>
 
-                <div class="journey-card wow fadeInUp" data-wow-delay=".6s">
-                    <div class="icon"><img src="{% static 'images/gemscend/full_transparency.png' %}" alt="Transparency Icon"></div>
-                    <h4>Full Transparency</h4>
-                    <p>Benefit from clear trading rules, transparent profit sharing, and absolutely no hidden restrictions.</p>
-                </div>
+                    <div class="journey-card wow fadeInUp" data-wow-delay=".6s">
+                        <div class="icon"><img src="{% static 'images/gemscend/splits.png' %}" alt="Transparency Icon"></div>
+                        <h4>80% Profit Split</h4>
+                        <p>Keep the majority of your trading profits while while trading with Gemscend capital.</p>
+                    </div>
 
                 </div>
             </div>
 
             </div>
         </div>
-        </section>
+    </section>
 
 
 
