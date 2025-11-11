@@ -14855,11 +14855,13 @@ Section Title
   font-weight: 600;
   font-size: 16px;
   border-radius: 0 0 8px 8px;
-  padding: 20px 0 16px 0;
-  width: 100%;
+  padding: 10px 0px 5px 0;
+  width: auto; /* Change from 100% to auto */
+  min-width: 140px; /* Match button width including padding */
   text-align: center;
   z-index: 1;
   box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+  margin: 0 auto; /* Center it */
 }
 
 .price-header.popular .price-fee {

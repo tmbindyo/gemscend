@@ -80,6 +80,7 @@ License: copyright commercial
   --gemscend-dark-emerald-75: #2B8448;
   --gemscend-emerald: #41A95C;
   --gemscend-dark-grey: #A9AAAE;
+  --gemscend-dark-green: #00150F;
   
 
   --bg-theme-color1: var(--theme-color1);
@@ -11915,7 +11916,7 @@ Section Title
 
 ***/
 .marquee {
-  background-color: #000;
+  background-color: var(--gemscend-dark-green);
   padding-top: 30px;
   padding-bottom: 30px;
   position: relative;
@@ -14779,12 +14780,7 @@ Section Title
 
 
 .gemscend-pricing-section {
-  background: linear-gradient(to bottom, 
-    #ffffff 0%,
-    #fff 55%,
-    #333 75%,
-    #000000 100%
-  );
+  background: var(--gemscend-dark-green);
   position: relative;
   z-index: 9;
 }
@@ -14856,10 +14852,12 @@ Section Title
   font-size: 16px;
   border-radius: 0 0 8px 8px;
   padding: 10px 0px 5px 0;
-  width: 100%;
+  width: auto; /* Change from 100% to auto */
+  min-width: 140px; /* Match button width including padding */
   text-align: center;
   z-index: 1;
   box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+  margin: 0 auto; /* Center it */
 }
 
 .price-header.popular .price-fee {
@@ -18808,7 +18806,7 @@ faqs-background {
 
 ***/
 .top-earner-custom-bg {
-  background-color: #000; /* your color */
+  background-color: var(--gemscend-dark-green); /* your color */
 }
 .top-earner-heading {
   color: #fff;
