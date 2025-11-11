@@ -1009,7 +1009,7 @@
 
     <!-- Top earners Section Start -->
     <section class="top-earner-secton section-padding fix top-earner-custom-bg" >
-        <div class="journey-auto-container">
+        <div class="top-earner-auto-container">
             <div class="sec-title text-center">
                 <h2 class="sub-title wow fadeInUp">
                     Some Of Our Top Earners
@@ -1021,9 +1021,9 @@
             <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
               <div class="top-earner-box-items">
                 <div class="top-earner-content">
-                    <h3 class="text-gemscend-dark-emerald-75 text-center" style="font-weight: 900">2 Payouts Totalling</h3>
-                    <h3 class="text-center" style="font-weight: 900; font-size: 60px;">$25,000</h3>
-                    <p class="text-gemscend-dark-emerald-75" style="font-weight: 500; font-size: 20px; display: flex; align-items: center; justify-content: center; gap: 8px; text-align: center;">
+                    <h3 class="text-gemscend-dark-emerald-75 text-center top-earner-content-h3-heading">2 Payouts Totalling</h3>
+                    <h3 class="text-center top-earner-content-h3-amount">$25,000</h3>
+                    <p class="text-gemscend-dark-emerald-75 top-earner-content-h3-name">
                         Daniel Mbai.
                         <img src="https://flagcdn.com/ke.svg" 
                             alt="English" 
@@ -1040,9 +1040,9 @@
             <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
               <div class="top-earner-box-items">
                 <div class="top-earner-content">
-                    <h3 class="text-gemscend-dark-emerald-75 text-center" style="font-weight: 900">2 Payouts Totalling</h3>
-                    <h3 class="text-center" style="font-weight: 900; font-size: 60px;">$4,500</h3>
-                    <p class="text-gemscend-dark-emerald-75" style="font-weight: 500; font-size: 20px; display: flex; align-items: center; justify-content: center; gap: 8px; text-align: center;">
+                    <h3 class="text-gemscend-dark-emerald-75 text-center top-earner-content-h3-heading" >2 Payouts Totalling</h3>
+                    <h3 class="text-center top-earner-content-h3-amount">$4,500</h3>
+                    <p class="text-gemscend-dark-emerald-75 top-earner-content-h3-name">
                         Saanvi Shah.
                         <img src="https://flagcdn.com/in.svg" 
                             alt="English" 
@@ -1059,9 +1059,9 @@
             <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
               <div class="top-earner-box-items">
                 <div class="top-earner-content">
-                    <h3 class="text-gemscend-dark-emerald-75 text-center" style="font-weight: 900">2 Payouts Totalling</h3>
-                    <h3 class="text-center" style="font-weight: 900; font-size: 60px;">$8,500</h3>
-                    <p class="text-gemscend-dark-emerald-75" style="font-weight: 500; font-size: 20px; display: flex; align-items: center; justify-content: center; gap: 8px; text-align: center;">
+                    <h3 class="text-gemscend-dark-emerald-75 text-center top-earner-content-h3-heading" >2 Payouts Totalling</h3>
+                    <h3 class="text-center top-earner-content-h3-amount">$8,500</h3>
+                    <p class="text-gemscend-dark-emerald-75 top-earner-content-h3-name">
                         Imogen Smith.
                         <img src="https://flagcdn.com/gb.svg" 
                             alt="English" 
@@ -1078,9 +1078,9 @@
             <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
               <div class="top-earner-box-items">
                 <div class="top-earner-content">
-                    <h3 class="text-gemscend-dark-emerald-75 text-center" style="font-weight: 900">2 Payouts Totalling</h3>
-                    <h3 class="text-center" style="font-weight: 900; font-size: 60px;">$12,000</h3>
-                    <p class="text-gemscend-dark-emerald-75" style="font-weight: 500; font-size: 20px; display: flex; align-items: center; justify-content: center; gap: 8px; text-align: center;">
+                    <h3 class="text-gemscend-dark-emerald-75 text-center top-earner-content-h3-heading" >2 Payouts Totalling</h3>
+                    <h3 class="text-center top-earner-content-h3-amount">$12,000</h3>
+                    <p class="text-gemscend-dark-emerald-75 top-earner-content-h3-name">
                         Emily Winslet.
                         <img src="https://flagcdn.com/us.svg" 
                             alt="English" 
@@ -1321,6 +1321,94 @@ document.addEventListener('DOMContentLoaded', function() {
     marqueeGroup.parentNode.replaceChild(newContainer, marqueeGroup);
 });
 </script> {% endcomment %}
+
+
+<!-- priciing table highlight -->
+<!-- pricing table highlight -->
+<!-- pricing table highlight -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const table = document.querySelector('.gemscend-pricing-table');
+        if (!table) return;
+        
+        // Use CSS classes instead of inline styles for better control
+        const style = document.createElement('style');
+        style.textContent = `
+            .gemscend-pricing-table td.highlighted {
+                background-color: rgba(65, 169, 92, 0.05) !important;
+            }
+            .gemscend-pricing-table th.highlighted {
+                background-color: rgba(65, 169, 92, 0.1) !important;
+            }
+            .gemscend-pricing-table td, .gemscend-pricing-table th {
+                transition: background-color 0.2s ease;
+            }
+        `;
+        document.head.appendChild(style);
+        
+        // Function to highlight column
+        function highlightColumn(columnIndex) {
+            if (columnIndex === 0) return; // Skip first column
+            
+            // Highlight all cells in the column
+            const allCells = table.querySelectorAll('td, th');
+            allCells.forEach(cell => {
+                if (cell.cellIndex === columnIndex) {
+                    cell.classList.add('highlighted');
+                }
+            });
+        }
+        
+        // Function to reset column
+        function resetColumn(columnIndex) {
+            if (columnIndex === 0) return;
+            
+            // Reset all cells in the column
+            const allCells = table.querySelectorAll('td, th');
+            allCells.forEach(cell => {
+                if (cell.cellIndex === columnIndex) {
+                    cell.classList.remove('highlighted');
+                }
+            });
+        }
+        
+        // Use event delegation on the entire table
+        table.addEventListener('mouseover', function(e) {
+            let target = e.target;
+            
+            // Find the closest td or th
+            while (target && target !== table) {
+                if (target.tagName === 'TD' || target.tagName === 'TH') {
+                    const columnIndex = target.cellIndex;
+                    if (columnIndex > 0) {
+                        highlightColumn(columnIndex);
+                    }
+                    break;
+                }
+                target = target.parentElement;
+            }
+        });
+        
+        table.addEventListener('mouseout', function(e) {
+            let target = e.target;
+            
+            // Find the closest td or th
+            while (target && target !== table) {
+                if (target.tagName === 'TD' || target.tagName === 'TH') {
+                    const columnIndex = target.cellIndex;
+                    if (columnIndex > 0) {
+                        setTimeout(() => {
+                            resetColumn(columnIndex);
+                        }, 50);
+                    }
+                    break;
+                }
+                target = target.parentElement;
+            }
+        });
+    });
+</script>
+
 
 
 <script>

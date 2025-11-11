@@ -14780,11 +14780,17 @@ Section Title
   z-index: 9;
 }
 
+.gemscend-pricing-auto-container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 /* Table Styling */
 .gemscend-pricing-table {
   width: 100%;
+  max-width: calc(100% - 40px); /* 20px spacing on each side */
   border-collapse: collapse;
-  margin-top: 40px;
+  margin: 40px auto 0 auto; /* Center with auto margins */
   background: #fff;
   border-radius: 12px;
   overflow: hidden;
@@ -14802,7 +14808,7 @@ Section Title
   flex-direction: column;
   align-items: center;
   background: #fff;
-  padding: 20px 15px 0;
+  padding: 5px 5px 0;
   border-radius: 12px;
   position: relative;
   overflow: visible;
@@ -15000,24 +15006,92 @@ Section Title
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+/* Responsive adjustments */
+@media (max-width: 1099px) {
   .price-header {
-    padding: 20px 10px;
+    padding: 20px 8px;
   }
   
   .price-amount {
-    font-size: 20px;
+    font-size: 18px;
   }
   
   .gemscend-price-btn {
-    padding: 10px 20px;
-    font-size: 13px;
-    min-width: 100px;
+    padding: 10px 16px; /* Reduced horizontal padding */
+    font-size: 12px; /* Smaller font size */
+    min-width: 100px; /* Ensure minimum width */
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+
+  .price-fee {
+    min-width: 100px; /* Match the button's min-width */
+    font-size: 11px; /* Smaller font for mobile */
+    padding: 8px 16px 4px 16px; /* Match button's horizontal padding */
+    top: -12px; /* Adjust overlap for smaller button */
   }
   
   .gemscend-pricing-table tbody td {
-    padding: 15px 12px;
-    font-size: 14px;
+    padding: 15px 10px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .price-header {
+    padding: 20px 8px;
+  }
+  
+  .price-amount {
+    font-size: 18px;
+  }
+  
+  .gemscend-price-btn {
+    padding: 10px 16px; /* Reduced horizontal padding */
+    font-size: 12px; /* Smaller font size */
+    min-width: 100px; /* Ensure minimum width */
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+
+  .price-fee {
+    min-width: 100px; /* Match the button's min-width */
+    font-size: 11px; /* Smaller font for mobile */
+    padding: 8px 16px 4px 16px; /* Match button's horizontal padding */
+    top: -12px; /* Adjust overlap for smaller button */
+  }
+  
+  .gemscend-pricing-table tbody td {
+    padding: 15px 10px;
+    font-size: 13px;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .price-header {
+    padding: 15px 5px;
+  }
+  
+  .price-amount {
+    font-size: 16px;
+  }
+  
+  .gemscend-price-btn {
+    padding: 8px 12px; /* Even smaller padding */
+    font-size: 11px; /* Smaller font */
+    min-width: 90px; /* Slightly smaller min-width */
+    white-space: nowrap;
+  }
+
+  .price-fee {
+    min-width: 90px;
+    font-size: 10px;
+    padding: 7px 12px 3px 12px;
+    top: -10px;
+  }
+  
+  .gemscend-pricing-table tbody td {
+    padding: 12px 8px;
+    font-size: 12px;
   }
 }
 
@@ -18803,9 +18877,33 @@ faqs-background {
 .top-earner-custom-bg {
   background-color: var(--gemscend-dark-green); /* your color */
 }
+.top-earner-auto-container {
+  position: static;
+  max-width: var(--container-width);
+  padding: 0px 95px;
+  margin: 0 auto;
+  width: 100%;
+}
 .top-earner-heading {
   color: #fff;
 }
+.top-earner-content-h3-heading {
+  font-weight: 900;
+}
+.top-earner-content-h3-amount {
+  font-weight: 900!important;
+  font-size: 60px!important;
+}
+.top-earner-content-h3-name {
+  font-weight: 500; 
+  font-size: 20px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 8px; 
+  text-align: center;
+}
+
 .top-earner-box-items {
   display: flex;                  /* enable flexbox */
   align-items: center;            /* vertically align image + text */
@@ -18863,15 +18961,7 @@ faqs-background {
 }
 
 @media (max-width: 768px) {
-  .top-earner-box-items {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .top-earner-box-items .top-earner-image,
-  .top-earner-box-items .top-earner-content {
-    max-width: 100%;
-  }
+  
 }
 .top-earner-box-items .top-earner-content .comments-list {
   display: -webkit-inline-box;
@@ -18920,6 +19010,91 @@ faqs-background {
 @media (max-width: 1199.98px) {
   .top-earner-box-items .top-earner-content h3 {
     font-size: 20px;
+  }
+  .top-earner-content-h3-heading {
+    font-weight: 900;
+  }
+  .top-earner-content-h3-amount {
+    font-weight: 800!important;
+    font-size: 30px!important;
+  }
+  .top-earner-content-h3-name {
+    font-weight: 500; 
+    font-size: 15px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 8px; 
+    text-align: center;
+  }
+
+}
+@media (max-width: 768px) {
+  .top-earner-box-items .top-earner-content h3 {
+    font-size: 25px;
+  }
+
+  .top-earner-content-h3-heading {
+    font-weight: 900;
+  }
+  .top-earner-content-h3-amount {
+    font-weight: 800!important;
+    font-size: 40px!important;
+  }
+  .top-earner-content-h3-name {
+    font-weight: 500; 
+    font-size: 20px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 8px; 
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .top-earner-box-items .top-earner-content h3 {
+    font-size: 15px;
+  }
+
+  .top-earner-content-h3-heading {
+    font-weight: 900;
+  }
+  .top-earner-content-h3-amount {
+    font-weight: 800!important;
+    font-size: 30px!important;
+  }
+  .top-earner-content-h3-name {
+    font-weight: 500; 
+    font-size: 15px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 8px; 
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .top-earner-box-items .top-earner-content h3 {
+    font-size: 15px;
+  }
+
+  .top-earner-content-h3-heading {
+    font-weight: 900;
+  }
+  .top-earner-content-h3-amount {
+    font-weight: 800!important;
+    font-size: 20px!important;
+  }
+  .top-earner-content-h3-name {
+    font-weight: 500; 
+    font-size: 10px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 8px; 
+    text-align: center;
   }
 }
 .top-earner-box-items .top-earner-content h3 a {
@@ -18972,6 +19147,10 @@ faqs-background {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
 }
+
+
+
+
 
 
 
