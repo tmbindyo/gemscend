@@ -19277,25 +19277,22 @@ faqs-background {
 
 .journey-section {
   padding: 100px 0;
-  background: linear-gradient(180deg, #000, #002a1c);
+  background: var(--gemscend-dark-green);
   /* color: #fff; */
 }
 
 .journey-auto-container {
   max-width: 100%; /* Remove container constraints */
-  padding: 0; /* Remove side padding */
+  padding: 0px 200px; /* Remove side padding */
   margin: 0;
   width: 100%;
 }
 
 .journey-layout {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 40px; /* smaller gap to tighten layout */
-  max-width: 100%; /* increased total width */
-  margin: 0 auto;
-  padding: 0 20px; /* moves closer to edges */
+  display: block; /* Change from flex to simple block */
+  max-width: 100%;
+  margin: 0;
+  padding: 0; /* Remove padding */
 }
 
 /* Left side */
@@ -19324,8 +19321,11 @@ faqs-background {
   padding-left: clamp(20px, 5vw, 100px);
   padding-right: clamp(20px, 5vw, 100px);
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* force 3 per row */
+  grid-template-columns: repeat(3, 1fr);
   gap: 35px;
+  width: 100%; /* Ensure full width */
+  max-width: 100%; /* Remove any max-width constraints */
+  margin: 0 auto; /* Center the grid but keep full width content */
 }
 
 /* Cards */
