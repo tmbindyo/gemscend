@@ -18880,7 +18880,7 @@ faqs-background {
 .top-earner-auto-container {
   position: static;
   max-width: var(--container-width);
-  padding: 0px 95px;
+  padding: 0px 200px;
   margin: 0 auto;
   width: 100%;
 }
@@ -18889,6 +18889,7 @@ faqs-background {
 }
 .top-earner-content-h3-heading {
   font-weight: 900;
+  font-size: 40px;
 }
 .top-earner-content-h3-amount {
   font-weight: 900!important;
@@ -19013,6 +19014,7 @@ faqs-background {
   }
   .top-earner-content-h3-heading {
     font-weight: 900;
+    font-size: 40px;
   }
   .top-earner-content-h3-amount {
     font-weight: 800!important;
@@ -19036,6 +19038,7 @@ faqs-background {
 
   .top-earner-content-h3-heading {
     font-weight: 900;
+    font-size: 20px;
   }
   .top-earner-content-h3-amount {
     font-weight: 800!important;
@@ -19059,6 +19062,7 @@ faqs-background {
 
   .top-earner-content-h3-heading {
     font-weight: 900;
+    font-size: 40px;
   }
   .top-earner-content-h3-amount {
     font-weight: 800!important;
@@ -19278,10 +19282,9 @@ faqs-background {
 }
 
 .journey-auto-container {
-  position: static;
-  max-width: var(--container-width);
-  padding: 0px 95px;
-  margin: 0 auto;
+  max-width: 100%; /* Remove container constraints */
+  padding: 0; /* Remove side padding */
+  margin: 0;
   width: 100%;
 }
 
@@ -19290,7 +19293,7 @@ faqs-background {
   justify-content: space-between;
   align-items: flex-start;
   gap: 40px; /* smaller gap to tighten layout */
-  max-width: 1400px; /* increased total width */
+  max-width: 100%; /* increased total width */
   margin: 0 auto;
   padding: 0 20px; /* moves closer to edges */
 }
@@ -19327,7 +19330,7 @@ faqs-background {
 
 /* Cards */
 .journey-card {
-  background: rgba(0, 0, 0, 0);
+  background: var(--gemscend-dark-green);
   border-radius: 20px;
   padding: 30px 25px;
   text-align: left;
