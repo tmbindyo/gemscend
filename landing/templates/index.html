@@ -497,10 +497,7 @@
 
 
     <!-- Pricing Section Start -->
-    <section class="gemscend-pricing-section fix section-padding" id="pricing">
-        {% comment %} <div class="gemscend-pricing-circle animation__rotateAndScale">
-            <img src="{% static 'images/home-1/pricing-circle.png' %}" alt="img">
-        </div> {% endcomment %}
+    {% comment %} <section class="gemscend-pricing-section fix section-padding" id="pricing">
         <div class="auto-container">
             <div class="sec-title text-center">
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
@@ -619,6 +616,129 @@
                                     <td><a href="https://dashboard.gemscend.com/challenges?planid=123" class="gemscend-price-btn popular">Select Plan</a></td>
                                     <td><a href="https://dashboard.gemscend.com/challenges?planid=124" class="gemscend-price-btn">Select Plan</a></td>
                                     <td><a href="https://dashboard.gemscend.com/challenges?planid=125" class="gemscend-price-btn">Select Plan</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> {% endcomment %}
+
+
+
+
+    <!-- Pricing Section Start -->
+    <section class="gemscend-pricing-section fix section-padding" id="pricing">
+        <div class="auto-container">
+            <div class="sec-title text-center">
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                    Our Pricing
+                </h2>
+                <h3 class="wow fadeInUp" data-wow-delay=".3s">
+                    <span class="text-gemscend-emerald">Great Price Plans</span> Tailored To Your Trading Needs
+                </h3>
+            </div>
+
+            <div class="row">
+                <div class="gemscend-pricing-wrapper">
+                    <div class="table-responsive">
+                        <table class="gemscend-pricing-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>
+                                        <div class="price-header">
+                                            <div class="price-amount">$3,000</div>
+                                            <a href="https://dashboard.gemscend.com/challenges?planid=121" class="gemscend-price-btn">Select Plan</a>
+                                            <div class="price-fee">Fee: $35</div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="price-header">
+                                            <div class="price-amount">$5,000</div>
+                                            <a href="https://dashboard.gemscend.com/challenges?planid=122" class="gemscend-price-btn">Select Plan</a>
+                                            <div class="price-fee">Fee: $50</div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="price-header">
+                                            <div class="price-amount">$10,000</div>
+                                            <a href="https://dashboard.gemscend.com/challenges?planid=123" class="gemscend-price-btn">Select Plan</a>
+                                            <div class="price-fee">Fee: $100</div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="price-header">
+                                            <div class="price-amount">$20,000</div>
+                                            <a href="https://dashboard.gemscend.com/challenges?planid=124" class="gemscend-price-btn">Select Plan</a>
+                                            <div class="price-fee">Fee: $200</div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div class="price-header">
+                                            <div class="price-amount">$100,000</div>
+                                            <a href="https://dashboard.gemscend.com/challenges?planid=125" class="gemscend-price-btn">Select Plan</a>
+                                            <div class="price-fee">Fee: $660</div>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span class="info-tooltip" data-tooltip="The trader should achieve an 8% profit in Phase 1 to advance to Phase 2.">i</span>
+                                        Phase 1 Profit Target
+                                    </td>
+                                    <td>8%</td>
+                                    <td>8%</td>
+                                    <td>8%</td>
+                                    <td>8%</td>
+                                    <td>8%</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="info-tooltip" data-tooltip="The trader should achieve a 5% profit in Phase 2 to complete the challenge and receive a funded account.">i</span>
+                                        Phase 2 Profit Target
+                                    </td>
+                                    <td>5%</td>
+                                    <td>5%</td>
+                                    <td>5%</td>
+                                    <td>5%</td>
+                                    <td>5%</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="info-tooltip" data-tooltip="An equity-based restriction that ensures a trader cannot lose more than a fixed amount in a single trading day, calculated from the prior day's closing balance, and exceeding it results in a hard breach.">i</span>
+                                        Daily Loss Limit 5%
+                                    </td>
+                                    <td>$150</td>
+                                    <td>$250</td>
+                                    <td>$500</td>
+                                    <td>$1,000</td>
+                                    <td>$5,000</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="info-tooltip" data-tooltip="Profit split: 80%">i</span>
+                                        Profit Split
+                                    </td>
+                                    <td>80%</td>
+                                    <td>80%</td>
+                                    <td>80%</td>
+                                    <td>80%</td>
+                                    <td>80%</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="info-tooltip" data-tooltip="The trader should not lose more than the fixed maximum overall loss from the allocated capital.">i</span>
+                                        Maximum Drawdown
+                                    </td>
+                                    <td>8%</td>
+                                    <td>8%</td>
+                                    <td>8%</td>
+                                    <td>8%</td>
+                                    <td>8%</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1215,78 +1335,119 @@ document.addEventListener('DOMContentLoaded', function() {
         const accountRange = document.getElementById('accountRange');
         const accountTooltip = document.getElementById('accountTooltip');
         
-        accountOptions.forEach(option => {
-            option.addEventListener('click', function() {
-                accountOptions.forEach(btn => btn.classList.remove('active'));
-                this.classList.add('active');
-                const value = this.getAttribute('data-value');
-                accountRange.value = value;
-                accountTooltip.textContent = `$${parseInt(value).toLocaleString()}`;
-                updateTooltipPosition(accountRange, accountTooltip);
+        if (accountOptions.length > 0) {
+            accountOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    accountOptions.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    const value = this.getAttribute('data-value');
+                    accountRange.value = value;
+                    accountTooltip.textContent = `$${parseInt(value).toLocaleString()}`;
+                    updateTooltipPosition(accountRange, accountTooltip);
+                    calculateEarnings();
+                });
+            });
+            
+            function updateTooltipPosition(slider, tooltip) {
+                const percent = (slider.value - slider.min) / (slider.max - slider.min);
+                const sliderWidth = slider.offsetWidth;
+                const tooltipWidth = tooltip.offsetWidth;
+                const left = percent * (sliderWidth - tooltipWidth) + tooltipWidth / 2;
+                tooltip.style.left = `${left}px`;
+            }
+
+            updateTooltipPosition(accountRange, accountTooltip);
+            updateTooltipPosition(document.getElementById('profitRange'), document.getElementById('profitTooltip'));
+            
+            accountRange.addEventListener('input', function() {
+                accountTooltip.textContent = `$${parseInt(this.value).toLocaleString()}`;
+                updateTooltipPosition(this, accountTooltip);
                 calculateEarnings();
             });
-        });
-        
-        function updateTooltipPosition(slider, tooltip) {
-            const percent = (slider.value - slider.min) / (slider.max - slider.min);
-            const sliderWidth = slider.offsetWidth;
-            const tooltipWidth = tooltip.offsetWidth;
-            const left = percent * (sliderWidth - tooltipWidth) + tooltipWidth / 2;
-            tooltip.style.left = `${left}px`;
+            
+            document.getElementById('profitRange').addEventListener('input', function() {
+                document.getElementById('profitTooltip').textContent = `${this.value}%`;
+                updateTooltipPosition(this, document.getElementById('profitTooltip'));
+                calculateEarnings();
+            });
+            
+            function calculateEarnings() {
+                // Add your earnings calculation logic here
+            }
         }
 
-        updateTooltipPosition(accountRange, accountTooltip);
-        updateTooltipPosition(document.getElementById('profitRange'), document.getElementById('profitTooltip'));
-        
-        accountRange.addEventListener('input', function() {
-            accountTooltip.textContent = `$${parseInt(this.value).toLocaleString()}`;
-            updateTooltipPosition(this, accountTooltip);
-            calculateEarnings();
-        });
-        
-        document.getElementById('profitRange').addEventListener('input', function() {
-            document.getElementById('profitTooltip').textContent = `${this.value}%`;
-            updateTooltipPosition(this, document.getElementById('profitTooltip'));
-            calculateEarnings();
-        });
-        
-        function calculateEarnings() {
-            // Add your earnings calculation logic here
-        }
-
-
-        // --- Info tooltip system (now shows tooltip on the RIGHT) ---
+        // --- Info tooltip system for pricing table ---
         const infoIcons = document.querySelectorAll('.info-tooltip');
+        
         infoIcons.forEach(icon => {
             let tooltip;
 
-            icon.addEventListener('mouseenter', () => {
-                const text = icon.getAttribute('data-tooltip');
+            icon.addEventListener('mouseenter', function(e) {
+                const text = this.getAttribute('data-tooltip');
                 if (!text) return;
 
+                // Remove any existing tooltip first
+                const existingTooltip = document.querySelector('.floating-tooltip');
+                if (existingTooltip) {
+                    existingTooltip.remove();
+                }
+
                 tooltip = document.createElement('div');
-                tooltip.className = 'floating-tooltip arrow-left'; // 👈 arrow points left → tooltip on the right
+                tooltip.className = 'floating-tooltip arrow-left';
                 tooltip.innerText = text;
                 document.body.appendChild(tooltip);
 
-                const rect = icon.getBoundingClientRect();
+                // Get position relative to viewport
+                const rect = this.getBoundingClientRect();
+                const scrollX = window.pageXOffset || document.documentElement.scrollLeft;
+                const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+
                 const tooltipWidth = tooltip.offsetWidth;
                 const tooltipHeight = tooltip.offsetHeight;
 
                 // Position tooltip to the RIGHT of the icon
-                const left = rect.right + 12; // 12px gap
-                const top = rect.top + rect.height / 2 - tooltipHeight / 2;
+                let left = rect.right + 8 + scrollX; // 8px gap from right edge
+                let top = rect.top + (rect.height / 2) - (tooltipHeight / 2) + scrollY;
+
+                // Check if tooltip would go off-screen to the right
+                const viewportWidth = window.innerWidth;
+                if (left + tooltipWidth > viewportWidth + scrollX - 20) {
+                    // Position to the left instead
+                    left = rect.left - tooltipWidth - 8 + scrollX;
+                    tooltip.classList.remove('arrow-left');
+                    tooltip.classList.add('arrow-right');
+                } else {
+                    tooltip.classList.remove('arrow-right');
+                    tooltip.classList.add('arrow-left');
+                }
+
+                // Check if tooltip would go off-screen vertically
+                if (top < scrollY) {
+                    top = scrollY + 10; // Stick to top with padding
+                } else if (top + tooltipHeight > scrollY + window.innerHeight) {
+                    top = scrollY + window.innerHeight - tooltipHeight - 10; // Stick to bottom
+                }
 
                 tooltip.style.left = `${left}px`;
                 tooltip.style.top = `${top}px`;
-                tooltip.style.zIndex = '999999'; // always on top
-                tooltip.classList.add('visible');
+                
+                // Tooltip appears immediately - no opacity/visibility transitions needed
             });
 
-            icon.addEventListener('mouseleave', () => {
-                if (tooltip) {
+            icon.addEventListener('mouseleave', function() {
+                if (tooltip && tooltip.parentNode) {
                     tooltip.remove();
                     tooltip = null;
+                }
+            });
+
+            // Also remove tooltip if user clicks elsewhere
+            document.addEventListener('click', function(e) {
+                if (tooltip && !icon.contains(e.target) && !tooltip.contains(e.target)) {
+                    if (tooltip.parentNode) {
+                        tooltip.remove();
+                        tooltip = null;
+                    }
                 }
             });
         });

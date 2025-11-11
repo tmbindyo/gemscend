@@ -4153,6 +4153,184 @@ Section Title
   line-height: 1.2;
 }
 
+/* Enhanced Responsive Design */
+@media (max-width: 1024px) {
+  .gemscend-glassbar {
+    padding: 20px 30px;
+    border-radius: 30px;
+  }
+  
+  .gemscend-glassbar-inner {
+    gap: 30px;
+  }
+  
+  .gemscend-glassbar .glass-title {
+    font-size: 1.2rem;
+    padding-right: 30px;
+  }
+  
+  .gemscend-glass-items {
+    gap: 25px;
+  }
+  
+  .glass-item img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .glass-item p {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .gemscend-glassbar {
+    padding: 20px;
+    border-radius: 25px;
+    margin: 20px auto;
+  }
+  
+  .gemscend-glassbar-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .gemscend-glassbar .glass-title {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-right: 0;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 1.3rem;
+    white-space: normal; /* Allow text to wrap */
+  }
+  
+  .gemscend-glass-items {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .glass-item {
+    flex: 0 0 calc(50% - 20px);
+    padding: 10px 5px;
+  }
+  
+  .glass-item img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 6px;
+  }
+  
+  .glass-item p {
+    font-size: 0.75rem;
+    white-space: normal; /* Allow text to wrap on mobile */
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 768px) {
+  .gemscend-glassbar {
+    padding: 20px;
+    border-radius: 25px;
+    margin: 20px auto;
+  }
+  
+  .gemscend-glassbar-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .gemscend-glassbar .glass-title {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-right: 0;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 1.3rem;
+    white-space: normal; /* Allow text to wrap */
+  }
+  
+  .gemscend-glass-items {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .glass-item {
+    flex: 0 0 calc(50% - 20px);
+    padding: 10px 5px;
+  }
+  
+  .glass-item img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 6px;
+  }
+  
+  .glass-item p {
+    font-size: 0.75rem;
+    white-space: normal; /* Allow text to wrap on mobile */
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 480px) {
+  .gemscend-glassbar {
+    padding: 15px;
+    border-radius: 20px;
+    width: 95%;
+  }
+  
+  .gemscend-glassbar-inner {
+    gap: 15px;
+  }
+  
+  .gemscend-glassbar .glass-title {
+    font-size: 1.1rem;
+    padding-bottom: 12px;
+  }
+  
+  .gemscend-glass-items {
+    gap: 15px;
+  }
+  
+  .glass-item {
+    flex: 0 0 calc(50% - 15px);
+    padding: 8px 3px;
+  }
+  
+  .glass-item img {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .glass-item p {
+    font-size: 0.7rem;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 360px) {
+  .gemscend-glass-items {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .glass-item {
+    flex: 0 0 100%;
+    padding: 5px;
+  }
+  
+  .glass-item p {
+    font-size: 0.65rem;
+  }
+}
+
 /* Button container */
 .gemscend-button-container {
   text-align: center;
@@ -14585,26 +14763,13 @@ Section Title
 
 .gemscend-pricing-section {
   background: linear-gradient(to bottom, 
-    #ffffff 0%,     /* starts white */
-    #fff 55%,    /* keeps white for half the section */
-    #333 75%,    /* starts getting darker near the bottom */
-    #000000 100%    /* ends fully black */
+    #ffffff 0%,
+    #fff 55%,
+    #333 75%,
+    #000000 100%
   );
   position: relative;
   z-index: 9;
-}
-
-.gemscend-pricing-section .gemscend-pricing-circle {
-  position: absolute;
-  right: 80px;
-  top: 50px;
-  z-index: -1;
-}
-
-@media (max-width: 1399.98px) {
-  .gemscend-pricing-section .gemscend-pricing-circle {
-    display: none;
-  }
 }
 
 /* Table Styling */
@@ -14620,165 +14785,195 @@ Section Title
 }
 
 .gemscend-pricing-table th {
-  position: relative; /* ensures absolute child positions are relative to the cell */
-  padding: 0; /* remove extra space */
-  height: 120px; /* gives a consistent visual height (adjust as needed) */
+  padding: 0;
+  vertical-align: top;
 }
 
-.gemscend-pricing-table th > div {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* perfectly center content */
-  width: 90%;
-  height: 90%;
+.price-header {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-
-.gemscend-pricing-table thead {
-  color: #fff;
-}
-
-.gemscend-price-header-btn {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background: var(--gemscend-emerald);
-  color: #fff;
-  padding: 10px 25px;
-  border-radius: 20px !important;
-  border: 2px solid #EEF8F1;
-  width: 90%;
-  height: 90%;
-  font-weight: 700;
-  font-size: 22px;
-  text-decoration: none;
+  background: #fff;
+  padding: 20px 15px 0;
+  border-radius: 12px;
   position: relative;
-  text-align: center;
-  transition: all 0.3s ease;
+  overflow: visible;
 }
 
-/* .gemscend-price-header-btn {
-  
-  
-  flex-direction: row;
-  background: #41A95C;
-
-  
-} */
+.price-header.popular {
+  background: linear-gradient(135deg, #2B8448, #41A95C);
+  color: white;
+  border: 1px solid #2B8448;
+}
 
 .popular-label {
   position: absolute;
-  top: -10%; /* adjust how far above the button it sits */
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--gemscend-dark-emerald-75);
-  color: #000;
-  font-size: 12px;
-  color: #fff;
+  top: 8px; /* Moved closer to top */
+  background: #ff6b35;
+  color: white;
+  font-size: 10px; /* Slightly smaller */
   font-weight: 700;
   text-transform: uppercase;
-  padding: 4px 10px;
-  border-radius: 6px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  white-space: nowrap;
+  padding: 3px 10px; /* Reduced padding */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-/* only this one stacks vertically */
-.gemscend-price-header-btn.popular {
-  flex-direction: column; /* stack label and amount vertically */
-  background: #2B8448; /* darker emerald */
-  box-shadow: 0 0 10px rgba(43, 132, 72, 0.4);
+.price-amount {
+  font-size: 30px;
+  font-weight: 700;
+  color: #2e9b54;
+  margin-bottom: 10px;
 }
 
-/* label styling */
-.gemscend-price-header-btn .label {
-  font-size: 10px;
+.price-header.popular .price-amount {
+  color: white;
+}
+
+.price-fee {
+  position: relative;
+  top: -15px; /* Moves it upward behind the button */
+  background: #D5D7DB;
+  color: #2e9b54;
   font-weight: 600;
-  text-transform: uppercase;
-  opacity: 0.9;
-  margin-bottom: 4px;
+  font-size: 16px;
+  border-radius: 0 0 8px 8px;
+  padding: 20px 0 16px 0;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
 }
 
-/* amount styling */
-.gemscend-price-header-btn .amount {
-  font-size: 22px;
-  font-weight: 700;
+.price-header.popular .price-fee {
+  color: rgba(255,255,255,0.9);
 }
-
-
 
 .gemscend-price-btn {
-  display: inline-block;
-  background: #EEF8F1; /* button background */
-  color: #2B8448;
+  background: linear-gradient(180deg, #3ab467 0%, #2e9b54 100%);
+  color: #fff;
   font-weight: 700;
-  font-size: 16px;
-  padding: 15px 25px;
-  border-radius: 6px;
-  text-align: center;
-  min-width: 120px;
-  border: 2px solid #EEF8F1; /* add this line */
+  font-size: 18px;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease;
 }
 
-.gemscend-pricing-table td:first-child,
-.gemscend-pricing-table th:first-child {
-  background-color: #EEF8F1;
-  font-weight: 600;
-  color: #333;
+.gemscend-price-btn:hover {
+  background: linear-gradient(180deg, #34a15d 0%, #278b4f 100%);
 }
 
 .gemscend-price-btn.popular {
-  background: #2B8448; /* darker green */
-  font-size: 17px;
-  color: #fff;
+  background: white;
+  color: #2B8448;
+  font-weight: 700;
 }
 
-.gemscend-pricing-table thead th {
-  background: none;
-  border: 0.5px solid var(--gemscend-dark-emerald-75); /* use emerald borders */
-  padding: 0;
+.gemscend-price-btn.popular:hover {
+  background: #f8f9fa;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255,255,255,0.3);
 }
 
-.gemscend-pricing-table thead th.popular {
-  background: var(--theme-color2);
-  color: #fff;
-  font-size: 18px;
-}
 
 .gemscend-pricing-table tbody td {
-  padding: 16px;
-  border: 0.5px solid var(--gemscend-dark-emerald-75); /* use emerald borders */
-  font-size: 25px;
+  padding: 18px 16px; /* Slightly reduced padding */
+  border: 1px solid #e9ecef;
+  font-size: 15px; /* Slightly smaller */
   font-weight: 500;
   color: #444;
+}
+
+.gemscend-pricing-table tbody td:first-child {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #2c3e50;
+  text-align: left;
+  padding-left: 20px;
 }
 
 .gemscend-pricing-table tbody tr:nth-child(even) {
   background: #fafafa;
 }
 
-.gemscend-pricing-table .plan-actions td {
-  padding: 20px;
-  border: 0.5px solid var(--gemscend-dark-emerald-75);
+.gemscend-pricing-table tbody tr:nth-child(even) td:first-child {
+  background-color: #f1f3f4;
 }
 
-.gemscend-pricing-table .plan-actions a {
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 6px;
-  font-weight: 600;
+/* Tooltip Base Styles */
+.info-tooltip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    background: #41A95C;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 8px;
+    cursor: help;
+    line-height: 1;
 }
 
+.floating-tooltip {
+    position: absolute;
+    background: #2c3e50; /* Fixed background color */
+    color: white;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.4;
+    max-width: 280px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 10000;
+    opacity: 1;
+    visibility: visible;
+}
+
+.floating-tooltip.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Arrow for tooltip pointing left (tooltip on right) */
+.floating-tooltip.arrow-left::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 6px solid transparent;
+    border-right-color: #2c3e50;
+}
+
+/* Arrow for tooltip pointing right (tooltip on left) */
+.floating-tooltip.arrow-right::before {
+    content: '';
+    position: absolute;
+    right: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 6px solid transparent;
+    border-left-color: #2c3e50;
+}
+
+/* Ensure tooltips are above everything */
+.floating-tooltip {
+    z-index: 9999;
+}
 
 /* Make pricing table scrollable on smaller screens */
 .table-responsive {
   width: 100%;
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch; /* for smooth scrolling on mobile */
+  -webkit-overflow-scrolling: touch;
 }
 
 .table-responsive::-webkit-scrollbar {
@@ -14790,18 +14985,30 @@ Section Title
   border-radius: 4px;
 }
 
-.table-responsive::-webkit-scrollbar-thumb:hover {
-  background: #999;
-}
-
-/* Optional: add subtle shadow to show scrollability */
-.table-responsive {
-  box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
-}
-
-/* Prevent the table content from shrinking */
 .gemscend-pricing-table {
-  min-width: 800px; /* you can adjust to fit your design */
+  min-width: 800px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .price-header {
+    padding: 20px 10px;
+  }
+  
+  .price-amount {
+    font-size: 20px;
+  }
+  
+  .gemscend-price-btn {
+    padding: 10px 20px;
+    font-size: 13px;
+    min-width: 100px;
+  }
+  
+  .gemscend-pricing-table tbody td {
+    padding: 15px 12px;
+    font-size: 14px;
+  }
 }
 
 
