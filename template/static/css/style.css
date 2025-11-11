@@ -19282,7 +19282,7 @@ faqs-background {
 
 
 .journey-section {
-  padding: 0 0;
+  padding: 0 0 60px 0;
   background: var(--gemscend-dark-green);
   /* color: #fff; */
 }
