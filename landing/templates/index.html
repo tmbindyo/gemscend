@@ -62,7 +62,7 @@
                             <li><a href="#pricing">Pricing</a></li>
                             <li><a href="{% url 'faqs' %}">FAQ's</a></li>
                             <li><a href="{% url 'refer_and_earn' %}">Refer & Earn</a></li>
-                            <li><a href="https://app.gemscend.com/">E-Learning</a></li>
+                            <li><a href="https://elearning.gemscend.com//">E-Learning</a></li>
                             <li class="dropdown">
                                 <a href="#">
                                     <img src="https://flagcdn.com/gb.svg" alt="English" class="flag-icon">
@@ -384,6 +384,7 @@
                         <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="How It Works Video" class="w-100 border border-2 border-success rounded-4" style="aspect-ratio: 16/9;" allowfullscreen loading="lazy"></iframe>
                     </div>
                 </div>
+                {% comment %} gemscend calculator start here {% endcomment %}
                 <div class="col-lg-6">
                     <h2 class="fw-bold text-white text-center mb-4"><span class="text-gemscend-dark-emerald-75">How Much</span> Can You Make?</h2>
                     <div class="bg-white rounded-4 shadow p-5 flex-grow-1 calculator-container">
@@ -435,55 +436,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Content Row -->
-            <!-- Content Row - UPDATED -->
-            <div class="row align-items-start g-5">  <!-- Changed from align-items-center to align-items-start -->
-                <!-- LEFT: Video -->
-                <div class="col-lg-6 text-center text-lg-start d-flex flex-column">
-                    
-                </div>
-
-                <!-- RIGHT: Calculator -->
-                <div class="col-lg-6 d-flex flex-column">
-                    
-                </div>
-                {% comment %} <div class="col-lg-6 d-flex flex-column">
-                    <div class="bg-white rounded-4 shadow p-5 flex-grow-1" style="border-radius: 20px !important;">
-                        <!-- Your calculator content remains the same -->
-                        <div class="mb-5">
-                            <h5 class="fw-bold text-gemscend-dark-emerald-75 text-center mb-1 responsive-heading">Choose Your Account Size</h5>
-                            <p>Account Size</p>
-                            <div class="d-flex justify-content-between mb-4">
-                                <button class="btn btn-outline-success account-option" data-value="5000">$5K</button>
-                                <button class="btn btn-outline-success account-option" data-value="50000">$50K</button>
-                                <button class="btn btn-outline-success account-option" data-value="100000">$100K</button>
-                            </div>
-
-                            <div class="slider-container">
-                                <input type="range" class="form-range custom-slider" min="5000" max="100000" step="1000" id="accountRange" value="50000">
-                                <div class="slider-tooltip" id="accountTooltip">$50K</div>
-                            </div>
-                        </div>
-
-                        <div class="mb-1">
-                            <div class="slider-container">
-                                <input type="range" class="form-range custom-slider" min="1" max="20" step="1" id="profitRange" value="4">
-                                <div class="slider-tooltip" id="profitTooltip">4%</div>
-                            </div>
-                        </div>
-
-                        <div class="text-center mt-auto">  <!-- Added mt-auto to push content up -->
-                            <p class="text-dark text-gemscend-black mb-1" style="font-size: 30px; ">Trader Take Home</p>
-                            <div class="bg-dark text-white rounded-3 p-1 earnings-box" style="border-radius: 35px !important;">
-                                <h2 class="mb-0 fw-bold text-white" id="monthlyEarnings">$2,000<span class="fs-5"></span></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div> {% endcomment %}
-
-
+                {% comment %} gemscend calculator end here {% endcomment %}
             </div>
 
         </div>
@@ -494,134 +447,6 @@
 
 
 
-    <!-- Pricing Section Start -->
-    {% comment %} <section class="gemscend-pricing-section fix section-padding" id="pricing">
-        <div class="auto-container">
-            <div class="sec-title text-center">
-                <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    Our Pricing
-                </h2>
-                <h3 class="wow fadeInUp" data-wow-delay=".3s">
-                    We Offer Great <span class="text-gemscend-emerald">Price Plans</span> Based On Your Trading Needs
-                </h3>
-            </div>
-
-            <div class="row">
-                <div class="gemscend-pricing-wrapper">
-                    <div class="table-responsive">
-                        <table class="gemscend-pricing-table">
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>
-                                        <div class="">
-                                            <a href="#" class="gemscend-price-header-btn">$ 3,000</a>
-                                        </div>
-                                    </th>
-                                    <th>
-                                        <div class="">
-                                        <a href="#" class="gemscend-price-header-btn">$ 5,000</a>
-                                        </div>
-                                    </th>
-                                    <th class="position-relative">
-                                        <div class="position-relative d-inline-block">
-                                            <a href="#" class="gemscend-price-header-btn position-relative">
-                                            <span class="popular-label">Most Popular</span>
-                                            <span class="amount">$10,000</span>
-                                            </a>
-                                        </div>
-                                    </th>
-                                    <th>
-                                        <div class="">
-                                            <a href="#" class="gemscend-price-header-btn">$ 20,000</a>
-                                        </div>
-                                    </th>
-                                    <th>
-                                        <div class="">
-                                            <a href="#" class="gemscend-price-header-btn">$ 100,000</a>
-                                        </div>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td style="white-space: nowrap;">
-                                        <span class="info-tooltip" data-tooltip="The trader should achieve an 8% profit in Phase 1 to advance to Phase 2.">i</span>
-                                        Phase 1 Profit Target
-                                    </td>
-                                    <td>8%</td>
-                                    <td>8%</td>
-                                    <td>8%</td>
-                                    <td>8%</td>
-                                    <td>8%</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="info-tooltip" data-tooltip="The trader should achieve a 5% profit in Phase 2 to complete the challenge and receive a funded account.">i</span>
-                                        Phase 2 Profit Target
-                                    </td>
-                                    <td>5%</td>
-                                    <td>5%</td>
-                                    <td>5%</td>
-                                    <td>5%</td>
-                                    <td>5%</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="info-tooltip" data-tooltip="An equity-based restriction that ensures a trader cannot lose more than a fixed amount in a single trading day, calculated from the prior day's closing balance, and exceeding it results in a hard breach.">i</span>
-                                        Daily Loss Limit 5%
-                                    </td>
-                                    <td>$150</td>
-                                    <td>$250</td>
-                                    <td>$500</td>
-                                    <td>$1,000</td>
-                                    <td>$5,000</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="info-tooltip" data-tooltip="Profit split: 80%">i</span>
-                                        Profit Split
-                                    </td>
-                                    <td>80%</td>
-                                    <td>80%</td>
-                                    <td>80%</td>
-                                    <td>80%</td>
-                                    <td>80%</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="info-tooltip" data-tooltip="The trader should not lose more than the fixed maximum overall loss from the allocated capital.">i</span>
-                                        Maximum Drawdown
-                                    </td>
-                                    <td>8%</td>
-                                    <td>8%</td>
-                                    <td>8%</td>
-                                    <td>8%</td>
-                                    <td>8%</td>
-                                </tr>
-                                <tr>
-                                    <td>Trading Fee</td>
-                                    <td>$35</td>
-                                    <td>$50</td>
-                                    <td>$100</td>
-                                    <td>$300</td>
-                                    <td>$660</td>
-                                </tr>
-                                <tr class="plan-actions">
-                                    <td></td>
-                                    <td><a href="https://dashboard.gemscend.com/challenges?planid=121" class="gemscend-price-btn">Select Plan</a></td>
-                                    <td><a href="https://dashboard.gemscend.com/challenges?planid=122" class="gemscend-price-btn">Select Plan</a></td>
-                                    <td><a href="https://dashboard.gemscend.com/challenges?planid=123" class="gemscend-price-btn popular">Select Plan</a></td>
-                                    <td><a href="https://dashboard.gemscend.com/challenges?planid=124" class="gemscend-price-btn">Select Plan</a></td>
-                                    <td><a href="https://dashboard.gemscend.com/challenges?planid=125" class="gemscend-price-btn">Select Plan</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> {% endcomment %}
 
 
 
@@ -1338,216 +1163,110 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- pricing table highlight -->
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const table = document.querySelector('.gemscend-pricing-table');
-        if (!table) return;
+        // Account size values for hard stops
+        const accountValues = [3000, 5000, 10000, 20000, 100000];
         
-        // Use CSS classes instead of inline styles for better control
-        const style = document.createElement('style');
-        style.textContent = `
-            .gemscend-pricing-table td.highlighted {
-                background-color: rgba(65, 169, 92, 0.05) !important;
-            }
-            .gemscend-pricing-table th.highlighted {
-                background-color: rgba(65, 169, 92, 0.1) !important;
-            }
-            .gemscend-pricing-table td, .gemscend-pricing-table th {
-                transition: background-color 0.2s ease;
-            }
-        `;
-        document.head.appendChild(style);
-        
-        // Function to highlight column
-        function highlightColumn(columnIndex) {
-            if (columnIndex === 0) return; // Skip first column
-            
-            // Highlight all cells in the column
-            const allCells = table.querySelectorAll('td, th');
-            allCells.forEach(cell => {
-                if (cell.cellIndex === columnIndex) {
-                    cell.classList.add('highlighted');
-                }
-            });
-        }
-        
-        // Function to reset column
-        function resetColumn(columnIndex) {
-            if (columnIndex === 0) return;
-            
-            // Reset all cells in the column
-            const allCells = table.querySelectorAll('td, th');
-            allCells.forEach(cell => {
-                if (cell.cellIndex === columnIndex) {
-                    cell.classList.remove('highlighted');
-                }
-            });
-        }
-        
-        // Use event delegation on the entire table
-        table.addEventListener('mouseover', function(e) {
-            let target = e.target;
-            
-            // Find the closest td or th
-            while (target && target !== table) {
-                if (target.tagName === 'TD' || target.tagName === 'TH') {
-                    const columnIndex = target.cellIndex;
-                    if (columnIndex > 0) {
-                        highlightColumn(columnIndex);
-                    }
-                    break;
-                }
-                target = target.parentElement;
-            }
-        });
-        
-        table.addEventListener('mouseout', function(e) {
-            let target = e.target;
-            
-            // Find the closest td or th
-            while (target && target !== table) {
-                if (target.tagName === 'TD' || target.tagName === 'TH') {
-                    const columnIndex = target.cellIndex;
-                    if (columnIndex > 0) {
-                        setTimeout(() => {
-                            resetColumn(columnIndex);
-                        }, 50);
-                    }
-                    break;
-                }
-                target = target.parentElement;
-            }
-        });
-    });
-</script>
-
-
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // --- Account size buttons functionality ---
-        const accountOptions = document.querySelectorAll('.account-option');
+        // Get DOM elements
         const accountRange = document.getElementById('accountRange');
-        const accountTooltip = document.getElementById('accountTooltip');
-        
-        if (accountOptions.length > 0) {
-            accountOptions.forEach(option => {
-                option.addEventListener('click', function() {
-                    accountOptions.forEach(btn => btn.classList.remove('active'));
-                    this.classList.add('active');
-                    const value = this.getAttribute('data-value');
-                    accountRange.value = value;
-                    accountTooltip.textContent = `$${parseInt(value).toLocaleString()}`;
-                    updateTooltipPosition(accountRange, accountTooltip);
-                    calculateEarnings();
-                });
-            });
-            
-            function updateTooltipPosition(slider, tooltip) {
-                const percent = (slider.value - slider.min) / (slider.max - slider.min);
-                const sliderWidth = slider.offsetWidth;
-                const tooltipWidth = tooltip.offsetWidth;
-                const left = percent * (sliderWidth - tooltipWidth) + tooltipWidth / 2;
-                tooltip.style.left = `${left}px`;
-            }
+        const profitRange = document.getElementById('profitRange');
+        const monthlyEarnings = document.getElementById('monthlyEarnings');
+        const accountValueDisplay = document.getElementById('accountValue');
+        const profitValueDisplay = document.getElementById('profitValue');
+        const accountProgress = document.getElementById('accountProgress');
+        const profitProgress = document.getElementById('profitProgress');
 
-            updateTooltipPosition(accountRange, accountTooltip);
-            updateTooltipPosition(document.getElementById('profitRange'), document.getElementById('profitTooltip'));
-            
-            accountRange.addEventListener('input', function() {
-                accountTooltip.textContent = `$${parseInt(this.value).toLocaleString()}`;
-                updateTooltipPosition(this, accountTooltip);
-                calculateEarnings();
-            });
-            
-            document.getElementById('profitRange').addEventListener('input', function() {
-                document.getElementById('profitTooltip').textContent = `${this.value}%`;
-                updateTooltipPosition(this, document.getElementById('profitTooltip'));
-                calculateEarnings();
-            });
-            
-            function calculateEarnings() {
-                // Add your earnings calculation logic here
+        // Utility function to format currency
+        function formatCurrency(amount) {
+            return new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: 'USD',
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 0
+            }).format(amount);
+        }
+
+        // Update slider progress fill
+        function updateSliderProgress(slider, progressElement) {
+            const min = parseFloat(slider.min);
+            const max = parseFloat(slider.max);
+            const value = parseFloat(slider.value);
+            let progress = ((value - min) / (max - min)) * 100;
+
+            // Apply a slight extension to cover the thumb
+            const extendedProgress = Math.min(progress + 1.5, 100);
+
+            if (progressElement) {
+                progressElement.style.width = `${extendedProgress}%`;
             }
         }
 
-        // --- Info tooltip system for pricing table ---
-        const infoIcons = document.querySelectorAll('.info-tooltip');
-        
-        infoIcons.forEach(icon => {
-            let tooltip;
+        // Update the displayed value next to the slider title
+        function updateDisplayValue(slider, displayElement) {
+            if (slider.id === 'accountRange') {
+                // Use the hard stop values
+                const index = parseInt(slider.value);
+                const value = accountValues[index];
+                const formattedValue = formatCurrency(value);
+                displayElement.textContent = formattedValue;
+            } else {
+                // Format profit rate as percentage
+                const value = parseFloat(slider.value);
+                displayElement.textContent = `${value}%`;
+            }
+        }
 
-            icon.addEventListener('mouseenter', function(e) {
-                const text = this.getAttribute('data-tooltip');
-                if (!text) return;
+        // Calculate and display the final earnings
+        function calculateEarnings() {
+            // Get account size from hard stop values
+            const accountIndex = parseInt(accountRange.value);
+            const accountSize = accountValues[accountIndex];
+            const profitPercent = parseFloat(profitRange.value);
+            const traderTakeHomeRate = 0.80; // 80%
 
-                // Remove any existing tooltip first
-                const existingTooltip = document.querySelector('.floating-tooltip');
-                if (existingTooltip) {
-                    existingTooltip.remove();
-                }
+            // Calculate earnings based on account size and profit percentage
+            const monthlyProfit = (accountSize * profitPercent) / 100;
+            const calculatedTakeHome = monthlyProfit * traderTakeHomeRate;
+            monthlyEarnings.textContent = formatCurrency(calculatedTakeHome);
+        }
 
-                tooltip = document.createElement('div');
-                tooltip.className = 'floating-tooltip arrow-left';
-                tooltip.innerText = text;
-                document.body.appendChild(tooltip);
+        // --- Event Listeners ---
 
-                // Get position relative to viewport
-                const rect = this.getBoundingClientRect();
-                const scrollX = window.pageXOffset || document.documentElement.scrollLeft;
-                const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+        // Account slider input
+        accountRange.addEventListener('input', function() {
+            updateDisplayValue(accountRange, accountValueDisplay);
+            updateSliderProgress(accountRange, accountProgress);
+            calculateEarnings();
+        });
 
-                const tooltipWidth = tooltip.offsetWidth;
-                const tooltipHeight = tooltip.offsetHeight;
+        // Profit slider input
+        profitRange.addEventListener('input', function() {
+            updateDisplayValue(profitRange, profitValueDisplay);
+            updateSliderProgress(profitRange, profitProgress);
+            calculateEarnings();
+        });
 
-                // Position tooltip to the RIGHT of the icon
-                let left = rect.right + 8 + scrollX; // 8px gap from right edge
-                let top = rect.top + (rect.height / 2) - (tooltipHeight / 2) + scrollY;
+        // --- Initialization ---
 
-                // Check if tooltip would go off-screen to the right
-                const viewportWidth = window.innerWidth;
-                if (left + tooltipWidth > viewportWidth + scrollX - 20) {
-                    // Position to the left instead
-                    left = rect.left - tooltipWidth - 8 + scrollX;
-                    tooltip.classList.remove('arrow-left');
-                    tooltip.classList.add('arrow-right');
-                } else {
-                    tooltip.classList.remove('arrow-right');
-                    tooltip.classList.add('arrow-left');
-                }
+        // Initial load: Set all values and progress bars
+        updateDisplayValue(accountRange, accountValueDisplay);
+        updateDisplayValue(profitRange, profitValueDisplay);
+        updateSliderProgress(accountRange, accountProgress);
+        updateSliderProgress(profitRange, profitProgress);
+        calculateEarnings();
 
-                // Check if tooltip would go off-screen vertically
-                if (top < scrollY) {
-                    top = scrollY + 10; // Stick to top with padding
-                } else if (top + tooltipHeight > scrollY + window.innerHeight) {
-                    top = scrollY + window.innerHeight - tooltipHeight - 10; // Stick to bottom
-                }
-
-                tooltip.style.left = `${left}px`;
-                tooltip.style.top = `${top}px`;
-                
-                // Tooltip appears immediately - no opacity/visibility transitions needed
-            });
-
-            icon.addEventListener('mouseleave', function() {
-                if (tooltip && tooltip.parentNode) {
-                    tooltip.remove();
-                    tooltip = null;
-                }
-            });
-
-            // Also remove tooltip if user clicks elsewhere
-            document.addEventListener('click', function(e) {
-                if (tooltip && !icon.contains(e.target) && !tooltip.contains(e.target)) {
-                    if (tooltip.parentNode) {
-                        tooltip.remove();
-                        tooltip = null;
-                    }
-                }
-            });
+        // Update on window resize (to correct progress bar position)
+        window.addEventListener('resize', function() {
+            updateSliderProgress(accountRange, accountProgress);
+            updateSliderProgress(profitRange, profitProgress);
         });
     });
 </script>
 
 
+
+
+
+<!-- Slider Functionality Script -->
 <script>
     document.addEventListener('DOMContentLoaded', function() {
     // New references for the value display elements (H1 tags)

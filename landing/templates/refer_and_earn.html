@@ -45,7 +45,6 @@
                 <!--Nav Box-->
                 <div class="nav-outer">
                     <div class="logo-box">
-                        {% comment %} <div class="logo"><a href="{% url 'template-index' %}"><img src="{% static 'images/gemscend/logo.png' %}" alt="" style="max-width:350px; height:auto;" title="finclix"></a></div> {% endcomment %}
                         <div class="logo"><a href="{% url 'index' %}"><img src="{% static 'images/gemscend/gemscend_grey_logo.png' %}" alt="" title="gemscend"></a></div>
                     </div>
                     <nav class="nav main-menu">
@@ -54,7 +53,7 @@
                             <li><a href="#pricing">Pricing</a></li>
                             <li><a href="{% url 'faqs' %}">FAQ's</a></li>
                             <li><a href="{% url 'refer_and_earn' %}">Refer & Earn</a></li>
-                            <li><a href="https://app.gemscend.com/">E-Learning</a></li>
+                            <li><a href="https://elearning.gemscend.com//">E-Learning</a></li>
                             <li class="dropdown">
                                 <a href="#">
                                     <img src="https://flagcdn.com/gb.svg" alt="English" class="flag-icon">
@@ -70,11 +69,38 @@
                                 </ul> {% endcomment %}
                             </li>
 
+                            <div class="nav-buttons">
+                                <a href="https://gemscenddashboard.propaccount.com/en/sign-in" class="theme-btn btn-style-login btn-outline">
+                                    Log-In
+                                </a>
+                                <a href="https://gemscenddashboard.propaccount.com/en/sign-up" class="theme-btn btn-style-register btn-solid">
+                                    Register Now
+                                </a>
+                            </div>
+
+                            {% comment %} <li class="nav-buttons">
+                                <a href="https://gemscenddashboard.propaccount.com/en/sign-in" class="theme-btn btn-style-login btn-outline">
+                                    Log-In
+                                </a>
+                            </li>
+                            <li class="nav-buttons">
+                                <a href="https://gemscenddashboard.propaccount.com/en/sign-up" class="theme-btn btn-style-register btn-solid">
+                                    Register Now
+                                </a>
+                            </li> {% endcomment %}
+
+                            {% comment %} <a href="https://gemscenddashboard.propaccount.com/en/sign-in" class="theme-btn btn-style-login btn-outline">
+                                Log-In
+                            </a>
+                            <a href="https://gemscenddashboard.propaccount.com/en/sign-up" class="theme-btn btn-style-register btn-solid">
+                                Register Now
+                            </a> {% endcomment %}
+
 
                         </ul>
                     </nav>
                     <!-- Main Menu End-->
-                    <div class="outer-box">
+                    {% comment %} <div class="outer-box">
                         <a href="https://gemscenddashboard.propaccount.com/en/sign-in" class="theme-btn btn-style-login btn-outline">
                             Log-In
                         </a>
@@ -83,7 +109,7 @@
                         </a>
                         <!-- Mobile Nav toggler -->
                         <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
-                    </div>
+                    </div> {% endcomment %}
                 </div>
             </div>
         </div>
@@ -188,14 +214,15 @@
 
         <!-- Sticky Header  -->
         <div class="sticky-header">
-          <div class="auto-container">
+          <div class="">
             <div class="inner-container">
               <!--Logo-->
-                <div class="sticky-logo-box">
-                    <div class="logo">
-                        <a href="https://app.gemscend.com/"><img src="{% static 'images/gemscend/gemscend_dark_logo.png' %}" alt="img" /></a>
-                    </div>
+              
+            <div class="sticky-logo-box">
+                <div class="logo">
+                    <a href="https://app.gemscend.com/"><img src="{% static 'images/gemscend/gemscend_dark_logo.png' %}" alt="img" /></a>
                 </div>
+            </div>
 
               <!--Right Col-->
               <div class="nav-outer">
@@ -207,6 +234,16 @@
                     </ul>
                   </div>
                 </nav>
+                <div class="outer-box">
+                        <a href="https://gemscenddashboard.propaccount.com/en/sign-in" class="theme-btn btn-style-login btn-outline">
+                            Log-In
+                        </a>
+                        <a href="https://gemscenddashboard.propaccount.com/en/sign-up" class="theme-btn btn-style-register btn-solid">
+                            Register Now
+                        </a>
+                        <!-- Mobile Nav toggler -->
+                        <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+                    </div>
                 <!-- Main Menu End-->
 
                 <!--Mobile Navigation Toggler-->
@@ -289,20 +326,15 @@
 
 
 
-    <section class="how-it-works-css fix ">
-
+    <section class="how-it-works-css fix">
         <div class="refer_and_earn-image"></div>
         <div class="refer_and_earn-left"></div>
-        {% comment %} <div class="refer_and_earn-right"></div> {% endcomment %}
-
+        
         <div class="auto-container">
             <div class="sec-title text-center">
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
                     How Our Affiliate Model Works
                 </h2>
-            {% comment %} <h3 class="wow fadeInUp" data-wow-delay=".3s">
-                Join our <span class="text-gemscend-emerald">Gemscend Affiliate Program</span> today
-            </h3> {% endcomment %}
             </div>
 
             <!-- Combined Steps Row -->
@@ -312,58 +344,58 @@
                     <div class="number-box">1</div>
                     <img src="{% static 'images/gemscend/down.gif' %}" alt="arrow down" class="arrow-down">
                     <div class="step">
-                    <h4>Apply</h4>
-                    <p>Apply for our Gemscend affiliate program</p>
+                        <h4>Apply</h4>
+                        <p>Apply for our Gemscend affiliate program</p>
                     </div>
                 </div>
 
-            <img src="{% static 'images/gemscend/horizontal_image.gif' %}" alt="arrow" class="horizontal-arrow">
+                <img src="{% static 'images/gemscend/horizontal_image.gif' %}" alt="arrow" class="horizontal-arrow">
 
-            <!-- Step 2 -->
-            <div class="step-group">
-                <div class="number-box">2</div>
-                <img src="{% static 'images/gemscend/down.gif' %}" alt="arrow down" class="arrow-down">
-                <div class="step">
-                <h4>Verify</h4>
-                <p>After verification you'll receive your affiliate account credentials via email</p>
+                <!-- Step 2 -->
+                <div class="step-group">
+                    <div class="number-box">2</div>
+                    <img src="{% static 'images/gemscend/down.gif' %}" alt="arrow down" class="arrow-down">
+                    <div class="step">
+                        <h4>Verify</h4>
+                        <p>After verification you'll receive your affiliate account credentials via email</p>
+                    </div>
                 </div>
-            </div>
 
-            <img src="{% static 'images/gemscend/horizontal_image.gif' %}" alt="arrow" class="horizontal-arrow">
+                <img src="{% static 'images/gemscend/horizontal_image.gif' %}" alt="arrow" class="horizontal-arrow">
 
-            <!-- Step 3 -->
-            <div class="step-group">
-                <div class="number-box">3</div>
-                <img src="{% static 'images/gemscend/down.gif' %}" alt="arrow down" class="arrow-down">
-                <div class="step">
-                <h4>Promote</h4>
-                <p>Promote Gemscend and share your affiliate link</p>
+                <!-- Step 3 -->
+                <div class="step-group">
+                    <div class="number-box">3</div>
+                    <img src="{% static 'images/gemscend/down.gif' %}" alt="arrow down" class="arrow-down">
+                    <div class="step">
+                        <h4>Promote</h4>
+                        <p>Promote Gemscend and share your affiliate link</p>
+                    </div>
                 </div>
-            </div>
 
-            <img src="{% static 'images/gemscend/horizontal_image.gif' %}" alt="arrow" class="horizontal-arrow">
+                <img src="{% static 'images/gemscend/horizontal_image.gif' %}" alt="arrow" class="horizontal-arrow">
 
-            <!-- Step 4 -->
-            <div class="step-group">
-                <div class="number-box">4</div>
-                <img src="{% static 'images/gemscend/down.gif' %}" alt="arrow down" class="arrow-down">
-                <div class="step">
-                <h4>Track</h4>
-                <p>Track your progress via your affiliate dashboard</p>
+                <!-- Step 4 -->
+                <div class="step-group">
+                    <div class="number-box">4</div>
+                    <img src="{% static 'images/gemscend/down.gif' %}" alt="arrow down" class="arrow-down">
+                    <div class="step">
+                        <h4>Track</h4>
+                        <p>Track your progress via your affiliate dashboard</p>
+                    </div>
                 </div>
-            </div>
 
-            <img src="{% static 'images/gemscend/horizontal_image.gif' %}" alt="arrow" class="horizontal-arrow">
+                <img src="{% static 'images/gemscend/horizontal_image.gif' %}" alt="arrow" class="horizontal-arrow">
 
-            <!-- Step 5 -->
-            <div class="step-group">
-                <div class="number-box">5</div>
-                <img src="{% static 'images/gemscend/down.gif' %}" alt="arrow down" class="arrow-down">
-                <div class="step">
-                <h4>Payout</h4>
-                <p>Request your payout once you reach your commission target</p>
+                <!-- Step 5 -->
+                <div class="step-group">
+                    <div class="number-box">5</div>
+                    <img src="{% static 'images/gemscend/down.gif' %}" alt="arrow down" class="arrow-down">
+                    <div class="step">
+                        <h4>Payout</h4>
+                        <p>Request your payout once you reach your commission target</p>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
     </section>
@@ -377,18 +409,16 @@
             <div class="row text-center">
                 <div class="footer-widget-wrapper">
                     <div class="row justify-content-between">
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-2 wow fadeInUp" data-wow-delay=".2s">
                         <div class="footer-widget-items mt-30">
                         <div class="widget-title mb-25">
                             <a href="{% url 'index' %}" class="footer-logo">
-                            <img src="{% static 'images/gemscend/logo.png' %}" alt="img" />
+                            <img style="padding-left: 20px;" src="{% static 'images/gemscend/gemscend_grey_logo.png' %}" alt="img" />
                             </a>
-                        </div>
-                        <div class="footer-content">
                         </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".4s" style="text-align: left;">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".4s">
                         <div class="footer-widget-items mt-30">
                             <div class="widget-title mb-25">
                                 <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">Quick Links</h3>
@@ -401,7 +431,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".6s" style="text-align: left;">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".6s">
                         <div class="footer-widget-items mt-30">
                         
                             <div class="widget-title mb-25">
@@ -411,11 +441,10 @@
 
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".8s">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".8s">
                         <div class="footer-widget-items mt-30">
-                            <div class="widget-title mb-25" style="display:flex; justify-content:left;">
-                            <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75" 
-                                style="text-align:left;">
+                            <div class="widget-title mb-25">
+                            <h3 class="font-size-24 font-weight-500 text-gemscend-dark-emerald-75">
                                 Socials
                             </h3>
                             </div>
@@ -465,7 +494,12 @@
                 <p class="wow fadeInUp" data-wow-delay=".3s"><a href="{% url 'legal' %}#privacy_policy" class="text-white">Privacy Policy</a></p>
                 <p class="wow fadeInUp" data-wow-delay=".3s"><a href="{% url 'legal' %}#disclaimer" class="text-white">Disclaimer</a></p>
                 <p class="wow fadeInUp" data-wow-delay=".3s"><a href="{% url 'legal' %}#terms_and_conditions" class="text-white">Terms and Conditions</a></p>
+
+                <p class="wow fadeInUp text-white" style="font-size:10px; text-align: left;" data-wow-delay=".3s" style="margin:0;">
+                    Gemscend is an affiliate of Prop Account LTD. Prop Account LTD offers fee-based simulated trading assessments for Potential Traders. All funding assessments are provided by Prop Account LTD and all assessment fees are paid to Prop Account LTD. If you qualify for a Funded Account, you will be required to enter into a Trader Agreement with Prop Account LTD. Prop Account LTD does not provide any trading education or other services.
+                </p>
             </div>
+            
 
         </div>
       </footer>
