@@ -8241,6 +8241,16 @@ Section Title
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
 }
 
+.custom-bottom-height-option {
+    /* Define padding that controls the height of both the button and the box */
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    display: flex; /* Use flexbox to vertically center content inside the earnings box */
+    align-items: center;
+    justify-content: center;
+    width: auto !important;
+}
+
 .custom-bottom-height {
     /* Define padding that controls the height of both the button and the box */
     padding: 1.5rem 1rem !important; /* Increase top/bottom padding */
