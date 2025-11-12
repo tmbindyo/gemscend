@@ -19014,6 +19014,29 @@ faqs-background {
 [data-tm-layout=dark] .top-earner-box-items .top-earner-content h3 {
   border-color: rgb(var(--theme-color-white-rgb), 0.1);
 }
+@media (max-width: 1370px) {
+  .top-earner-box-items .top-earner-content h3 {
+    font-size: 20px;
+  }
+  .top-earner-content-h3-heading {
+    font-weight: 900;
+    font-size: 16px;
+  }
+  .top-earner-content-h3-amount {
+    font-weight: 800!important;
+    font-size: 30px!important;
+  }
+  .top-earner-content-h3-name {
+    font-weight: 500; 
+    font-size: 15px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 8px; 
+    text-align: center;
+  }
+
+}
 @media (max-width: 1199.98px) {
   .top-earner-box-items .top-earner-content h3 {
     font-size: 20px;
