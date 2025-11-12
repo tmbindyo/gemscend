@@ -8243,7 +8243,8 @@ Section Title
 
 .custom-bottom-height-option {
     /* Define padding that controls the height of both the button and the box */
-    padding: 20px 20px !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
 
     padding-left: 30px !important;
     padding-right: 30px !important;
@@ -8256,8 +8257,8 @@ Section Title
 
 .custom-bottom-height {
     /* Define padding that controls the height of both the button and the box */
-    padding-top: 20px !important;
-    padding-bottom: 20px !important; /* Increase top/bottom padding */
+    padding-top: 10px !important;
+    padding-bottom: 10px !important; /* Increase top/bottom padding */
     display: flex; /* Use flexbox to vertically center content inside the earnings box */
     align-items: center;
     justify-content: center;
