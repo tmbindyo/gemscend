@@ -8142,9 +8142,22 @@ Section Title
   border-radius: 20px !important;
 }
 
+@media (max-width: 1370px) {
+  .dual-showcase-section h2 {
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .account-option {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 991px) {
   .dual-showcase-section h2 {
     text-align: center;
+    
   }
   
   .account-option {
