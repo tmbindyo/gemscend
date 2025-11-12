@@ -8268,8 +8268,8 @@ Section Title
 .fee-button-image {
     font-size: 1.8rem; /* Make button text slightly larger to better fill the height */
     line-height: 1; /* Adjust line height to prevent extra spacing */
-    padding-top: 2rem !important; /* Override py-3 slightly for fine-tuning */
-    padding-bottom: 2rem !important;
+    padding-top: 20px !important; /* Override py-3 slightly for fine-tuning */
+    padding-bottom: 20px !important;
 }
 /* Ensure the big numbers are the right size and color */
 #accountValue, #profitValue {
