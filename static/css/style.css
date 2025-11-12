@@ -2515,7 +2515,7 @@ Scroll To Top style
   align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: right;
+  justify-content: space-between;
   width: 100%;
 }
 .header-style-one .main-box .outer-box {
@@ -2704,7 +2704,7 @@ Scroll To Top style
   color: var(--theme-color-white);
 }
 .header-style-one.header-5 .main-box {
-  padding: 10px 110px;
+  padding: 10px 30px;
 }
 @media (max-width: 1699.98px) {
   .header-style-one.header-5 .main-box {
