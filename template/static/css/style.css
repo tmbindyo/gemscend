@@ -7990,6 +7990,11 @@ Section Title
   border-radius: 16px;
 }
 
+.dual-showcase-section h2 {
+    text-align: center;
+    font-size: 50px;
+  }
+
 .slider-container {
     position: relative;
     width: 100%;
