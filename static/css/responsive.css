@@ -207,6 +207,20 @@
 	}
 }
 
+/* Hide mobile nav toggler on screens above 1024px */
+@media only screen and (min-width: 1025px) {
+  .mobile-nav-toggler {
+    display: none !important;
+  }
+  
+  /* Adjust navigation item spacing for larger screens */
+  .main-menu .navigation > li {
+    font-size: 10px !important;
+  }
+}
+
+
+
 @media only screen and (max-width: 1023px){
 	.header-top,
 	.main-header .main-menu {
