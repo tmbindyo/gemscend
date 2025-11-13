@@ -4016,7 +4016,7 @@ Section Title
   width: 100%;
   height: 100%;
   background-image: url(../images/gemscend/gemscend_header_transparent_slice_2.png);
-  background-position: center -50px !important;
+  background-position: center -100px !important;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
@@ -15023,7 +15023,7 @@ Section Title
 /* Table Styling */
 .gemscend-pricing-table {
   width: 100%;
-  max-width: calc(100% - 40px); /* 20px spacing on each side */
+  max-width: calc(100% - 160px); /* 20px spacing on each side */
   border-collapse: collapse;
   margin: 40px auto 0 auto; /* Center with auto margins */
   background: #fff;
@@ -15107,7 +15107,7 @@ Section Title
   font-weight: 700;
   font-size: 18px;
   text-decoration: none;
-  padding: 12px 12px;
+  padding: 12px 10px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   z-index: 2;

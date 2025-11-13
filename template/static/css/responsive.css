@@ -224,6 +224,15 @@
   .main-menu .navigation > li {
     font-size: 10px !important;
   }
+
+  	.btn-style-register{
+		padding: 16px 32px;
+	}
+	.btn-style-login {
+		padding: 16px 32px;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
 }
 
 
@@ -269,9 +278,12 @@
 
 	.btn-style-register{
 		padding: 12px 20px;
+		margin-top: 20px;
 	}
 	.btn-style-login {
 		padding: 12px 20px;
+		margin-top: 20px;
+		margin-left: 20px;
 	}
 
 
@@ -332,6 +344,16 @@
 		
 		padding-top: 10px; /* Add padding from top instead of margin */
 	}
+
+	.btn-style-register{
+		padding: 12px 20px;
+		margin-top: 20px;
+	}
+	.btn-style-login {
+		padding: 12px 20px;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
 	
 	
 }
@@ -344,7 +366,15 @@
 	}
 
 	
-
+	.btn-style-register{
+		padding: 12px 20px;
+		margin-top: 20px;
+	}
+	.btn-style-login {
+		padding: 12px 20px;
+		margin-top: 20px;
+		margin-left: 20px;
+	}
 	
 	.sticky-logo-box {
 		min-width: auto;
