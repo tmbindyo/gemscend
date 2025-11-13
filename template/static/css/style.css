@@ -20257,9 +20257,7 @@ faqs-background {
   transition: filter 0.3s ease;
 }
 
-.journey-card:hover .icon img {
-  filter: brightness(0) invert(1) drop-shadow(0 0 8px rgba(16, 185, 129, 0.5));
-}
+
 
 
 
