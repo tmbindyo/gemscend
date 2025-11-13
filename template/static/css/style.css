@@ -15152,6 +15152,10 @@ Section Title
   color: #2c3e50;
   text-align: left;
   padding-left: 20px;
+  width: 210px; /* Fixed width */
+  max-width: 210px;
+  min-width: 210px;
+  white-space: nowrap; /* Prevent text wrapping */
 }
 
 .gemscend-pricing-table tbody tr:nth-child(even) {
