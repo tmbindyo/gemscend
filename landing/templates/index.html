@@ -1039,7 +1039,131 @@
 </script>
 
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // --- Account size buttons functionality ---
+        const accountOptions = document.querySelectorAll('.account-option');
+        const accountRange = document.getElementById('accountRange');
+        const accountTooltip = document.getElementById('accountTooltip');
+        
+        if (accountOptions.length > 0) {
+            accountOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    accountOptions.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    const value = this.getAttribute('data-value');
+                    accountRange.value = value;
+                    accountTooltip.textContent = `$${parseInt(value).toLocaleString()}`;
+                    updateTooltipPosition(accountRange, accountTooltip);
+                    calculateEarnings();
+                });
+            });
+            
+            function updateTooltipPosition(slider, tooltip) {
+                const percent = (slider.value - slider.min) / (slider.max - slider.min);
+                const sliderWidth = slider.offsetWidth;
+                const tooltipWidth = tooltip.offsetWidth;
+                const left = percent * (sliderWidth - tooltipWidth) + tooltipWidth / 2;
+                tooltip.style.left = `${left}px`;
+            }
 
+            updateTooltipPosition(accountRange, accountTooltip);
+            updateTooltipPosition(document.getElementById('profitRange'), document.getElementById('profitTooltip'));
+            
+            accountRange.addEventListener('input', function() {
+                accountTooltip.textContent = `$${parseInt(this.value).toLocaleString()}`;
+                updateTooltipPosition(this, accountTooltip);
+                calculateEarnings();
+            });
+            
+            document.getElementById('profitRange').addEventListener('input', function() {
+                document.getElementById('profitTooltip').textContent = `${this.value}%`;
+                updateTooltipPosition(this, document.getElementById('profitTooltip'));
+                calculateEarnings();
+            });
+            
+            function calculateEarnings() {
+                // Add your earnings calculation logic here
+            }
+        }
+
+        // --- Info tooltip system for pricing table ---
+        const infoIcons = document.querySelectorAll('.info-tooltip');
+        
+        infoIcons.forEach(icon => {
+            let tooltip;
+
+            icon.addEventListener('mouseenter', function(e) {
+                const text = this.getAttribute('data-tooltip');
+                if (!text) return;
+
+                // Remove any existing tooltip first
+                const existingTooltip = document.querySelector('.floating-tooltip');
+                if (existingTooltip) {
+                    existingTooltip.remove();
+                }
+
+                tooltip = document.createElement('div');
+                tooltip.className = 'floating-tooltip arrow-left';
+                tooltip.innerText = text;
+                document.body.appendChild(tooltip);
+
+                // Get position relative to viewport
+                const rect = this.getBoundingClientRect();
+                const scrollX = window.pageXOffset || document.documentElement.scrollLeft;
+                const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+
+                const tooltipWidth = tooltip.offsetWidth;
+                const tooltipHeight = tooltip.offsetHeight;
+
+                // Position tooltip to the RIGHT of the icon
+                let left = rect.right + 8 + scrollX; // 8px gap from right edge
+                let top = rect.top + (rect.height / 2) - (tooltipHeight / 2) + scrollY;
+
+                // Check if tooltip would go off-screen to the right
+                const viewportWidth = window.innerWidth;
+                if (left + tooltipWidth > viewportWidth + scrollX - 20) {
+                    // Position to the left instead
+                    left = rect.left - tooltipWidth - 8 + scrollX;
+                    tooltip.classList.remove('arrow-left');
+                    tooltip.classList.add('arrow-right');
+                } else {
+                    tooltip.classList.remove('arrow-right');
+                    tooltip.classList.add('arrow-left');
+                }
+
+                // Check if tooltip would go off-screen vertically
+                if (top < scrollY) {
+                    top = scrollY + 10; // Stick to top with padding
+                } else if (top + tooltipHeight > scrollY + window.innerHeight) {
+                    top = scrollY + window.innerHeight - tooltipHeight - 10; // Stick to bottom
+                }
+
+                tooltip.style.left = `${left}px`;
+                tooltip.style.top = `${top}px`;
+                
+                // Tooltip appears immediately - no opacity/visibility transitions needed
+            });
+
+            icon.addEventListener('mouseleave', function() {
+                if (tooltip && tooltip.parentNode) {
+                    tooltip.remove();
+                    tooltip = null;
+                }
+            });
+
+            // Also remove tooltip if user clicks elsewhere
+            document.addEventListener('click', function(e) {
+                if (tooltip && !icon.contains(e.target) && !tooltip.contains(e.target)) {
+                    if (tooltip.parentNode) {
+                        tooltip.remove();
+                        tooltip = null;
+                    }
+                }
+            });
+        });
+    });
+</script>
 
 
 
