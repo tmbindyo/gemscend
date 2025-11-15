@@ -1,5 +1,7 @@
 
+/* 15-11-2025 - Business Consulting Html Template
 
+**********************************************/
 
 
 @media only screen and (min-width: 1700px){
@@ -212,10 +214,18 @@
 	.mobile-nav-toggler {
 		display: block !important;
 	}
+
+	.top-earner-auto-container {
+		padding: 0px 100px;
+	}
+
 }
 
 /* Hide mobile nav toggler on screens above 1024px */
 @media only screen and (min-width: 1025px) {
+  .sticky-header .mobile-nav-toggler {
+    display: none !important;
+  }
   .mobile-nav-toggler {
     display: none !important;
   }
@@ -226,18 +236,25 @@
   }
 
   	.btn-style-register{
-		padding: 16px 32px;
+		padding: 12px 28px;
 	}
 	.btn-style-login {
-		padding: 16px 32px;
-		margin-top: 20px;
+		padding: 12px 28px;
 		margin-left: 20px;
 	}
 }
 
+@media only screen and (max-width: 1024px){
+	.sticky-header .mobile-nav-toggler {
+		display: none !important;
+	}
+}
 
 
 @media only screen and (max-width: 1023px){
+	.sticky-header .mobile-nav-toggler {
+		display: none !important;
+	}
 	.header-top,
 	.main-header .main-menu {
 		display: none;
@@ -278,11 +295,9 @@
 
 	.btn-style-register{
 		padding: 12px 20px;
-		margin-top: 20px;
 	}
 	.btn-style-login {
 		padding: 12px 20px;
-		margin-top: 20px;
 		margin-left: 20px;
 	}
 
@@ -345,6 +360,10 @@
 		padding-top: 10px; /* Add padding from top instead of margin */
 	}
 
+	.top-earner-auto-container {
+		padding: 0px 100px;
+	}
+
 	.btn-style-register{
 		padding: 12px 20px;
 		margin-top: 20px;
@@ -365,6 +384,9 @@
 		padding-left: 0;
 	}
 
+	.top-earner-auto-container {
+		padding: 0px 40px;
+	}
 	
 	.btn-style-register{
 		padding: 12px 20px;
@@ -393,4 +415,18 @@
 	.main-header .header-lower .logo-box .logo img {
 		max-width: 180px;
 	}
+}
+
+
+
+
+
+
+
+@media only screen and (max-height: 600px){
+
+	.gemscend-get-started{
+		padding: 16px 40px;
+	}
+
 }

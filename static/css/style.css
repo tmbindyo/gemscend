@@ -1,4 +1,4 @@
-/* Finclix - Business Consulting Html Template
+/* 15-11-2025 - Business Consulting Html Template
 
 Template Name: Finclix
 Version: 1.0.0
@@ -1089,15 +1089,15 @@ Scroll To Top style
 }
 
 .email-floating-btn img {
-  width: 93px;
-  height: 93px;
+  width: 72px;
+  height: 72px;
   transition: width 0.35s ease-in-out, transform 0.35s ease-in-out;
   transform-origin: right center; /* ensures it expands left */
 }
 
 .email-floating-btn:hover img {
   content: url(../images/gemscend/on_click_1.png);
-  width: 282px; /* expand width smoothly */
+  width: 172px; /* expand width smoothly */
   transform: translateX(-5px); /* optional subtle motion */
 }
 
@@ -2971,7 +2971,7 @@ Scroll To Top style
 }
 @media (max-width: 1424px) {
   .main-menu .navigation > li > a {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 .main-menu .navigation > li > a .icon {
@@ -3235,6 +3235,9 @@ Scroll To Top style
 ====================================================================
 
 ***/
+.top-earner-section-padding {
+  padding: 80px 0;
+}
 .section-padding {
   padding: 120px 0;
 }
@@ -3927,6 +3930,28 @@ Section Title
     font-size: 30px;
   }
 }
+
+@media (max-width: 1199.98px) {
+  .why-gemscend-sec-title h2 {
+    font-size: 50px !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .why-gemscend-sec-title h2 {
+    font-size: 44px !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .why-gemscend-sec-title h2 {
+    font-size: 38px !important;
+  }
+}
+@media (max-width: 469.98px) {
+  .why-gemscend-sec-title h2 {
+    font-size: 30px !important;
+  }
+}
+
 .sec-title .title {
   position: relative;
   font-size: var(--sec-title-font-size);
@@ -4100,7 +4125,7 @@ Section Title
 
 /* Glass bar */
 .gemscend-glassbar {
-  margin: 0 auto 40px auto; /* Increased bottom margin from 20px to 40px */
+  margin: 0 auto 20px auto; /* Increased bottom margin from 20px to 40px */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -4112,6 +4137,7 @@ Section Title
   box-shadow: 0 0 20px rgba(0, 255, 100, 0.2);
   max-width: 1100px;
   width: 90%;
+  scale: 70%
 }
 
 .gemscend-glassbar-inner {
@@ -8290,6 +8316,27 @@ Section Title
 .dual-showcase-section h2 {
   text-align: center;
   font-size: 50px;
+}
+
+@media (max-width: 1199.98px) {
+  .dual-showcase-section h2 {
+    font-size: 50px !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .dual-showcase-section h2 {
+    font-size: 44px !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .dual-showcase-section h2 {
+    font-size: 38px !important;
+  }
+}
+@media (max-width: 469.98px) {
+  .dual-showcase-section h2 {
+    font-size: 30px !important;
+  }
 }
 
 .slider-container {
@@ -19954,19 +20001,20 @@ faqs-background {
 
 /* Cards */
 .journey-card {
-  background: var(--gemscend-dark-green);
-  border-radius: 20px;
-  padding: clamp(20px, 3vw, 30px) clamp(15px, 2vw, 25px);
-  text-align: center;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-  border: 0.25px solid #3b4240;
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  box-sizing: border-box;
+    background: radial-gradient(ellipse at top, #0004 70%, #000000 100%) !important;
+    border-radius: 20px;
+    padding: clamp(20px, 3vw, 30px) clamp(15px, 2vw, 25px);
+    text-align: center;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border: 0.25px solid #3b4240;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
 }
+
 
 .journey-card:hover {
   background: rgba(255, 255, 255, 0.1);
