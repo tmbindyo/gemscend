@@ -47,652 +47,138 @@
 
 
     <!-- Main Header-->
-        {% include 'components/navbar_dark_background.html' with company_name="Gemscend" year=2024 %}
+        {% include 'components/navbar_white_background.html' with company_name="Gemscend" year=2024 %}
     <!--End Main Header -->
 
-    <!-- Hero Section Start -->
-    {% comment %} <section class="hero-section hero-5 parallaxie bg-cover" style="background-image: url('{% static 'images/header-image/gemscend _header_transparent_slice.png' %}');">
-        <div class="banner-outer">
-            <div class="hero-content">
-                <h1 class="banner-title wow fadeInUp" data-wow-delay=".2s">The Journey Starts Now!</h1>
-
-
-                <div class="info mt-50 wow fadeInUp" data-wow-delay=".2s">
-                    <a href="{% url 'template-contact' %}" class="theme-btn btn-style-five btn-outline">
-                        Get Started Today!
-                    </a>
-                </div>
-            </div>
-        </div>				
-    </section> {% endcomment %}
-	{% comment %} <section class="gemscend-hero-section">
-		<!-- Pulsing background layer -->
-		<div class="gemscend-hero-bg"></div>
-
-		<!-- Transparent main image layer -->
-		<div class="gemscend-hero-image"></div>
-
-		<!-- Glowing sides -->
-		<div class="gemscend-glow-left"></div>
-		<div class="gemscend-glow-right"></div>
-
-		<!-- Text content -->
-		<div class="gemscend-banner-outer">
-			<div class="gemscend-hero-content">
-			<h1 class="gemscend-banner-title wow fadeInUp" data-wow-delay=".2s">
-				The Journey Starts Now!
-			</h1>
-
-			<div class="gemscend-info mt-50 wow fadeInUp" data-wow-delay=".2s">
-				<a href="{% url 'template-contact' %}" class="theme-btn btn-style-five btn-outline">
-				Get Started Today!
-				</a>
-			</div>
-			</div>
+    
+    <!-- Start main-content -->
+    {% comment %} <section class="page-title" style="background-image: url('{% static "images/inner/page-title-bg.jpg" %}');">
+      <div class="auto-container">
+		<div class="title-outer">
+			<ul class="page-breadcrumb wow fadeInUp" data-wow-delay=".3s">
+				<li><a href="{% url 'template-index' %}">Home</a></li>
+				<li>Contact Us</li>
+			</ul>
+			<h1 class="title wow fadeInUp" data-wow-delay=".5s">Contact Us</h1>
 		</div>
-	</section> {% endcomment %}
+      </div>
+    </section> {% endcomment %}
 
-    <section class="gemscend-hero-section">
-        <!-- Background and glow layers -->
-        <div class="gemscend-hero-bg"></div>
-        <div class="gemscend-hero-image"></div>
-        <div class="gemscend-glow-left"></div>
-        <div class="gemscend-glow-right"></div>
-
-        <!-- Foreground content -->
-        <div class="gemscend-banner-outer">
-            <div class="gemscend-hero-content">
-                {% comment %} <h1 class="gemscend-banner-title wow fadeInUp" data-wow-delay=".2s">
-                    The Journey Starts Now!
-                </h1> {% endcomment %}
-            </div>
-            
-            <!-- Bottom content group -->
-            <div class="gemscend-bottom-group">
-                <!-- Glass bar -->
-                <div class="gemscend-glassbar wow fadeInUp" data-wow-delay=".4s">
-                    <div class="gemscend-glassbar-inner">
-                        <h3 class="glass-title">Why Gemscend?</h3>
-                        <div class="gemscend-glass-items">
-                            <div class="glass-item">
-                                <img src="{% static 'gifs/payout.gif' %}" alt="Payout">
-                                <p>First Payout on Demand</p>
-                            </div>
-                            <div class="glass-item">
-                                <img src="{% static 'gifs/minimum.gif' %}" alt="Days">
-                                <p>No Minimum Trading Days</p>
-                            </div>
-                            <div class="glass-item">
-                                <img src="{% static 'gifs/limit.gif' %}" alt="Limits">
-                                <p>No Time Limits</p>
-                            </div>
-                            <div class="glass-item">
-                                <img src="{% static 'gifs/splits_new.gif' %}" alt="Million">
-                                <p>80% Profit Split</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Button positioned immediately below -->
-                <div class="gemscend-button-container wow fadeInUp" data-wow-delay=".6s">
-                    <a href="https://dashboard.gemscend.com/en/sign-up" class="theme-btn gemscend-get-started btn-outline">
-                        Get Started Today!
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <section class="dual-showcase-section pt-40" id="how-it-works">
-        <div class="container-fluid" style="max-width: 90%;">
-            <!-- Headings Row -->
-            <div class="row mb-4">
-                <div class="col-lg-6">
-                    <h2 class="text-white text-center why-gemscend-sec-title mb-4">How <span class="text-gemscend-dark-emerald-75">Gemscend</span> Works?</h2>
-                    <div class="video-box rounded-4 overflow-hidden flex-grow-1 d-flex align-items-start">
-                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="How It Works Video" class="w-100 border border-2 border-success rounded-4" style="aspect-ratio: 16/9;" allowfullscreen loading="lazy"></iframe>
-                    </div>
-                </div>
-                {% comment %} gemscend calculator start here {% endcomment %}
-                <div class="col-lg-6">
-                    <h2 class="fw-bold text-white text-center why-gemscend-sec-title mb-4"><span class="text-gemscend-dark-emerald-75">How Much</span> Can You Make?</h2>
-                    <div class="bg-white rounded-4 shadow p-5 flex-grow-1 calculator-container">
-                        <div class="" style="margin-bottom: 5px;">
-                            <div class="d-flex justify-content-between align-items-baseline mb-3">
-                                <p class="mb-0 fw-bold fs-5">Account Size</p>
-                                <h1 class="mb-0 text-success fw-bold display-6" id="accountValue">$5,000</h1>
-                            </div>
-
-                            <div class="slider-container">
-                                <input type="range" class="form-range custom-slider" min="0" max="4" step="1" id="accountRange" value="1">
-                                <div class="slider-progress" id="accountProgress" style="width: 25%;"></div>
-                            </div>
-                            
-                            <div class="d-flex justify-content-between slider-labels-image">
-                                <span class="fw-bold">$3K</span>
-                                <span class="fw-bold">$5K</span>
-                                <span class="fw-bold">$10K</span>
-                                <span class="fw-bold">$20K</span>
-                                <span class="fw-bold">$100K</span>
-                            </div>
-                        </div>
-
-                        <div class="" style="margin-bottom: 5px;">
-                            <div class="d-flex justify-content-between align-items-baseline mb-3">
-                                <p class="mb-0 fw-bold fs-5">Profit Rate</p>
-                                <h1 class="mb-0 text-success fw-bold display-6" id="profitValue">15%</h1>
-                            </div>
-
-                            <div class="slider-container">
-                                <input type="range" class="form-range custom-slider" min="1" max="100" step="1" id="profitRange" value="15">
-                                <div class="slider-progress" id="profitProgress" style="width: 28%;"></div>
-                            </div>
-                        </div>
-
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
-                            <div class="text-center" style="flex-grow: 3; margin-right: 1.5rem;"> 
-                                <p class="text-dark mb-2" style="font-size: 1.25rem;">Your <strong class="fw-bolder">80%</strong> Take Home Is</p>
-                                <div class="earnings-box-image custom-bottom-height"> 
-                                    <h2 class="mb-0 fw-bold text-success display-6" id="monthlyEarnings">$25,000</h2>
-                                </div>
-                            </div>
-                            
-                            {% comment %} <div class="text-center d-flex flex-column align-items-center" style="flex-grow: 1;"> 
-                                <p class="text-dark mb-2" style="font-size: 1.25rem;"> <strong class="fw-bolder">Select Plan</strong> For Only</p>
-                                <button class="btn btn-success fee-button-image custom-bottom-height-option fw-bold">
-                                    $59
-                                </button>
-                            </div> {% endcomment %}
-
-                            <div class="text-center d-flex flex-column align-items-center" style="flex-grow: 1;"> 
-                                <p class="text-dark mb-2" style="font-size: 1.25rem;"> <strong class="fw-bolder">Select Plan</strong> For Only</p>
-                                <a href="#" class="btn btn-success fee-button-image custom-bottom-height-option fw-bold" id="planButton">
-                                    $50
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                {% comment %} gemscend calculator end here {% endcomment %}
-            </div>
-
-        </div>
-    </section>
-    <!-- Horizontal accordion area end here -->
-
-
-
-
-
-
-
-
-
-    <!-- Pricing Section Start -->
-    <section class="gemscend-pricing-section fix" id="pricing">
-        <div class="auto-container">
-            <div class="sec-title text-center">
-                <h2 class="wow fadeInUp text-white" data-wow-delay=".3s">
-                    Our Pricing
-                </h2>
-                <h3 class="wow fadeInUp text-white" data-wow-delay=".3s">
-                    <span class="text-gemscend-emerald">Great Price Plans</span> Tailored To Your Trading Needs
-                </h3>
-            </div>
-
-            <div class="row">
-                <div class="gemscend-pricing-wrapper">
-                    <div class="table-responsive">
-                        <table class="gemscend-pricing-table">
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>
-                                        <div class="price-header">
-                                            <div class="price-amount">$3,000</div>
-                                            <a href="https://dashboard.gemscend.com/challenges?planid=121" class="gemscend-price-btn">Select Plan</a>
-                                            <div class="price-fee">Fee: $35</div>
-                                        </div>
-                                    </th>
-                                    <th>
-                                        <div class="price-header">
-                                            <div class="price-amount">$5,000</div>
-                                            <a href="https://dashboard.gemscend.com/challenges?planid=122" class="gemscend-price-btn">Select Plan</a>
-                                            <div class="price-fee">Fee: $50</div>
-                                        </div>
-                                    </th>
-                                    <th>
-                                        <div class="price-header">
-                                            <div class="price-amount">$10,000</div>
-                                            <a href="https://dashboard.gemscend.com/challenges?planid=123" class="gemscend-price-btn">Select Plan</a>
-                                            <div class="price-fee">Fee: $100</div>
-                                        </div>
-                                    </th>
-                                    <th>
-                                        <div class="price-header">
-                                            <div class="price-amount">$20,000</div>
-                                            <a href="https://dashboard.gemscend.com/challenges?planid=124" class="gemscend-price-btn">Select Plan</a>
-                                            <div class="price-fee">Fee: $200</div>
-                                        </div>
-                                    </th>
-                                    <th>
-                                        <div class="price-header">
-                                            <div class="price-amount">$100,000</div>
-                                            <a href="https://dashboard.gemscend.com/challenges?planid=125" class="gemscend-price-btn">Select Plan</a>
-                                            <div class="price-fee">Fee: $660</div>
-                                        </div>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <span class="info-tooltip" data-tooltip="The trader should achieve an 8% profit in Phase 1 to advance to Phase 2.">i</span>
-                                        Phase 1 Profit Target
-                                    </td>
-                                    <td>8%</td>
-                                    <td>8%</td>
-                                    <td>8%</td>
-                                    <td>8%</td>
-                                    <td>8%</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="info-tooltip" data-tooltip="The trader should achieve a 5% profit in Phase 2 to complete the challenge and receive a funded account.">i</span>
-                                        Phase 2 Profit Target
-                                    </td>
-                                    <td>5%</td>
-                                    <td>5%</td>
-                                    <td>5%</td>
-                                    <td>5%</td>
-                                    <td>5%</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="info-tooltip" data-tooltip="An equity-based restriction that ensures a trader cannot lose more than a fixed amount in a single trading day, calculated from the prior day's closing balance, and exceeding it results in a hard breach.">i</span>
-                                        Daily Loss Limit 5%
-                                    </td>
-                                    <td>$150</td>
-                                    <td>$250</td>
-                                    <td>$500</td>
-                                    <td>$1,000</td>
-                                    <td>$5,000</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="info-tooltip" data-tooltip="The trader’s take-home is 80% of the net profit generated in the Gemscend funded account.">i</span>
-                                        Profit Split
-                                    </td>
-                                    <td>80%</td>
-                                    <td>80%</td>
-                                    <td>80%</td>
-                                    <td>80%</td>
-                                    <td>80%</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="info-tooltip" data-tooltip="The trader should not lose more than the fixed maximum overall loss from the allocated capital.">i</span>
-                                        Maximum Drawdown
-                                    </td>
-                                    <td>8%</td>
-                                    <td>8%</td>
-                                    <td>8%</td>
-                                    <td>8%</td>
-                                    <td>8%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Service Section Start -->
-    <div class="marquee-section fix pt-0">
-        <div class="marquee">
-            <div class="marquee-group">
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/ma_symbol.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/visa_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/discover_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/union_pay.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/union_pay_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/american_express.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/s_pay_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/pix_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/qris_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/paypal_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/risework_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/mpesa.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/airtel_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/vodacom.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/mtn.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/tigo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/bitcoin.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/etherium.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/usd_coin.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/usdt_logo.png' %}" alt="img" />
-                </div>
-            </div>
-            <div class="marquee-group">
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/ma_symbol.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/visa_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/discover_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/union_pay.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/union_pay_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/american_express.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/s_pay_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/pix_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/qris_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/paypal_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/risework_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/mpesa.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/airtel_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/vodacom.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/mtn.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/tigo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/bitcoin.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/etherium.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/usd_coin.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/usdt_logo.png' %}" alt="img" />
-                </div>
-            </div>
+	 <!-- Page Contact area start here -->
+    <section class="contact-details fix section-padding">
+      <div class="auto-container">
+        <div class="sec-title text-center">
+            <h2 class="sub-title wow fadeInUp text-gemscend-dark-emerald-75">
+                Contact Us
+            </h2>
             
         </div>
-    </div>
 
-
-
-
-
-    <!-- Top earners Section Start -->
-    <section class="top-earner-secton top-earner-section-padding fix top-earner-custom-bg" >
-        <div class="top-earner-auto-container">
-            <div class="sec-title text-center">
-                <h2 class="wow fadeInUp text-white" data-wow-delay=".3s">
-                    Some Of Our Top Earners
-                </h2>
-            </div>
-            <div class="row">
-
-            <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-              <div class="top-earner-box-items">
-                <div class="top-earner-content">
-                    <h3 class="text-gemscend-dark-emerald-75 text-center top-earner-content-h3-heading">2 Payouts Totalling</h3>
-                    <h3 class="text-center top-earner-content-h3-amount">$2,500</h3>
-                    <p class="text-gemscend-dark-emerald-75 top-earner-content-h3-name">
-                        Daniel Mbai.
-                        <img src="https://flagcdn.com/ke.svg" 
-                            alt="English" 
-                            class="flag-icon" 
-                            style="width:25px; height:25px; border-radius:50%;">
-                    </p>
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-4 wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
+            <div class="contact-details-block">
+              <div class="inner-box">
+                <div class="icon">
+				 <i class="lnr-icon-map-marker"></i>
                 </div>
-                <div class="top-earner-image">
-                  <img src="{% static 'images/gemscend/Cert_1.png' %}" alt="img" />
-                </div>
-                
+                <h4 class="title">address line</h4>
+                <p class="text">Bowery St, New York, 37 USA
+                  NY 10013,USA</p>
               </div>
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-              <div class="top-earner-box-items">
-                <div class="top-earner-content">
-                    <h3 class="text-gemscend-dark-emerald-75 text-center top-earner-content-h3-heading" >2 Payouts Totalling</h3>
-                    <h3 class="text-center top-earner-content-h3-amount">$4,500</h3>
-                    <p class="text-gemscend-dark-emerald-75 top-earner-content-h3-name">
-                        Saanvi Shah.
-                        <img src="https://flagcdn.com/in.svg" 
-                            alt="English" 
-                            class="flag-icon" 
-                            style="width:25px; height:25px; border-radius:50%;">
-                    </p>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
+            <div class="contact-details-block">
+              <div class="inner-box">
+                <div class="icon">
+                   <i class="lnr-icon-phone-handset"></i>
+
                 </div>
-                <div class="top-earner-image">
-                  <img src="{% static 'images/gemscend/Cert_2.png' %}" alt="img" />
-                </div>
-                
+                <h4 class="title">address line</h4>
+                <p class="text">+1255 - 568 - 6523 4374-221
+                  +1255 - 568 - 6523</p>
               </div>
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-              <div class="top-earner-box-items">
-                <div class="top-earner-content">
-                    <h3 class="text-gemscend-dark-emerald-75 text-center top-earner-content-h3-heading" >2 Payouts Totalling</h3>
-                    <h3 class="text-center top-earner-content-h3-amount">$8,500</h3>
-                    <p class="text-gemscend-dark-emerald-75 top-earner-content-h3-name">
-                        Imogen Smith.
-                        <img src="https://flagcdn.com/gb.svg" 
-                            alt="English" 
-                            class="flag-icon" 
-                            style="width:25px; height:25px; border-radius:50%;">
-                    </p>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInLeft" data-wow-delay="400ms" data-wow-duration="1500ms">
+            <div class="contact-details-block">
+              <div class="inner-box">
+                <div class="icon">
+                  <i class="lnr-icon-envelope"></i>
                 </div>
-                <div class="top-earner-image">
-                  <img src="{% static 'images/gemscend/Cert_3.png' %}" alt="img" />
-                </div>
-                
+                <h4 class="title">Mail Adress</h4>
+                <p class="text"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="40252d21292c002538212d302c256e232f2d">[email&#160;protected]</a> <br> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5831363e371821372d2a3c3735393136763b3735">[email&#160;protected]</a></p>
               </div>
             </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-              <div class="top-earner-box-items">
-                <div class="top-earner-content">
-                    <h3 class="text-gemscend-dark-emerald-75 text-center top-earner-content-h3-heading" >2 Payouts Totalling</h3>
-                    <h3 class="text-center top-earner-content-h3-amount">$12,000</h3>
-                    <p class="text-gemscend-dark-emerald-75 top-earner-content-h3-name">
-                        Emily Winslet.
-                        <img src="https://flagcdn.com/us.svg" 
-                            alt="English" 
-                            class="flag-icon" 
-                            style="width:25px; height:25px; border-radius:50%;">
-                    </p>
-                </div>
-                <div class="top-earner-image">
-                  <img src="{% static 'images/gemscend/Cert_4.png' %}" alt="img" />
-                </div>
-                
-              </div>
-            </div>
-
-            {% comment %} <div class="info mt-50 wow fadeInUp" data-wow-delay=".2s" style="display: flex; justify-content: center; align-items: center"> 
-                <a href="https://gemscenddashboard.propaccount.com/en/sign-up" class="theme-btn btn-emerald"> Get Started Today! </a> 
-            </div> {% endcomment %}
-
-            <div class="info mt-50 wow fadeInUp text-center" data-wow-delay=".2s"> 
-                <a href="https://dashboard.gemscend.com/en/sign-up" class="theme-btn btn-emerald"> Get Started Today! </a> 
-            </div>
-
-
           </div>
         </div>
-    </section>
-
-
-
-
-
-
-
-    <!-- Journey Section Start -->
-    <section class="journey-section fix">
-        <div class="journey-auto-container">
-            <div class="sec-title text-center">
-                <h2 class="wow fadeInUp text-white" data-wow-delay=".3s">
-                    Why Gemscend?
-                </h2>
-            </div>
-            <div class="journey-layout">
-                <div class="journey-grid">
-                
-                    <div class="journey-card wow fadeInUp" data-wow-delay=".1s">
-                        <div class="icon"><img src="{% static 'gifs/Withdraw-5.gif' %}" alt="Payout Icon"></div>
-                        <h4>First Payout on Demand</h4>
-                        <p>Your first withdrawal can be requested at any time, subject to an 80/20 profit split.</p>
-                    </div>
-
-                    <div class="journey-card wow fadeInUp" data-wow-delay=".2s">
-                        <div class="icon"><img src="{% static 'gifs/Schedule-3.gif' %}" alt="No Time Limits Icon"></div>
-                        <h4>No Time Limits</h4>
-                        <p>Trade freely without any minimum trading day requirements or restrictions.</p>
-                    </div>
-
-                    <div class="journey-card wow fadeInUp" data-wow-delay=".3s">
-                        <div class="icon"><img style="height: 60px; width: 60px;" src="{% static 'gifs/calendar_V3.gif' %}" alt="Trading Days Icon"></div>
-                        <h4>No Minimum Trading Days</h4>
-                        <p>Trade at your own pace. No deadlines, no pressure.</p>
-                    </div>
-
-                    <div class="journey-card wow fadeInUp" data-wow-delay=".4s">
-                        <div class="icon"><img src="{% static 'gifs/Income-3.gif' %}" alt="Funding Icon"></div>
-                        <h4>Maximum of $1 Million</h4>
-                        <p>A maximum of $1 million in active evaluation or funded plans per person is permitted.</p>
-                    </div>
-
-                    <div class="journey-card wow fadeInUp" data-wow-delay=".5s">
-                        <div class="icon"><img src="{% static 'gifs/bookmark-2.gif' %}" alt="Weekend Icon"></div>
-                        <h4>Weekend Position Holding</h4>
-                        <p>Hold positions over the weekend with complete flexibility.</p>
-                    </div>
-
-                    <div class="journey-card wow fadeInUp" data-wow-delay=".6s">
-                        <div class="icon"><img src="{% static 'gifs/splits_2.gif' %}" alt="Transparency Icon"></div>
-                        <h4>80% Profit Split</h4>
-                        <p>Keep the majority of your trading profits while while trading with Gemscend capital.</p>
-                    </div>
-
+        <div class="mt-100">
+          <div class="row g-5">
+            <div class="col-lg-6 mx-auto content-column">
+              <div class="inner-column right-column">
+                <div class="sec-title mb-30">
+                  <h2 class="title wow splt-txt" data-splitting>Fill Up The Form</h2>
+                  <p class="text wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Your email address will not be published. Required fields are marked *</p>
                 </div>
-            
-            
-            <!-- Right Column -->
-            <div class="journey-right">
-                
-            </div>
 
+                <div id="form-messages" class="alert d-none mb-3"></div>
+
+                <form id="contact_form" name="contact_form" method="post">
+                    {% csrf_token %}
+                    <!-- Honeypot Field - Hidden from humans but bots will fill it -->
+                    <div class="hp-field" style="display: none;">
+                        <input name="website" type="text" tabindex="-1" autocomplete="off">
+                    </div>
+
+                    <div class="type-feild">
+                        <i class="fa-light fa-user"></i>
+                        <input name="form_name" class="required" type="text" placeholder="Your Name*">
+                    </div>
+                    <div class="type-feild">
+                        <i class="fa-light fa-pen-clip"></i>
+                        <input name="form_subject" class="required" type="text" placeholder="Your Subject*">
+                    </div>
+                    <div class="type-feild">
+                        <i class="fa-light fa-envelope"></i>
+                        <input name="form_email" class="required" type="email" placeholder="Email Address*">
+                    </div>
+                    <div class="type-feild">
+                        <i class="fa-light fa-pen-to-square"></i>
+                        <textarea name="form_message" class="required" placeholder="Enter Your Messege here"></textarea>
+                    </div>
+                    <button type="submit" class="theme-btn btn-style-one rounded-0"><i class="me-2 fa-light fa-paper-plane"></i> Get In Touch</button>
+                </form>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
+    <!-- Page Contact area end here -->
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -719,275 +205,101 @@
     });
 </script>
 
-
-
-<!-- pricing table highlight -->
+{% comment %} send email {% endcomment %}
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Account size values for hard stops
-        const accountValues = [3000, 5000, 10000, 20000, 100000];
+    let formLoadTime = Date.now();
+
+    document.getElementById('contact_form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        console.log('Form submitted!'); // Debug log
         
-        // Get DOM elements
-        const accountRange = document.getElementById('accountRange');
-        const profitRange = document.getElementById('profitRange');
-        const monthlyEarnings = document.getElementById('monthlyEarnings');
-        const accountValueDisplay = document.getElementById('accountValue');
-        const profitValueDisplay = document.getElementById('profitValue');
-        const accountProgress = document.getElementById('accountProgress');
-        const profitProgress = document.getElementById('profitProgress');
-
-        // Utility function to format currency
-        function formatCurrency(amount) {
-            return new Intl.NumberFormat('en-US', {
-                style: 'currency',
-                currency: 'USD',
-                minimumFractionDigits: 0,
-                maximumFractionDigits: 0
-            }).format(amount);
+        // Honeypot validation
+        const honeypot = document.querySelector('input[name="website"]');
+        if (honeypot && honeypot.value !== '') {
+            console.log('Bot detected - honeypot field filled');
+            // Silent fail - don't proceed with submission
+            return;
         }
-
-        // Update slider progress fill
-        function updateSliderProgress(slider, progressElement) {
-            const min = parseFloat(slider.min);
-            const max = parseFloat(slider.max);
-            const value = parseFloat(slider.value);
-            let progress = ((value - min) / (max - min)) * 100;
-
-            // Apply a slight extension to cover the thumb
-            const extendedProgress = Math.min(progress + 1.5, 100);
-
-            if (progressElement) {
-                progressElement.style.width = `${extendedProgress}%`;
-            }
-        }
-
-        // Update the displayed value next to the slider title
-        function updateDisplayValue(slider, displayElement) {
-            if (slider.id === 'accountRange') {
-                // Use the hard stop values
-                const index = parseInt(slider.value);
-                const value = accountValues[index];
-                const formattedValue = formatCurrency(value);
-                displayElement.textContent = formattedValue;
-            } else {
-                // Format profit rate as percentage
-                const value = parseFloat(slider.value);
-                displayElement.textContent = `${value}%`;
-            }
-        }
-
-        // Calculate and display the final earnings
-        function calculateEarnings() {
-            // Get account size from hard stop values
-            const accountIndex = parseInt(accountRange.value);
-            const accountSize = accountValues[accountIndex];
-            const profitPercent = parseFloat(profitRange.value);
-            const traderTakeHomeRate = 0.80; // 80%
-
-            // Calculate earnings based on account size and profit percentage
-            const monthlyProfit = (accountSize * profitPercent) / 100;
-            const calculatedTakeHome = monthlyProfit * traderTakeHomeRate;
-            monthlyEarnings.textContent = formatCurrency(calculatedTakeHome);
-        }
-
-        // --- Event Listeners ---
-
-        // Account slider input
-        accountRange.addEventListener('input', function() {
-            updateDisplayValue(accountRange, accountValueDisplay);
-            updateSliderProgress(accountRange, accountProgress);
-            calculateEarnings();
-        });
-
-        // Profit slider input
-        profitRange.addEventListener('input', function() {
-            updateDisplayValue(profitRange, profitValueDisplay);
-            updateSliderProgress(profitRange, profitProgress);
-            calculateEarnings();
-        });
-
-        // --- Initialization ---
-
-        // Initial load: Set all values and progress bars
-        updateDisplayValue(accountRange, accountValueDisplay);
-        updateDisplayValue(profitRange, profitValueDisplay);
-        updateSliderProgress(accountRange, accountProgress);
-        updateSliderProgress(profitRange, profitProgress);
-        calculateEarnings();
-
-        // Update on window resize (to correct progress bar position)
-        window.addEventListener('resize', function() {
-            updateSliderProgress(accountRange, accountProgress);
-            updateSliderProgress(profitRange, profitProgress);
-        });
-    });
-</script>
-
-
-
-
-
-<!-- Slider Functionality Script -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Account size values for hard stops and corresponding fees/links
-        const accountValues = [3000, 5000, 10000, 20000, 100000];
-        const accountFees = [35, 50, 100, 200, 660];
-        const accountLinks = [
-            "https://dashboard.gemscend.com/challenges?planid=121",
-            "https://dashboard.gemscend.com/challenges?planid=122", 
-            "https://dashboard.gemscend.com/challenges?planid=123",
-            "https://dashboard.gemscend.com/challenges?planid=124",
-            "https://dashboard.gemscend.com/challenges?planid=125"
-        ];
         
-        // Get DOM elements
-        const accountRange = document.getElementById('accountRange');
-        const profitRange = document.getElementById('profitRange');
-        const monthlyEarnings = document.getElementById('monthlyEarnings');
-        const accountValueDisplay = document.getElementById('accountValue');
-        const profitValueDisplay = document.getElementById('profitValue');
-        const accountProgress = document.getElementById('accountProgress');
-        const profitProgress = document.getElementById('profitProgress');
-        const planButton = document.getElementById('planButton'); // New
-
-        // Utility function to format currency
-        function formatCurrency(amount) {
-            return new Intl.NumberFormat('en-US', {
-                style: 'currency',
-                currency: 'USD',
-                minimumFractionDigits: 0,
-                maximumFractionDigits: 0
-            }).format(amount);
+        // Time-based validation
+        const submitTime = Date.now();
+        const timeDifference = submitTime - formLoadTime;
+        if (timeDifference < 2000) { // 2 seconds minimum
+            console.log('Bot detected - form submitted too quickly:', timeDifference + 'ms');
+            // Silent fail - don't proceed with submission
+            return;
         }
-
-        // Update slider progress fill
-        function updateSliderProgress(slider, progressElement) {
-            const min = parseFloat(slider.min);
-            const max = parseFloat(slider.max);
-            const value = parseFloat(slider.value);
-            let progress = ((value - min) / (max - min)) * 100;
-
-            // Apply a slight extension to cover the thumb
-            const extendedProgress = Math.min(progress + 1.5, 100);
-
-            if (progressElement) {
-                progressElement.style.width = `${extendedProgress}%`;
+        
+        console.log('Form passed bot checks, proceeding with submission');
+        
+        const form = this;
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalText = submitBtn.innerHTML;
+        const messagesDiv = document.getElementById('form-messages');
+        
+        console.log('Form elements found:', {form, submitBtn, messagesDiv}); // Debug log
+        
+        // Show loading state
+        submitBtn.innerHTML = '<i class="me-2 fa-light fa-spinner fa-spin"></i> Sending...';
+        submitBtn.disabled = true;
+        
+        if (messagesDiv) {
+            messagesDiv.classList.add('d-none');
+        }
+        
+        // Get form data
+        const formData = new FormData(form);
+        console.log('Form data:', Object.fromEntries(formData)); // Debug log
+        
+        // Send AJAX request
+        fetch('/contact/submit/', {  // Make sure this URL is correct!
+            method: 'POST',
+            body: formData,
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest',
             }
-        }
-
-        // Update the displayed value next to the slider title
-        function updateDisplayValue(slider, displayElement) {
-            if (slider.id === 'accountRange') {
-                // Use the hard stop values
-                const index = parseInt(slider.value);
-                const value = accountValues[index];
-                const formattedValue = formatCurrency(value);
-                displayElement.textContent = formattedValue;
-            } else {
-                // Format profit rate as percentage
-                const value = parseFloat(slider.value);
-                displayElement.textContent = `${value}%`;
-            }
-        }
-
-        // Update the plan button based on account size
-        function updatePlanButton() {
-            const accountIndex = parseInt(accountRange.value);
-            const fee = accountFees[accountIndex];
-            const link = accountLinks[accountIndex];
-            
-            // Update button text and href
-            planButton.textContent = `$${fee}`;
-            planButton.href = link;
-        }
-
-        // Calculate and display the final earnings
-        function calculateEarnings() {
-            // Get account size from hard stop values
-            const accountIndex = parseInt(accountRange.value);
-            const accountSize = accountValues[accountIndex];
-            const profitPercent = parseFloat(profitRange.value);
-            const traderTakeHomeRate = 0.80; // 80%
-
-            // Calculate earnings based on account size and profit percentage
-            const monthlyProfit = (accountSize * profitPercent) / 100;
-            const calculatedTakeHome = monthlyProfit * traderTakeHomeRate;
-            monthlyEarnings.textContent = formatCurrency(calculatedTakeHome);
-        }
-
-        // --- Event Listeners ---
-
-        // Account slider input
-        accountRange.addEventListener('input', function() {
-            updateDisplayValue(accountRange, accountValueDisplay);
-            updateSliderProgress(accountRange, accountProgress);
-            updatePlanButton(); // Update button when account changes
-            calculateEarnings();
-        });
-
-        // Profit slider input
-        profitRange.addEventListener('input', function() {
-            updateDisplayValue(profitRange, profitValueDisplay);
-            updateSliderProgress(profitRange, profitProgress);
-            calculateEarnings();
-        });
-
-        // --- Initialization ---
-
-        // Initial load: Set all values and progress bars
-        updateDisplayValue(accountRange, accountValueDisplay);
-        updateDisplayValue(profitRange, profitValueDisplay);
-        updateSliderProgress(accountRange, accountProgress);
-        updateSliderProgress(profitRange, profitProgress);
-        updatePlanButton(); // Initialize button
-        calculateEarnings();
-
-        // Update on window resize (to correct progress bar position)
-        window.addEventListener('resize', function() {
-            updateSliderProgress(accountRange, accountProgress);
-            updateSliderProgress(profitRange, profitProgress);
-        });
-    });
-</script>
-
-
-<script>
-
-    document.addEventListener('DOMContentLoaded', function() {
-        // Minimal tooltip implementation
-        document.querySelectorAll('.info-tooltip').forEach(icon => {
-            icon.addEventListener('mouseenter', function(e) {
-                const text = this.getAttribute('data-tooltip');
-                if (!text) return;
-
-                // Remove any existing tooltips
-                document.querySelectorAll('.floating-tooltip').forEach(t => t.remove());
-
-                // Create new tooltip
-                const tooltip = document.createElement('div');
-                tooltip.className = 'floating-tooltip arrow-left';
-                tooltip.textContent = text;
-                document.body.appendChild(tooltip);
-
-                // Simple positioning
-                const rect = this.getBoundingClientRect();
-                tooltip.style.left = (rect.right + 10) + 'px';
-                tooltip.style.top = (rect.top + window.scrollY) + 'px';
-
-                // Store reference
-                this.tooltip = tooltip;
-            });
-
-            icon.addEventListener('mouseleave', function() {
-                if (this.tooltip) {
-                    this.tooltip.remove();
-                    this.tooltip = null;
+        })
+        .then(response => {
+            console.log('Response status:', response.status); // Debug log
+            return response.json();
+        })
+        .then(data => {
+            console.log('Response data:', data); // Debug log
+            if (messagesDiv) {
+                if (data.success) {
+                    messagesDiv.className = 'alert alert-success';
+                    messagesDiv.textContent = data.message;
+                    form.reset(); // Clear form on success
+                } else {
+                    messagesDiv.className = 'alert alert-danger';
+                    messagesDiv.textContent = data.message;
                 }
-            });
+                messagesDiv.classList.remove('d-none');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error); // Debug log
+            if (messagesDiv) {
+                messagesDiv.className = 'alert alert-danger';
+                messagesDiv.textContent = 'An error occurred. Please try again.';
+                messagesDiv.classList.remove('d-none');
+            }
+        })
+        .finally(() => {
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
         });
     });
+
+    // Set form load time when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        formLoadTime = Date.now();
+        console.log('Form loaded at:', formLoadTime);
+    });
 </script>
+
+
+
 
 
 
