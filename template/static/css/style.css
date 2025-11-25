@@ -15114,22 +15114,24 @@ Section Title
 }
 
 .price-header.popular {
-  background: linear-gradient(135deg, #2B8448, #41A95C);
-  color: white;
-  border: 1px solid #2B8448;
+  position: relative;
 }
 
 .popular-label {
   position: absolute;
-  top: 8px; /* Moved closer to top */
+  top: -25px; /* Move it higher above the column */
+  left: 50%;
+  transform: translateX(-50%);
   background: #ff6b35;
   color: white;
-  font-size: 10px; /* Slightly smaller */
+  font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 3px 10px; /* Reduced padding */
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  padding: 4px 12px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  white-space: nowrap;
+  z-index: 10;
 }
 
 .price-amount {
@@ -15137,10 +15139,6 @@ Section Title
   font-weight: 700;
   color: #2e9b54;
   margin-bottom: 10px;
-}
-
-.price-header.popular .price-amount {
-  color: white;
 }
 
 .price-fee {
@@ -15160,9 +15158,7 @@ Section Title
   margin: 0 auto; /* Center it */
 }
 
-.price-header.popular .price-fee {
-  color: rgba(255,255,255,0.9);
-}
+
 
 .gemscend-price-btn {
   background: linear-gradient(180deg, #3ab467 0%, #2e9b54 100%);
@@ -15402,6 +15398,7 @@ Section Title
     font-size: 12px;
   }
 }
+
 
 
 
@@ -24913,7 +24910,7 @@ Sidebar
   font-size: 18px;
 }
 .contact-details-block:hover {
-  background-color: var(--theme-color2);
+  background-color: var(--gemscend-emerald);
 }
 .contact-details-block:hover .icon {
   -webkit-transform: rotateY(360deg);

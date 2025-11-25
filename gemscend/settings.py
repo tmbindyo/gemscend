@@ -86,13 +86,22 @@ DATABASES = {
 
 
 # send mail settings
+# settings.py
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.your-email-provider.com'  # e.g., smtp.gmail.com
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'your-email@company.com'
-EMAIL_HOST_PASSWORD = 'your-email-password'
-DEFAULT_FROM_EMAIL = 'noreply@yourdomain.com'
+
+# cPanel Email Settings
+EMAIL_HOST = 'mail.gemscend.com'  # or your server's hostname
+EMAIL_PORT = 587  # or 465 for SSL
+EMAIL_USE_TLS = True  # Use False if using port 465 and EMAIL_USE_SSL = True
+# EMAIL_USE_SSL = True  # Uncomment if using port 465
+
+# Your cPanel email credentials
+EMAIL_HOST_USER = 'noreply@gemscend.com'  # Your cPanel email address
+EMAIL_HOST_PASSWORD = 'your-cpanel-email-password'  # Password for that email account
+
+# Default from email
+DEFAULT_FROM_EMAIL = 'noreply@gemscend.com'
+SERVER_EMAIL = 'noreply@gemscend.com'  # For error messages
 
 
 # Password validation

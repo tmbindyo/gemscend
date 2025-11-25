@@ -51,6 +51,7 @@ def contact_us(request):
 
 
 # views.py
+# views.py
 from django.core.mail import EmailMessage
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
@@ -65,6 +66,16 @@ def contact_form_submit(request):
         data = request.POST
 
         print(f"data:{data}")
+        
+        # Honeypot validation
+        honeypot = data.get('website', '').strip()
+        if honeypot:  # If honeypot field is filled, it's a bot
+            print("Bot detected via honeypot")
+            # Return fake success to confuse bots
+            return JsonResponse({
+                'success': True,
+                'message': 'Thank you for your message!'
+            })
         
         name = data.get('form_name', '').strip()
         subject = data.get('form_subject', '').strip()
@@ -98,11 +109,9 @@ def contact_form_submit(request):
         email_msg = EmailMessage(
             subject=email_subject,
             body=email_body,
-            from_email='noreply@yourdomain.com',  # Change this
-            to=['recipient@company.com'],  # Main recipient
+            from_email='noreply@yourdomain.com',  # Use your cPanel email here
+            to=['you@yourdomain.com'],  # Where you want to receive emails
             cc=[email],  # CC the person who filled the form
-            # Or use bcc instead of cc:
-            # bcc=[email],
             reply_to=[email],  # So replies go to the submitter
         )
         
@@ -115,6 +124,7 @@ def contact_form_submit(request):
         })
         
     except Exception as e:
+        print(f"Email error: {e}")  # Debug logging
         return JsonResponse({
             'success': False,
             'message': 'An error occurred. Please try again later.'
