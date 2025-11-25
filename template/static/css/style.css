@@ -24882,7 +24882,7 @@ Sidebar
   transition: all 700ms ease;
   font-size: 50px;
   line-height: 1;
-  color: var(--headings-color);
+  color: var(--gemscend-dark-emerald-75);
 }
 .contact-details-block .icon svg,
 .contact-details-block .icon i {
@@ -24910,7 +24910,7 @@ Sidebar
   font-size: 18px;
 }
 .contact-details-block:hover {
-  background-color: var(--gemscend-emerald);
+  background-color: var(--gemscend-dark-emerald-75);
 }
 .contact-details-block:hover .icon {
   -webkit-transform: rotateY(360deg);
