@@ -15096,10 +15096,12 @@ Section Title
   text-align: center;
 }
 
-.gemscend-pricing-table th {
+..gemscend-pricing-table th {
   padding: 0;
   vertical-align: top;
-  border: 1px solid #e9ecef; /* Add this line */
+  border: 1px solid #e9ecef;
+  overflow: visible; /* Add this line */
+  position: relative; /* Add this line */
 }
 
 .price-header {
@@ -15114,12 +15116,42 @@ Section Title
 }
 
 .price-header.popular {
+  overflow: visible;
+}
+
+/* Fix for Most Popular label clipping */
+.gemscend-pricing-section {
+  overflow: visible !important;
+}
+
+.auto-container {
+  overflow: visible !important;
+}
+
+.gemscend-pricing-wrapper {
+  overflow: visible !important;
+}
+
+.table-responsive {
+  overflow: visible !important;
+}
+
+.gemscend-pricing-table {
+  overflow: visible !important;
+}
+
+.gemscend-pricing-table th {
+  overflow: visible !important;
   position: relative;
+}
+
+.price-header.popular {
+  overflow: visible !important;
 }
 
 .popular-label {
   position: absolute;
-  top: -25px; /* Move it higher above the column */
+  top: -20px; /* Position above the table cell */
   left: 50%;
   transform: translateX(-50%);
   background: #ff6b35;
@@ -15131,7 +15163,7 @@ Section Title
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   white-space: nowrap;
-  z-index: 10;
+  z-index: 1000; /* Higher z-index to ensure visibility */
 }
 
 .price-amount {
