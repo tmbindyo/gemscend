@@ -15,7 +15,7 @@
 
 @media only screen and (min-width: 1100px){
 	.gemscend-hero-image {
-		height: 80%;
+		height: 100%;
 
 		}
 }
@@ -204,6 +204,9 @@
 
 
 @media only screen and (min-width: 768px){
+	.sticky-header .mobile-nav-toggler {
+		display: block !important;
+	}
 	.main-menu .navigation > li > ul,
 	.main-menu .navigation > li > ul > li > ul{
 		display:block !important;
@@ -337,6 +340,10 @@
 		display: none;
 	}
 
+	.sticky-header .mobile-nav-toggler {
+		display: block !important;
+	}
+
 	.sticky-logo-box {
 		min-width: auto;
 		margin-right: 0px;
@@ -382,6 +389,10 @@
 @media only screen and (max-width: 599px){
 	.main-header .header-lower .logo-box {
 		padding-left: 0;
+	}
+
+	.sticky-header .mobile-nav-toggler {
+		display: block !important;
 	}
 
 	.top-earner-auto-container {

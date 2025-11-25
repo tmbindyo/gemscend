@@ -7,8 +7,8 @@
 <title>Gemscend - FAQ </title>
 <!-- Stylesheets -->
 <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-<link href="{% static 'css/style.css' %}" rel="stylesheet">
-<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+<link href="{% static 'css/style.css' %}?v=1.8" rel="stylesheet">
+<link href="{% static 'css/responsive.css' %}?v=1.8" rel="stylesheet">
 
 <link rel="shortcut icon" href="{% static 'images/gemscend/gemsend_favicon.png' %}" type="image/x-icon">
 <link rel="icon" href="{% static 'images/gemscend/gemsend_favicon.png' %}" type="image/x-icon">
@@ -71,37 +71,52 @@
                 <!-- Sidebar Nav Pills -->
                 <div class="col-xl-3 col-lg-4 col-md-12 mb-4 mb-lg-0">
                     <div class="nav flex-column nav-pills" id="feature-tabs" role="tablist" aria-orientation="vertical">
-                    <button class="nav-link active" id="tab-1" data-bs-toggle="pill" data-bs-target="#pane-1" type="button" role="tab" aria-controls="pane-1" aria-selected="true">
-                        Trading Rules
-                    </button>
-                    <button class="nav-link" id="tab-2" data-bs-toggle="pill" data-bs-target="#pane-2" type="button" role="tab" aria-controls="pane-2" aria-selected="false">
-                        Funded Accounts
-                    </button>
-                    <button class="nav-link" id="tab-3" data-bs-toggle="pill" data-bs-target="#pane-3" type="button" role="tab" aria-controls="pane-3" aria-selected="false">
-                        General Questions
-                    </button>
-                    <button class="nav-link" id="tab-4" data-bs-toggle="pill" data-bs-target="#pane-4" type="button" role="tab" aria-controls="pane-4" aria-selected="false">
-                        Prohibited & Restricted Trading
-                    </button>
-                    <button class="nav-link" id="tab-4" data-bs-toggle="pill" data-bs-target="#pane-5" type="button" role="tab" aria-controls="pane-4" aria-selected="false">
-                        Accounts & Registration
-                    </button>
-                    <button class="nav-link" id="tab-4" data-bs-toggle="pill" data-bs-target="#pane-6" type="button" role="tab" aria-controls="pane-4" aria-selected="false">
-                        Limits, Allocation & Fees
-                    </button>
-                    <button class="nav-link" id="tab-4" data-bs-toggle="pill" data-bs-target="#pane-7" type="button" role="tab" aria-controls="pane-4" aria-selected="false">
-                        Profits & Withdrawals
-                    </button>
-                    <button class="nav-link" id="tab-4" data-bs-toggle="pill" data-bs-target="#pane-8" type="button" role="tab" aria-controls="pane-4" aria-selected="false">
-                        Taxes & Affiliates
-                    </button>
+
+                        <button class="nav-link active" id="tab-1" data-bs-toggle="pill" data-bs-target="#pane-1"
+                            type="button" role="tab" aria-controls="pane-1" aria-selected="true">
+                            Trading Rules <span class="count">8</span>
+                        </button>
+
+                        <button class="nav-link" id="tab-2" data-bs-toggle="pill" data-bs-target="#pane-2"
+                            type="button" role="tab" aria-controls="pane-2" aria-selected="false">
+                            Funded Accounts <span class="count">9</span>
+                        </button>
+
+                        <button class="nav-link" id="tab-3" data-bs-toggle="pill" data-bs-target="#pane-3"
+                            type="button" role="tab" aria-controls="pane-3" aria-selected="false">
+                            General Questions <span class="count">10</span>
+                        </button>
+
+                        <button class="nav-link" id="tab-4" data-bs-toggle="pill" data-bs-target="#pane-4"
+                            type="button" role="tab" aria-controls="pane-4" aria-selected="false">
+                            Prohibited & Restricted Trading <span class="count">5</span>
+                        </button>
+
+                        <button class="nav-link" id="tab-5" data-bs-toggle="pill" data-bs-target="#pane-5"
+                            type="button" role="tab" aria-controls="pane-5" aria-selected="false">
+                            Accounts & Registration <span class="count">2</span>
+                        </button>
+
+                        <button class="nav-link" id="tab-6" data-bs-toggle="pill" data-bs-target="#pane-6"
+                            type="button" role="tab" aria-controls="pane-6" aria-selected="false">
+                            Limits, Allocation & Fees <span class="count">4</span>
+                        </button>
+
+                        <button class="nav-link" id="tab-7" data-bs-toggle="pill" data-bs-target="#pane-7"
+                            type="button" role="tab" aria-controls="pane-7" aria-selected="false">
+                            Profits & Withdrawals <span class="count">1</span>
+                        </button>
+
+                        <button class="nav-link" id="tab-8" data-bs-toggle="pill" data-bs-target="#pane-8"
+                            type="button" role="tab" aria-controls="pane-8" aria-selected="false">
+                            Taxes & Affiliates <span class="count">2</span>
+                        </button>
+
                     </div>
                 </div>
 
                 <!-- Tab Content Area -->
                 <div class="col-xl-9 col-lg-8 col-md-12">
-
-
                     <div class="tab-content" id="feature-tabs-content">
                     
                     <div class="tab-pane fade show active" id="pane-1" role="tabpanel" aria-labelledby="tab-1">
@@ -146,13 +161,13 @@
 
                         </div>
 
-                         <div class="faq-item">
+                        <div class="faq-item">
                             <p class="gemscend-bold-text">What is 1 lot equal to on the Trading Platform?</p>
                             <p class="text-gemscend-emerald">● Forex - 1 lot = $100k notional</p>
                             <p class="text-gemscend-emerald">● Index - 1 lot = 1 Contracts</p>
                         </div>
 
-                         <div class="faq-item">
+                        <div class="faq-item">
                             <p class="gemscend-bold-text">Exceptions:</p>
 
                             <p class="">SPX500: 1 lot = 10 contracts</p>
@@ -179,7 +194,7 @@
                         <div class="faq-item">
                             <h3 class="fw-bold gemscend-heading-text">Funded Accounts</h3>
                             <p class="gemscend-bold-text">How Long does it take to receive my funded account?</p>
-                            <p class="">Upon passing your Assessment, you will receive an email with instructions on how to access and complete both your “Know Your Customer” verification and your “Trader Agreement”. Once both are completed and supporting documentation is provided, your Funded Account will be created, funded and issued to you typically within 24-48 business hours. You will receive a confirmation email once this account is being enabled.</p>
+                            <p class="">Upon passing your Assessment, you will receive an email with instructions on how to access and complete both your "Know Your Customer" verification and your "Trader Agreement". Once both are completed and supporting documentation is provided, your Funded Account will be created, funded and issued to you typically within 24-48 business hours. You will receive a confirmation email once this account is being enabled.</p>
                         </div>
                         <div class="faq-item">
                             <p class="gemscend-bold-text">Once I pass the Assessment am I provided with a demo or funded account?</p>
@@ -192,7 +207,7 @@
 
                         <div class="faq-item">
                             <p class="gemscend-bold-text">Who is the counterparty to my trades?</p>
-                            <p class="">For purposes of managing risk and minimizing transaction costs, we may offset or negate market risk and act as the direct counterparty to certain trades initiated in the Account. Such trades are executed at prices provided by arm’s length third parties. This framework is intended to ensure you receive real market execution on your trades, while simultaneously allowing us to manage risk dynamically by routing existing positions or future orders to third parties for execution as we deem appropriate.</p>
+                            <p class="">For purposes of managing risk and minimizing transaction costs, we may offset or negate market risk and act as the direct counterparty to certain trades initiated in the Account. Such trades are executed at prices provided by arm's length third parties. This framework is intended to ensure you receive real market execution on your trades, while simultaneously allowing us to manage risk dynamically by routing existing positions or future orders to third parties for execution as we deem appropriate.</p>
                             <p class="">We believe that such real market execution and dynamic risk management would not be possible or as cost-effective if trades were executed in simulated accounts. Regardless of whether we act as counterparty to your trades, the gain or loss on your funded account is not calculated differently. However, when we act as the counterparty to your trades, there is an inherent potential conflict of interest because your trades do not result in net gain or loss to us, as your trades would if we were not the direct counterparty.</p>
                         </div>
 
@@ -236,7 +251,7 @@
                         </div>
                         <div class="faq-item">
                             <p class="gemscend-bold-text">What Countries are accepted?</p>
-                            <p class="">Subject to compliance with applicable laws and regulations, traders from all countries, excluding OFAC listed countries, can take part in our program, unless otherwise limited at the Company’s discretion.</p>
+                            <p class="">Subject to compliance with applicable laws and regulations, traders from all countries, excluding OFAC listed countries, can take part in our program, unless otherwise limited at the Company's discretion.</p>
                         </div>
                         <div class="faq-item">
                             <p class="gemscend-bold-text">What is the minimum age I must be to be part of your program?</p>
@@ -262,9 +277,9 @@
                             <p class="gemscend-bold-text">What are the trading hours?</p>
                             <p class="">Trading hours are generally set by the Liquidity Provider, unless set by our rules. We do not have any control over the trading hours. You can see the trading hours for each product by using the following methods:</p>
                             
-                            <p class="text-gemscend-emerald">DXtrade – Right click symbol, select “Instrument Info”</p>
-                            <p class="text-gemscend-emerald">MatchTrader – Click symbol to expand, select “Info”</p>
-                            <p class="text-gemscend-emerald">cTrader – Navigate to Symbol Window, scroll down to see “Market Hours” for selected symbol</p>
+                            <p class="text-gemscend-emerald">DXtrade - Right click symbol, select "Instrument Info"</p>
+                            <p class="text-gemscend-emerald">MatchTrader - Click symbol to expand, select "Info"</p>
+                            <p class="text-gemscend-emerald">cTrader - Navigate to Symbol Window, scroll down to see "Market Hours" for selected symbol</p>
 
                             <p class="">Please note that holidays can have an impact on available trading hours.</p>
                         </div>
@@ -284,7 +299,7 @@
                             <h3 class="fw-bold gemscend-heading-text">Prohibited & Restricted Trading</h3>
 
                             <p class="gemscend-bold-text">What is the policy on Prohibited Trading Activity?</p>
-                            <p class="">You are also prohibited from using any trading strategy that is expressly prohibited by the Company or the Liquidity Providers it uses. Such prohibited trading (“Prohibited Trading”) shall include, but not be limited to:</p>
+                            <p class="">You are also prohibited from using any trading strategy that is expressly prohibited by the Company or the Liquidity Providers it uses. Such prohibited trading ("Prohibited Trading") shall include, but not be limited to:</p>
                             
                             <ul class="">
                                 <li class="">Exploiting errors or latency in the pricing and/or platform(s) provided by the Liquidity Provider</li>
@@ -303,9 +318,9 @@
 
                         <div class="faq-item">
                             <p class="gemscend-bold-text">Is Gambling Prohibited in Trading Practices?</p>
-                            <p class="">Engaging in inappropriate risk management practices, such as gambling, “all-in” trading, or excessively leveraging positions, is strictly prohibited. Trading activity that resembles gambling such as consistently placing trades prior to news releases or other binary events—will not be tolerated.</p>
-                            <p class="">Excessive risk-taking and gambling are defined by the percentage of an account risked in a single trade or across a series of trades or positions. An “all-in” trade refers to committing all or a substantial portion of available capital or margin to a single trade. Similarly, excessive and improper use of leverage occurs when a trader risks a significant portion of their account in one trade or across a series of one-directional trades and positions.</p>
-                            <p class="">If you are found to be engaging in such activities, the Company reserves the right to immediately close your account and such closure may include the forfeiture of any fees owed to you by the Company, in the Company’s sole discretion.</p>
+                            <p class="">Engaging in inappropriate risk management practices, such as gambling, "all-in" trading, or excessively leveraging positions, is strictly prohibited. Trading activity that resembles gambling such as consistently placing trades prior to news releases or other binary events-will not be tolerated.</p>
+                            <p class="">Excessive risk-taking and gambling are defined by the percentage of an account risked in a single trade or across a series of trades or positions. An "all-in" trade refers to committing all or a substantial portion of available capital or margin to a single trade. Similarly, excessive and improper use of leverage occurs when a trader risks a significant portion of their account in one trade or across a series of one-directional trades and positions.</p>
+                            <p class="">If you are found to be engaging in such activities, the Company reserves the right to immediately close your account and such closure may include the forfeiture of any fees owed to you by the Company, in the Company's sole discretion.</p>
                         </div>
 
                         <div class="faq-item">
@@ -334,14 +349,14 @@
 
                         <div class="faq-item">
                             <p class="gemscend-bold-text">How Do I Create an Account?</p>
-                            <p class="">In order to register as a Trader, you will be asked to provide personal information, including, but not limited to your name, email address, mailing address, phone number, date of birth and a username and password for an account that is unique to you. The information provided is subject to the Company’s privacy policy accessible here.</p>
+                            <p class="">In order to register as a Trader, you will be asked to provide personal information, including, but not limited to your name, email address, mailing address, phone number, date of birth and a username and password for an account that is unique to you. The information provided is subject to the Company's privacy policy accessible here.</p>
                             <p class="">The account will be personal to You, and You cannot share it with anybody else. You will be responsible for maintaining the confidentiality of your username and password. If you suspect that your account has been breached, you must immediately notify The Company.</p>
                             <p class="">Traders are limited to one active account per assessment level, (any individual registering under a corporate entity is barred from registering an individual account at the same time) absent prior written approval.</p>
                         </div>
 
                         <div class="faq-item">
                             <p class="gemscend-bold-text">What Are the Rules on Purchases and Refunds?</p>
-                            <p class="">The Company may provide products, services, subscriptions, or access to certain portions to the Company’s website at a monetary cost. Prices and availability are subject to change without notice. The Company may allow for such purchases within its website or via a white label affiliate. It is your responsibility to thoroughly read and understand any such terms and conditions. By making any such purchases, you agree that the Company has no responsibility and acquires no liability for any claim related to your purchases.</p>
+                            <p class="">The Company may provide products, services, subscriptions, or access to certain portions to the Company's website at a monetary cost. Prices and availability are subject to change without notice. The Company may allow for such purchases within its website or via a white label affiliate. It is your responsibility to thoroughly read and understand any such terms and conditions. By making any such purchases, you agree that the Company has no responsibility and acquires no liability for any claim related to your purchases.</p>
                             <p class="">Upon the complete purchase of a product, service, subscription, or access to certain portions of the Company website, the Company will make any said product, service, or access will be available to you following the approved transaction.</p>
                             <p class="">There are no refunds on any Services purchased from the Company.</p>
                         </div>
@@ -363,12 +378,12 @@
 
                         <div class="faq-item">  
                             <p class="gemscend-bold-text">What Commissions and Fees Apply?</p>
-                            <p class="">Commissions or commission-equivalents may be charged in connection with your trading activity. Rates and methods of application can vary by asset class and are determined by our liquidity providers, and may be adjusted periodically to reflect market conditions. In addition, it’s important to note that positions held overnight may incur swap rates. These rates vary by asset class and are subject to change.</p>
+                            <p class="">Commissions or commission-equivalents may be charged in connection with your trading activity. Rates and methods of application can vary by asset class and are determined by our liquidity providers, and may be adjusted periodically to reflect market conditions. In addition, it's important to note that positions held overnight may incur swap rates. These rates vary by asset class and are subject to change.</p>
                         </div>
 
                         <div class="faq-item">
                             <p class="gemscend-bold-text">What Are the Margin Rules?</p>
-                            <p class="">While our current leverages and margin requirements are fixed, we reserve the right to implement tiered or variable margin requirements at our discretion, and such changes may be made without prior notice.</p>
+                            <p class="">While our current leverages and margin requirements are fixed, we reserve the right to implement tiered or variable margin requirements at our discretion, such changes may be made without prior notice.</p>
                         </div>
                     </div>
 
@@ -406,6 +421,8 @@
 
 
 
+
+
     <section class="white-section">
     </section>
 
@@ -417,20 +434,162 @@
 
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-    const searchInput = document.querySelector('.faq-search-input');
-    const faqItems = document.querySelectorAll('#feature-tabs-content .faq-item');
+    document.addEventListener("DOMContentLoaded", function () {
+        const searchInput = document.querySelector('.faq-search-input');
+        const searchBtn = document.querySelector('.faq-search-btn');
+        
+        // Store original content for each FAQ item
+        document.querySelectorAll(".faq-item").forEach(item => {
+            if (!item.hasAttribute('data-original')) {
+                item.setAttribute('data-original', item.innerHTML);
+            }
+        });
+        
+        // Store original counts for each tab
+        const originalCounts = {};
+        document.querySelectorAll("#feature-tabs .nav-link").forEach(btn => {
+            const target = btn.getAttribute('data-bs-target');
+            if (target) {
+                const pane = document.querySelector(target);
+                if (pane) {
+                    const count = pane.querySelectorAll('.faq-item').length;
+                    originalCounts[target] = count;
+                    const countSpan = btn.querySelector('.count');
+                    if (countSpan) countSpan.textContent = count;
+                }
+            }
+        });
 
-    searchInput.addEventListener('input', function() {
-        const query = searchInput.value.toLowerCase().trim();
+        function resetItemToOriginal(item) {
+            const original = item.getAttribute('data-original');
+            if (original) {
+                item.innerHTML = original;
+            }
+        }
 
-        faqItems.forEach(item => {
-        const text = item.innerText.toLowerCase();
-        item.style.display = text.includes(query) ? '' : 'none';
+        function highlightText(element, term) {
+            if (!element || !term) return;
+            
+            const text = element.textContent;
+            const regex = new RegExp(`(${escapeRegExp(term)})`, 'gi');
+            const highlighted = text.replace(regex, '<span class="highlight">$1</span>');
+            
+            // Create a temporary element to parse the HTML
+            const temp = document.createElement('div');
+            temp.innerHTML = highlighted;
+            
+            // Replace the element's content with the highlighted version
+            while (element.firstChild) {
+                element.removeChild(element.firstChild);
+            }
+            
+            while (temp.firstChild) {
+                element.appendChild(temp.firstChild);
+            }
+        }
+
+        function escapeRegExp(string) {
+            return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        }
+
+        function performSearch() {
+            const term = (searchInput.value || '').toLowerCase().trim();
+            
+            // Reset all items first
+            document.querySelectorAll('.faq-item').forEach(item => {
+                resetItemToOriginal(item);
+                item.style.display = '';
+            });
+            
+            if (term) {
+                // Hide non-matching items and highlight matches
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    const text = item.textContent.toLowerCase();
+                    if (text.includes(term)) {
+                        // Highlight all text nodes within this FAQ item
+                        highlightAllTextNodes(item, term);
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+            
+            updateCounts();
+        }
+
+        function highlightAllTextNodes(element, term) {
+            const walker = document.createTreeWalker(
+                element,
+                NodeFilter.SHOW_TEXT,
+                null,
+                false
+            );
+            
+            let node;
+            const nodes = [];
+            while (node = walker.nextNode()) {
+                if (node.textContent.toLowerCase().includes(term)) {
+                    nodes.push(node);
+                }
+            }
+            
+            nodes.forEach(textNode => {
+                const parent = textNode.parentNode;
+                if (parent.nodeType === Node.ELEMENT_NODE && parent.classList.contains('highlight')) {
+                    return; // Skip if already highlighted
+                }
+                
+                const text = textNode.textContent;
+                const regex = new RegExp(`(${escapeRegExp(term)})`, 'gi');
+                const newHTML = text.replace(regex, '<span class="highlight">$1</span>');
+                
+                const wrapper = document.createElement('span');
+                wrapper.innerHTML = newHTML;
+                parent.replaceChild(wrapper, textNode);
+            });
+        }
+
+        function updateCounts() {
+            document.querySelectorAll("#feature-tabs .nav-link").forEach(btn => {
+                const target = btn.getAttribute('data-bs-target');
+                if (target) {
+                    const pane = document.querySelector(target);
+                    if (pane) {
+                        const visibleItems = Array.from(pane.querySelectorAll('.faq-item'))
+                            .filter(item => item.style.display !== 'none');
+                        
+                        const countSpan = btn.querySelector('.count');
+                        if (countSpan) {
+                            countSpan.textContent = visibleItems.length;
+                        }
+                    }
+                }
+            });
+        }
+
+        // Event listeners
+        if (searchInput) {
+            searchInput.addEventListener('input', performSearch);
+        }
+        
+        if (searchBtn) {
+            searchBtn.addEventListener('click', performSearch);
+        }
+        
+        // Reset search when switching tabs (optional)
+        document.querySelectorAll('#feature-tabs .nav-link').forEach(tab => {
+            tab.addEventListener('shown.bs.tab', function() {
+                // Optionally reset search when switching tabs
+                // searchInput.value = '';
+                // performSearch();
+            });
         });
     });
-    });
 </script>
+
+
+
+
 
 
 

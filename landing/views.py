@@ -42,3 +42,10 @@ def refer_and_earn(request):
     }
     return render(request, 'refer_and_earn.html', context)
 
+def contact_us(request):
+    # Create a context dictionary with the user groups
+    context = {
+        'user': None
+    }
+    return render(request, 'contact_us.html', context)
+

@@ -11354,6 +11354,15 @@ Section Title
 ====================================================================
 
 ***/
+.underlined-link {
+    color: #41A95C;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.underlined-link:hover {
+    text-decoration: none;
+}
+
 .faq-left-items-1 .faq-image {
   margin-top: 45px;
   position: relative;
@@ -19912,6 +19921,13 @@ faqs-background {
   }
 }
 
+.highlight {
+    background: yellow;
+    font-weight: bold;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
 
 
 
@@ -19919,15 +19935,15 @@ faqs-background {
 .social-links-grid {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   column-gap: 30px; /* reduce horizontal spacing */
   row-gap: 30px;   /* keep vertical spacing */
 }
 
 .social-link img {
-  width: 40px;
-  height: 40px;
+  width: 40px !important;
+  height: 40px !important;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
