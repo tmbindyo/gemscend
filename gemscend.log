@@ -1,0 +1,337 @@
+[26/Nov/2025 06:51:40] INFO [django.utils.autoreload:667] Watching for file changes with StatReloader
+[26/Nov/2025 06:51:59] INFO [django.utils.autoreload:265] /Users/gosu/Documents/Dev/Django/gemscend/landing/views.py changed, reloading.
+[26/Nov/2025 06:52:00] INFO [django.utils.autoreload:667] Watching for file changes with StatReloader
+[26/Nov/2025 06:52:03] INFO [django.utils.autoreload:265] /Users/gosu/Documents/Dev/Django/gemscend/landing/views.py changed, reloading.
+[26/Nov/2025 06:52:04] INFO [django.utils.autoreload:667] Watching for file changes with StatReloader
+[26/Nov/2025 06:52:13] INFO [django.utils.autoreload:265] /Users/gosu/Documents/Dev/Django/gemscend/landing/views.py changed, reloading.
+[26/Nov/2025 06:52:14] INFO [django.utils.autoreload:667] Watching for file changes with StatReloader
+[26/Nov/2025 06:53:31] INFO [django.server:213] "GET / HTTP/1.1" 200 55592
+[26/Nov/2025 06:53:32] WARNING [django.request:253] Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+[26/Nov/2025 06:53:32] WARNING [django.server:213] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 179
+[26/Nov/2025 06:53:32] WARNING [django.request:253] Not Found: /color-switcher/style-switcher.html
+[26/Nov/2025 06:53:32] WARNING [django.server:213] "GET /color-switcher/style-switcher.html HTTP/1.1" 404 179
+[26/Nov/2025 07:09:15] INFO [django.server:213] "GET / HTTP/1.1" 200 55592
+[26/Nov/2025 07:09:16] WARNING [django.request:253] Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+[26/Nov/2025 07:09:16] WARNING [django.server:213] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 179
+[26/Nov/2025 07:09:18] WARNING [django.request:253] Not Found: /color-switcher/style-switcher.html
+[26/Nov/2025 07:09:18] WARNING [django.server:213] "GET /color-switcher/style-switcher.html HTTP/1.1" 404 179
+[26/Nov/2025 07:58:31] INFO [django.server:213] "GET /contact/us HTTP/1.1" 200 22809
+[26/Nov/2025 07:58:32] WARNING [django.request:253] Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+[26/Nov/2025 07:58:32] WARNING [django.server:213] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 179
+[26/Nov/2025 07:58:32] WARNING [django.request:253] Not Found: /contact/color-switcher/style-switcher.html
+[26/Nov/2025 07:58:32] WARNING [django.server:213] "GET /contact/color-switcher/style-switcher.html HTTP/1.1" 404 179
+[26/Nov/2025 07:58:59] WARNING [django.request:253] Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[26/Nov/2025 07:58:59] WARNING [django.server:213] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 179
+[26/Nov/2025 07:59:01] WARNING [django.request:253] Not Found: /static/js/popper.min.js.map
+[26/Nov/2025 07:59:01] WARNING [django.request:253] Not Found: /static/js/bootstrap.min.js.map
+[26/Nov/2025 07:59:01] WARNING [django.server:213] "GET /static/js/popper.min.js.map HTTP/1.1" 404 179
+[26/Nov/2025 07:59:01] WARNING [django.server:213] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 179
+[26/Nov/2025 07:59:01] WARNING [django.request:253] Not Found: /static/js/swiper-bundle.min.js.map
+[26/Nov/2025 07:59:01] WARNING [django.server:213] "GET /static/js/swiper-bundle.min.js.map HTTP/1.1" 404 179
+[26/Nov/2025 07:59:01] WARNING [django.request:253] Not Found: /static/css/bootstrap.min.css.map
+[26/Nov/2025 07:59:01] WARNING [django.server:213] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 179
+[26/Nov/2025 07:59:26] INFO [django.utils.autoreload:265] /Users/gosu/Documents/Dev/Django/gemscend/landing/views.py changed, reloading.
+[26/Nov/2025 07:59:27] INFO [django.utils.autoreload:667] Watching for file changes with StatReloader
+[26/Nov/2025 07:59:30] INFO [django.server:213] "GET / HTTP/1.1" 200 55592
+[26/Nov/2025 07:59:30] WARNING [django.request:253] Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[26/Nov/2025 07:59:30] WARNING [django.server:213] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 179
+[26/Nov/2025 07:59:30] WARNING [django.request:253] Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+[26/Nov/2025 07:59:30] WARNING [django.server:213] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 179
+[26/Nov/2025 07:59:31] WARNING [django.request:253] Not Found: /static/css/bootstrap.min.css.map
+[26/Nov/2025 07:59:31] WARNING [django.server:213] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 179
+[26/Nov/2025 07:59:32] WARNING [django.request:253] Not Found: /static/js/popper.min.js.map
+[26/Nov/2025 07:59:32] WARNING [django.request:253] Not Found: /static/js/bootstrap.min.js.map
+[26/Nov/2025 07:59:32] WARNING [django.server:213] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 179
+[26/Nov/2025 07:59:32] WARNING [django.server:213] "GET /static/js/popper.min.js.map HTTP/1.1" 404 179
+[26/Nov/2025 07:59:33] WARNING [django.request:253] Not Found: /color-switcher/style-switcher.html
+[26/Nov/2025 07:59:33] WARNING [django.request:253] Not Found: /static/js/swiper-bundle.min.js.map
+[26/Nov/2025 07:59:33] WARNING [django.server:213] "GET /static/js/swiper-bundle.min.js.map HTTP/1.1" 404 179
+[26/Nov/2025 07:59:33] WARNING [django.server:213] "GET /color-switcher/style-switcher.html HTTP/1.1" 404 179
+[26/Nov/2025 08:05:25] INFO [django.utils.autoreload:265] /Users/gosu/Documents/Dev/Django/gemscend/gemscend/settings.py changed, reloading.
+[26/Nov/2025 08:05:26] INFO [django.utils.autoreload:667] Watching for file changes with StatReloader
+[26/Nov/2025 08:11:00] INFO [django.utils.autoreload:265] /Users/gosu/Documents/Dev/Django/gemscend/landing/views.py changed, reloading.
+[26/Nov/2025 08:11:02] INFO [django.utils.autoreload:667] Watching for file changes with StatReloader
+[26/Nov/2025 08:11:08] INFO [django.server:213] "GET /contact/us HTTP/1.1" 200 22809
+[26/Nov/2025 08:11:08] WARNING [django.request:253] Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+[26/Nov/2025 08:11:08] WARNING [django.server:213] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 179
+[26/Nov/2025 08:11:09] WARNING [django.request:253] Not Found: /contact/color-switcher/style-switcher.html
+[26/Nov/2025 08:11:09] WARNING [django.server:213] "GET /contact/color-switcher/style-switcher.html HTTP/1.1" 404 179
+[26/Nov/2025 08:13:35] INFO [django.utils.autoreload:265] /Users/gosu/Documents/Dev/Django/gemscend/gemscend/settings.py changed, reloading.
+[26/Nov/2025 08:13:36] INFO [django.utils.autoreload:667] Watching for file changes with StatReloader
+[26/Nov/2025 08:14:27] INFO [django.utils.autoreload:667] Watching for file changes with StatReloader
+[26/Nov/2025 08:15:04] INFO [django.utils.autoreload:265] /Users/gosu/Documents/Dev/Django/gemscend/landing/views.py changed, reloading.
+[26/Nov/2025 08:15:05] INFO [django.utils.autoreload:667] Watching for file changes with StatReloader
+[26/Nov/2025 08:17:38] INFO [django.server:213] "POST /contact/submit/ HTTP/1.1" 200 75
+[26/Nov/2025 08:21:44] INFO [django.utils.autoreload:265] /Users/gosu/Documents/Dev/Django/gemscend/gemscend/settings.py changed, reloading.
+[26/Nov/2025 08:21:45] INFO [django.utils.autoreload:667] Watching for file changes with StatReloader
+[26/Nov/2025 08:22:10] INFO [django.utils.autoreload:265] /Users/gosu/Documents/Dev/Django/gemscend/gemscend/settings.py changed, reloading.
+[26/Nov/2025 08:22:10] INFO [django.utils.autoreload:667] Watching for file changes with StatReloader
+[26/Nov/2025 08:22:19] INFO [django.utils.autoreload:265] /Users/gosu/Documents/Dev/Django/gemscend/gemscend/settings.py changed, reloading.
+[26/Nov/2025 08:22:19] INFO [django.utils.autoreload:667] Watching for file changes with StatReloader
+[26/Nov/2025 08:27:51] INFO [django.server:213] "POST /contact/submit/ HTTP/1.1" 200 75
+[26/Nov/2025 08:37:53] INFO [django.utils.autoreload:265] /Users/gosu/Documents/Dev/Django/gemscend/landing/views.py changed, reloading.
+[26/Nov/2025 08:37:54] INFO [django.utils.autoreload:667] Watching for file changes with StatReloader
+[26/Nov/2025 08:38:41] WARNING [django.request:253] Not Found: /static/css/style.css
+[26/Nov/2025 08:38:41] WARNING [django.server:213] "GET /static/css/style.css?v=2.0 HTTP/1.1" 404 179
+[26/Nov/2025 08:38:41] WARNING [django.request:253] Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[26/Nov/2025 08:38:41] WARNING [django.server:213] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 179
+[26/Nov/2025 08:38:42] WARNING [django.request:253] Not Found: /static/js/popper.min.js.map
+[26/Nov/2025 08:38:42] WARNING [django.request:253] Not Found: /static/js/bootstrap.min.js.map
+[26/Nov/2025 08:38:42] WARNING [django.request:253] Not Found: /static/js/swiper-bundle.min.js.map
+[26/Nov/2025 08:38:42] WARNING [django.server:213] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 179
+[26/Nov/2025 08:38:42] WARNING [django.server:213] "GET /static/js/swiper-bundle.min.js.map HTTP/1.1" 404 179
+[26/Nov/2025 08:38:42] WARNING [django.server:213] "GET /static/js/popper.min.js.map HTTP/1.1" 404 179
+[26/Nov/2025 08:38:42] WARNING [django.request:253] Not Found: /static/css/bootstrap.min.css.map
+[26/Nov/2025 08:38:42] WARNING [django.server:213] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 179
+[26/Nov/2025 08:40:18] INFO [django.server:213] "GET /contact/us HTTP/1.1" 200 22809
+[26/Nov/2025 08:40:18] WARNING [django.request:253] Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[26/Nov/2025 08:40:18] WARNING [django.server:213] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 179
+[26/Nov/2025 08:40:18] WARNING [django.request:253] Not Found: /static/css/style.css
+[26/Nov/2025 08:40:18] WARNING [django.server:213] "GET /static/css/style.css?v=2.0 HTTP/1.1" 404 179
+[26/Nov/2025 08:40:19] WARNING [django.request:253] Not Found: /static/css/bootstrap.min.css.map
+[26/Nov/2025 08:40:19] WARNING [django.server:213] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 179
+[26/Nov/2025 08:40:19] WARNING [django.request:253] Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+[26/Nov/2025 08:40:19] WARNING [django.server:213] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 179
+[26/Nov/2025 08:40:19] WARNING [django.request:253] Not Found: /static/js/popper.min.js.map
+[26/Nov/2025 08:40:19] WARNING [django.request:253] Not Found: /static/js/bootstrap.min.js.map
+[26/Nov/2025 08:40:19] WARNING [django.server:213] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 179
+[26/Nov/2025 08:40:19] WARNING [django.server:213] "GET /static/js/popper.min.js.map HTTP/1.1" 404 179
+[26/Nov/2025 08:40:19] WARNING [django.request:253] Not Found: /static/js/swiper-bundle.min.js.map
+[26/Nov/2025 08:40:19] WARNING [django.server:213] "GET /static/js/swiper-bundle.min.js.map HTTP/1.1" 404 179
+[26/Nov/2025 08:40:19] WARNING [django.request:253] Not Found: /contact/color-switcher/style-switcher.html
+[26/Nov/2025 08:40:19] WARNING [django.server:213] "GET /contact/color-switcher/style-switcher.html HTTP/1.1" 404 179
+[26/Nov/2025 08:40:29] INFO [django.server:81] - Broken pipe from ('127.0.0.1', 55806)
+[26/Nov/2025 08:40:39] INFO [django.server:213] "GET /contact/us HTTP/1.1" 200 22809
+[26/Nov/2025 08:40:39] WARNING [django.request:253] Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[26/Nov/2025 08:40:39] WARNING [django.server:213] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 179
+[26/Nov/2025 08:40:39] WARNING [django.request:253] Not Found: /static/css/responsive.css
+[26/Nov/2025 08:40:39] WARNING [django.request:253] Not Found: /static/css/style.css
+[26/Nov/2025 08:40:39] WARNING [django.request:253] Not Found: /static/css/bootstrap.min.css
+[26/Nov/2025 08:40:39] WARNING [django.request:253] Not Found: /static/images/gemscend/gemscend_dark_logo.png
+[26/Nov/2025 08:40:39] WARNING [django.server:213] "GET /static/css/bootstrap.min.css HTTP/1.1" 404 179
+[26/Nov/2025 08:40:39] WARNING [django.server:213] "GET /static/css/style.css?v=2.0 HTTP/1.1" 404 179
+[26/Nov/2025 08:40:39] WARNING [django.server:213] "GET /static/images/gemscend/gemscend_dark_logo.png HTTP/1.1" 404 179
+[26/Nov/2025 08:40:39] WARNING [django.server:213] "GET /static/css/responsive.css?v=2.0 HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/images/gemscend/logo_grey.png
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/images/gemscend/logo_grey.png HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/images/gemscend/call.png
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/images/gemscend/mail.png
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/js/bootstrap.min.js
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/js/jquery.js
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/images/gemscend/call.png HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/js/popper.min.js
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/images/gemscend/mail.png HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/js/bootstrap.min.js HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/js/jquery.js HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/js/jquery.fancybox.js
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/js/popper.min.js HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/js/gsap.js
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/js/jquery-ui.js
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/js/gsap-scroll-to-plugin.js
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/js/jquery.fancybox.js HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/js/gsap.js HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/js/jquery-ui.js HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/js/gsap-scroll-to-plugin.js HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/js/gsap-scroll-smoother.js
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/js/gsap-scroll-smoother.js HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/js/gsap-scroll-trigger.js
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/js/gsap-scroll-trigger.js HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/js/gsap-split-text.js
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/js/split-type.min.js
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/js/parallaxie.js
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/js/wow.js
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/js/split-type.min.js HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/js/parallaxie.js HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/js/gsap-split-text.js HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/js/wow.js HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/js/bxslider.js
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/js/bxslider.js HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/js/nice-select.min.js
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/js/nice-select.min.js HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/js/knob.js
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/js/appear.js
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/js/knob.js HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/js/appear.js HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/js/swiper.min.js
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/js/swiper.min.js HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/js/mixitup.js
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/js/mixitup.js HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/js/script.js
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/js/script.js HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/images/gemscend/circle-clock.png
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/images/gemscend/circle-clock.png HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/images/gemscend/X_twitter.png
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/images/gemscend/facebook.png
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/images/gemscend/tiktok.png
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/images/gemscend/facebook.png HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/images/gemscend/X_twitter.png HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/images/gemscend/tiktok.png HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/images/gemscend/instagram.png
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/images/gemscend/instagram.png HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/images/gemscend/gemscend_grey_logo.png
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/images/gemscend/gemscend_grey_logo.png HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/images/gemscend/instagram_2.png
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/images/gemscend/linked_in_2.png
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/images/gemscend/tiktok_2.png
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/images/gemscend/twitter_2.png
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/images/gemscend/facebook_2.png
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/images/gemscend/tiktok_2.png HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/images/gemscend/instagram_2.png HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/images/gemscend/linked_in_2.png HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/images/gemscend/youtube_2.png
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/images/gemscend/twitter_2.png HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/images/gemscend/facebook_2.png HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/images/gemscend/youtube_2.png HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/images/gemscend/gemscend_dark_logo.png
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/images/gemscend/gemscend_dark_logo.png HTTP/1.1" 404 179
+[26/Nov/2025 08:40:40] WARNING [django.request:253] Not Found: /static/images/gemscend/gemsend_favicon.png
+[26/Nov/2025 08:40:40] WARNING [django.server:213] "GET /static/images/gemscend/gemsend_favicon.png HTTP/1.1" 404 179
+[26/Nov/2025 08:42:19] INFO [django.utils.autoreload:667] Watching for file changes with StatReloader
+[26/Nov/2025 08:43:48] INFO [django.utils.autoreload:265] /Users/gosu/Documents/Dev/Django/gemscend/gemscend/settings.py changed, reloading.
+[26/Nov/2025 08:43:49] INFO [django.utils.autoreload:667] Watching for file changes with StatReloader
+[26/Nov/2025 08:43:57] INFO [django.server:213] "GET /contact/us HTTP/1.1" 200 22809
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/css/bootstrap.min.css
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/css/style.css
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/css/responsive.css
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/css/responsive.css?v=2.0 HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/images/gemscend/gemscend_dark_logo.png
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/images/gemscend/gemscend_dark_logo.png HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/css/bootstrap.min.css HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/css/style.css?v=2.0 HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/images/gemscend/logo_grey.png
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/js/jquery.js
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/images/gemscend/call.png
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/js/popper.min.js
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/images/gemscend/mail.png
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/images/gemscend/logo_grey.png HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/js/jquery.js HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/images/gemscend/call.png HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/js/popper.min.js HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/images/gemscend/mail.png HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/js/bootstrap.min.js
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/js/bootstrap.min.js HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/js/jquery-ui.js
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/js/jquery.fancybox.js
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/js/gsap.js
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/js/gsap-scroll-trigger.js
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/js/gsap-scroll-to-plugin.js
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/js/gsap-scroll-smoother.js
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/js/gsap.js HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/js/jquery.fancybox.js HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/js/gsap-scroll-trigger.js HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/js/jquery-ui.js HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/js/gsap-scroll-smoother.js HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/js/gsap-scroll-to-plugin.js HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/js/gsap-split-text.js
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/js/parallaxie.js
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/js/wow.js
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/js/split-type.min.js
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/js/nice-select.min.js
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/js/bxslider.js
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/js/gsap-split-text.js HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/js/parallaxie.js HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/js/wow.js HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/js/split-type.min.js HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/js/nice-select.min.js HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/js/knob.js
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/js/bxslider.js HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/js/appear.js
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/js/script.js
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/js/swiper.min.js
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/js/mixitup.js
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/js/knob.js HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/js/appear.js HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/images/gemscend/circle-clock.png
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/js/script.js HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/js/swiper.min.js HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/js/mixitup.js HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/images/gemscend/X_twitter.png
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/images/gemscend/facebook.png
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/images/gemscend/circle-clock.png HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/images/gemscend/gemscend_grey_logo.png
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/images/gemscend/tiktok.png
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/images/gemscend/instagram.png
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/images/gemscend/instagram.png HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/images/gemscend/instagram_2.png
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/images/gemscend/instagram_2.png HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/images/gemscend/X_twitter.png HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/images/gemscend/twitter_2.png
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/images/gemscend/twitter_2.png HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/images/gemscend/facebook.png HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/images/gemscend/tiktok.png HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/images/gemscend/facebook_2.png
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/images/gemscend/gemscend_dark_logo.png
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/images/gemscend/gemscend_grey_logo.png HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/images/gemscend/facebook_2.png HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/images/gemscend/tiktok_2.png
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/images/gemscend/gemscend_dark_logo.png HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/images/gemscend/linked_in_2.png
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/images/gemscend/linked_in_2.png HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/images/gemscend/tiktok_2.png HTTP/1.1" 404 179
+[26/Nov/2025 08:43:58] WARNING [django.request:253] Not Found: /static/images/gemscend/youtube_2.png
+[26/Nov/2025 08:43:58] WARNING [django.server:213] "GET /static/images/gemscend/youtube_2.png HTTP/1.1" 404 179
+[26/Nov/2025 08:43:59] WARNING [django.request:253] Not Found: /static/images/gemscend/gemsend_favicon.png
+[26/Nov/2025 08:43:59] WARNING [django.server:213] "GET /static/images/gemscend/gemsend_favicon.png HTTP/1.1" 404 179
+[26/Nov/2025 08:45:31] INFO [django.utils.autoreload:265] /Users/gosu/Documents/Dev/Django/gemscend/gemscend/settings.py changed, reloading.
+[26/Nov/2025 08:45:32] INFO [django.utils.autoreload:667] Watching for file changes with StatReloader
+[26/Nov/2025 08:45:36] INFO [django.server:213] "GET /contact/us HTTP/1.1" 200 22809
+[26/Nov/2025 08:45:37] WARNING [django.request:253] Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[26/Nov/2025 08:45:37] WARNING [django.server:213] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4283
+[26/Nov/2025 08:45:37] INFO [django.server:213] "GET /static/css/responsive.css?v=2.0 HTTP/1.1" 200 7059
+[26/Nov/2025 08:45:37] INFO [django.server:213] "GET /static/images/gemscend/gemscend_dark_logo.png HTTP/1.1" 200 25348
+[26/Nov/2025 08:45:37] INFO [django.server:213] "GET /static/images/gemscend/logo_grey.png HTTP/1.1" 200 25404
+[26/Nov/2025 08:45:37] INFO [django.server:213] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 155844
+[26/Nov/2025 08:45:37] INFO [django.server:213] "GET /static/css/style.css?v=2.0 HTTP/1.1" 200 609682
+[26/Nov/2025 08:45:37] INFO [django.server:213] "GET /static/images/gemscend/call.png HTTP/1.1" 200 2870
+[26/Nov/2025 08:45:37] WARNING [django.request:253] Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+[26/Nov/2025 08:45:37] WARNING [django.server:213] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 4325
+[26/Nov/2025 08:45:37] INFO [django.server:213] "GET /static/images/gemscend/mail.png HTTP/1.1" 200 2086
+[26/Nov/2025 08:45:37] INFO [django.server:213] "GET /static/js/popper.min.js HTTP/1.1" 200 18593
+[26/Nov/2025 08:45:37] INFO [django.server:213] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 60089
+[26/Nov/2025 08:45:37] INFO [django.server:213] "GET /static/js/jquery.js HTTP/1.1" 200 87532
+[26/Nov/2025 08:45:37] INFO [django.server:213] "GET /static/js/jquery.fancybox.js HTTP/1.1" 200 154109
+[26/Nov/2025 08:45:37] INFO [django.server:213] "GET /static/js/gsap-scroll-to-plugin.js HTTP/1.1" 200 3971
+[26/Nov/2025 08:45:37] INFO [django.server:213] "GET /static/js/gsap-split-text.js HTTP/1.1" 200 15589
+[26/Nov/2025 08:45:37] INFO [django.server:213] "GET /static/images/gemscend/circle-clock.png HTTP/1.1" 200 3318
+[26/Nov/2025 08:45:38] INFO [django.server:213] "GET /static/js/gsap-scroll-smoother.js HTTP/1.1" 200 12059
+[26/Nov/2025 08:45:38] WARNING [django.server:213] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1889
+[26/Nov/2025 08:45:38] INFO [django.server:213] "GET /static/js/gsap-scroll-trigger.js HTTP/1.1" 200 40595
+[26/Nov/2025 08:45:38] INFO [django.server:213] "GET /static/js/gsap.js HTTP/1.1" 200 71156
+[26/Nov/2025 08:45:38] INFO [django.server:213] "GET /static/js/split-type.min.js HTTP/1.1" 200 19367
+[26/Nov/2025 08:45:38] INFO [django.server:213] "GET /static/js/jquery-ui.js HTTP/1.1" 200 520717
+[26/Nov/2025 08:45:38] INFO [django.server:213] "GET /static/js/parallaxie.js HTTP/1.1" 200 2016
+[26/Nov/2025 08:45:38] INFO [django.server:213] "GET /static/js/wow.js HTTP/1.1" 200 6299
+[26/Nov/2025 08:45:38] INFO [django.server:213] "GET /static/js/bxslider.js HTTP/1.1" 200 24252
+[26/Nov/2025 08:45:38] INFO [django.server:213] "GET /static/js/nice-select.min.js HTTP/1.1" 200 2944
+[26/Nov/2025 08:45:38] INFO [django.server:213] "GET /static/js/knob.js HTTP/1.1" 200 26221
+[26/Nov/2025 08:45:38] INFO [django.server:213] "GET /static/js/appear.js HTTP/1.1" 200 4227
+[26/Nov/2025 08:45:38] INFO [django.server:213] "GET /static/js/mixitup.js HTTP/1.1" 200 52224
+[26/Nov/2025 08:45:38] INFO [django.server:213] "GET /static/images/gemscend/X_twitter.png HTTP/1.1" 200 981
+[26/Nov/2025 08:45:38] INFO [django.server:213] "GET /static/images/gemscend/facebook.png HTTP/1.1" 200 627
+[26/Nov/2025 08:45:38] INFO [django.server:213] "GET /static/js/script.js HTTP/1.1" 200 18989
+[26/Nov/2025 08:45:38] INFO [django.server:213] "GET /static/js/swiper.min.js HTTP/1.1" 200 143281
+[26/Nov/2025 08:45:38] INFO [django.server:213] "GET /static/images/gemscend/tiktok.png HTTP/1.1" 200 865
+[26/Nov/2025 08:45:38] INFO [django.server:213] "GET /static/images/gemscend/instagram.png HTTP/1.1" 200 846
+[26/Nov/2025 08:45:38] INFO [django.server:213] "GET /static/images/gemscend/facebook_2.png HTTP/1.1" 200 3721
+[26/Nov/2025 08:45:38] INFO [django.server:213] "GET /static/images/gemscend/instagram_2.png HTTP/1.1" 200 5217
+[26/Nov/2025 08:45:38] INFO [django.server:213] "GET /static/images/gemscend/twitter_2.png HTTP/1.1" 200 4474
+[26/Nov/2025 08:45:38] INFO [django.server:213] "GET /static/images/gemscend/gemscend_grey_logo.png HTTP/1.1" 200 25407
+[26/Nov/2025 08:45:38] INFO [django.server:213] "GET /static/images/gemscend/linked_in_2.png HTTP/1.1" 200 4950
+[26/Nov/2025 08:45:38] INFO [django.server:213] "GET /static/images/gemscend/youtube_2.png HTTP/1.1" 200 5005
+[26/Nov/2025 08:45:38] INFO [django.server:213] "GET /static/images/gemscend/tiktok_2.png HTTP/1.1" 200 5181
+[26/Nov/2025 08:45:39] WARNING [django.server:213] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1874
+[26/Nov/2025 08:45:39] WARNING [django.server:213] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1883
+[26/Nov/2025 08:45:39] WARNING [django.server:213] "GET /static/js/swiper-bundle.min.js.map HTTP/1.1" 404 1895
+[26/Nov/2025 08:45:39] WARNING [django.request:253] Not Found: /contact/color-switcher/style-switcher.html
+[26/Nov/2025 08:45:39] WARNING [django.server:213] "GET /contact/color-switcher/style-switcher.html HTTP/1.1" 404 4265
+[26/Nov/2025 08:55:31] INFO [django.server:213] "POST /contact/submit/ HTTP/1.1" 200 75
+[26/Nov/2025 09:04:37] INFO [django.server:213] "POST /contact/submit/ HTTP/1.1" 200 75
+[26/Nov/2025 09:05:51] INFO [django.utils.autoreload:265] /Users/gosu/Documents/Dev/Django/gemscend/gemscend/settings.py changed, reloading.
+[26/Nov/2025 09:05:52] INFO [django.utils.autoreload:667] Watching for file changes with StatReloader
+[26/Nov/2025 09:08:44] INFO [django.server:213] "POST /contact/submit/ HTTP/1.1" 200 75

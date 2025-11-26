@@ -7,8 +7,8 @@
 <title>Gemscend - About Us </title>
 <!-- Stylesheets -->
 <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-<link href="{% static 'css/style.css' %}?v=1.8" rel="stylesheet">
-<link href="{% static 'css/responsive.css' %}?v=1.8" rel="stylesheet">
+<link href="{% static 'css/style.css' %}?v=2.0" rel="stylesheet">
+<link href="{% static 'css/responsive.css' %}?v=2.0" rel="stylesheet">
 <link href="{% static 'css/style-dark.css' %}" rel="stylesheet">
 
 <link rel="shortcut icon" href="{% static 'images/gemscend/gemsend_favicon.png' %}" type="image/x-icon">
@@ -26,6 +26,11 @@
 
 	<!-- Scroll To Top -->
 	<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+    <!-- Email Button -->
+    <div id="emailButton" class="email-floating-btn">
+        <img src="{% static 'images/gemscend/default.png' %}" alt="Email Us" id="emailIcon">
+    </div>
 
 	<!-- Main Header-->
         {% include 'components/navbar_dark_background.html' with company_name="Gemscend" year=2024 %}
@@ -93,6 +98,17 @@
 	
 
 </div><!-- End Page Wrapper -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const emailButton = document.getElementById('emailButton');
+
+        // On click: redirect to contact us page
+        emailButton.addEventListener('click', function() {
+            window.location.href = "/contact/us";
+        });
+    });
+</script>
 
 
 
