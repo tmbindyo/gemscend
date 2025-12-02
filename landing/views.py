@@ -114,7 +114,7 @@ def contact_form_submit(request):
             subject=email_subject,
             body=email_body,
             from_email='no-reply@gemscend.com',  # Replace with your email
-            to=['no-reply@gemscend.com'],           # Replace with your receiving email
+            to=['support@gemscend.com'],           # Replace with your receiving email
             cc=[email],
             reply_to=[email],
         )
@@ -145,5 +145,6 @@ def contact_form_submit(request):
         traceback.print_exc()  # Print full error stack
         return JsonResponse({
             'success': False,
-            'message': 'An error occurred. Please try again later.'
+            'message': 'An error occurred. Please try again later.',
+            'error': f'{e}'
         })

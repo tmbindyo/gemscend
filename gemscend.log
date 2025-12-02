@@ -335,3 +335,17 @@
 [26/Nov/2025 09:05:51] INFO [django.utils.autoreload:265] /Users/gosu/Documents/Dev/Django/gemscend/gemscend/settings.py changed, reloading.
 [26/Nov/2025 09:05:52] INFO [django.utils.autoreload:667] Watching for file changes with StatReloader
 [26/Nov/2025 09:08:44] INFO [django.server:213] "POST /contact/submit/ HTTP/1.1" 200 75
+[26/Nov/2025 12:48:59] INFO [django.utils.autoreload:265] /Users/gosu/Documents/Dev/Django/gemscend/gemscend/settings.py changed, reloading.
+[26/Nov/2025 12:49:01] INFO [django.utils.autoreload:667] Watching for file changes with StatReloader
+[26/Nov/2025 12:49:55] INFO [django.utils.autoreload:265] /Users/gosu/Documents/Dev/Django/gemscend/landing/views.py changed, reloading.
+[26/Nov/2025 12:49:57] INFO [django.utils.autoreload:667] Watching for file changes with StatReloader
+[26/Nov/2025 12:58:53] INFO [django.server:213] "POST /contact/submit/ HTTP/1.1" 200 118
+[26/Nov/2025 13:30:52] INFO [django.server:213] "POST /contact/submit/ HTTP/1.1" 200 118
+[26/Nov/2025 13:33:34] INFO [django.utils.autoreload:265] /Users/gosu/Documents/Dev/Django/gemscend/landing/views.py changed, reloading.
+[26/Nov/2025 13:33:35] INFO [django.utils.autoreload:667] Watching for file changes with StatReloader
+[26/Nov/2025 13:36:50] INFO [django.utils.autoreload:265] /Users/gosu/Documents/Dev/Django/gemscend/landing/views.py changed, reloading.
+[26/Nov/2025 13:36:51] INFO [django.utils.autoreload:667] Watching for file changes with StatReloader
+[26/Nov/2025 13:49:45] INFO [django.utils.autoreload:265] /Users/gosu/Documents/Dev/Django/gemscend/gemscend/settings.py changed, reloading.
+[26/Nov/2025 13:49:46] INFO [django.utils.autoreload:667] Watching for file changes with StatReloader
+[27/Nov/2025 08:21:54] INFO [django.utils.autoreload:265] /Users/gosu/Documents/Dev/Django/gemscend/landing/views.py changed, reloading.
+[27/Nov/2025 08:21:57] INFO [django.utils.autoreload:667] Watching for file changes with StatReloader

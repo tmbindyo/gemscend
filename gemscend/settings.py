@@ -252,9 +252,9 @@ DATABASES = {
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 # cPanel Email Settings
-EMAIL_HOST = 'mail.gemscend.com'  # or your server's hostname
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+EMAIL_HOST = '127.0.0.1'  # or your server's hostname
+EMAIL_PORT = 25
+EMAIL_USE_TLS = False
 EMAIL_USE_SSL = False
 # EMAIL_PORT = 465  # or 465 for SSL
 # EMAIL_USE_TLS = False  # Use False if using port 465 and EMAIL_USE_SSL = True
