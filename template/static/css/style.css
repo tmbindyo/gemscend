@@ -4113,34 +4113,163 @@ Section Title
 .gemscend-glow-left {
   left: 0;
   background-image: url(../images/gemscend/glow_left.svg);
-  background-position: left bottom; /* Changed from center to bottom */
-  animation: gemscend-float-left 8s ease-in-out infinite;
+  background-position: left center;
+  animation: gemscend-pulse-left 4s ease-in-out infinite;
 }
 
 .gemscend-glow-right {
   right: 0;
   background-image: url(../images/gemscend/glow_right.svg);
-  background-position: right bottom; /* Changed from center to bottom */
-  animation: gemscend-float-right 8s ease-in-out infinite;
+  background-position: right center;
+  animation: gemscend-pulse-right 4s ease-in-out infinite;
 }
 
-/* Add extra height to ensure coverage */
+/* SMOOTH PULSE ANIMATION */
+@keyframes gemscend-pulse-left {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+    filter: brightness(1) blur(0px);
+  }
+  25% {
+    opacity: 0.7;
+    transform: scale(1.03) translateX(-5px);
+    filter: brightness(1.2) blur(0.5px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.98) translateX(3px);
+    filter: brightness(1) blur(0px);
+  }
+  75% {
+    opacity: 0.8;
+    transform: scale(1.02) translateX(2px);
+    filter: brightness(1.3) blur(0.3px);
+  }
+}
+
+@keyframes gemscend-pulse-right {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+    filter: brightness(1) blur(0px);
+  }
+  25% {
+    opacity: 0.7;
+    transform: scale(1.03) translateX(5px);
+    filter: brightness(1.2) blur(0.5px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.98) translateX(-3px);
+    filter: brightness(1) blur(0px);
+  }
+  75% {
+    opacity: 0.8;
+    transform: scale(1.02) translateX(-2px);
+    filter: brightness(1.3) blur(0.3px);
+  }
+}
+
+/* ENHANCED: Add a subtle glow effect */
 .gemscend-glow-left::after,
 .gemscend-glow-right::after {
   content: '';
   position: absolute;
-  bottom: -50px; /* Extend beyond container */
+  top: 0;
   left: 0;
   width: 100%;
-  height: 50px;
+  height: 100%;
   background: inherit;
+  background-position: inherit;
+  opacity: 0.3;
+  filter: blur(15px);
+  animation: gemscend-glow-pulse 6s ease-in-out infinite;
   z-index: -1;
+}
+
+@keyframes gemscend-glow-pulse {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+}
+
+/* Add a subtle background pulse for the entire section */
+.gemscend-pricing-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.gemscend-pricing-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at 25% 50%,
+    rgba(58, 180, 103, 0.15) 0%,
+    rgba(58, 180, 103, 0) 60%
+  );
+  animation: gemscend-bg-pulse 8s ease-in-out infinite;
+  z-index: 1;
+}
+
+.gemscend-pricing-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at 75% 50%,
+    rgba(46, 155, 84, 0.15) 0%,
+    rgba(46, 155, 84, 0) 60%
+  );
+  animation: gemscend-bg-pulse-delayed 8s ease-in-out infinite;
+  z-index: 1;
+}
+
+@keyframes gemscend-bg-pulse {
+  0%, 100% {
+    opacity: 0.1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.25;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes gemscend-bg-pulse-delayed {
+  0%, 100% {
+    opacity: 0.1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.25;
+    transform: scale(1.05);
+  }
+  animation-delay: 2s;
 }
 
 @media (max-width: 768px) {
   .gemscend-glow-left,
   .gemscend-glow-right {
     display: none;
+  }
+  
+  .gemscend-pricing-section::before,
+  .gemscend-pricing-section::after {
+    animation: none;
+    opacity: 0.1;
   }
 }
 
