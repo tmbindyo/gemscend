@@ -5311,3 +5311,97 @@
 [08/Dec/2025 09:06:40] WARNING [django.server:213] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1883
 [08/Dec/2025 09:06:40] WARNING [django.server:213] "GET /static/js/swiper-bundle.min.js.map HTTP/1.1" 404 1895
 [08/Dec/2025 09:06:41] INFO [django.server:213] "GET /static/images/gemscend/gemsend_favicon.png HTTP/1.1" 200 2448
+[08/Dec/2025 09:09:44] INFO [django.server:213] "GET /static/images/gemscend/gemscend_header_transparent_slice_2.png HTTP/1.1" 200 1068832
+[08/Dec/2025 09:13:21] INFO [django.server:213] "GET /static/fonts/linearicons-free.ttf?4l2k0u HTTP/1.1" 200 66136
+[08/Dec/2025 09:13:51] INFO [django.server:213] "GET / HTTP/1.1" 200 64917
+[08/Dec/2025 09:13:51] WARNING [django.request:253] Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[08/Dec/2025 09:13:51] INFO [django.server:213] "GET /static/css/style.css?v=2.3 HTTP/1.1" 304 0
+[08/Dec/2025 09:13:51] WARNING [django.server:213] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4283
+[08/Dec/2025 09:13:52] WARNING [django.request:253] Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+[08/Dec/2025 09:13:52] WARNING [django.server:213] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 4325
+[08/Dec/2025 09:13:52] WARNING [django.server:213] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1889
+[08/Dec/2025 09:13:53] WARNING [django.server:213] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1883
+[08/Dec/2025 09:13:53] WARNING [django.server:213] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1874
+[08/Dec/2025 09:13:53] WARNING [django.server:213] "GET /static/js/swiper-bundle.min.js.map HTTP/1.1" 404 1895
+[08/Dec/2025 09:13:53] WARNING [django.request:253] Not Found: /color-switcher/style-switcher.html
+[08/Dec/2025 09:13:53] WARNING [django.server:213] "GET /color-switcher/style-switcher.html HTTP/1.1" 404 4241
+[08/Dec/2025 09:15:59] INFO [django.server:213] "GET / HTTP/1.1" 200 64945
+[08/Dec/2025 09:15:59] WARNING [django.request:253] Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[08/Dec/2025 09:15:59] WARNING [django.server:213] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4283
+[08/Dec/2025 09:15:59] INFO [django.server:213] "GET /static/css/style.css?v=2.3 HTTP/1.1" 304 0
+[08/Dec/2025 09:15:59] WARNING [django.request:253] Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+[08/Dec/2025 09:15:59] WARNING [django.server:213] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 4325
+[08/Dec/2025 09:15:59] WARNING [django.server:213] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1889
+[08/Dec/2025 09:16:00] WARNING [django.request:253] Not Found: /color-switcher/style-switcher.html
+[08/Dec/2025 09:16:00] WARNING [django.server:213] "GET /color-switcher/style-switcher.html HTTP/1.1" 404 4241
+[08/Dec/2025 09:16:00] WARNING [django.server:213] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1874
+[08/Dec/2025 09:16:00] WARNING [django.server:213] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1883
+[08/Dec/2025 09:16:00] WARNING [django.server:213] "GET /static/js/swiper-bundle.min.js.map HTTP/1.1" 404 1895
+[08/Dec/2025 09:16:10] INFO [django.server:213] "GET / HTTP/1.1" 200 64925
+[08/Dec/2025 09:16:10] WARNING [django.request:253] Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[08/Dec/2025 09:16:10] WARNING [django.server:213] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4283
+[08/Dec/2025 09:16:11] INFO [django.server:213] "GET / HTTP/1.1" 200 64925
+[08/Dec/2025 09:16:11] WARNING [django.request:253] Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+[08/Dec/2025 09:16:11] WARNING [django.server:213] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 4325
+[08/Dec/2025 09:16:11] WARNING [django.server:213] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1889
+[08/Dec/2025 09:16:11] WARNING [django.request:253] Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[08/Dec/2025 09:16:11] WARNING [django.server:213] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4283
+[08/Dec/2025 09:16:11] WARNING [django.request:253] Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+[08/Dec/2025 09:16:11] WARNING [django.server:213] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 4325
+[08/Dec/2025 09:16:12] WARNING [django.server:213] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1889
+[08/Dec/2025 09:16:12] WARNING [django.server:213] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1883
+[08/Dec/2025 09:16:12] WARNING [django.server:213] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1874
+[08/Dec/2025 09:16:13] WARNING [django.request:253] Not Found: /color-switcher/style-switcher.html
+[08/Dec/2025 09:16:13] WARNING [django.server:213] "GET /color-switcher/style-switcher.html HTTP/1.1" 404 4241
+[08/Dec/2025 09:16:13] WARNING [django.server:213] "GET /static/js/swiper-bundle.min.js.map HTTP/1.1" 404 1895
+[08/Dec/2025 09:16:34] INFO [django.server:213] "GET / HTTP/1.1" 200 64897
+[08/Dec/2025 09:16:34] WARNING [django.request:253] Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[08/Dec/2025 09:16:34] WARNING [django.request:253] Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+[08/Dec/2025 09:16:34] WARNING [django.server:213] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4283
+[08/Dec/2025 09:16:34] INFO [django.server:81] - Broken pipe from ('127.0.0.1', 57700)
+[08/Dec/2025 09:16:34] WARNING [django.server:213] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 4325
+[08/Dec/2025 09:16:34] WARNING [django.server:213] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1889
+[08/Dec/2025 09:16:35] WARNING [django.server:213] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1883
+[08/Dec/2025 09:16:35] WARNING [django.server:213] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1874
+[08/Dec/2025 09:16:35] WARNING [django.request:253] Not Found: /color-switcher/style-switcher.html
+[08/Dec/2025 09:16:35] WARNING [django.server:213] "GET /color-switcher/style-switcher.html HTTP/1.1" 404 4241
+[08/Dec/2025 09:16:35] WARNING [django.server:213] "GET /static/js/swiper-bundle.min.js.map HTTP/1.1" 404 1895
+[08/Dec/2025 09:17:20] INFO [django.server:213] "GET /refer/and/earn HTTP/1.1" 200 28304
+[08/Dec/2025 09:17:20] WARNING [django.request:253] Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[08/Dec/2025 09:17:20] WARNING [django.server:213] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4283
+[08/Dec/2025 09:17:20] INFO [django.server:213] "GET /static/css/responsive.css?v=2.0 HTTP/1.1" 304 0
+[08/Dec/2025 09:17:20] INFO [django.server:213] "GET /static/css/style.css?v=2.0 HTTP/1.1" 200 619083
+[08/Dec/2025 09:17:21] WARNING [django.request:253] Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+[08/Dec/2025 09:17:21] WARNING [django.server:213] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 4325
+[08/Dec/2025 09:17:21] INFO [django.server:213] "GET /static/images/gemscend/giveaway.gif HTTP/1.1" 304 0
+[08/Dec/2025 09:17:21] INFO [django.server:213] "GET /static/images/gemscend/partnership.gif HTTP/1.1" 304 0
+[08/Dec/2025 09:17:21] INFO [django.server:213] "GET /static/images/gemscend/exclusive.gif HTTP/1.1" 304 0
+[08/Dec/2025 09:17:21] WARNING [django.server:213] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1889
+[08/Dec/2025 09:17:21] INFO [django.server:213] "GET /static/images/gemscend/down.gif HTTP/1.1" 304 0
+[08/Dec/2025 09:17:21] INFO [django.server:213] "GET /static/images/gemscend/horizontal_image.gif HTTP/1.1" 304 0
+[08/Dec/2025 09:17:22] WARNING [django.server:213] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1883
+[08/Dec/2025 09:17:22] WARNING [django.server:213] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1874
+[08/Dec/2025 09:17:22] WARNING [django.request:253] Not Found: /refer/and/color-switcher/style-switcher.html
+[08/Dec/2025 09:17:22] WARNING [django.server:213] "GET /refer/and/color-switcher/style-switcher.html HTTP/1.1" 404 4271
+[08/Dec/2025 09:17:22] WARNING [django.server:213] "GET /static/js/swiper-bundle.min.js.map HTTP/1.1" 404 1895
+[08/Dec/2025 09:17:25] WARNING [django.server:213] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1889
+[08/Dec/2025 09:17:25] WARNING [django.request:253] Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[08/Dec/2025 09:17:25] WARNING [django.server:213] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4283
+[08/Dec/2025 09:17:25] INFO [django.server:213] "GET /static/css/style.css?v=2.3 HTTP/1.1" 304 0
+[08/Dec/2025 09:17:25] WARNING [django.request:253] Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[08/Dec/2025 09:17:25] WARNING [django.server:213] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4283
+[08/Dec/2025 09:17:25] WARNING [django.server:213] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1889
+[08/Dec/2025 09:17:26] WARNING [django.server:213] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1874
+[08/Dec/2025 09:17:26] WARNING [django.server:213] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1883
+[08/Dec/2025 09:17:26] WARNING [django.server:213] "GET /static/js/swiper-bundle.min.js.map HTTP/1.1" 404 1895
+[08/Dec/2025 09:17:52] INFO [django.server:213] "GET / HTTP/1.1" 200 64983
+[08/Dec/2025 09:17:52] WARNING [django.request:253] Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[08/Dec/2025 09:17:52] WARNING [django.server:213] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 4283
+[08/Dec/2025 09:17:52] WARNING [django.request:253] Not Found: /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+[08/Dec/2025 09:17:52] WARNING [django.server:213] "GET /cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js HTTP/1.1" 404 4325
+[08/Dec/2025 09:17:53] WARNING [django.server:213] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1889
+[08/Dec/2025 09:17:53] WARNING [django.server:213] "GET /static/js/popper.min.js.map HTTP/1.1" 404 1874
+[08/Dec/2025 09:17:53] WARNING [django.server:213] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 1883
+[08/Dec/2025 09:17:54] WARNING [django.request:253] Not Found: /color-switcher/style-switcher.html
+[08/Dec/2025 09:17:54] WARNING [django.server:213] "GET /color-switcher/style-switcher.html HTTP/1.1" 404 4241
+[08/Dec/2025 09:17:54] WARNING [django.server:213] "GET /static/js/swiper-bundle.min.js.map HTTP/1.1" 404 1895
