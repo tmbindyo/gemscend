@@ -7,9 +7,9 @@
 <title>Gemscend </title>
 <!-- Stylesheets -->
 <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-<link href="{% static 'css/style.css' %}?v=2.0" rel="stylesheet">
+<link href="{% static 'css/style.css' %}?v=2.3" rel="stylesheet">
 {% comment %} <link href="{% static 'css/style.css' %}" rel="stylesheet"> {% endcomment %}
-<link href="{% static 'css/responsive.css' %}?v=2.0" rel="stylesheet">
+<link href="{% static 'css/responsive.css' %}?v=2.3" rel="stylesheet">
 
 <link rel="shortcut icon" href="{% static 'images/gemscend/gemsend_favicon.png' %}" type="image/x-icon">
 <link rel="icon" href="{% static 'images/gemscend/gemsend_favicon.png' %}" type="image/x-icon">
@@ -50,48 +50,9 @@
         {% include 'components/navbar_dark_background.html' with company_name="Gemscend" year=2024 %}
     <!--End Main Header -->
 
+    
+
     <!-- Hero Section Start -->
-    {% comment %} <section class="hero-section hero-5 parallaxie bg-cover" style="background-image: url('{% static 'images/header-image/gemscend _header_transparent_slice.png' %}');">
-        <div class="banner-outer">
-            <div class="hero-content">
-                <h1 class="banner-title wow fadeInUp" data-wow-delay=".2s">The Journey Starts Now!</h1>
-
-
-                <div class="info mt-50 wow fadeInUp" data-wow-delay=".2s">
-                    <a href="{% url 'template-contact' %}" class="theme-btn btn-style-five btn-outline">
-                        Get Started Today!
-                    </a>
-                </div>
-            </div>
-        </div>				
-    </section> {% endcomment %}
-	{% comment %} <section class="gemscend-hero-section">
-		<!-- Pulsing background layer -->
-		<div class="gemscend-hero-bg"></div>
-
-		<!-- Transparent main image layer -->
-		<div class="gemscend-hero-image"></div>
-
-		<!-- Glowing sides -->
-		<div class="gemscend-glow-left"></div>
-		<div class="gemscend-glow-right"></div>
-
-		<!-- Text content -->
-		<div class="gemscend-banner-outer">
-			<div class="gemscend-hero-content">
-			<h1 class="gemscend-banner-title wow fadeInUp" data-wow-delay=".2s">
-				The Journey Starts Now!
-			</h1>
-
-			<div class="gemscend-info mt-50 wow fadeInUp" data-wow-delay=".2s">
-				<a href="{% url 'template-contact' %}" class="theme-btn btn-style-five btn-outline">
-				Get Started Today!
-				</a>
-			</div>
-			</div>
-		</div>
-	</section> {% endcomment %}
-
     <section class="gemscend-hero-section">
         <!-- Background and glow layers -->
         <div class="gemscend-hero-bg"></div>
@@ -143,6 +104,7 @@
             </div>
         </div>
     </section>
+    <!-- Hero Section End -->
 
 
 
@@ -200,13 +162,6 @@
                                     <h2 class="mb-0 fw-bold text-success display-6" id="monthlyEarnings">$25,000</h2>
                                 </div>
                             </div>
-                            
-                            {% comment %} <div class="text-center d-flex flex-column align-items-center" style="flex-grow: 1;"> 
-                                <p class="text-dark mb-2" style="font-size: 1.25rem;"> <strong class="fw-bolder">Select Plan</strong> For Only</p>
-                                <button class="btn btn-success fee-button-image custom-bottom-height-option fw-bold">
-                                    $59
-                                </button>
-                            </div> {% endcomment %}
 
                             <div class="text-center d-flex flex-column align-items-center" style="flex-grow: 1;"> 
                                 <p class="text-dark mb-2" style="font-size: 1.25rem;"> <strong class="fw-bolder">Select Plan</strong> For Only</p>
@@ -232,7 +187,7 @@
 
 
 
-
+{% comment %} 
     <!-- Pricing Section Start -->
     <section class="gemscend-pricing-section fix" id="pricing">
         <div class="auto-container">
@@ -352,7 +307,324 @@
                 </div>
             </div>
         </div>
+    </section> {% endcomment %}
+
+    <!-- Pricing Section Start -->
+    <section class="gemscend-pricing-section fix" id="pricing">
+        <div class="auto-container">
+            <div class="sec-title text-center">
+                <h2 class="wow fadeInUp text-white" data-wow-delay=".3s">Our Pricing</h2>
+                <h3 class="wow fadeInUp text-white" data-wow-delay=".3s">
+                    <span class="text-gemscend-emerald">Two Step Challenge</span> Tailored To Your Trading Needs
+                </h3>
+            </div>
+
+            <!-- DESKTOP TABLE (Visible on desktop only) -->
+            <div class="pricing-table-desktop">
+                <div class="table-responsive">
+                    <table class="gemscend-pricing-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+
+                                <!-- PLAN 1 -->
+                                <th>
+                                    <div class="price-header">
+                                        <div class="price-amount">$3,000</div>
+                                        <a href="https://dashboard.gemscend.com/challenges?planid=121" class="gemscend-price-btn">
+                                            Select Plan
+                                        </a>
+                                        <div class="price-fee">Fee: $35</div>
+                                    </div>
+                                </th>
+
+                                <!-- PLAN 2 -->
+                                <th>
+                                    <div class="price-header">
+                                        <div class="price-amount">$5,000</div>
+                                        <a href="https://dashboard.gemscend.com/challenges?planid=122" class="gemscend-price-btn">
+                                            Select Plan
+                                        </a>
+                                        <div class="price-fee">Fee: $50</div>
+                                    </div>
+                                </th>
+
+                                <!-- PLAN 3 – MOST POPULAR -->
+                                <th>
+                                    <div class="price-header popular">
+                                        <div class="popular-label">Most Popular</div>
+                                        <div class="price-amount">$10,000</div>
+                                        <a href="https://dashboard.gemscend.com/challenges?planid=123" class="gemscend-price-btn">
+                                            Select Plan
+                                        </a>
+                                        <div class="price-fee">Fee: $100</div>
+                                    </div>
+                                </th>
+
+                                <!-- PLAN 4 -->
+                                <th>
+                                    <div class="price-header">
+                                        <div class="price-amount">$20,000</div>
+                                        <a href="https://dashboard.gemscend.com/challenges?planid=124" class="gemscend-price-btn">
+                                            Select Plan
+                                        </a>
+                                        <div class="price-fee">Fee: $200</div>
+                                    </div>
+                                </th>
+
+                                <!-- PLAN 5 -->
+                                <th>
+                                    <div class="price-header">
+                                        <div class="price-amount">$100,000</div>
+                                        <a href="https://dashboard.gemscend.com/challenges?planid=125" class="gemscend-price-btn">
+                                            Select Plan
+                                        </a>
+                                        <div class="price-fee">Fee: $660</div>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span class="info-tooltip" data-tooltip="The trader should achieve an 8% profit in Phase 1 to advance to Phase 2.">i</span>
+                                    Phase 1 Profit Target
+                                </td>
+                                <td>8%</td>
+                                <td>8%</td>
+                                <td>8%</td>
+                                <td>8%</td>
+                                <td>8%</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="info-tooltip" data-tooltip="The trader should achieve a 5% profit in Phase 2 to complete the challenge and receive a funded account.">i</span>
+                                    Phase 2 Profit Target
+                                </td>
+                                <td>5%</td>
+                                <td>5%</td>
+                                <td>5%</td>
+                                <td>5%</td>
+                                <td>5%</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="info-tooltip" data-tooltip="An equity-based restriction that ensures a trader cannot lose more than a fixed amount in a single trading day, calculated from the prior day's closing balance, and exceeding it results in a hard breach.">i</span>
+                                    Daily Loss Limit 5%
+                                </td>
+                                <td>$150</td>
+                                <td>$250</td>
+                                <td>$500</td>
+                                <td>$1,000</td>
+                                <td>$5,000</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="info-tooltip" data-tooltip="The trader's take-home is 80% of the net profit generated in the Gemscend funded account.">i</span>
+                                    Profit Split
+                                </td>
+                                <td>80%</td>
+                                <td>80%</td>
+                                <td>80%</td>
+                                <td>80%</td>
+                                <td>80%</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="info-tooltip" data-tooltip="The trader should not lose more than the fixed maximum overall loss from the allocated capital.">i</span>
+                                    Maximum Drawdown
+                                </td>
+                                <td>8%</td>
+                                <td>8%</td>
+                                <td>8%</td>
+                                <td>8%</td>
+                                <td>8%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- MOBILE CARDS (Visible only on mobile) -->
+            <div class="pricing-cards-mobile">
+
+                <!-- CARD 1 -->
+                <div class="pricing-card">
+                    <div class="mobile-price-header">
+                        <div class="mobile-price-amount">$3,000</div>
+                        <a href="https://dashboard.gemscend.com/challenges?planid=121" class="mobile-price-btn">
+                            Select Plan
+                        </a>
+                        <div class="mobile-price-fee">Fee: $35</div>
+                    </div>
+                    
+                    <div class="mobile-features-table">
+                        <div class="feature-row">
+                            <div class="feature-name">Phase 1 Profit Target</div>
+                            <div class="feature-value">8%</div>
+                        </div>
+                        <div class="feature-row">
+                            <div class="feature-name">Phase 2 Profit Target</div>
+                            <div class="feature-value">5%</div>
+                        </div>
+                        <div class="feature-row">
+                            <div class="feature-name">Daily Loss Limit 5%</div>
+                            <div class="feature-value">$150</div>
+                        </div>
+                        <div class="feature-row">
+                            <div class="feature-name">Profit Split</div>
+                            <div class="feature-value">80%</div>
+                        </div>
+                        <div class="feature-row">
+                            <div class="feature-name">Maximum Drawdown</div>
+                            <div class="feature-value">8%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="pricing-card">
+                    <div class="mobile-price-header">
+                        <div class="mobile-price-amount">$5,000</div>
+                        <a href="https://dashboard.gemscend.com/challenges?planid=122" class="mobile-price-btn">
+                            Select Plan
+                        </a>
+                        <div class="mobile-price-fee">Fee: $50</div>
+                    </div>
+                    
+                    <div class="mobile-features-table">
+                        <div class="feature-row">
+                            <div class="feature-name">Phase 1 Profit Target</div>
+                            <div class="feature-value">8%</div>
+                        </div>
+                        <div class="feature-row">
+                            <div class="feature-name">Phase 2 Profit Target</div>
+                            <div class="feature-value">5%</div>
+                        </div>
+                        <div class="feature-row">
+                            <div class="feature-name">Daily Loss Limit 5%</div>
+                            <div class="feature-value">$250</div>
+                        </div>
+                        <div class="feature-row">
+                            <div class="feature-name">Profit Split</div>
+                            <div class="feature-value">80%</div>
+                        </div>
+                        <div class="feature-row">
+                            <div class="feature-name">Maximum Drawdown</div>
+                            <div class="feature-value">8%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 3 – MOST POPULAR -->
+                <div class="pricing-card mobile-popular-card">
+                    <span class="mobile-popular-label">Most Popular</span>
+                    <div class="mobile-price-header">
+                        <div class="mobile-price-amount">$10,000</div>
+                        <a href="https://dashboard.gemscend.com/challenges?planid=123" class="mobile-price-btn mobile-popular-btn">
+                            Select Plan
+                        </a>
+                        <div class="mobile-price-fee">Fee: $100</div>
+                    </div>
+                    
+                    <div class="mobile-features-table">
+                        <div class="feature-row">
+                            <div class="feature-name">Phase 1 Profit Target</div>
+                            <div class="feature-value">8%</div>
+                        </div>
+                        <div class="feature-row">
+                            <div class="feature-name">Phase 2 Profit Target</div>
+                            <div class="feature-value">5%</div>
+                        </div>
+                        <div class="feature-row">
+                            <div class="feature-name">Daily Loss Limit 5%</div>
+                            <div class="feature-value">$500</div>
+                        </div>
+                        <div class="feature-row">
+                            <div class="feature-name">Profit Split</div>
+                            <div class="feature-value">80%</div>
+                        </div>
+                        <div class="feature-row">
+                            <div class="feature-name">Maximum Drawdown</div>
+                            <div class="feature-value">8%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="pricing-card">
+                    <div class="mobile-price-header">
+                        <div class="mobile-price-amount">$20,000</div>
+                        <a href="https://dashboard.gemscend.com/challenges?planid=124" class="mobile-price-btn">
+                            Select Plan
+                        </a>
+                        <div class="mobile-price-fee">Fee: $200</div>
+                    </div>
+                    
+                    <div class="mobile-features-table">
+                        <div class="feature-row">
+                            <div class="feature-name">Phase 1 Profit Target</div>
+                            <div class="feature-value">8%</div>
+                        </div>
+                        <div class="feature-row">
+                            <div class="feature-name">Phase 2 Profit Target</div>
+                            <div class="feature-value">5%</div>
+                        </div>
+                        <div class="feature-row">
+                            <div class="feature-name">Daily Loss Limit 5%</div>
+                            <div class="feature-value">$1,000</div>
+                        </div>
+                        <div class="feature-row">
+                            <div class="feature-name">Profit Split</div>
+                            <div class="feature-value">80%</div>
+                        </div>
+                        <div class="feature-row">
+                            <div class="feature-name">Maximum Drawdown</div>
+                            <div class="feature-value">8%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="pricing-card">
+                    <div class="mobile-price-header">
+                        <div class="mobile-price-amount">$100,000</div>
+                        <a href="https://dashboard.gemscend.com/challenges?planid=125" class="mobile-price-btn">
+                            Select Plan
+                        </a>
+                        <div class="mobile-price-fee">Fee: $660</div>
+                    </div>
+                    
+                    <div class="mobile-features-table">
+                        <div class="feature-row">
+                            <div class="feature-name">Phase 1 Profit Target</div>
+                            <div class="feature-value">8%</div>
+                        </div>
+                        <div class="feature-row">
+                            <div class="feature-name">Phase 2 Profit Target</div>
+                            <div class="feature-value">5%</div>
+                        </div>
+                        <div class="feature-row">
+                            <div class="feature-name">Daily Loss Limit 5%</div>
+                            <div class="feature-value">$5,000</div>
+                        </div>
+                        <div class="feature-row">
+                            <div class="feature-name">Profit Split</div>
+                            <div class="feature-value">80%</div>
+                        </div>
+                        <div class="feature-row">
+                            <div class="feature-name">Maximum Drawdown</div>
+                            <div class="feature-value">8%</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
+    <!-- Pricing Section End -->
+
 
 
     <!-- Service Section Start -->
@@ -552,7 +824,7 @@
               <div class="top-earner-box-items">
                 <div class="top-earner-content">
                     <h3 class="text-gemscend-dark-emerald-75 text-center top-earner-content-h3-heading">2 Payouts Totalling</h3>
-                    <h3 class="text-center top-earner-content-h3-amount">$2,500</h3>
+                    <h3 class="text-center top-earner-content-h3-amount">$2,520</h3>
                     <p class="text-gemscend-dark-emerald-75 top-earner-content-h3-name">
                         Daniel Mbai.
                         <img src="https://flagcdn.com/ke.svg" 
@@ -571,7 +843,7 @@
               <div class="top-earner-box-items">
                 <div class="top-earner-content">
                     <h3 class="text-gemscend-dark-emerald-75 text-center top-earner-content-h3-heading" >2 Payouts Totalling</h3>
-                    <h3 class="text-center top-earner-content-h3-amount">$4,500</h3>
+                    <h3 class="text-center top-earner-content-h3-amount">$4,550</h3>
                     <p class="text-gemscend-dark-emerald-75 top-earner-content-h3-name">
                         Saanvi Shah.
                         <img src="https://flagcdn.com/in.svg" 
@@ -590,7 +862,7 @@
               <div class="top-earner-box-items">
                 <div class="top-earner-content">
                     <h3 class="text-gemscend-dark-emerald-75 text-center top-earner-content-h3-heading" >2 Payouts Totalling</h3>
-                    <h3 class="text-center top-earner-content-h3-amount">$8,500</h3>
+                    <h3 class="text-center top-earner-content-h3-amount">$8,755</h3>
                     <p class="text-gemscend-dark-emerald-75 top-earner-content-h3-name">
                         Imogen Smith.
                         <img src="https://flagcdn.com/gb.svg" 
@@ -609,7 +881,7 @@
               <div class="top-earner-box-items">
                 <div class="top-earner-content">
                     <h3 class="text-gemscend-dark-emerald-75 text-center top-earner-content-h3-heading" >2 Payouts Totalling</h3>
-                    <h3 class="text-center top-earner-content-h3-amount">$12,000</h3>
+                    <h3 class="text-center top-earner-content-h3-amount">$12,690</h3>
                     <p class="text-gemscend-dark-emerald-75 top-earner-content-h3-name">
                         Emily Winslet.
                         <img src="https://flagcdn.com/us.svg" 
@@ -625,9 +897,6 @@
               </div>
             </div>
 
-            {% comment %} <div class="info mt-50 wow fadeInUp" data-wow-delay=".2s" style="display: flex; justify-content: center; align-items: center"> 
-                <a href="https://gemscenddashboard.propaccount.com/en/sign-up" class="theme-btn btn-emerald"> Get Started Today! </a> 
-            </div> {% endcomment %}
 
             <div class="info mt-50 wow fadeInUp text-center" data-wow-delay=".2s"> 
                 <a href="https://dashboard.gemscend.com/en/sign-up" class="theme-btn btn-emerald"> Get Started Today! </a> 

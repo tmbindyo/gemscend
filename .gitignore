@@ -1,0 +1,122 @@
+# -----------------------------------------
+# Django / Python .gitignore
+# -----------------------------------------
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C Extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Pip / Virtualenv
+.venv/
+venv/
+ENV/
+env/
+.env/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Poetry
+.poetry/
+poetry.lock
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+cover/
+tests/__pycache__/
+
+# Django Stuff
+*.log
+*.pot
+*.pyc
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Django Static + Media (generated)
+staticfiles/
+static/
+media/
+assets/
+
+# Django migrations (optional – comment out if you want them tracked)
+# */migrations/*
+# !*/migrations/__init__.py
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# dotenv
+*.env
+.env.*
+!.env.example
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs / Dumps
+*.log
+*.sql
+*.sqlite3
+dump.rdb
+
+# Node (if using Tailwind, React, etc.)
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.pnp/
+.pnp.js
+
+# Redis / Celery
+celerybeat-schedule
+celerybeat.pid
+
+# VSCode local history
+.history/

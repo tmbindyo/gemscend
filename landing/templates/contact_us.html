@@ -7,9 +7,9 @@
 <title>Gemscend </title>
 <!-- Stylesheets -->
 <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-<link href="{% static 'css/style.css' %}?v=2.1" rel="stylesheet">
+<link href="{% static 'css/style.css' %}?v=2.5" rel="stylesheet">
 {% comment %} <link href="{% static 'css/style.css' %}" rel="stylesheet"> {% endcomment %}
-<link href="{% static 'css/responsive.css' %}?v=2.1" rel="stylesheet">
+<link href="{% static 'css/responsive.css' %}?v=2.5" rel="stylesheet">
 
 <link rel="shortcut icon" href="{% static 'images/gemscend/gemsend_favicon.png' %}" type="image/x-icon">
 <link rel="icon" href="{% static 'images/gemscend/gemsend_favicon.png' %}" type="image/x-icon">
@@ -51,79 +51,39 @@
     <!--End Main Header -->
 
     
-    <!-- Start main-content -->
-    {% comment %} <section class="page-title" style="background-image: url('{% static "images/inner/page-title-bg.jpg" %}');">
-      <div class="auto-container">
-		<div class="title-outer">
-			<ul class="page-breadcrumb wow fadeInUp" data-wow-delay=".3s">
-				<li><a href="{% url 'template-index' %}">Home</a></li>
-				<li>Contact Us</li>
-			</ul>
-			<h1 class="title wow fadeInUp" data-wow-delay=".5s">Contact Us</h1>
-		</div>
-      </div>
-    </section> {% endcomment %}
+    
 
-	 <!-- Page Contact area start here -->
+
+
+
+
+
+
+
+
+    <!-- Page Contact area start here -->
     <section class="contact-details fix section-padding">
       <div class="auto-container">
+
         <div class="sec-title text-center">
             <h2 class="sub-title wow fadeInUp text-gemscend-dark-emerald-75">
-                Contact Us
+                Connect with us
             </h2>
             
         </div>
 
-        {% comment %} <div class="row g-5">
-          <div class="col-md-6 col-lg-4 wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
-            <div class="contact-details-block">
-              <div class="inner-box">
-                <div class="icon">
-				 <i class="lnr-icon-map-marker"></i>
-                </div>
-                <h4 class="title">address line</h4>
-                <p class="text">Bowery St, New York, 37 USA
-                  NY 10013,USA</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
-            <div class="contact-details-block">
-              <div class="inner-box">
-                <div class="icon">
-                   <i class="lnr-icon-phone-handset"></i>
-
-                </div>
-                <h4 class="title">address line</h4>
-                <p class="text">+1255 - 568 - 6523 4374-221
-                  +1255 - 568 - 6523</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 wow fadeInLeft" data-wow-delay="400ms" data-wow-duration="1500ms">
-            <div class="contact-details-block">
-              <div class="inner-box">
-                <div class="icon">
-                  <i class="lnr-icon-envelope"></i>
-                </div>
-                <h4 class="title">Mail Adress</h4>
-                <p class="text"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="40252d21292c002538212d302c256e232f2d">[email&#160;protected]</a> <br> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5831363e371821372d2a3c3735393136763b3735">[email&#160;protected]</a></p>
-              </div>
-            </div>
-          </div>
-        </div> {% endcomment %}
-
         
         <div class="mt-100">
           <div class="row g-5">
-            <div class="col-lg-6 mx-auto content-column">
+            
+            <div class="col-lg-6 content-column">
               <div class="inner-column right-column">
                 <div class="sec-title mb-30">
-                  <h2 class="title wow splt-txt" data-splitting>Fill In The Form</h2>
-                  <p class="text wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">Your email address will not be published. Required fields are marked *</p>
+                  <p class="text wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">We’d love to hear from you. <span class="text-gemscend-emerald"> We reply within 24hrs</span></p>
                 </div>
 
                 <div id="form-messages" class="alert d-none mb-3"></div>
+
 
                 <form id="contact_form" name="contact_form" method="post">
                     {% csrf_token %}
@@ -148,20 +108,24 @@
                         <i class="fa-light fa-pen-to-square"></i>
                         <textarea name="form_message" class="required" placeholder="Enter Your Messege here"></textarea>
                     </div>
-                    <button type="submit" class="theme-btn btn-style-contact-us rounded-0"><i class="me-2 fa-light fa-paper-plane"></i> Get In Touch</button>
+                    <button style="border-radius: 30px;" type="submit" class="theme-btn btn-emerald"><i class="me-2 fa-light fa-paper-plane"></i> SUBMIT EMAIL</button>
                 </form>
               </div>
             </div>
+
+            <div class="col-lg-6 content-column">
+              <div class="inner-column">
+                <div class="contact-us-image">
+                  <img src="{% static 'images/gemscend/contact.png' %}" alt="Contact Us Image">
+              </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
     </section>
     <!-- Page Contact area end here -->
-
- 
-
-
-
 
 
 

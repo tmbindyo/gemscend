@@ -12,24 +12,16 @@
                 </div>
                 <nav class="nav main-menu">
                     <ul class="navigation">
-                        <li><a style="color: #41A95C;" href="{% url 'index' %}#how-it-works">How It Works</a></li>
-                        <li><a style="color: #41A95C;" href="{% url 'index' %}#pricing">Pricing</a></li>
-                        <li><a style="color: #41A95C;" href="{% url 'faqs' %}">FAQ's</a></li>
-                        <li><a style="color: #41A95C;" href="{% url 'refer_and_earn' %}">Refer & Earn</a></li>
-                        <li><a style="color: #41A95C;" href="https://app.gemscend.com/">E-Learning</a></li>
+                        <li><a href="{% url 'index' %}#how-it-works">How It Works</a></li>
+                        <li><a href="{% url 'index' %}#pricing">Pricing</a></li>
+                        <li><a href="{% url 'faqs' %}">FAQ's</a></li>
+                        <li><a href="{% url 'refer_and_earn' %}">Refer & Earn</a></li>
+                        <li><a href="https://elearning.gemscend.com">E-Learning</a></li>
                         <li class="dropdown">
                             <a href="#">
                                 <img src="https://flagcdn.com/gb.svg" alt="English" class="flag-icon">
                                 EN
                             </a>
-                            {% comment %} <ul>
-                                <li>
-                                <a href="#"><img src="https://flagcdn.com/fr.svg" class="flag-icon"> FR</a>
-                                </li>
-                                <li>
-                                <a href="#"><img src="https://flagcdn.com/de.svg" class="flag-icon"> DE</a>
-                                </li>
-                            </ul> {% endcomment %}
                         </li>
 
                         <div class="nav-buttons">
@@ -44,6 +36,12 @@
 
                     </ul>
                 </nav>
+                
+                <!-- Mobile Nav toggler -->
+                <div class="mobile-nav-toggler">
+                    <span class="icon lnr-icon-bars" style="color:#000 !important;"></span>
+                </div>
+
             </div>
         </div>
     </div>
@@ -63,66 +61,27 @@
             <ul class="navigation clearfix">
                 <!--Keep This Empty / Menu will come through Javascript-->
             </ul>
-            <ul class="contact-list-one">
-                <ul class="contact-list">
-                    <li>
-                        <div class="contact-info-box">
-                            <span class="icon">
-                                <img style="height: 50px;" src="{% static 'images/gemscend/call.png' %}" alt="Call Icon">
-                            </span>
-                            <div class="content">
-                                <h3>Call Now</h3>
-                                <p><a href="tel:+254796947837">+254796947837</a></p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="contact-info-box">
-                            <span class="icon">
-                                <img style="height: 50px;" src="{% static 'images/gemscend/mail.png' %}" alt="Mail Icon">
-                            </span>
-                            <div class="content">
-                                <h3>Send Email</h3>
-                                <p><a href="mailto:info@gemscend.com">info@gemscend.com</a></p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="contact-info-box">
-                            <span class="icon">
-                                <img style="height: 50px;" src="{% static 'images/gemscend/circle-clock.png' %}" alt="Clock Icon">
-                            </span>
-                            <div class="content">
-                                <h3>Working Hours</h3>
-                                <p style="color: #fff;">Mon - Sat 8:00 - 6:30, Sunday - CLOSED</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-
-            </ul>
+            
 
 
             <ul class="social-links">
                 <li>
-                    <a href="#">
+                    <a href="https://twitter.com/gemscend">
                         <img src="{% static 'images/gemscend/X_twitter.png' %}" alt="Twitter" class="social-icon">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://www.facebook.com/share/17cUq46wys/?mibextid=wwXIfr">
                         <img src="{% static 'images/gemscend/facebook.png' %}" alt="Facebook" class="social-icon">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://tiktok.com/@gemscend">
                         <img src="{% static 'images/gemscend/tiktok.png' %}" alt="Tiktok" class="social-icon">
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://instagram.com/gemscend">
                         <img src="{% static 'images/gemscend/instagram.png' %}" alt="Instagram" class="social-icon">
                     </a>
                 </li>

@@ -15122,11 +15122,16 @@ Section Title
 
 
 
-
+/* ===== PRICING SECTION STYLES ===== */
 .gemscend-pricing-section {
   background: var(--gemscend-dark-green);
   position: relative;
   z-index: 9;
+  overflow: visible !important;
+}
+
+.auto-container {
+  overflow: visible !important;
 }
 
 .gemscend-pricing-auto-container {
@@ -15134,6 +15139,7 @@ Section Title
   padding-right: 20px;
 }
 
+/* ===== DESKTOP TABLE STYLES (KEEPING ORIGINAL) ===== */
 /* Table Styling */
 .gemscend-pricing-table {
   width: 100%;
@@ -15147,12 +15153,12 @@ Section Title
   text-align: center;
 }
 
-..gemscend-pricing-table th {
+.gemscend-pricing-table th {
   padding: 0;
   vertical-align: top;
   border: 1px solid #e9ecef;
-  overflow: visible; /* Add this line */
-  position: relative; /* Add this line */
+  overflow: visible;
+  position: relative;
 }
 
 .price-header {
@@ -15172,10 +15178,6 @@ Section Title
 
 /* Fix for Most Popular label clipping */
 .gemscend-pricing-section {
-  overflow: visible !important;
-}
-
-.auto-container {
   overflow: visible !important;
 }
 
@@ -15241,8 +15243,6 @@ Section Title
   margin: 0 auto; /* Center it */
 }
 
-
-
 .gemscend-price-btn {
   background: linear-gradient(180deg, #3ab467 0%, #2e9b54 100%);
   color: #fff;
@@ -15273,7 +15273,6 @@ Section Title
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(255,255,255,0.3);
 }
-
 
 .gemscend-pricing-table thead td {
   border: 1px solid #e9ecef;
@@ -15308,70 +15307,6 @@ Section Title
   background-color: #f1f3f4;
 }
 
-/* Tooltip Base Styles */
-.info-tooltip {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 18px;
-    height: 18px;
-    background: #41A95C;
-    color: white;
-    border-radius: 50%;
-    font-size: 12px;
-    font-weight: bold;
-    margin-right: 8px;
-    cursor: help;
-    line-height: 1;
-}
-
-.floating-tooltip {
-    position: absolute;
-    background: #2c3e50; /* Fixed background color */
-    color: white;
-    padding: 12px 16px;
-    border-radius: 8px;
-    font-size: 14px;
-    line-height: 1.4;
-    max-width: 280px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    z-index: 10000;
-    opacity: 1;
-    visibility: visible;
-}
-
-.floating-tooltip.visible {
-    opacity: 1;
-    visibility: visible;
-}
-
-/* Arrow for tooltip pointing left (tooltip on right) */
-.floating-tooltip.arrow-left::before {
-    content: '';
-    position: absolute;
-    left: -6px;
-    top: 50%;
-    transform: translateY(-50%);
-    border: 6px solid transparent;
-    border-right-color: #2c3e50;
-}
-
-/* Arrow for tooltip pointing right (tooltip on left) */
-.floating-tooltip.arrow-right::before {
-    content: '';
-    position: absolute;
-    right: -6px;
-    top: 50%;
-    transform: translateY(-50%);
-    border: 6px solid transparent;
-    border-left-color: #2c3e50;
-}
-
-/* Ensure tooltips are above everything */
-.floating-tooltip {
-    z-index: 9999;
-}
-
 /* Make pricing table scrollable on smaller screens */
 .table-responsive {
   width: 100%;
@@ -15392,8 +15327,239 @@ Section Title
   min-width: 800px;
 }
 
-/* Responsive adjustments */
-/* Responsive adjustments */
+/* ===== MOBILE CARDS STYLES (UPDATED TO MATCH DESKTOP) ===== */
+/* Hide mobile cards on desktop */
+.pricing-cards-mobile {
+    display: none;
+}
+
+/* Show table on desktop */
+.pricing-table-desktop {
+    display: block;
+}
+
+/* MOBILE ONLY — Hide table, show cards */
+@media (max-width: 768px) {
+    .pricing-table-desktop {
+        display: none;
+    }
+
+    .pricing-cards-mobile {
+        display: block;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    /* Mobile Pricing Card */
+    .pricing-card {
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0px 4px 20px rgba(0,0,0,0.05);
+        margin-bottom: 30px;
+        overflow: hidden;
+        border: 1px solid #e9ecef;
+        position: relative;
+    }
+
+    /* Mobile Price Header - Matching Desktop */
+    .mobile-price-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #fff;
+        padding: 15px 10px 0;
+        border-radius: 12px;
+        position: relative;
+        overflow: visible;
+    }
+
+    .mobile-price-amount {
+        font-size: 26px;
+        font-weight: 700;
+        color: #2e9b54;
+        margin-bottom: 8px;
+    }
+
+    .mobile-price-btn {
+        background: linear-gradient(180deg, #3ab467 0%, #2e9b54 100%);
+        color: #fff;
+        font-weight: 700;
+        font-size: 16px;
+        text-decoration: none;
+        padding: 10px 16px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        z-index: 2;
+        position: relative;
+        display: inline-block;
+        transition: all 0.3s ease;
+        min-width: 120px;
+        text-align: center;
+        margin-bottom: 4px;
+    }
+
+    .mobile-price-btn:hover {
+        background: linear-gradient(180deg, #34a15d 0%, #278b4f 100%);
+    }
+
+    .mobile-price-fee {
+        position: relative;
+        top: -12px;
+        background: #D5D7DB;
+        color: #2e9b54;
+        font-weight: 600;
+        font-size: 14px;
+        border-radius: 0 0 8px 8px;
+        padding: 10px 0px 6px 0;
+        width: auto;
+        min-width: 120px;
+        text-align: center;
+        z-index: 1;
+        box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+        margin: 0 auto;
+    }
+
+    /* Mobile Features Table */
+    .mobile-features-table {
+        width: 100%;
+    }
+
+    .feature-row {
+        display: flex;
+        padding: 14px 16px;
+        border-bottom: 1px solid #e9ecef;
+        align-items: center;
+    }
+
+    .feature-row:last-child {
+        border-bottom: none;
+    }
+
+    .feature-row:nth-child(even) {
+        background: #fafafa;
+    }
+
+    .feature-name {
+        flex: 1;
+        background-color: #f8f9fa;
+        font-weight: 600;
+        color: #2c3e50;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .feature-row:nth-child(even) .feature-name {
+        background-color: #f1f3f4;
+    }
+
+    .feature-value {
+        width: 80px;
+        text-align: right;
+        font-weight: 500;
+        color: #444;
+        font-size: 14px;
+        padding-right: 5px;
+    }
+
+    /* Popular Card Mobile */
+    .mobile-popular-card {
+        border: 2px solid #ff6b35;
+        overflow: visible;
+    }
+
+    .mobile-popular-label {
+        position: absolute;
+        top: -18px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #ff6b35;
+        color: white;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 3px 10px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        white-space: nowrap;
+        z-index: 1000;
+    }
+
+    .mobile-popular-btn {
+        background: white;
+        color: #2B8448;
+        font-weight: 700;
+    }
+
+    .mobile-popular-btn:hover {
+        background: #f8f9fa;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(255,255,255,0.3);
+    }
+
+    /* Responsive adjustments for mobile cards */
+    @media (max-width: 480px) {
+        .mobile-price-header {
+            padding: 12px 8px 0;
+        }
+        
+        .mobile-price-amount {
+            font-size: 22px;
+            margin-bottom: 6px;
+        }
+        
+        .mobile-price-btn {
+            font-size: 14px;
+            padding: 8px 12px;
+            min-width: 100px;
+        }
+
+        .mobile-price-fee {
+            font-size: 12px;
+            min-width: 100px;
+            padding: 8px 0px 5px 0;
+            top: -10px;
+        }
+        
+        .feature-row {
+            padding: 12px 14px;
+        }
+        
+        .feature-name,
+        .feature-value {
+            font-size: 13px;
+        }
+    }
+
+    @media (max-width: 360px) {
+        .mobile-price-amount {
+            font-size: 20px;
+        }
+        
+        .mobile-price-btn {
+            font-size: 13px;
+            padding: 7px 10px;
+            min-width: 90px;
+        }
+
+        .mobile-price-fee {
+            font-size: 11px;
+            min-width: 90px;
+            padding: 7px 0px 4px 0;
+            top: -8px;
+        }
+        
+        .feature-row {
+            padding: 10px 12px;
+        }
+        
+        .feature-name,
+        .feature-value {
+            font-size: 12px;
+        }
+    }
+}
+
+/* Desktop responsive adjustments (keeping original) */
 @media (max-width: 1099px) {
   .price-header {
     padding: 20px 8px;
@@ -15482,6 +15648,125 @@ Section Title
   }
 }
 
+/* ===== ADDITIONAL STYLES (Tooltips, etc.) ===== */
+/* Tooltip Base Styles */
+.info-tooltip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    background: #41A95C;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 8px;
+    cursor: help;
+    line-height: 1;
+}
+
+.floating-tooltip {
+    position: absolute;
+    background: #2c3e50; /* Fixed background color */
+    color: white;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.4;
+    max-width: 280px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 10000;
+    opacity: 1;
+    visibility: visible;
+}
+
+.floating-tooltip.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Arrow for tooltip pointing left (tooltip on right) */
+.floating-tooltip.arrow-left::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 6px solid transparent;
+    border-right-color: #2c3e50;
+}
+
+/* Arrow for tooltip pointing right (tooltip on left) */
+.floating-tooltip.arrow-right::before {
+    content: '';
+    position: absolute;
+    right: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 6px solid transparent;
+    border-left-color: #2c3e50;
+}
+
+/* Ensure tooltips are above everything */
+.floating-tooltip {
+    z-index: 9999;
+}
+
+/* Section Title Styles */
+.sec-title {
+  margin-bottom: 40px;
+}
+
+.sec-title h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.sec-title h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.text-gemscend-emerald {
+  color: #3ab467;
+}
+
+.text-white {
+  color: white !important;
+}
+
+.fix {
+  position: relative;
+}
+
+/* Animation for fade-in effects */
+.wow.fadeInUp {
+  visibility: visible;
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@media (max-width: 768px) {
+    .pricing-card:last-child {
+        margin-bottom: 0 !important;
+    }
+    
+    /* Also check if the container has bottom margin/padding */
+    .pricing-cards-mobile {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
 
 
 
@@ -25135,6 +25420,15 @@ Sidebar
   width: 100%;
   height: 350px;
 }
+.contact-details .content-column .inner-column .contact-us-image img {
+    width: 100%;
+    height: 650px;     /* Same height as before */
+    object-fit: cover; /* Ensures image fills area nicely */
+    display: block;
+
+    border: 5px solid var(--gemscend-emerald); /* Green border */
+    border-radius: 6px; /* Optional: smooth corners */
+}
 .contact-details .content-column .inner-column form .type-feild {
   position: relative;
   z-index: 1;
@@ -25164,6 +25458,56 @@ Sidebar
 }
 .contact-details .content-column .inner-column.right-column .sec-title {
   margin-bottom: 55px !important;
+}
+
+@media (min-height: 500px) and (max-height: 650px) {
+
+
+
+    /* Disable mt-100 spacing */
+    .mt-100 {
+        margin-top: 0 !important;
+    }
+
+    /* Change section-padding from 120px → 100px */
+    .section-padding {
+        padding: 100px 0 !important;
+    }
+
+  /* Reduce the image height */
+  .contact-details .content-column .inner-column .contact-us-image img {
+      height: 550px;   /* Reduce to fit shorter screens */
+  }
+
+  /* Reduce the image height */
+  .contact-us-image {
+      padding-right: 100px;
+  }
+
+  /* Reduce map size */
+  .contact-details .content-column .inner-column .google-map iframe {
+      height: 250px;
+  }
+
+  /* Reduce form spacing */
+  .contact-details .content-column .inner-column form .type-feild {
+      margin-bottom: 25px;
+  }
+
+  /* Optional: reduce textarea height a bit */
+  .contact-details .content-column .inner-column form .type-feild textarea {
+      height: 100px;
+  }
+
+  /* Optional: reduce right column maximum width */
+  .contact-details .content-column .inner-column.right-column {
+      max-width: 520px;
+  }
+
+  /* Reduce section title spacing */
+  .contact-details .content-column .inner-column.right-column .sec-title {
+      margin-bottom: 35px !important;
+  }
 }
 
 /***
