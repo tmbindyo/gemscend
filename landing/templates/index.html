@@ -4,15 +4,42 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="description" content="Our journey starts now. First payout on demand, no minimum trading days, and no time limits. Experience 80/20 profit splits and scale up to $1M with our Two-Step Challenge.">
+
 <title>Gemscend </title>
 <!-- Stylesheets -->
 <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-<link href="{% static 'css/style.css' %}?v=2.3" rel="stylesheet">
+<link href="{% static 'css/style.css' %}?v=2.4" rel="stylesheet">
 {% comment %} <link href="{% static 'css/style.css' %}" rel="stylesheet"> {% endcomment %}
-<link href="{% static 'css/responsive.css' %}?v=2.3" rel="stylesheet">
+<link href="{% static 'css/responsive.css' %}?v=2.4" rel="stylesheet">
 
-<link rel="shortcut icon" href="{% static 'images/gemscend/gemsend_favicon.png' %}" type="image/x-icon">
-<link rel="icon" href="{% static 'images/gemscend/gemsend_favicon.png' %}" type="image/x-icon">
+<link rel="icon" href="/static/images/gemscend/gemsend_favicon.png" sizes="48x48" type="image/png">
+
+
+
+
+{% comment %} <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WV7BXSSZ');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WV7BXSSZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --> {% endcomment %}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z57QRX63F8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z57QRX63F8');
+</script>
+
+
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -76,19 +103,19 @@
                         <h3 class="glass-title">Why Gemscend?</h3>
                         <div class="gemscend-glass-items">
                             <div class="glass-item">
-                                <img src="{% static 'gifs/payout.gif' %}" alt="Payout">
+                                <img src="{% static 'gifs/payout.gif' %}" alt="First payout on demand">
                                 <p>First Payout on Demand</p>
                             </div>
                             <div class="glass-item">
-                                <img src="{% static 'gifs/minimum.gif' %}" alt="Days">
+                                <img src="{% static 'gifs/minimum.gif' %}" alt="No minimum trading days">
                                 <p>No Minimum Trading Days</p>
                             </div>
                             <div class="glass-item">
-                                <img src="{% static 'gifs/limit.gif' %}" alt="Limits">
+                                <img src="{% static 'gifs/limit.gif' %}" alt="No time limits">
                                 <p>No Time Limits</p>
                             </div>
                             <div class="glass-item">
-                                <img src="{% static 'gifs/splits_new.gif' %}" alt="Million">
+                                <img src="{% static 'gifs/splits_new.gif' %}" alt="80% profit split scaling up to $1M">
                                 <p>80% Profit Split</p>
                             </div>
                         </div>
@@ -116,7 +143,19 @@
                 <div class="col-lg-6">
                     <h2 class="text-white text-center why-gemscend-sec-title mb-4">How <span class="text-gemscend-dark-emerald-75">Gemscend</span> Works?</h2>
                     <div class="video-box rounded-4 overflow-hidden flex-grow-1 d-flex align-items-start">
-                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="How It Works Video" class="w-100 border border-2 border-success rounded-4" style="aspect-ratio: 16/9;" allowfullscreen loading="lazy"></iframe>
+                        <iframe src="https://www.youtube.com/embed/Omki3COkBYM?si=vyml80obYtQP2p04" title="How It Works Video" class="w-100 border border-2 border-success rounded-4" style="aspect-ratio: 16/9;"         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+
+                        {% comment %} <iframe 
+                            src="https://www.youtube.com/embed/Omki3COkBYM" 
+                            title="How It Works Video" 
+                            class="w-100 border border-2 border-success rounded-4" 
+                            style="aspect-ratio: 16/9;" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen 
+                            loading="lazy">
+                        </iframe> {% endcomment %}
+                        
                     </div>
                 </div>
                 {% comment %} gemscend calculator start here {% endcomment %}

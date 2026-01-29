@@ -17,9 +17,25 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
+from django.contrib.sitemaps.views import sitemap
+from landing.sitemaps import LandingSitemap
+
+sitemaps = {
+    'landing': LandingSitemap,
+}
+
+
+from django.conf.urls import handler404
+from django.shortcuts import render
+
+def custom_404(request, exception):
+    return render(request, "404.html", status=404)
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('template/', include('template.urls')),
     path('', include('landing.urls')),
+
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='sitemap'),
     
 ]

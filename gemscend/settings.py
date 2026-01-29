@@ -186,7 +186,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-wtv=@6kvvw8x#64ks16fx+jqf0!a*8qo%5gerq+%1so)v@1cb5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', 'gemscend.com', 'gemscend.tomulumbi.com']
 
@@ -201,9 +201,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
+
     'landing',
     'template',
 ]
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -220,7 +225,9 @@ ROOT_URLCONF = 'gemscend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / 'templates',   # ✅ THIS MUST EXIST
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -245,6 +252,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
 
 
 # send mail settings

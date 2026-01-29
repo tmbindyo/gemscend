@@ -10,8 +10,38 @@
 <link href="{% static 'css/style.css' %}?v=2.0" rel="stylesheet">
 <link href="{% static 'css/responsive.css' %}?v=2.0" rel="stylesheet">
 
-<link rel="shortcut icon" href="{% static 'images/gemscend/gemsend_favicon.png' %}" type="image/x-icon">
-<link rel="icon" href="{% static 'images/gemscend/gemsend_favicon.png' %}" type="image/x-icon">
+<link rel="icon" href="/static/images/gemscend/gemsend_favicon.png" sizes="48x48" type="image/png">
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z57QRX63F8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z57QRX63F8');
+</script>
+
+
+{% comment %} <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WV7BXSSZ');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WV7BXSSZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --> {% endcomment %}
+
+
+
+
+
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -64,10 +94,10 @@
 
             <!-- Button group -->
             <div class="refer_and_earn-buttons wow fadeInUp" data-wow-delay=".4s">
-                <a href="https://gemscenddashboard.propaccount.com/en/sign-up" class="theme-btn btn-style-refer-and-earn" style="background-color: white; color: var(--gemscend-emerald);">
+                <a href="https://dashboard.gemscend.com/en/sign-up" class="theme-btn btn-style-refer-and-earn" style="background-color: white; color: var(--gemscend-emerald);">
                     Become An Affiliate
                 </a>
-                <a href="https://gemscenddashboard.propaccount.com/en/sign-in" class="theme-btn btn-style-refer-and-earn" style="background-color: transparent; color: white; border: 1px solid white;">
+                <a href="https://dashboard.gemscend.com/en/sign-in" class="theme-btn btn-style-refer-and-earn" style="background-color: transparent; color: white; border: 1px solid white;">
                     Affiliate Login
                 </a>
             {% comment %} <a href="#" class="theme-btn btn-outline">Affiliate Login</a> {% endcomment %}
@@ -96,12 +126,20 @@
                 </div>
 
                 <div class="refer_and_earn-video">
-                    <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/example"
-                    title="Affiliate Program Overview"
-                    frameborder="0"
-                    allowfullscreen>
-                    </iframe>
+                    {% comment %} <iframe 
+                        src="https://www.youtube.com/embed/Omki3COkBYM" 
+                        title="How It Works Video" 
+                        class="w-100 border border-2 border-success rounded-4" 
+                        style="aspect-ratio: 16/9;" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen 
+                        loading="lazy"
+                        width="560" height="315">
+                    </iframe> {% endcomment %}
+
+
+                    <iframe src="https://www.youtube.com/embed/Omki3COkBYM?si=vyml80obYtQP2p04" title="Affiliate Program Overview" frameborder="0" style="aspect-ratio: 16/9;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
 
