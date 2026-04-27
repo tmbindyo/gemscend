@@ -186,7 +186,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-wtv=@6kvvw8x#64ks16fx+jqf0!a*8qo%5gerq+%1so)v@1cb5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', 'gemscend.com', 'gemscend.tomulumbi.com']
 
