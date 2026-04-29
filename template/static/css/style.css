@@ -15908,54 +15908,6 @@ Section Title
     margin: 0 auto;
 }
 
-/* Platform Tabs (Top) */
-.platform-tabs-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-}
-
-.platform-tabs {
-    position: relative;
-    display: flex;
-    background: #141414;
-    border: 1px solid #2e2e2e;
-    border-radius: 60px;
-    padding: 8px;
-    gap: 8px;
-}
-
-.platform-tab {
-    position: relative;
-    padding: 12px 32px;
-    cursor: pointer;
-    z-index: 2;
-    transition: all 0.3s ease;
-}
-
-.platform-tab span {
-    font-family: "Rethink Sans", sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-    color: #ffffff;
-    transition: color 0.3s ease;
-}
-
-.platform-tab.active span {
-    color: #0c0c0d;
-}
-
-.platform-tab-indicator {
-    position: absolute;
-    top: 8px;
-    bottom: 8px;
-    width: 33.33%;
-    background: #ffffff;
-    border-radius: 60px;
-    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    z-index: 1;
-}
-
 /* Main Content - Split Layout */
 .platform-main-content {
     display: flex;
@@ -15963,20 +15915,27 @@ Section Title
     align-items: stretch;
 }
 
-/* Left Column - Video */
+/* Left Column - Video Column with Background */
 .platform-video-column {
     flex: 1;
-}
-
-.platform-video-wrapper {
-    width: 100%;
-    height: 100%;
-    min-height: 550px;
-    background: #000000;
+    background: radial-gradient(ellipse at top, #0004 70%, #000000 100%) !important;
     border: 1px solid #2e2e2e;
     border-radius: 16px;
+    display: flex;
+    align-items: center; /* Vertically center the video */
+    justify-content: center; /* Horizontally center the video */
+    padding: 40px 20px; /* Add padding around the video */
+}
+
+/* Video Wrapper - Fixed width, maintains 16:9 aspect ratio */
+.platform-video-wrapper {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000000;
+    border-radius: 12px;
     overflow: hidden;
     position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .platform-video-iframe {
@@ -16114,14 +16073,50 @@ Section Title
     margin: 0;
 }
 
+/* Video Controls Overlay */
+.video-controls-overlay {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.platform-video-wrapper:hover .video-controls-overlay {
+    opacity: 1;
+}
+
+.video-control-btn {
+    background: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.video-control-btn:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: scale(1.1);
+}
+
+.video-control-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
 /* Responsive Styles */
 @media (max-width: 1024px) {
     .platforms-title {
         font-size: 40px;
-    }
-    
-    .platform-video-wrapper {
-        min-height: 450px;
     }
     
     .platform-feature-card-content,
@@ -16132,6 +16127,14 @@ Section Title
     .platform-feature-card-content h3,
     .platform-stat-card-content h3 {
         font-size: 24px;
+    }
+    
+    .platform-video-wrapper {
+        max-width: 500px;
+    }
+    
+    .platform-video-column {
+        padding: 30px 15px;
     }
 }
 
@@ -16154,26 +16157,13 @@ Section Title
         gap: 20px;
     }
     
+    .platform-video-column {
+        padding: 30px 20px;
+        min-height: 350px;
+    }
+    
     .platform-video-wrapper {
-        min-height: 300px;
-    }
-    
-    .platform-tabs {
-        flex-wrap: wrap;
-        border-radius: 40px;
-        padding: 6px;
-    }
-    
-    .platform-tab {
-        padding: 10px 20px;
-    }
-    
-    .platform-tab span {
-        font-size: 14px;
-    }
-    
-    .platform-tab-indicator {
-        display: none;
+        max-width: 100%;
     }
     
     .platform-selector-tab span {
@@ -16213,8 +16203,9 @@ Section Title
         font-size: 14px;
     }
     
-    .platform-video-wrapper {
-        min-height: 220px;
+    .platform-video-column {
+        padding: 20px 15px;
+        min-height: 280px;
     }
     
     .platform-feature-card-content,
@@ -16225,6 +16216,10 @@ Section Title
     .platform-feature-card-content h3,
     .platform-stat-card-content h3 {
         font-size: 20px;
+    }
+    
+    .platform-selector-tab span {
+        font-size: 12px;
     }
 }
 
