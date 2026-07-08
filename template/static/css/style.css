@@ -15918,8 +15918,8 @@ Section Title
 /* Left Column - Video Column with Background */
 .platform-video-column {
     flex: 1;
-    background: radial-gradient(ellipse at top, #0004 70%, #000000 100%) !important;
-    border: 1px solid #2e2e2e;
+    /* background: radial-gradient(ellipse at top, #0004 70%, #000000 100%) !important; */
+    /* border: 1px solid #2e2e2e; */
     border-radius: 16px;
     display: flex;
     align-items: center; /* Vertically center the video */

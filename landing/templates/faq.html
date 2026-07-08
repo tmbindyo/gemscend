@@ -75,7 +75,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <!-- Main Header-->
-        {% include 'components/navbar_white_background.html' with company_name="Gemscend" year=2024 %}
+        {% include 'components/navbar_dark_background.html' with company_name="Gemscend" year=2024 %}
     <!--End Main Header -->
 
 
@@ -182,11 +182,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
 
                         <div class="faq-item">
-                            <p class="gemscend-bold-text">How do you calculate the Max Drawdown?</p>
+                            {% comment %} <p class="gemscend-bold-text">How do you calculate the Max Drawdown?</p> {% endcomment %}
+                            <p class="gemscend-bold-text">How do you calculate the Max Drawdown (STATIC)?</p>
 
                             <ul class="">
-                                <li class="">Maximum drawdown is the maximum your account can drawdown before you would hard breach your account. When you open the account, your Maximum Drawdown is set at 8% of your starting balance.</li>
-
+                                {% comment %} <li class="">Maximum drawdown is the maximum your account can drawdown before you would hard breach your account. When you open the account, your Maximum Drawdown is set at 8% of your starting balance.</li> {% endcomment %}
+                                <li>The Maximum Drawdown is set at a fixed percentage based on the plan type and is calculated using closed balance only. It remains static for the life of the active account.</li>
+                                <li>Example: Using 6% Max Drawdown in this example, if your starting balance is $100,000, you can drawdown to $94,000 before you would violate the Maximum Drawdown rule. Then, for example, let's say you take your account to $102,000 in CLOSED BALANCE, your Maximum Drawdown would remain locked at $94,000. So, regardless of how high your account goes, your drawdown will remain the same (note, you can still violate the daily drawdown).</li>
+                                <li><strong>All plans will have “Lock Upon Payout” enabled by default.</strong> However, traders can elect to purchase an add‑on for 25% of the purchase price to disable this feature.</li>
+                                <li>Example using the “Lock Upon Payout” default: A trader has a $100,000 account and grows the balance to $110,000. When the trader submits a payout request, the maximum drawdown becomes permanently locked at the original starting balance of $100,000. From that point forward, the account balance may not fall below $100,000. If it does, the account will be considered breached.</li>
+                                
                                 <li class="text-gemscend-emerald">This 8% is static and does not trail.</li>
                             </ul>
                         </div>
@@ -225,7 +230,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <li class="">Yes. We will consider you inactive and your account will be breached if you do not have any trading activity on your account for 30 consecutive days..</li>
                             </ul>
                         </div>
-
+                        
+                        {% comment %} <div class="faq-item">
+                            <p class="gemscend-bold-text">How do you calculate the Max Drawdown (STATIC)?</p>
+                            <ul class="">
+                                <li>The Maximum Drawdown is set at a fixed percentage based on the plan type and is calculated using closed balance only. It remains static for the life of the active account.</li>
+                                <li>Example: Using 6% Max Drawdown in this example, if your starting balance is $100,000, you can drawdown to $94,000 before you would violate the Maximum Drawdown rule. Then, for example, let's say you take your account to $102,000 in CLOSED BALANCE, your Maximum Drawdown would remain locked at $94,000. So, regardless of how high your account goes, your drawdown will remain the same (note, you can still violate the daily drawdown).</li>
+                                <li><strong>All plans will have “Lock Upon Payout” enabled by default.</strong> However, traders can elect to purchase an add‑on for 25% of the purchase price to disable this feature.</li>
+                                <li>Example using the “Lock Upon Payout” default: A trader has a $100,000 account and grows the balance to $110,000. When the trader submits a payout request, the maximum drawdown becomes permanently locked at the original starting balance of $100,000. From that point forward, the account balance may not fall below $100,000. If it does, the account will be considered breached.</li>
+                            </ul>
+                        </div> {% endcomment %}
                         
                     </div>
                     
@@ -433,6 +447,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <p class="gemscend-bold-text">What Happens to Profit Withdrawals on Breached Accounts?</p>
                             <p class="">For breached accounts with withdraw-able profits, traders have 60 days from the breach date to submit a withdrawal request. If no request is received within that window, the profit balance will be reset to zero and the funds forfeited.</p>
                         </div>
+
+                        <div class="faq-item">
+                            <p class="gemscend-bold-text">If I have a hard breach in my Funded Account and there are gains in the account, do I forfeit those gains?</p>
+                            <p class="">Yes. If you have a hard breach in your funded account, any accumulated gains in the account will be forfeited unless you have purchased the Payout Protector add-on. Please review the FAQs for additional details.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <p class="gemscend-bold-text">What is Payout Protector?</p>
+                            <p class="">Payout Protector is an optional add-on that enables you to still receive a payout on any gains in your account, despite the fact that you breached your account (provided all other conditions for a withdrawal are met and your account is not otherwise in violation of our Terms and Conditions).</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <p class="gemscend-bold-text">How does Payout Protector work?</p>
+                            <p class="">Example:<br>
+                            <p class="">Assume you are trading a $100,000 Funded account and have generated $8,000 in gains at the time you breach your account.</p>
+                            <p class="">Without Payout Protector, the account would be closed and the $8,000 would be forfeited.</p>
+                            <p class="">With Payout Protector, the account would still be closed due to the breach, but you would still receive your portion of the $8,000 gain made in the account.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <p class="gemscend-bold-text">Does Payout Protector prevent my account from breaching?</p>
+                            <p class="">No. The account will still be considered breached if a rule violation occurs. Payout Protector does not remove or alter risk parameters. It only protects your gain from being forfeited in the event of an account breach.</p>
+                        </div>
+
+                        <div class="faq-item">
+                            <p class="gemscend-bold-text">Is Payout Protector required?</p>
+                            <p class="">No. It is entirely optional and must be selected at the time of purchase.</p>
+                        </div>
+
                     </div>
 
                     <div class="tab-pane fade" id="pane-8" role="tabpanel" aria-labelledby="tab-8">
