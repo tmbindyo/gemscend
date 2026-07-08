@@ -13051,3 +13051,4 @@ django.template.exceptions.TemplateDoesNotExist: components/navbar_light_backgro
 [08/Jul/2026 10:38:54] WARNING [django.server:213] "GET /color-switcher/style-switcher.html HTTP/1.1" 404 4414
 [08/Jul/2026 10:38:55] WARNING [django.server:213] "GET /static/js/swiper-bundle.min.js.map HTTP/1.1" 404 1895
 [08/Jul/2026 10:39:03] INFO [django.server:213] "GET /static/video/ctrader.mov HTTP/1.1" 200 38677752
+[08/Jul/2026 11:02:29] INFO [django.utils.autoreload:667] Watching for file changes with StatReloader
