@@ -1,86 +1,110 @@
-
-<!DOCTYPE html>
+<!doctype html>
 {% load static %}
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="description" content="Our journey starts now. First payout on demand, no minimum trading days, and no time limits. Experience 80/20 profit splits and scale up to $1M with our Two-Step Challenge.">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Our journey starts now. First payout on demand, no minimum trading days, and no time limits. Experience 80/20 profit splits and scale up to $1M with our Two-Step Challenge."
+    />
 
-<title>Gemscend </title>
-<!-- Stylesheets -->
-<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-<link href="{% static 'css/style.css' %}?v=2.4" rel="stylesheet">
-{% comment %} <link href="{% static 'css/style.css' %}" rel="stylesheet"> {% endcomment %}
-<link href="{% static 'css/responsive.css' %}?v=2.4" rel="stylesheet">
+    <title>Gemscend</title>
+    <!-- Stylesheets -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/style.css' %}?v=2.4" rel="stylesheet" />
+    {% comment %}
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+    {% endcomment %}
+    <link href="{% static 'css/responsive.css' %}?v=2.4" rel="stylesheet" />
 
-<link rel="icon" href="/static/images/gemscend/gemsend_favicon.png" sizes="48x48" type="image/png">
+    <link
+      rel="icon"
+      href="/static/images/gemscend/gemsend_favicon.png"
+      sizes="48x48"
+      type="image/png"
+    />
 
+    {% comment %}
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WV7BXSSZ");
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WV7BXSSZ"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    {% endcomment %}
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Z57QRX63F8"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
+      gtag("config", "G-Z57QRX63F8");
+    </script>
 
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .flag-icon {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 6px;
+        vertical-align: middle;
+      }
+    </style>
+  </head>
 
-{% comment %} <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WV7BXSSZ');</script>
-<!-- End Google Tag Manager -->
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WV7BXSSZ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) --> {% endcomment %}
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z57QRX63F8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <body>
+    <div style="background: #00150f" class="page-wrapper">
+      <!-- Preloader Start -->
 
-  gtag('config', 'G-Z57QRX63F8');
-</script>
+      <!-- Scroll To Top -->
+      <div class="scroll-to-top scroll-to-target" data-target="html">
+        <span class="fa fa-angle-up"></span>
+      </div>
 
+      <!-- Email Button -->
+      <div id="emailButton" class="email-floating-btn">
+        <img
+          src="{% static 'images/gemscend/default.png' %}"
+          alt="Email Us"
+          id="emailIcon"
+        />
+      </div>
 
+      <!-- Main Header-->
+      {% include 'components/navbar_white_background.html' with
+      company_name="Gemscend" year=2024 %}
+      <!--End Main Header -->
 
-<!-- Responsive -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-.flag-icon {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-right: 6px;
-  vertical-align: middle;
-}
-</style>
-</head>
-
-<body>
-
-<div style="background: #00150F;" class="page-wrapper">
-
-    <!-- Preloader Start -->
-    
-
-    <!-- Scroll To Top -->
-    <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
-
-    <!-- Email Button -->
-    <div id="emailButton" class="email-floating-btn">
-        <img src="{% static 'images/gemscend/default.png' %}" alt="Email Us" id="emailIcon">
-    </div>
-
-
-
-    <!-- Main Header-->
-        {% include 'components/navbar_white_background.html' with company_name="Gemscend" year=2024 %}
-    <!--End Main Header -->
-
-    
-
-    <!-- Hero Section Start -->
-    <section class="gemscend-hero-section">
+      <!-- Hero Section Start -->
+      <section class="gemscend-hero-section">
         <!-- Background and glow layers -->
         <div class="gemscend-hero-bg"></div>
         <div class="gemscend-hero-image"></div>
@@ -89,1196 +113,1692 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <!-- Foreground content -->
         <div class="gemscend-banner-outer">
-            <div class="gemscend-hero-content">
-                {% comment %} <h1 class="gemscend-banner-title wow fadeInUp" data-wow-delay=".2s">
-                    The Journey Starts Now!
-                </h1> {% endcomment %}
-            </div>
-            
-            <!-- Bottom content group -->
-            <div class="gemscend-bottom-group">
-                <!-- Glass bar -->
-                <div class="gemscend-glassbar wow fadeInUp" data-wow-delay=".4s">
-                    <div class="gemscend-glassbar-inner">
-                        <h3 class="glass-title">Why Gemscend?</h3>
-                        <div class="gemscend-glass-items">
-                            <div class="glass-item">
-                                <img src="{% static 'gifs/payout.gif' %}" alt="First payout on demand">
-                                <p>First Payout on Demand</p>
-                            </div>
-                            <div class="glass-item">
-                                <img src="{% static 'gifs/minimum.gif' %}" alt="No minimum trading days">
-                                <p>No Minimum Trading Days</p>
-                            </div>
-                            <div class="glass-item">
-                                <img src="{% static 'gifs/limit.gif' %}" alt="No time limits">
-                                <p>No Time Limits</p>
-                            </div>
-                            <div class="glass-item">
-                                <img src="{% static 'gifs/splits_new.gif' %}" alt="80% profit split scaling up to $1M">
-                                <p>80% Profit Split</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="gemscend-hero-content">
+            {% comment %}
+            <h1 class="gemscend-banner-title wow fadeInUp" data-wow-delay=".2s">
+              The Journey Starts Now!
+            </h1>
+            {% endcomment %}
+          </div>
 
-                <!-- Button positioned immediately below -->
-                <div class="gemscend-button-container wow fadeInUp" data-wow-delay=".6s">
-                    <a href="https://dashboard.gemscend.com/en/sign-up" class="theme-btn gemscend-get-started btn-outline">
-                        Get Started Today!
-                    </a>
+          <!-- Bottom content group -->
+          <div class="gemscend-bottom-group">
+            <!-- Glass bar -->
+            <div class="gemscend-glassbar wow fadeInUp" data-wow-delay=".4s">
+              <div class="gemscend-glassbar-inner">
+                <h3 class="glass-title">Why Gemscend?</h3>
+                <div class="gemscend-glass-items">
+                  <div class="glass-item">
+                    <img
+                      src="{% static 'gifs/payout.gif' %}"
+                      alt="First payout on demand"
+                    />
+                    <p>First Payout on Demand</p>
+                  </div>
+                  <div class="glass-item">
+                    <img
+                      src="{% static 'gifs/minimum.gif' %}"
+                      alt="No minimum trading days"
+                    />
+                    <p>No Minimum Trading Days</p>
+                  </div>
+                  <div class="glass-item">
+                    <img
+                      src="{% static 'gifs/limit.gif' %}"
+                      alt="No time limits"
+                    />
+                    <p>No Time Limits</p>
+                  </div>
+                  <div class="glass-item">
+                    <img
+                      src="{% static 'gifs/splits_new.gif' %}"
+                      alt="80% profit split scaling up to $1M"
+                    />
+                    <p>80% Profit Split</p>
+                  </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- Hero Section End -->
-
-
-
-
-    <section class="dual-showcase-section pt-40" id="how-it-works">
-        <div class="container-fluid" style="max-width: 90%;">
-            <!-- Headings Row -->
-            <div class="row mb-4">
-                <div class="col-lg-6">
-                    <h2 class="text-white text-center why-gemscend-sec-title mb-4">How <span class="text-gemscend-dark-emerald-75">Gemscend</span> Works?</h2>
-                    <div class="video-box rounded-4 overflow-hidden flex-grow-1 d-flex align-items-start">
-                        <iframe src="https://www.youtube.com/embed/Omki3COkBYM?si=vyml80obYtQP2p04" title="How It Works Video" class="w-100 border border-2 border-success rounded-4" style="aspect-ratio: 16/9;"         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
-
-                        {% comment %} <iframe 
-                            src="https://www.youtube.com/embed/Omki3COkBYM" 
-                            title="How It Works Video" 
-                            class="w-100 border border-2 border-success rounded-4" 
-                            style="aspect-ratio: 16/9;" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            referrerpolicy="strict-origin-when-cross-origin"
-                            allowfullscreen 
-                            loading="lazy">
-                        </iframe> {% endcomment %}
-                        
-                    </div>
-                </div>
-                {% comment %} gemscend calculator start here {% endcomment %}
-                <div class="col-lg-6">
-                    <h2 class="fw-bold text-white text-center why-gemscend-sec-title mb-4"><span class="text-gemscend-dark-emerald-75">How Much</span> Can You Make?</h2>
-                    <div class="bg-white rounded-4 shadow p-5 flex-grow-1 calculator-container">
-                        <div class="" style="margin-bottom: 5px;">
-                            <div class="d-flex justify-content-between align-items-baseline mb-3">
-                                <p class="mb-0 fw-bold fs-5">Account Size</p>
-                                <h1 class="mb-0 text-success fw-bold display-6" id="accountValue">$5,000</h1>
-                            </div>
-
-                            <div class="slider-container">
-                                <input type="range" class="form-range custom-slider" min="0" max="4" step="1" id="accountRange" value="1">
-                                <div class="slider-progress" id="accountProgress" style="width: 25%;"></div>
-                            </div>
-                            
-                            <div class="d-flex justify-content-between slider-labels-image">
-                                <span class="fw-bold">$3K</span>
-                                <span class="fw-bold">$5K</span>
-                                <span class="fw-bold">$10K</span>
-                                <span class="fw-bold">$20K</span>
-                                <span class="fw-bold">$100K</span>
-                            </div>
-                        </div>
-
-                        <div class="" style="margin-bottom: 5px;">
-                            <div class="d-flex justify-content-between align-items-baseline mb-3">
-                                <p class="mb-0 fw-bold fs-5">Profit Rate</p>
-                                <h1 class="mb-0 text-success fw-bold display-6" id="profitValue">15%</h1>
-                            </div>
-
-                            <div class="slider-container">
-                                <input type="range" class="form-range custom-slider" min="1" max="100" step="1" id="profitRange" value="15">
-                                <div class="slider-progress" id="profitProgress" style="width: 28%;"></div>
-                            </div>
-                        </div>
-
-                        <div class="d-flex justify-content-between align-items-center mt-auto">
-                            <div class="text-center" style="flex-grow: 3; margin-right: 1.5rem;"> 
-                                <p class="text-dark mb-2" style="font-size: 1.25rem;">Your <strong class="fw-bolder">80%</strong> Take Home Is</p>
-                                <div class="earnings-box-image custom-bottom-height"> 
-                                    <h2 class="mb-0 fw-bold text-success display-6" id="monthlyEarnings">$25,000</h2>
-                                </div>
-                            </div>
-
-                            <div class="text-center d-flex flex-column align-items-center" style="flex-grow: 1;"> 
-                                <p class="text-dark mb-2" style="font-size: 1.25rem;"> <strong class="fw-bolder">Select Plan</strong> For Only</p>
-                                <a href="#" class="btn btn-success fee-button-image custom-bottom-height-option fw-bold" id="planButton">
-                                    $50
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                {% comment %} gemscend calculator end here {% endcomment %}
-            </div>
-
-        </div>
-    </section>
-    <!-- Horizontal accordion area end here -->
-
-
-
-
-
-
-
-
-{% comment %} 
-    <!-- Pricing Section Start -->
-    <section class="gemscend-pricing-section fix" id="pricing">
-        <div class="auto-container">
-            <div class="sec-title text-center">
-                <h2 class="wow fadeInUp text-white" data-wow-delay=".3s">
-                    Our Pricing
-                </h2>
-                <h3 class="wow fadeInUp text-white" data-wow-delay=".3s">
-                    <span class="text-gemscend-emerald">Two Step Challenge</span> Tailored To Your Trading Needs
-                </h3>
-            </div>
-
-            <div class="row">
-                <div class="gemscend-pricing-wrapper">
-                    <div class="table-responsive">
-                        <table class="gemscend-pricing-table">
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>
-                                        <div class="price-header">
-                                            <div class="price-amount">$3,000</div>
-                                            <a href="https://dashboard.gemscend.com/challenges?planid=121" class="gemscend-price-btn">Select Plan</a>
-                                            <div class="price-fee">Fee: $35</div>
-                                        </div>
-                                    </th>
-                                    <th>
-                                        <div class="price-header">
-                                            <div class="price-amount">$5,000</div>
-                                            <a href="https://dashboard.gemscend.com/challenges?planid=122" class="gemscend-price-btn">Select Plan</a>
-                                            <div class="price-fee">Fee: $50</div>
-                                        </div>
-                                    </th>
-                                    <th>
-                                        <div class="price-header popular"> <!-- Added popular class -->
-                                            <div class="popular-label">Most Popular</div> <!-- Added popular label -->
-                                            <div class="price-amount">$10,000</div>
-                                            <a href="https://dashboard.gemscend.com/challenges?planid=123" class="gemscend-price-btn">Select Plan</a> <!-- Added popular class -->
-                                            <div class="price-fee">Fee: $100</div>
-                                        </div>
-                                    </th>
-                                    <th>
-                                        <div class="price-header">
-                                            <div class="price-amount">$20,000</div>
-                                            <a href="https://dashboard.gemscend.com/challenges?planid=124" class="gemscend-price-btn">Select Plan</a>
-                                            <div class="price-fee">Fee: $200</div>
-                                        </div>
-                                    </th>
-                                    <th>
-                                        <div class="price-header">
-                                            <div class="price-amount">$100,000</div>
-                                            <a href="https://dashboard.gemscend.com/challenges?planid=125" class="gemscend-price-btn">Select Plan</a>
-                                            <div class="price-fee">Fee: $660</div>
-                                        </div>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <span class="info-tooltip" data-tooltip="The trader should achieve an 8% profit in Phase 1 to advance to Phase 2.">i</span>
-                                        Phase 1 Profit Target
-                                    </td>
-                                    <td>8%</td>
-                                    <td>8%</td>
-                                    <td>8%</td>
-                                    <td>8%</td>
-                                    <td>8%</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="info-tooltip" data-tooltip="The trader should achieve a 5% profit in Phase 2 to complete the challenge and receive a funded account.">i</span>
-                                        Phase 2 Profit Target
-                                    </td>
-                                    <td>5%</td>
-                                    <td>5%</td>
-                                    <td>5%</td>
-                                    <td>5%</td>
-                                    <td>5%</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="info-tooltip" data-tooltip="An equity-based restriction that ensures a trader cannot lose more than a fixed amount in a single trading day, calculated from the prior day's closing balance, and exceeding it results in a hard breach.">i</span>
-                                        Daily Loss Limit 5%
-                                    </td>
-                                    <td>$150</td>
-                                    <td>$250</td>
-                                    <td>$500</td>
-                                    <td>$1,000</td>
-                                    <td>$5,000</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="info-tooltip" data-tooltip="The trader's take-home is 80% of the net profit generated in the Gemscend funded account.">i</span>
-                                        Profit Split
-                                    </td>
-                                    <td>80%</td>
-                                    <td>80%</td>
-                                    <td>80%</td>
-                                    <td>80%</td>
-                                    <td>80%</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="info-tooltip" data-tooltip="The trader should not lose more than the fixed maximum overall loss from the allocated capital.">i</span>
-                                        Maximum Drawdown
-                                    </td>
-                                    <td>8%</td>
-                                    <td>8%</td>
-                                    <td>8%</td>
-                                    <td>8%</td>
-                                    <td>8%</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> {% endcomment %}
-
-    <!-- Pricing Section Start -->
-    <section class="gemscend-pricing-section fix" id="pricing">
-        <div class="auto-container">
-            <div class="sec-title text-center">
-                <h2 class="wow fadeInUp text-white" data-wow-delay=".3s">Our Pricing</h2>
-                <h3 class="wow fadeInUp text-white" data-wow-delay=".3s">
-                    <span class="text-gemscend-emerald">Two Step Challenge</span> Tailored To Your Trading Needs
-                </h3>
-            </div>
-
-            <!-- DESKTOP TABLE (Visible on desktop only) -->
-            <div class="pricing-table-desktop">
-                <div class="table-responsive">
-                    <table class="gemscend-pricing-table">
-                        <thead>
-                            <tr>
-                                <th></th>
-
-                                <!-- PLAN 1 -->
-                                <th>
-                                    <div class="price-header">
-                                        <div class="price-amount">$3,000</div>
-                                        <a href="https://dashboard.gemscend.com/challenges?planid=121" class="gemscend-price-btn">
-                                            Select Plan
-                                        </a>
-                                        <div class="price-fee">Fee: $35</div>
-                                    </div>
-                                </th>
-
-                                <!-- PLAN 2 -->
-                                <th>
-                                    <div class="price-header">
-                                        <div class="price-amount">$5,000</div>
-                                        <a href="https://dashboard.gemscend.com/challenges?planid=122" class="gemscend-price-btn">
-                                            Select Plan
-                                        </a>
-                                        <div class="price-fee">Fee: $50</div>
-                                    </div>
-                                </th>
-
-                                <!-- PLAN 3 – MOST POPULAR -->
-                                <th>
-                                    <div class="price-header popular">
-                                        <div class="popular-label">Most Popular</div>
-                                        <div class="price-amount">$10,000</div>
-                                        <a href="https://dashboard.gemscend.com/challenges?planid=123" class="gemscend-price-btn">
-                                            Select Plan
-                                        </a>
-                                        <div class="price-fee">Fee: $100</div>
-                                    </div>
-                                </th>
-
-                                <!-- PLAN 4 -->
-                                <th>
-                                    <div class="price-header">
-                                        <div class="price-amount">$20,000</div>
-                                        <a href="https://dashboard.gemscend.com/challenges?planid=124" class="gemscend-price-btn">
-                                            Select Plan
-                                        </a>
-                                        <div class="price-fee">Fee: $200</div>
-                                    </div>
-                                </th>
-
-                                <!-- PLAN 5 -->
-                                <th>
-                                    <div class="price-header">
-                                        <div class="price-amount">$100,000</div>
-                                        <a href="https://dashboard.gemscend.com/challenges?planid=125" class="gemscend-price-btn">
-                                            Select Plan
-                                        </a>
-                                        <div class="price-fee">Fee: $660</div>
-                                    </div>
-                                </th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <span class="info-tooltip" data-tooltip="The trader should achieve an 8% profit in Phase 1 to advance to Phase 2.">i</span>
-                                    Phase 1 Profit Target
-                                </td>
-                                <td>8%</td>
-                                <td>8%</td>
-                                <td>8%</td>
-                                <td>8%</td>
-                                <td>8%</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span class="info-tooltip" data-tooltip="The trader should achieve a 5% profit in Phase 2 to complete the challenge and receive a funded account.">i</span>
-                                    Phase 2 Profit Target
-                                </td>
-                                <td>5%</td>
-                                <td>5%</td>
-                                <td>5%</td>
-                                <td>5%</td>
-                                <td>5%</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span class="info-tooltip" data-tooltip="An equity-based restriction that ensures a trader cannot lose more than a fixed amount in a single trading day, calculated from the prior day's closing balance, and exceeding it results in a hard breach.">i</span>
-                                    Daily Loss Limit 5%
-                                </td>
-                                <td>$150</td>
-                                <td>$250</td>
-                                <td>$500</td>
-                                <td>$1,000</td>
-                                <td>$5,000</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span class="info-tooltip" data-tooltip="The trader's take-home is 80% of the net profit generated in the Gemscend funded account.">i</span>
-                                    Profit Split
-                                </td>
-                                <td>80%</td>
-                                <td>80%</td>
-                                <td>80%</td>
-                                <td>80%</td>
-                                <td>80%</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span class="info-tooltip" data-tooltip="The trader should not lose more than the fixed maximum overall loss from the allocated capital.">i</span>
-                                    Maximum Drawdown
-                                </td>
-                                <td>8%</td>
-                                <td>8%</td>
-                                <td>8%</td>
-                                <td>8%</td>
-                                <td>8%</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!-- MOBILE CARDS (Visible only on mobile) -->
-            <div class="pricing-cards-mobile">
-
-                <!-- CARD 1 -->
-                <div class="pricing-card">
-                    <div class="mobile-price-header">
-                        <div class="mobile-price-amount">$3,000</div>
-                        <a href="https://dashboard.gemscend.com/challenges?planid=121" class="mobile-price-btn">
-                            Select Plan
-                        </a>
-                        <div class="mobile-price-fee">Fee: $35</div>
-                    </div>
-                    
-                    <div class="mobile-features-table">
-                        <div class="feature-row">
-                            <div class="feature-name">Phase 1 Profit Target</div>
-                            <div class="feature-value">8%</div>
-                        </div>
-                        <div class="feature-row">
-                            <div class="feature-name">Phase 2 Profit Target</div>
-                            <div class="feature-value">5%</div>
-                        </div>
-                        <div class="feature-row">
-                            <div class="feature-name">Daily Loss Limit 5%</div>
-                            <div class="feature-value">$150</div>
-                        </div>
-                        <div class="feature-row">
-                            <div class="feature-name">Profit Split</div>
-                            <div class="feature-value">80%</div>
-                        </div>
-                        <div class="feature-row">
-                            <div class="feature-name">Maximum Drawdown</div>
-                            <div class="feature-value">8%</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CARD 2 -->
-                <div class="pricing-card">
-                    <div class="mobile-price-header">
-                        <div class="mobile-price-amount">$5,000</div>
-                        <a href="https://dashboard.gemscend.com/challenges?planid=122" class="mobile-price-btn">
-                            Select Plan
-                        </a>
-                        <div class="mobile-price-fee">Fee: $50</div>
-                    </div>
-                    
-                    <div class="mobile-features-table">
-                        <div class="feature-row">
-                            <div class="feature-name">Phase 1 Profit Target</div>
-                            <div class="feature-value">8%</div>
-                        </div>
-                        <div class="feature-row">
-                            <div class="feature-name">Phase 2 Profit Target</div>
-                            <div class="feature-value">5%</div>
-                        </div>
-                        <div class="feature-row">
-                            <div class="feature-name">Daily Loss Limit 5%</div>
-                            <div class="feature-value">$250</div>
-                        </div>
-                        <div class="feature-row">
-                            <div class="feature-name">Profit Split</div>
-                            <div class="feature-value">80%</div>
-                        </div>
-                        <div class="feature-row">
-                            <div class="feature-name">Maximum Drawdown</div>
-                            <div class="feature-value">8%</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CARD 3 – MOST POPULAR -->
-                <div class="pricing-card mobile-popular-card">
-                    <span class="mobile-popular-label">Most Popular</span>
-                    <div class="mobile-price-header">
-                        <div class="mobile-price-amount">$10,000</div>
-                        <a href="https://dashboard.gemscend.com/challenges?planid=123" class="mobile-price-btn mobile-popular-btn">
-                            Select Plan
-                        </a>
-                        <div class="mobile-price-fee">Fee: $100</div>
-                    </div>
-                    
-                    <div class="mobile-features-table">
-                        <div class="feature-row">
-                            <div class="feature-name">Phase 1 Profit Target</div>
-                            <div class="feature-value">8%</div>
-                        </div>
-                        <div class="feature-row">
-                            <div class="feature-name">Phase 2 Profit Target</div>
-                            <div class="feature-value">5%</div>
-                        </div>
-                        <div class="feature-row">
-                            <div class="feature-name">Daily Loss Limit 5%</div>
-                            <div class="feature-value">$500</div>
-                        </div>
-                        <div class="feature-row">
-                            <div class="feature-name">Profit Split</div>
-                            <div class="feature-value">80%</div>
-                        </div>
-                        <div class="feature-row">
-                            <div class="feature-name">Maximum Drawdown</div>
-                            <div class="feature-value">8%</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CARD 4 -->
-                <div class="pricing-card">
-                    <div class="mobile-price-header">
-                        <div class="mobile-price-amount">$20,000</div>
-                        <a href="https://dashboard.gemscend.com/challenges?planid=124" class="mobile-price-btn">
-                            Select Plan
-                        </a>
-                        <div class="mobile-price-fee">Fee: $200</div>
-                    </div>
-                    
-                    <div class="mobile-features-table">
-                        <div class="feature-row">
-                            <div class="feature-name">Phase 1 Profit Target</div>
-                            <div class="feature-value">8%</div>
-                        </div>
-                        <div class="feature-row">
-                            <div class="feature-name">Phase 2 Profit Target</div>
-                            <div class="feature-value">5%</div>
-                        </div>
-                        <div class="feature-row">
-                            <div class="feature-name">Daily Loss Limit 5%</div>
-                            <div class="feature-value">$1,000</div>
-                        </div>
-                        <div class="feature-row">
-                            <div class="feature-name">Profit Split</div>
-                            <div class="feature-value">80%</div>
-                        </div>
-                        <div class="feature-row">
-                            <div class="feature-name">Maximum Drawdown</div>
-                            <div class="feature-value">8%</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CARD 5 -->
-                <div class="pricing-card">
-                    <div class="mobile-price-header">
-                        <div class="mobile-price-amount">$100,000</div>
-                        <a href="https://dashboard.gemscend.com/challenges?planid=125" class="mobile-price-btn">
-                            Select Plan
-                        </a>
-                        <div class="mobile-price-fee">Fee: $660</div>
-                    </div>
-                    
-                    <div class="mobile-features-table">
-                        <div class="feature-row">
-                            <div class="feature-name">Phase 1 Profit Target</div>
-                            <div class="feature-value">8%</div>
-                        </div>
-                        <div class="feature-row">
-                            <div class="feature-name">Phase 2 Profit Target</div>
-                            <div class="feature-value">5%</div>
-                        </div>
-                        <div class="feature-row">
-                            <div class="feature-name">Daily Loss Limit 5%</div>
-                            <div class="feature-value">$5,000</div>
-                        </div>
-                        <div class="feature-row">
-                            <div class="feature-name">Profit Split</div>
-                            <div class="feature-value">80%</div>
-                        </div>
-                        <div class="feature-row">
-                            <div class="feature-name">Maximum Drawdown</div>
-                            <div class="feature-value">8%</div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- Pricing Section End -->
-
-
-
-    <!-- Service Section Start -->
-    <div class="marquee-section fix pt-0">
-        <div class="marquee">
-            <div class="marquee-group">
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/ma_symbol.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/visa_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/discover_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/union_pay.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/union_pay_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/american_express.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/s_pay_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/pix_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/qris_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/paypal_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/risework_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/mpesa.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/airtel_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/vodacom.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/mtn.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/tigo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/bitcoin.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/etherium.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/usd_coin.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/usdt_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/pesalink.png' %}" alt="img" />
-                </div>
-            </div>
-            <div class="marquee-group">
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/ma_symbol.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/visa_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/discover_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/union_pay.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/union_pay_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/american_express.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/s_pay_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/pix_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/qris_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/paypal_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/risework_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/mpesa.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/airtel_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/vodacom.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/mtn.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/tigo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/bitcoin.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/etherium.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/usd_coin.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/usdt_logo.png' %}" alt="img" />
-                </div>
-                <div class="text"></div>
-                <div class="text">
-                    <img src="{% static 'images/gemscend/pesalink.png' %}" alt="img" />
-                </div>
-            </div>
-            
-        </div>
-    </div>
-
-
-    {% comment %} <!-- Platforms Section Start -->
-    <section class="c" id="platforms">
-        <div class="platforms-container">
-            <!-- Heading Section -->
-            <div class="platforms-heading-wrapper">
-                <h2 class="platforms-title">Platforms that professionals trust</h2>
-                <p class="platforms-description">Trade your Dominion Funding account on industry-leading platforms, built for speed, precision, and reliability — without changing how you trade.</p>
-            </div>
-
-            <!-- Main Content - Split into Two Columns -->
-            <div class="platform-main-content">
-                <!-- LEFT COLUMN: Video -->
-                <div class="platform-video-column">
-                    <div class="platform-video-wrapper">
-                        <video id="platformVideo" class="platform-video-iframe" autoplay loop muted playsinline>
-                            <source src="{% static 'video/ctrader.mov' %}" type="video/mp4">
-                            <source src="{% static 'video/ctrader.mov' %}" type="video/quicktime">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-
-                <!-- RIGHT COLUMN: Content -->
-                <div class="platform-content-column">
-                    <!-- Feature Card -->
-                    <div class="platform-feature-card">
-                        <div class="platform-feature-card-content">
-                            <h3 id="featureTitle">Dive into Dominion ecosystem</h3>
-                            <p id="featureDesc">Trade in a professional environment designed for consistency, risk control, and long-term performance — not gambling.</p>
-                        </div>
-                    </div>
-
-                    <!-- Platform Tabs Selector -->
-                    <div class="platform-selector">
-                        <div class="platform-selector-tabs">
-                            <div class="platform-selector-tab active" data-selector="ctrader">
-                                <span>cTrader</span>
-                            </div>
-                            <div class="platform-selector-tab" data-selector="tradingview">
-                                <span>Match-Trader</span>
-                            </div>
-                            <div class="platform-selector-tab" data-selector="mt5">
-                                <span>DXtrade</span>
-                            </div>
-                            <div class="platform-selector-indicator"></div>
-                        </div>
-                    </div>
-
-                    <!-- Stats Row -->
-                    <div class="platform-stats-row">
-                        <div class="platform-stat-card">
-                            <div class="platform-stat-card-content">
-                                <h3 id="stat1Title">10 MS</h3>
-                                <p id="stat1Desc">Enjoy lightning fast execution speed on all platforms.</p>
-                            </div>
-                        </div>
-                        <div class="platform-stat-card">
-                            <div class="platform-stat-card-content">
-                                <h3 id="stat2Title">0.1 PIP</h3>
-                                <p id="stat2Desc">Average spread value for the best trading conditions.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Platforms Section End --> {% endcomment %}
-
-    <!-- Platforms Section Start -->
-    <section class="platforms-section" id="platforms">
-        <div class="platforms-container">
-            <!-- Heading Section -->
-            <div class="platforms-heading-wrapper">
-                <h2 class="platforms-title">Professional Trading Platforms You Can Rely On</h2>
-                <p class="platforms-description">Trade your Gemscend account on globally trusted, professional-grade platforms designed for performance, accuracy, and seamless execution  so you can operate with confidence without altering your trading style.</p>
-            </div>
-
-            <!-- Main Content - Split into Two Columns -->
-            <div class="platform-main-content">
-                <!-- LEFT COLUMN: Video -->
-                <div class="platform-video-column">
-                    <div class="platform-video-wrapper">
-                        <video id="platformVideo" class="platform-video-iframe" autoplay loop muted playsinline>
-                            <source src="{% static 'video/ctrader.mov' %}" type="video/mp4">
-                            <source src="{% static 'video/ctrader.mov' %}" type="video/quicktime">
-                            Your browser does not support the video tag.
-                        </video>
-                        
-                        <!-- Video Controls Overlay -->
-                        <div class="video-controls-overlay">
-                            <button class="video-control-btn" id="playPauseBtn">
-                                <svg class="play-icon" width="24" height="24" viewBox="0 0 24 24" fill="white">
-                                    <path d="M8 5v14l11-7z"/>
-                                </svg>
-                                <svg class="pause-icon" style="display:none" width="24" height="24" viewBox="0 0 24 24" fill="white">
-                                    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
-                                </svg>
-                            </button>
-                            <button class="video-control-btn" id="muteBtn">
-                                <svg class="unmute-icon" width="24" height="24" viewBox="0 0 24 24" fill="white">
-                                    <path d="M3 9v6h4l5 5V4L7 9H3z"/>
-                                    <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/>
-                                    <path d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
-                                </svg>
-                                <svg class="mute-icon" style="display:none" width="24" height="24" viewBox="0 0 24 24" fill="white">
-                                    <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
-                                    <line x1="2" y1="2" x2="22" y2="22" stroke="white" stroke-width="2"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- RIGHT COLUMN: Content -->
-                <div class="platform-content-column">
-                    <!-- Feature Card -->
-                    <div class="platform-feature-card">
-                        <div class="platform-feature-card-content">
-                            <h3 id="featureTitle">Dive into Gemscend platforms</h3>
-                            <p id="featureDesc">Trade in a professional environment designed for consistency, risk control, and long-term performance — not gambling.</p>
-                        </div>
-                    </div>
-
-                    <!-- Platform Tabs Selector -->
-                    <div class="platform-selector">
-                        <div class="platform-selector-tabs">
-                            <div class="platform-selector-tab active" data-selector="ctrader">
-                                <span>cTrader</span>
-                            </div>
-                            <div class="platform-selector-tab" data-selector="tradingview">
-                                <span>Match-Trader</span>
-                            </div>
-                            <div class="platform-selector-tab" data-selector="mt5">
-                                <span>DXtrade</span>
-                            </div>
-                            <div class="platform-selector-indicator"></div>
-                        </div>
-                    </div>
-
-                    <!-- Stats Row -->
-                    <div class="platform-stats-row">
-                        <div class="platform-stat-card">
-                            <div class="platform-stat-card-content">
-                                <h3 id="stat1Title">10 MS</h3>
-                                <p id="stat1Desc">Enjoy lightning fast execution speed on all platforms.</p>
-                            </div>
-                        </div>
-                        <div class="platform-stat-card">
-                            <div class="platform-stat-card-content">
-                                <h3 id="stat2Title">0.1 PIP</h3>
-                                <p id="stat2Desc">Average spread value for the best trading conditions.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Platforms Section End -->
-
-    <!-- Top earners Section Start -->
-    <section class="top-earner-secton top-earner-section-padding fix top-earner-custom-bg" >
-        <div class="top-earner-auto-container">
-            <div class="sec-title text-center">
-                <h2 class="wow fadeInUp text-white" data-wow-delay=".3s">
-                    Some Of Our Top Earners
-                </h2>
-            </div>
-            <div class="row">
-
-            <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-              <div class="top-earner-box-items">
-                <div class="top-earner-content">
-                    <h3 class="text-gemscend-dark-emerald-75 text-center top-earner-content-h3-heading">2 Payouts Totalling</h3>
-                    <h3 class="text-center top-earner-content-h3-amount">$2,520</h3>
-                    <p class="text-gemscend-dark-emerald-75 top-earner-content-h3-name">
-                        Daniel Mbai.
-                        <img src="https://flagcdn.com/ke.svg" 
-                            alt="English" 
-                            class="flag-icon" 
-                            style="width:25px; height:25px; border-radius:50%;">
-                    </p>
-                </div>
-                <div class="top-earner-image">
-                  <img src="{% static 'images/gemscend/Mbai.png' %}" alt="img" />
-                </div>
-                
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-              <div class="top-earner-box-items">
-                <div class="top-earner-content">
-                    <h3 class="text-gemscend-dark-emerald-75 text-center top-earner-content-h3-heading" >2 Payouts Totalling</h3>
-                    <h3 class="text-center top-earner-content-h3-amount">$4,550</h3>
-                    <p class="text-gemscend-dark-emerald-75 top-earner-content-h3-name">
-                        Saanvi Shah.
-                        <img src="https://flagcdn.com/in.svg" 
-                            alt="English" 
-                            class="flag-icon" 
-                            style="width:25px; height:25px; border-radius:50%;">
-                    </p>
-                </div>
-                <div class="top-earner-image">
-                  <img src="{% static 'images/gemscend/Saanvi.png' %}" alt="img" />
-                </div>
-                
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-              <div class="top-earner-box-items">
-                <div class="top-earner-content">
-                    <h3 class="text-gemscend-dark-emerald-75 text-center top-earner-content-h3-heading" >2 Payouts Totalling</h3>
-                    <h3 class="text-center top-earner-content-h3-amount">$8,755</h3>
-                    <p class="text-gemscend-dark-emerald-75 top-earner-content-h3-name">
-                        Imogen Smith.
-                        <img src="https://flagcdn.com/gb.svg" 
-                            alt="English" 
-                            class="flag-icon" 
-                            style="width:25px; height:25px; border-radius:50%;">
-                    </p>
-                </div>
-                <div class="top-earner-image">
-                  <img src="{% static 'images/gemscend/Imogen.png' %}" alt="img" />
-                </div>
-                
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-              <div class="top-earner-box-items">
-                <div class="top-earner-content">
-                    <h3 class="text-gemscend-dark-emerald-75 text-center top-earner-content-h3-heading" >2 Payouts Totalling</h3>
-                    <h3 class="text-center top-earner-content-h3-amount">$12,690</h3>
-                    <p class="text-gemscend-dark-emerald-75 top-earner-content-h3-name">
-                        Emily Winslet.
-                        <img src="https://flagcdn.com/us.svg" 
-                            alt="English" 
-                            class="flag-icon" 
-                            style="width:25px; height:25px; border-radius:50%;">
-                    </p>
-                </div>
-                <div class="top-earner-image">
-                  <img src="{% static 'images/gemscend/Emily.png' %}" alt="img" />
-                </div>
-                
               </div>
             </div>
 
-
-            <div class="info mt-50 wow fadeInUp text-center" data-wow-delay=".2s"> 
-                <a href="https://dashboard.gemscend.com/en/sign-up" class="theme-btn btn-emerald"> Get Started Today! </a> 
+            <!-- Button positioned immediately below -->
+            <div
+              class="gemscend-button-container wow fadeInUp"
+              data-wow-delay=".6s"
+            >
+              <a
+                href="https://dashboard.gemscend.com/en/sign-up"
+                class="theme-btn gemscend-get-started btn-outline"
+              >
+                Get Started Today!
+              </a>
             </div>
-
-
           </div>
         </div>
-    </section>
+      </section>
+      <!-- Hero Section End -->
 
+      <section class="dual-showcase-section pt-40" id="how-it-works">
+        <div class="container-fluid" style="max-width: 90%">
+          <!-- Headings Row -->
+          <div class="row mb-4">
+            <div class="col-lg-6">
+              <h2 class="text-white text-center why-gemscend-sec-title mb-4">
+                How
+                <span class="text-gemscend-dark-emerald-75">Gemscend</span>
+                Works?
+              </h2>
+              <div
+                class="video-box rounded-4 overflow-hidden flex-grow-1 d-flex align-items-start"
+              >
+                <iframe
+                  src="https://www.youtube.com/embed/Omki3COkBYM?si=vyml80obYtQP2p04"
+                  title="How It Works Video"
+                  class="w-100 border border-2 border-success rounded-4"
+                  style="aspect-ratio: 16/9"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
 
-
-
-
-
-
-    <!-- Journey Section Start -->
-    <section class="journey-section fix">
-        <div class="journey-auto-container">
-            <div class="sec-title text-center">
-                <h2 class="wow fadeInUp text-white" data-wow-delay=".3s">
-                    Why Gemscend?
-                </h2>
+                {% comment %}
+                <iframe
+                  src="https://www.youtube.com/embed/Omki3COkBYM"
+                  title="How It Works Video"
+                  class="w-100 border border-2 border-success rounded-4"
+                  style="aspect-ratio: 16/9"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                  loading="lazy"
+                >
+                      </iframe
+                >
+                {% endcomment %}
+              </div>
             </div>
-            <div class="journey-layout">
-                <div class="journey-grid">
-                
-                    <div class="journey-card wow fadeInUp" data-wow-delay=".1s">
-                        <div class="icon"><img src="{% static 'gifs/Withdraw-5.gif' %}" alt="Payout Icon"></div>
-                        <h4>First Payout on Demand</h4>
-                        <p>Your first withdrawal can be requested at any time, subject to an 80/20 profit split.</p>
-                    </div>
+            {% comment %} gemscend calculator start here {% endcomment %}
+            <div class="col-lg-6">
+              <h2
+                class="fw-bold text-white text-center why-gemscend-sec-title mb-4"
+              >
+                <span class="text-gemscend-dark-emerald-75">How Much</span> Can
+                You Make?
+              </h2>
+              <div
+                class="bg-white rounded-4 shadow p-5 flex-grow-1 calculator-container"
+              >
+                <div class="" style="margin-bottom: 5px">
+                  <div
+                    class="d-flex justify-content-between align-items-baseline mb-3"
+                  >
+                    <p class="mb-0 fw-bold fs-5">Account Size</p>
+                    <h1
+                      class="mb-0 text-success fw-bold display-6"
+                      id="accountValue"
+                    >
+                      $5,000
+                    </h1>
+                  </div>
 
-                    <div class="journey-card wow fadeInUp" data-wow-delay=".2s">
-                        <div class="icon"><img src="{% static 'gifs/Schedule-3.gif' %}" alt="No Time Limits Icon"></div>
-                        <h4>No Time Limits</h4>
-                        <p>Trade freely without any minimum trading day requirements or restrictions.</p>
-                    </div>
+                  <div class="slider-container">
+                    <input
+                      type="range"
+                      class="form-range custom-slider"
+                      min="0"
+                      max="4"
+                      step="1"
+                      id="accountRange"
+                      value="1"
+                    />
+                    <div
+                      class="slider-progress"
+                      id="accountProgress"
+                      style="width: 25%"
+                    ></div>
+                  </div>
 
-                    <div class="journey-card wow fadeInUp" data-wow-delay=".3s">
-                        <div class="icon"><img style="height: 60px; width: 60px;" src="{% static 'gifs/calendar_V3.gif' %}" alt="Trading Days Icon"></div>
-                        <h4>No Minimum Trading Days</h4>
-                        <p>Trade at your own pace. No deadlines, no pressure.</p>
-                    </div>
-
-                    <div class="journey-card wow fadeInUp" data-wow-delay=".4s">
-                        <div class="icon"><img src="{% static 'gifs/Income-3.gif' %}" alt="Funding Icon"></div>
-                        <h4>Maximum of $1 Million</h4>
-                        <p>A maximum of $1 million in active evaluation or funded plans per person is permitted.</p>
-                    </div>
-
-                    <div class="journey-card wow fadeInUp" data-wow-delay=".5s">
-                        <div class="icon"><img src="{% static 'gifs/bookmark-2.gif' %}" alt="Weekend Icon"></div>
-                        <h4>Weekend Position Holding</h4>
-                        <p>Hold positions over the weekend with complete flexibility.</p>
-                    </div>
-
-                    <div class="journey-card wow fadeInUp" data-wow-delay=".6s">
-                        <div class="icon"><img src="{% static 'gifs/splits_2.gif' %}" alt="Transparency Icon"></div>
-                        <h4>80% Profit Split</h4>
-                        <p>Keep the majority of your trading profits while trading with Gemscend capital.</p>
-                    </div>
-
+                  <div
+                    class="d-flex justify-content-between slider-labels-image"
+                  >
+                    <span class="fw-bold">$3K</span>
+                    <span class="fw-bold">$5K</span>
+                    <span class="fw-bold">$10K</span>
+                    <span class="fw-bold">$20K</span>
+                    <span class="fw-bold">$100K</span>
+                  </div>
                 </div>
-            
-            
-            <!-- Right Column -->
-            <div class="journey-right">
-                
-            </div>
 
+                <div class="" style="margin-bottom: 5px">
+                  <div
+                    class="d-flex justify-content-between align-items-baseline mb-3"
+                  >
+                    <p class="mb-0 fw-bold fs-5">Profit Rate</p>
+                    <h1
+                      class="mb-0 text-success fw-bold display-6"
+                      id="profitValue"
+                    >
+                      15%
+                    </h1>
+                  </div>
+
+                  <div class="slider-container">
+                    <input
+                      type="range"
+                      class="form-range custom-slider"
+                      min="1"
+                      max="100"
+                      step="1"
+                      id="profitRange"
+                      value="15"
+                    />
+                    <div
+                      class="slider-progress"
+                      id="profitProgress"
+                      style="width: 28%"
+                    ></div>
+                  </div>
+                </div>
+
+                <div
+                  class="d-flex justify-content-between align-items-center mt-auto"
+                >
+                  <div
+                    class="text-center"
+                    style="flex-grow: 3; margin-right: 1.5rem"
+                  >
+                    <p class="text-dark mb-2" style="font-size: 1.25rem">
+                      Your <strong class="fw-bolder">80%</strong> Take Home Is
+                    </p>
+                    <div class="earnings-box-image custom-bottom-height">
+                      <h2
+                        class="mb-0 fw-bold text-success display-6"
+                        id="monthlyEarnings"
+                      >
+                        $25,000
+                      </h2>
+                    </div>
+                  </div>
+
+                  <div
+                    class="text-center d-flex flex-column align-items-center"
+                    style="flex-grow: 1"
+                  >
+                    <p class="text-dark mb-2" style="font-size: 1.25rem">
+                      <strong class="fw-bolder">Select Plan</strong> For Only
+                    </p>
+                    <a
+                      href="#"
+                      class="btn btn-success fee-button-image custom-bottom-height-option fw-bold"
+                      id="planButton"
+                    >
+                      $50
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
+            {% comment %} gemscend calculator end here {% endcomment %}
+          </div>
         </div>
-    </section>
+      </section>
+      <!-- Horizontal accordion area end here -->
 
+      {% comment %}
+      <!-- Pricing Section Start -->
+      <section class="gemscend-pricing-section fix" id="pricing">
+        <div class="auto-container">
+          <div class="sec-title text-center">
+            <h2 class="wow fadeInUp text-white" data-wow-delay=".3s">
+              Our Pricing
+            </h2>
+            <h3 class="wow fadeInUp text-white" data-wow-delay=".3s">
+              <span class="text-gemscend-emerald">Two Step Challenge</span>
+              Tailored To Your Trading Needs
+            </h3>
+          </div>
 
+          <div class="row">
+            <div class="gemscend-pricing-wrapper">
+              <div class="table-responsive">
+                <table class="gemscend-pricing-table">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>
+                        <div class="price-header">
+                          <div class="price-amount">$3,000</div>
+                          <a
+                            href="https://dashboard.gemscend.com/challenges?planid=121"
+                            class="gemscend-price-btn"
+                            >Select Plan</a
+                          >
+                          <div class="price-fee">Fee: $35</div>
+                        </div>
+                      </th>
+                      <th>
+                        <div class="price-header">
+                          <div class="price-amount">$5,000</div>
+                          <a
+                            href="https://dashboard.gemscend.com/challenges?planid=122"
+                            class="gemscend-price-btn"
+                            >Select Plan</a
+                          >
+                          <div class="price-fee">Fee: $50</div>
+                        </div>
+                      </th>
+                      <th>
+                        <div class="price-header popular">
+                          <!-- Added popular class -->
+                          <div class="popular-label">Most Popular</div>
+                          <!-- Added popular label -->
+                          <div class="price-amount">$10,000</div>
+                          <a
+                            href="https://dashboard.gemscend.com/challenges?planid=123"
+                            class="gemscend-price-btn"
+                            >Select Plan</a
+                          >
+                          <!-- Added popular class -->
+                          <div class="price-fee">Fee: $100</div>
+                        </div>
+                      </th>
+                      <th>
+                        <div class="price-header">
+                          <div class="price-amount">$20,000</div>
+                          <a
+                            href="https://dashboard.gemscend.com/challenges?planid=124"
+                            class="gemscend-price-btn"
+                            >Select Plan</a
+                          >
+                          <div class="price-fee">Fee: $200</div>
+                        </div>
+                      </th>
+                      <th>
+                        <div class="price-header">
+                          <div class="price-amount">$100,000</div>
+                          <a
+                            href="https://dashboard.gemscend.com/challenges?planid=125"
+                            class="gemscend-price-btn"
+                            >Select Plan</a
+                          >
+                          <div class="price-fee">Fee: $660</div>
+                        </div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <span
+                          class="info-tooltip"
+                          data-tooltip="The trader should achieve an 8% profit in Phase 1 to advance to Phase 2."
+                          >i</span
+                        >
+                        Phase 1 Profit Target
+                      </td>
+                      <td>8%</td>
+                      <td>8%</td>
+                      <td>8%</td>
+                      <td>8%</td>
+                      <td>8%</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span
+                          class="info-tooltip"
+                          data-tooltip="The trader should achieve a 5% profit in Phase 2 to complete the challenge and receive a funded account."
+                          >i</span
+                        >
+                        Phase 2 Profit Target
+                      </td>
+                      <td>5%</td>
+                      <td>5%</td>
+                      <td>5%</td>
+                      <td>5%</td>
+                      <td>5%</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span
+                          class="info-tooltip"
+                          data-tooltip="An equity-based restriction that ensures a trader cannot lose more than a fixed amount in a single trading day, calculated from the prior day's closing balance, and exceeding it results in a hard breach."
+                          >i</span
+                        >
+                        Daily Loss Limit 5%
+                      </td>
+                      <td>$150</td>
+                      <td>$250</td>
+                      <td>$500</td>
+                      <td>$1,000</td>
+                      <td>$5,000</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span
+                          class="info-tooltip"
+                          data-tooltip="The trader's take-home is 80% of the net profit generated in the Gemscend funded account."
+                          >i</span
+                        >
+                        Profit Split
+                      </td>
+                      <td>80%</td>
+                      <td>80%</td>
+                      <td>80%</td>
+                      <td>80%</td>
+                      <td>80%</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span
+                          class="info-tooltip"
+                          data-tooltip="The trader should not lose more than the fixed maximum overall loss from the allocated capital."
+                          >i</span
+                        >
+                        Maximum Drawdown
+                      </td>
+                      <td>8%</td>
+                      <td>8%</td>
+                      <td>8%</td>
+                      <td>8%</td>
+                      <td>8%</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {% endcomment %}
 
-    <section class="black-section">
-    </section>
+      <!-- Pricing Section Start -->
+      <section class="gemscend-pricing-section fix" id="pricing">
+        <div class="auto-container">
+          <div class="sec-title text-center">
+            <h2 class="wow fadeInUp text-white" data-wow-delay=".3s">
+              Our Pricing
+            </h2>
+            <h3 class="wow fadeInUp text-white" data-wow-delay=".3s">
+              <span class="text-gemscend-emerald">Two Step Challenge</span>
+              Tailored To Your Trading Needs
+            </h3>
+          </div>
 
+          <!-- DESKTOP TABLE (Visible on desktop only) -->
+          <div class="pricing-table-desktop">
+            <div class="table-responsive">
+              <table class="gemscend-pricing-table">
+                <thead>
+                  <tr>
+                    <th></th>
 
-    <!-- Footer Section Start -->
-        {% include 'components/footer.html' with company_name="Gemscend" year=2024 %}
-    <!-- Footer Section Start -->
-      
+                    <!-- PLAN 1 -->
+                    <th>
+                      <div class="price-header">
+                        <div class="price-amount">$3,000</div>
+                        <a
+                          href="https://dashboard.gemscend.com/challenges?planid=121"
+                          class="gemscend-price-btn"
+                        >
+                          Select Plan
+                        </a>
+                        <div class="price-fee">Fee: $35</div>
+                      </div>
+                    </th>
 
-</div><!-- End Page Wrapper -->
+                    <!-- PLAN 2 -->
+                    <th>
+                      <div class="price-header">
+                        <div class="price-amount">$5,000</div>
+                        <a
+                          href="https://dashboard.gemscend.com/challenges?planid=122"
+                          class="gemscend-price-btn"
+                        >
+                          Select Plan
+                        </a>
+                        <div class="price-fee">Fee: $50</div>
+                      </div>
+                    </th>
 
+                    <!-- PLAN 3 – MOST POPULAR -->
+                    <th>
+                      <div class="price-header popular">
+                        <div class="popular-label">Most Popular</div>
+                        <div class="price-amount">$10,000</div>
+                        <a
+                          href="https://dashboard.gemscend.com/challenges?planid=123"
+                          class="gemscend-price-btn"
+                        >
+                          Select Plan
+                        </a>
+                        <div class="price-fee">Fee: $100</div>
+                      </div>
+                    </th>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const emailButton = document.getElementById('emailButton');
+                    <!-- PLAN 4 -->
+                    <th>
+                      <div class="price-header">
+                        <div class="price-amount">$20,000</div>
+                        <a
+                          href="https://dashboard.gemscend.com/challenges?planid=124"
+                          class="gemscend-price-btn"
+                        >
+                          Select Plan
+                        </a>
+                        <div class="price-fee">Fee: $200</div>
+                      </div>
+                    </th>
+
+                    <!-- PLAN 5 -->
+                    <th>
+                      <div class="price-header">
+                        <div class="price-amount">$100,000</div>
+                        <a
+                          href="https://dashboard.gemscend.com/challenges?planid=125"
+                          class="gemscend-price-btn"
+                        >
+                          Select Plan
+                        </a>
+                        <div class="price-fee">Fee: $660</div>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>
+                      <span
+                        class="info-tooltip"
+                        data-tooltip="The trader should achieve an 8% profit in Phase 1 to advance to Phase 2."
+                        >i</span
+                      >
+                      Phase 1 Profit Target
+                    </td>
+                    <td>8%</td>
+                    <td>8%</td>
+                    <td>8%</td>
+                    <td>8%</td>
+                    <td>8%</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span
+                        class="info-tooltip"
+                        data-tooltip="The trader should achieve a 5% profit in Phase 2 to complete the challenge and receive a funded account."
+                        >i</span
+                      >
+                      Phase 2 Profit Target
+                    </td>
+                    <td>5%</td>
+                    <td>5%</td>
+                    <td>5%</td>
+                    <td>5%</td>
+                    <td>5%</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span
+                        class="info-tooltip"
+                        data-tooltip="An equity-based restriction that ensures a trader cannot lose more than a fixed amount in a single trading day, calculated from the prior day's closing balance, and exceeding it results in a hard breach."
+                        >i</span
+                      >
+                      Daily Loss Limit 5%
+                    </td>
+                    <td>$150</td>
+                    <td>$250</td>
+                    <td>$500</td>
+                    <td>$1,000</td>
+                    <td>$5,000</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span
+                        class="info-tooltip"
+                        data-tooltip="The trader's take-home is 80% of the net profit generated in the Gemscend funded account."
+                        >i</span
+                      >
+                      Profit Split
+                    </td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span
+                        class="info-tooltip"
+                        data-tooltip="The trader should not lose more than the fixed maximum overall loss from the allocated capital."
+                        >i</span
+                      >
+                      Maximum Drawdown
+                    </td>
+                    <td>8%</td>
+                    <td>8%</td>
+                    <td>8%</td>
+                    <td>8%</td>
+                    <td>8%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- MOBILE CARDS (Visible only on mobile) -->
+          <div class="pricing-cards-mobile">
+            <!-- CARD 1 -->
+            <div class="pricing-card">
+              <div class="mobile-price-header">
+                <div class="mobile-price-amount">$3,000</div>
+                <a
+                  href="https://dashboard.gemscend.com/challenges?planid=121"
+                  class="mobile-price-btn"
+                >
+                  Select Plan
+                </a>
+                <div class="mobile-price-fee">Fee: $35</div>
+              </div>
+
+              <div class="mobile-features-table">
+                <div class="feature-row">
+                  <div class="feature-name">Phase 1 Profit Target</div>
+                  <div class="feature-value">8%</div>
+                </div>
+                <div class="feature-row">
+                  <div class="feature-name">Phase 2 Profit Target</div>
+                  <div class="feature-value">5%</div>
+                </div>
+                <div class="feature-row">
+                  <div class="feature-name">Daily Loss Limit 5%</div>
+                  <div class="feature-value">$150</div>
+                </div>
+                <div class="feature-row">
+                  <div class="feature-name">Profit Split</div>
+                  <div class="feature-value">80%</div>
+                </div>
+                <div class="feature-row">
+                  <div class="feature-name">Maximum Drawdown</div>
+                  <div class="feature-value">8%</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="pricing-card">
+              <div class="mobile-price-header">
+                <div class="mobile-price-amount">$5,000</div>
+                <a
+                  href="https://dashboard.gemscend.com/challenges?planid=122"
+                  class="mobile-price-btn"
+                >
+                  Select Plan
+                </a>
+                <div class="mobile-price-fee">Fee: $50</div>
+              </div>
+
+              <div class="mobile-features-table">
+                <div class="feature-row">
+                  <div class="feature-name">Phase 1 Profit Target</div>
+                  <div class="feature-value">8%</div>
+                </div>
+                <div class="feature-row">
+                  <div class="feature-name">Phase 2 Profit Target</div>
+                  <div class="feature-value">5%</div>
+                </div>
+                <div class="feature-row">
+                  <div class="feature-name">Daily Loss Limit 5%</div>
+                  <div class="feature-value">$250</div>
+                </div>
+                <div class="feature-row">
+                  <div class="feature-name">Profit Split</div>
+                  <div class="feature-value">80%</div>
+                </div>
+                <div class="feature-row">
+                  <div class="feature-name">Maximum Drawdown</div>
+                  <div class="feature-value">8%</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 3 – MOST POPULAR -->
+            <div class="pricing-card mobile-popular-card">
+              <span class="mobile-popular-label">Most Popular</span>
+              <div class="mobile-price-header">
+                <div class="mobile-price-amount">$10,000</div>
+                <a
+                  href="https://dashboard.gemscend.com/challenges?planid=123"
+                  class="mobile-price-btn mobile-popular-btn"
+                >
+                  Select Plan
+                </a>
+                <div class="mobile-price-fee">Fee: $100</div>
+              </div>
+
+              <div class="mobile-features-table">
+                <div class="feature-row">
+                  <div class="feature-name">Phase 1 Profit Target</div>
+                  <div class="feature-value">8%</div>
+                </div>
+                <div class="feature-row">
+                  <div class="feature-name">Phase 2 Profit Target</div>
+                  <div class="feature-value">5%</div>
+                </div>
+                <div class="feature-row">
+                  <div class="feature-name">Daily Loss Limit 5%</div>
+                  <div class="feature-value">$500</div>
+                </div>
+                <div class="feature-row">
+                  <div class="feature-name">Profit Split</div>
+                  <div class="feature-value">80%</div>
+                </div>
+                <div class="feature-row">
+                  <div class="feature-name">Maximum Drawdown</div>
+                  <div class="feature-value">8%</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="pricing-card">
+              <div class="mobile-price-header">
+                <div class="mobile-price-amount">$20,000</div>
+                <a
+                  href="https://dashboard.gemscend.com/challenges?planid=124"
+                  class="mobile-price-btn"
+                >
+                  Select Plan
+                </a>
+                <div class="mobile-price-fee">Fee: $200</div>
+              </div>
+
+              <div class="mobile-features-table">
+                <div class="feature-row">
+                  <div class="feature-name">Phase 1 Profit Target</div>
+                  <div class="feature-value">8%</div>
+                </div>
+                <div class="feature-row">
+                  <div class="feature-name">Phase 2 Profit Target</div>
+                  <div class="feature-value">5%</div>
+                </div>
+                <div class="feature-row">
+                  <div class="feature-name">Daily Loss Limit 5%</div>
+                  <div class="feature-value">$1,000</div>
+                </div>
+                <div class="feature-row">
+                  <div class="feature-name">Profit Split</div>
+                  <div class="feature-value">80%</div>
+                </div>
+                <div class="feature-row">
+                  <div class="feature-name">Maximum Drawdown</div>
+                  <div class="feature-value">8%</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="pricing-card">
+              <div class="mobile-price-header">
+                <div class="mobile-price-amount">$100,000</div>
+                <a
+                  href="https://dashboard.gemscend.com/challenges?planid=125"
+                  class="mobile-price-btn"
+                >
+                  Select Plan
+                </a>
+                <div class="mobile-price-fee">Fee: $660</div>
+              </div>
+
+              <div class="mobile-features-table">
+                <div class="feature-row">
+                  <div class="feature-name">Phase 1 Profit Target</div>
+                  <div class="feature-value">8%</div>
+                </div>
+                <div class="feature-row">
+                  <div class="feature-name">Phase 2 Profit Target</div>
+                  <div class="feature-value">5%</div>
+                </div>
+                <div class="feature-row">
+                  <div class="feature-name">Daily Loss Limit 5%</div>
+                  <div class="feature-value">$5,000</div>
+                </div>
+                <div class="feature-row">
+                  <div class="feature-name">Profit Split</div>
+                  <div class="feature-value">80%</div>
+                </div>
+                <div class="feature-row">
+                  <div class="feature-name">Maximum Drawdown</div>
+                  <div class="feature-value">8%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Pricing Section End -->
+
+      <!-- Service Section Start -->
+      <div class="marquee-section fix pt-0">
+        <div class="marquee">
+          <div class="marquee-group">
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/ma_symbol.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/visa_logo.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/discover_logo.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/union_pay.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/union_pay_logo.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/american_express.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/s_pay_logo.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/pix_logo.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/qris_logo.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/paypal_logo.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/risework_logo.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img src="{% static 'images/gemscend/mpesa.png' %}" alt="img" />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/airtel_logo.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img src="{% static 'images/gemscend/vodacom.png' %}" alt="img" />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img src="{% static 'images/gemscend/mtn.png' %}" alt="img" />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img src="{% static 'images/gemscend/tigo.png' %}" alt="img" />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img src="{% static 'images/gemscend/bitcoin.png' %}" alt="img" />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/etherium.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/usd_coin.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/usdt_logo.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/pesalink.png' %}"
+                alt="img"
+              />
+            </div>
+          </div>
+          <div class="marquee-group">
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/ma_symbol.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/visa_logo.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/discover_logo.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/union_pay.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/union_pay_logo.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/american_express.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/s_pay_logo.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/pix_logo.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/qris_logo.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/paypal_logo.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/risework_logo.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img src="{% static 'images/gemscend/mpesa.png' %}" alt="img" />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/airtel_logo.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img src="{% static 'images/gemscend/vodacom.png' %}" alt="img" />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img src="{% static 'images/gemscend/mtn.png' %}" alt="img" />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img src="{% static 'images/gemscend/tigo.png' %}" alt="img" />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img src="{% static 'images/gemscend/bitcoin.png' %}" alt="img" />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/etherium.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/usd_coin.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/usdt_logo.png' %}"
+                alt="img"
+              />
+            </div>
+            <div class="text"></div>
+            <div class="text">
+              <img
+                src="{% static 'images/gemscend/pesalink.png' %}"
+                alt="img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% comment %}
+      <!-- Platforms Section Start -->
+      <section class="c" id="platforms">
+        <div class="platforms-container">
+          <!-- Heading Section -->
+          <div class="platforms-heading-wrapper">
+            <h2 class="platforms-title">Platforms that professionals trust</h2>
+            <p class="platforms-description">
+              Trade your Gemscend Funding account on industry-leading platforms,
+              built for speed, precision, and reliability — without changing how
+              you trade.
+            </p>
+          </div>
+
+          <!-- Main Content - Split into Two Columns -->
+          <div class="platform-main-content">
+            <!-- LEFT COLUMN: Video -->
+            <div class="platform-video-column">
+              <div class="platform-video-wrapper">
+                <video
+                  id="platformVideo"
+                  class="platform-video-iframe"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                >
+                  <source
+                    src="{% static 'video/ctrader.mov' %}"
+                    type="video/mp4"
+                  />
+                  <source
+                    src="{% static 'video/ctrader.mov' %}"
+                    type="video/quicktime"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+
+            <!-- RIGHT COLUMN: Content -->
+            <div class="platform-content-column">
+              <!-- Feature Card -->
+              <div class="platform-feature-card">
+                <div class="platform-feature-card-content">
+                  <h3 id="featureTitle">Dive into Gemscend platforms</h3>
+                  <p id="featureDesc">
+                    Trade in a professional environment designed for
+                    consistency, risk control, and long-term performance — not
+                    gambling.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Platform Tabs Selector -->
+              <div class="platform-selector">
+                <div class="platform-selector-tabs">
+                  <div
+                    class="platform-selector-tab active"
+                    data-selector="ctrader"
+                  >
+                    <span>cTrader</span>
+                  </div>
+                  <div
+                    class="platform-selector-tab"
+                    data-selector="tradingview"
+                  >
+                    <span>Match-Trader</span>
+                  </div>
+                  <div class="platform-selector-tab" data-selector="mt5">
+                    <span>DXtrade</span>
+                  </div>
+                  <div class="platform-selector-indicator"></div>
+                </div>
+              </div>
+
+              <!-- Stats Row -->
+              <div class="platform-stats-row">
+                <div class="platform-stat-card">
+                  <div class="platform-stat-card-content">
+                    <h3 id="stat1Title">10 MS</h3>
+                    <p id="stat1Desc">
+                      Enjoy lightning fast execution speed on all platforms.
+                    </p>
+                  </div>
+                </div>
+                <div class="platform-stat-card">
+                  <div class="platform-stat-card-content">
+                    <h3 id="stat2Title">0.1 PIP</h3>
+                    <p id="stat2Desc">
+                      Average spread value for the best trading conditions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Platforms Section End -->
+      {% endcomment %}
+
+      <!-- Platforms Section Start -->
+      <section class="platforms-section" id="platforms">
+        <div class="platforms-container">
+          <!-- Heading Section -->
+          <div class="platforms-heading-wrapper">
+            <h2 class="platforms-title">
+              Professional Trading Platforms You Can Rely On
+            </h2>
+            <p class="platforms-description">
+              Trade your Gemscend account on globally trusted,
+              professional-grade platforms designed for performance, accuracy,
+              and seamless execution so you can operate with confidence without
+              altering your trading style.
+            </p>
+          </div>
+
+          <!-- Main Content - Split into Two Columns -->
+          <div class="platform-main-content">
+            <!-- LEFT COLUMN: Video -->
+            <div class="platform-video-column">
+              <div class="platform-video-wrapper">
+                <video
+                  id="platformVideo"
+                  class="platform-video-iframe"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                >
+                  <source
+                    src="{% static 'video/ctrader.mov' %}"
+                    type="video/mp4"
+                  />
+                  <source
+                    src="{% static 'video/ctrader.mov' %}"
+                    type="video/quicktime"
+                  />
+                  Your browser does not support the video tag.
+                </video>
+
+                <!-- Video Controls Overlay -->
+                <div class="video-controls-overlay">
+                  <button class="video-control-btn" id="playPauseBtn">
+                    <svg
+                      class="play-icon"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="white"
+                    >
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                    <svg
+                      class="pause-icon"
+                      style="display: none"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="white"
+                    >
+                      <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+                    </svg>
+                  </button>
+                  <button class="video-control-btn" id="muteBtn">
+                    <svg
+                      class="unmute-icon"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="white"
+                    >
+                      <path d="M3 9v6h4l5 5V4L7 9H3z" />
+                      <path
+                        d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"
+                      />
+                      <path
+                        d="M14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+                      />
+                    </svg>
+                    <svg
+                      class="mute-icon"
+                      style="display: none"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="white"
+                    >
+                      <path
+                        d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+                      />
+                      <line
+                        x1="2"
+                        y1="2"
+                        x2="22"
+                        y2="22"
+                        stroke="white"
+                        stroke-width="2"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- RIGHT COLUMN: Content -->
+            <div class="platform-content-column">
+              <!-- Feature Card -->
+              <div class="platform-feature-card">
+                <div class="platform-feature-card-content">
+                  <h3 id="featureTitle">Dive into Gemscend platforms</h3>
+                  <p id="featureDesc">
+                    Trade in a professional environment designed for
+                    consistency, risk control, and long-term performance — not
+                    gambling.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Platform Tabs Selector -->
+              <div class="platform-selector">
+                <div class="platform-selector-tabs">
+                  <div
+                    class="platform-selector-tab active"
+                    data-selector="ctrader"
+                  >
+                    <span>cTrader</span>
+                  </div>
+                  <div
+                    class="platform-selector-tab"
+                    data-selector="tradingview"
+                  >
+                    <span>Match-Trader</span>
+                  </div>
+                  <div class="platform-selector-tab" data-selector="mt5">
+                    <span>DXtrade</span>
+                  </div>
+                  <div class="platform-selector-indicator"></div>
+                </div>
+              </div>
+
+              <!-- Stats Row -->
+              <div class="platform-stats-row">
+                <div class="platform-stat-card">
+                  <div class="platform-stat-card-content">
+                    <h3 id="stat1Title">10 MS</h3>
+                    <p id="stat1Desc">
+                      Enjoy lightning fast execution speed on all platforms.
+                    </p>
+                  </div>
+                </div>
+                <div class="platform-stat-card">
+                  <div class="platform-stat-card-content">
+                    <h3 id="stat2Title">0.1 PIP</h3>
+                    <p id="stat2Desc">
+                      Average spread value for the best trading conditions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Platforms Section End -->
+
+      <!-- Top earners Section Start -->
+      <section
+        class="top-earner-secton top-earner-section-padding fix top-earner-custom-bg"
+      >
+        <div class="top-earner-auto-container">
+          <div class="sec-title text-center">
+            <h2 class="wow fadeInUp text-white" data-wow-delay=".3s">
+              Some Of Our Top Earners
+            </h2>
+          </div>
+          <div class="row">
+            <div
+              class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp"
+              data-wow-delay=".3s"
+            >
+              <div class="top-earner-box-items">
+                <div class="top-earner-content">
+                  <h3
+                    class="text-gemscend-dark-emerald-75 text-center top-earner-content-h3-heading"
+                  >
+                    2 Payouts Totalling
+                  </h3>
+                  <h3 class="text-center top-earner-content-h3-amount">
+                    $2,520
+                  </h3>
+                  <p
+                    class="text-gemscend-dark-emerald-75 top-earner-content-h3-name"
+                  >
+                    Daniel Mbai.
+                    <img
+                      src="https://flagcdn.com/ke.svg"
+                      alt="English"
+                      class="flag-icon"
+                      style="width: 25px; height: 25px; border-radius: 50%"
+                    />
+                  </p>
+                </div>
+                <div class="top-earner-image">
+                  <img
+                    src="{% static 'images/gemscend/Mbai.png' %}"
+                    alt="img"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp"
+              data-wow-delay=".3s"
+            >
+              <div class="top-earner-box-items">
+                <div class="top-earner-content">
+                  <h3
+                    class="text-gemscend-dark-emerald-75 text-center top-earner-content-h3-heading"
+                  >
+                    2 Payouts Totalling
+                  </h3>
+                  <h3 class="text-center top-earner-content-h3-amount">
+                    $4,550
+                  </h3>
+                  <p
+                    class="text-gemscend-dark-emerald-75 top-earner-content-h3-name"
+                  >
+                    Saanvi Shah.
+                    <img
+                      src="https://flagcdn.com/in.svg"
+                      alt="English"
+                      class="flag-icon"
+                      style="width: 25px; height: 25px; border-radius: 50%"
+                    />
+                  </p>
+                </div>
+                <div class="top-earner-image">
+                  <img
+                    src="{% static 'images/gemscend/Saanvi.png' %}"
+                    alt="img"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp"
+              data-wow-delay=".3s"
+            >
+              <div class="top-earner-box-items">
+                <div class="top-earner-content">
+                  <h3
+                    class="text-gemscend-dark-emerald-75 text-center top-earner-content-h3-heading"
+                  >
+                    2 Payouts Totalling
+                  </h3>
+                  <h3 class="text-center top-earner-content-h3-amount">
+                    $8,755
+                  </h3>
+                  <p
+                    class="text-gemscend-dark-emerald-75 top-earner-content-h3-name"
+                  >
+                    Imogen Smith.
+                    <img
+                      src="https://flagcdn.com/gb.svg"
+                      alt="English"
+                      class="flag-icon"
+                      style="width: 25px; height: 25px; border-radius: 50%"
+                    />
+                  </p>
+                </div>
+                <div class="top-earner-image">
+                  <img
+                    src="{% static 'images/gemscend/Imogen.png' %}"
+                    alt="img"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp"
+              data-wow-delay=".3s"
+            >
+              <div class="top-earner-box-items">
+                <div class="top-earner-content">
+                  <h3
+                    class="text-gemscend-dark-emerald-75 text-center top-earner-content-h3-heading"
+                  >
+                    2 Payouts Totalling
+                  </h3>
+                  <h3 class="text-center top-earner-content-h3-amount">
+                    $12,690
+                  </h3>
+                  <p
+                    class="text-gemscend-dark-emerald-75 top-earner-content-h3-name"
+                  >
+                    Emily Winslet.
+                    <img
+                      src="https://flagcdn.com/us.svg"
+                      alt="English"
+                      class="flag-icon"
+                      style="width: 25px; height: 25px; border-radius: 50%"
+                    />
+                  </p>
+                </div>
+                <div class="top-earner-image">
+                  <img
+                    src="{% static 'images/gemscend/Emily.png' %}"
+                    alt="img"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="info mt-50 wow fadeInUp text-center"
+              data-wow-delay=".2s"
+            >
+              <a
+                href="https://dashboard.gemscend.com/en/sign-up"
+                class="theme-btn btn-emerald"
+              >
+                Get Started Today!
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Journey Section Start -->
+      <section class="journey-section fix">
+        <div class="journey-auto-container">
+          <div class="sec-title text-center">
+            <h2 class="wow fadeInUp text-white" data-wow-delay=".3s">
+              Why Gemscend?
+            </h2>
+          </div>
+          <div class="journey-layout">
+            <div class="journey-grid">
+              <div class="journey-card wow fadeInUp" data-wow-delay=".1s">
+                <div class="icon">
+                  <img
+                    src="{% static 'gifs/Withdraw-5.gif' %}"
+                    alt="Payout Icon"
+                  />
+                </div>
+                <h4>First Payout on Demand</h4>
+                <p>
+                  Your first withdrawal can be requested at any time, subject to
+                  an 80/20 profit split.
+                </p>
+              </div>
+
+              <div class="journey-card wow fadeInUp" data-wow-delay=".2s">
+                <div class="icon">
+                  <img
+                    src="{% static 'gifs/Schedule-3.gif' %}"
+                    alt="No Time Limits Icon"
+                  />
+                </div>
+                <h4>No Time Limits</h4>
+                <p>
+                  Trade freely without any minimum trading day requirements or
+                  restrictions.
+                </p>
+              </div>
+
+              <div class="journey-card wow fadeInUp" data-wow-delay=".3s">
+                <div class="icon">
+                  <img
+                    style="height: 60px; width: 60px"
+                    src="{% static 'gifs/calendar_V3.gif' %}"
+                    alt="Trading Days Icon"
+                  />
+                </div>
+                <h4>No Minimum Trading Days</h4>
+                <p>Trade at your own pace. No deadlines, no pressure.</p>
+              </div>
+
+              <div class="journey-card wow fadeInUp" data-wow-delay=".4s">
+                <div class="icon">
+                  <img
+                    src="{% static 'gifs/Income-3.gif' %}"
+                    alt="Funding Icon"
+                  />
+                </div>
+                <h4>Maximum of $1 Million</h4>
+                <p>
+                  A maximum of $1 million in active evaluation or funded plans
+                  per person is permitted.
+                </p>
+              </div>
+
+              <div class="journey-card wow fadeInUp" data-wow-delay=".5s">
+                <div class="icon">
+                  <img
+                    src="{% static 'gifs/bookmark-2.gif' %}"
+                    alt="Weekend Icon"
+                  />
+                </div>
+                <h4>Weekend Position Holding</h4>
+                <p>
+                  Hold positions over the weekend with complete flexibility.
+                </p>
+              </div>
+
+              <div class="journey-card wow fadeInUp" data-wow-delay=".6s">
+                <div class="icon">
+                  <img
+                    src="{% static 'gifs/splits_2.gif' %}"
+                    alt="Transparency Icon"
+                  />
+                </div>
+                <h4>80% Profit Split</h4>
+                <p>
+                  Keep the majority of your trading profits while trading with
+                  Gemscend capital.
+                </p>
+              </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="journey-right"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="black-section"></section>
+
+      <!-- Footer Section Start -->
+      {% include 'components/footer.html' with company_name="Gemscend" year=2024
+      %}
+      <!-- Footer Section Start -->
+    </div>
+    <!-- End Page Wrapper -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const emailButton = document.getElementById("emailButton");
 
         // On click: redirect to contact us page
-        emailButton.addEventListener('click', function() {
-            window.location.href = "/contact/us";
+        emailButton.addEventListener("click", function () {
+          window.location.href = "/contact/us";
         });
-    });
-</script>
+      });
+    </script>
 
-
-
-<!-- pricing table highlight -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
+    <!-- pricing table highlight -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
         // Account size values for hard stops
         const accountValues = [3000, 5000, 10000, 20000, 100000];
-        
+
         // Get DOM elements
-        const accountRange = document.getElementById('accountRange');
-        const profitRange = document.getElementById('profitRange');
-        const monthlyEarnings = document.getElementById('monthlyEarnings');
-        const accountValueDisplay = document.getElementById('accountValue');
-        const profitValueDisplay = document.getElementById('profitValue');
-        const accountProgress = document.getElementById('accountProgress');
-        const profitProgress = document.getElementById('profitProgress');
+        const accountRange = document.getElementById("accountRange");
+        const profitRange = document.getElementById("profitRange");
+        const monthlyEarnings = document.getElementById("monthlyEarnings");
+        const accountValueDisplay = document.getElementById("accountValue");
+        const profitValueDisplay = document.getElementById("profitValue");
+        const accountProgress = document.getElementById("accountProgress");
+        const profitProgress = document.getElementById("profitProgress");
 
         // Utility function to format currency
         function formatCurrency(amount) {
-            return new Intl.NumberFormat('en-US', {
-                style: 'currency',
-                currency: 'USD',
-                minimumFractionDigits: 0,
-                maximumFractionDigits: 0
-            }).format(amount);
+          return new Intl.NumberFormat("en-US", {
+            style: "currency",
+            currency: "USD",
+            minimumFractionDigits: 0,
+            maximumFractionDigits: 0,
+          }).format(amount);
         }
 
         // Update slider progress fill
         function updateSliderProgress(slider, progressElement) {
-            const min = parseFloat(slider.min);
-            const max = parseFloat(slider.max);
-            const value = parseFloat(slider.value);
-            let progress = ((value - min) / (max - min)) * 100;
+          const min = parseFloat(slider.min);
+          const max = parseFloat(slider.max);
+          const value = parseFloat(slider.value);
+          let progress = ((value - min) / (max - min)) * 100;
 
-            // Apply a slight extension to cover the thumb
-            const extendedProgress = Math.min(progress + 1.5, 100);
+          // Apply a slight extension to cover the thumb
+          const extendedProgress = Math.min(progress + 1.5, 100);
 
-            if (progressElement) {
-                progressElement.style.width = `${extendedProgress}%`;
-            }
+          if (progressElement) {
+            progressElement.style.width = `${extendedProgress}%`;
+          }
         }
 
         // Update the displayed value next to the slider title
         function updateDisplayValue(slider, displayElement) {
-            if (slider.id === 'accountRange') {
-                // Use the hard stop values
-                const index = parseInt(slider.value);
-                const value = accountValues[index];
-                const formattedValue = formatCurrency(value);
-                displayElement.textContent = formattedValue;
-            } else {
-                // Format profit rate as percentage
-                const value = parseFloat(slider.value);
-                displayElement.textContent = `${value}%`;
-            }
+          if (slider.id === "accountRange") {
+            // Use the hard stop values
+            const index = parseInt(slider.value);
+            const value = accountValues[index];
+            const formattedValue = formatCurrency(value);
+            displayElement.textContent = formattedValue;
+          } else {
+            // Format profit rate as percentage
+            const value = parseFloat(slider.value);
+            displayElement.textContent = `${value}%`;
+          }
         }
 
         // Calculate and display the final earnings
         function calculateEarnings() {
-            // Get account size from hard stop values
-            const accountIndex = parseInt(accountRange.value);
-            const accountSize = accountValues[accountIndex];
-            const profitPercent = parseFloat(profitRange.value);
-            const traderTakeHomeRate = 0.80; // 80%
+          // Get account size from hard stop values
+          const accountIndex = parseInt(accountRange.value);
+          const accountSize = accountValues[accountIndex];
+          const profitPercent = parseFloat(profitRange.value);
+          const traderTakeHomeRate = 0.8; // 80%
 
-            // Calculate earnings based on account size and profit percentage
-            const monthlyProfit = (accountSize * profitPercent) / 100;
-            const calculatedTakeHome = monthlyProfit * traderTakeHomeRate;
-            monthlyEarnings.textContent = formatCurrency(calculatedTakeHome);
+          // Calculate earnings based on account size and profit percentage
+          const monthlyProfit = (accountSize * profitPercent) / 100;
+          const calculatedTakeHome = monthlyProfit * traderTakeHomeRate;
+          monthlyEarnings.textContent = formatCurrency(calculatedTakeHome);
         }
 
         // --- Event Listeners ---
 
         // Account slider input
-        accountRange.addEventListener('input', function() {
-            updateDisplayValue(accountRange, accountValueDisplay);
-            updateSliderProgress(accountRange, accountProgress);
-            calculateEarnings();
+        accountRange.addEventListener("input", function () {
+          updateDisplayValue(accountRange, accountValueDisplay);
+          updateSliderProgress(accountRange, accountProgress);
+          calculateEarnings();
         });
 
         // Profit slider input
-        profitRange.addEventListener('input', function() {
-            updateDisplayValue(profitRange, profitValueDisplay);
-            updateSliderProgress(profitRange, profitProgress);
-            calculateEarnings();
+        profitRange.addEventListener("input", function () {
+          updateDisplayValue(profitRange, profitValueDisplay);
+          updateSliderProgress(profitRange, profitProgress);
+          calculateEarnings();
         });
 
         // --- Initialization ---
@@ -1291,584 +1811,635 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         calculateEarnings();
 
         // Update on window resize (to correct progress bar position)
-        window.addEventListener('resize', function() {
-            updateSliderProgress(accountRange, accountProgress);
-            updateSliderProgress(profitRange, profitProgress);
+        window.addEventListener("resize", function () {
+          updateSliderProgress(accountRange, accountProgress);
+          updateSliderProgress(profitRange, profitProgress);
         });
-    });
-</script>
+      });
+    </script>
 
-{% comment %} 
-<script>
-    // Platform Tabs Functionality
-    document.addEventListener('DOMContentLoaded', function() {
-        const topTabs = document.querySelectorAll('.platform-tab');
-        const selectorTabs = document.querySelectorAll('.platform-selector-tab');
-        const topIndicator = document.querySelector('.platform-tab-indicator');
-        const selectorIndicator = document.querySelector('.platform-selector-indicator');
-        
-        // Function to update indicator position
-        function updateIndicator(activeTab, indicator, container) {
-            if (!indicator) return;
-            const tabWidth = activeTab.offsetWidth;
-            const tabOffset = activeTab.offsetLeft;
-            indicator.style.width = tabWidth + 'px';
-            indicator.style.transform = `translateX(${tabOffset}px)`;
-        }
-        
-        // Function to update content
-        function updateContent(platform) {
-            // Update video iframe source
-            const videoIframe = document.querySelector('.platform-video-iframe');
-            if (videoIframe) {
-                let videoUrl = '';
-                switch(platform) {
-                    case 'ctrader':
-                        videoUrl = '{% static 'video/ctrader.mov' %}';
-                        break;
-                    case 'tradingview':
-                        videoUrl = '{% static 'video/matchtrader.mov' %}';
-                        break;
-                    case 'mt5':
-                        videoUrl = '{% static 'video/dxtrader.mov' %}';
-                        break;
-                }
-                videoIframe.src = videoUrl;
-            }
-            
-            // Update feature card content
-            const featureTitle = document.querySelector('.platform-feature-card-content h3');
-            const featureDesc = document.querySelector('.platform-feature-card-content p');
-            
-            // Update stat cards content
-            const statCards = document.querySelectorAll('.platform-stat-card');
-            
-            switch(platform) {
-                case 'ctrader':
-                    if (featureTitle) featureTitle.textContent = 'Dive into Dominion ecosystem';
-                    if (featureDesc) featureDesc.textContent = 'Trade in a professional environment designed for consistency, risk control, and long-term performance — not gambling.';
-                    if (statCards[0]) {
-                        statCards[0].querySelector('h3').textContent = '10 MS';
-                        statCards[0].querySelector('p').textContent = 'Enjoy lightning fast execution speed on all platforms.';
-                    }
-                    if (statCards[1]) {
-                        statCards[1].querySelector('h3').textContent = '0.1 PIP';
-                        statCards[1].querySelector('p').textContent = 'Average spread value for the best trading conditions.';
-                    }
-                    break;
-                case 'tradingview':
-                    if (featureTitle) featureTitle.textContent = 'Trade with TradingView';
-                    if (featureDesc) featureDesc.textContent = 'Access advanced charting tools, social trading features, and seamless integration with Dominion Funding.';
-                    if (statCards[0]) {
-                        statCards[0].querySelector('h3').textContent = '12+ Charts';
-                        statCards[0].querySelector('p').textContent = 'Multiple chart layouts and advanced technical indicators.';
-                    }
-                    if (statCards[1]) {
-                        statCards[1].querySelector('h3').textContent = '50+ Indicators';
-                        statCards[1].querySelector('p').textContent = 'Built-in technical analysis tools for professional trading.';
-                    }
-                    break;
-                case 'mt5':
-                    if (featureTitle) featureTitle.textContent = 'MetaTrader 5 Excellence';
-                    if (featureDesc) featureDesc.textContent = 'Experience the most advanced trading platform with depth of market, 21 timeframes, and algorithmic trading capabilities.';
-                    if (statCards[0]) {
-                        statCards[0].querySelector('h3').textContent = '21 Timeframes';
-                        statCards[0].querySelector('p').textContent = 'From M1 to MN1 for complete market analysis.';
-                    }
-                    if (statCards[1]) {
-                        statCards[1].querySelector('h3').textContent = 'MQL5';
-                        statCards[1].querySelector('p').textContent = 'Automated trading with expert advisors and custom indicators.';
-                    }
-                    break;
-            }
-        }
-        
-        // Add click handlers to top tabs
-        topTabs.forEach(tab => {
-            tab.addEventListener('click', function() {
-                const platform = this.getAttribute('data-platform');
-                
-                // Update active states
-                topTabs.forEach(t => t.classList.remove('active'));
-                this.classList.add('active');
-                
-                selectorTabs.forEach(t => {
-                    t.classList.remove('active');
-                    if (t.getAttribute('data-selector') === platform) {
-                        t.classList.add('active');
-                    }
-                });
-                
-                // Update indicators
-                updateIndicator(this, topIndicator, '.platform-tabs');
-                const activeSelector = document.querySelector(`.platform-selector-tab[data-selector="${platform}"]`);
-                if (activeSelector) {
-                    updateIndicator(activeSelector, selectorIndicator, '.platform-selector-tabs');
-                }
-                
-                // Update content
-                updateContent(platform);
-            });
-        });
-        
-        // Add click handlers to selector tabs
-        selectorTabs.forEach(tab => {
-            tab.addEventListener('click', function() {
-                const platform = this.getAttribute('data-selector');
-                
-                // Update active states
-                selectorTabs.forEach(t => t.classList.remove('active'));
-                this.classList.add('active');
-                
-                topTabs.forEach(t => {
-                    t.classList.remove('active');
-                    if (t.getAttribute('data-platform') === platform) {
-                        t.classList.add('active');
-                    }
-                });
-                
-                // Update indicators
-                updateIndicator(this, selectorIndicator, '.platform-selector-tabs');
-                const activeTop = document.querySelector(`.platform-tab[data-platform="${platform}"]`);
-                if (activeTop) {
-                    updateIndicator(activeTop, topIndicator, '.platform-tabs');
-                }
-                
-                // Update content
-                updateContent(platform);
-            });
-        });
-        
-        // Initialize - set cTrader as active
-        const initialTab = document.querySelector('[data-platform="ctrader"]');
-        if (initialTab) {
-            updateIndicator(initialTab, topIndicator, '.platform-tabs');
-        }
-        
-        const initialSelector = document.querySelector('[data-selector="ctrader"]');
-        if (initialSelector) {
-            updateIndicator(initialSelector, selectorIndicator, '.platform-selector-tabs');
-        }
-        
-        // Update indicators on window resize
-        let resizeTimer;
-        window.addEventListener('resize', function() {
-            clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(function() {
-                const activeTop = document.querySelector('.platform-tab.active');
-                if (activeTop && topIndicator) {
-                    updateIndicator(activeTop, topIndicator, '.platform-tabs');
-                }
-                const activeSelector = document.querySelector('.platform-selector-tab.active');
-                if (activeSelector && selectorIndicator) {
-                    updateIndicator(activeSelector, selectorIndicator, '.platform-selector-tabs');
-                }
-            }, 100);
-        });
-    });
-</script> {% endcomment %}
-<script>
-    // Platform Tabs Functionality with Video Controls
-    document.addEventListener('DOMContentLoaded', function() {
+    {% comment %}
+    <script>
+      // Platform Tabs Functionality
+      document.addEventListener('DOMContentLoaded', function() {
+          const topTabs = document.querySelectorAll('.platform-tab');
+          const selectorTabs = document.querySelectorAll('.platform-selector-tab');
+          const topIndicator = document.querySelector('.platform-tab-indicator');
+          const selectorIndicator = document.querySelector('.platform-selector-indicator');
+
+          // Function to update indicator position
+          function updateIndicator(activeTab, indicator, container) {
+              if (!indicator) return;
+              const tabWidth = activeTab.offsetWidth;
+              const tabOffset = activeTab.offsetLeft;
+              indicator.style.width = tabWidth + 'px';
+              indicator.style.transform = `translateX(${tabOffset}px)`;
+          }
+
+          // Function to update content
+          function updateContent(platform) {
+              // Update video iframe source
+              const videoIframe = document.querySelector('.platform-video-iframe');
+              if (videoIframe) {
+                  let videoUrl = '';
+                  switch(platform) {
+                      case 'ctrader':
+                          videoUrl = '{% static 'video/ctrader.mov' %}';
+                          break;
+                      case 'tradingview':
+                          videoUrl = '{% static 'video/matchtrader.mov' %}';
+                          break;
+                      case 'mt5':
+                          videoUrl = '{% static 'video/dxtrader.mov' %}';
+                          break;
+                  }
+                  videoIframe.src = videoUrl;
+              }
+
+              // Update feature card content
+              const featureTitle = document.querySelector('.platform-feature-card-content h3');
+              const featureDesc = document.querySelector('.platform-feature-card-content p');
+
+              // Update stat cards content
+              const statCards = document.querySelectorAll('.platform-stat-card');
+
+              switch(platform) {
+                  case 'ctrader':
+                      if (featureTitle) featureTitle.textContent = 'Dive into Gemscend ecosystem';
+                      if (featureDesc) featureDesc.textContent = 'Trade in a professional environment designed for consistency, risk control, and long-term performance — not gambling.';
+                      if (statCards[0]) {
+                          statCards[0].querySelector('h3').textContent = '10 MS';
+                          statCards[0].querySelector('p').textContent = 'Enjoy lightning fast execution speed on all platforms.';
+                      }
+                      if (statCards[1]) {
+                          statCards[1].querySelector('h3').textContent = '0.1 PIP';
+                          statCards[1].querySelector('p').textContent = 'Average spread value for the best trading conditions.';
+                      }
+                      break;
+                  case 'tradingview':
+                      if (featureTitle) featureTitle.textContent = 'Trade with TradingView';
+                      if (featureDesc) featureDesc.textContent = 'Access advanced charting tools, social trading features, and seamless integration with Gemscend Funding.';
+                      if (statCards[0]) {
+                          statCards[0].querySelector('h3').textContent = '12+ Charts';
+                          statCards[0].querySelector('p').textContent = 'Multiple chart layouts and advanced technical indicators.';
+                      }
+                      if (statCards[1]) {
+                          statCards[1].querySelector('h3').textContent = '50+ Indicators';
+                          statCards[1].querySelector('p').textContent = 'Built-in technical analysis tools for professional trading.';
+                      }
+                      break;
+                  case 'mt5':
+                      if (featureTitle) featureTitle.textContent = 'MetaTrader 5 Excellence';
+                      if (featureDesc) featureDesc.textContent = 'Experience the most advanced trading platform with depth of market, 21 timeframes, and algorithmic trading capabilities.';
+                      if (statCards[0]) {
+                          statCards[0].querySelector('h3').textContent = '21 Timeframes';
+                          statCards[0].querySelector('p').textContent = 'From M1 to MN1 for complete market analysis.';
+                      }
+                      if (statCards[1]) {
+                          statCards[1].querySelector('h3').textContent = 'MQL5';
+                          statCards[1].querySelector('p').textContent = 'Automated trading with expert advisors and custom indicators.';
+                      }
+                      break;
+              }
+          }
+
+          // Add click handlers to top tabs
+          topTabs.forEach(tab => {
+              tab.addEventListener('click', function() {
+                  const platform = this.getAttribute('data-platform');
+
+                  // Update active states
+                  topTabs.forEach(t => t.classList.remove('active'));
+                  this.classList.add('active');
+
+                  selectorTabs.forEach(t => {
+                      t.classList.remove('active');
+                      if (t.getAttribute('data-selector') === platform) {
+                          t.classList.add('active');
+                      }
+                  });
+
+                  // Update indicators
+                  updateIndicator(this, topIndicator, '.platform-tabs');
+                  const activeSelector = document.querySelector(`.platform-selector-tab[data-selector="${platform}"]`);
+                  if (activeSelector) {
+                      updateIndicator(activeSelector, selectorIndicator, '.platform-selector-tabs');
+                  }
+
+                  // Update content
+                  updateContent(platform);
+              });
+          });
+
+          // Add click handlers to selector tabs
+          selectorTabs.forEach(tab => {
+              tab.addEventListener('click', function() {
+                  const platform = this.getAttribute('data-selector');
+
+                  // Update active states
+                  selectorTabs.forEach(t => t.classList.remove('active'));
+                  this.classList.add('active');
+
+                  topTabs.forEach(t => {
+                      t.classList.remove('active');
+                      if (t.getAttribute('data-platform') === platform) {
+                          t.classList.add('active');
+                      }
+                  });
+
+                  // Update indicators
+                  updateIndicator(this, selectorIndicator, '.platform-selector-tabs');
+                  const activeTop = document.querySelector(`.platform-tab[data-platform="${platform}"]`);
+                  if (activeTop) {
+                      updateIndicator(activeTop, topIndicator, '.platform-tabs');
+                  }
+
+                  // Update content
+                  updateContent(platform);
+              });
+          });
+
+          // Initialize - set cTrader as active
+          const initialTab = document.querySelector('[data-platform="ctrader"]');
+          if (initialTab) {
+              updateIndicator(initialTab, topIndicator, '.platform-tabs');
+          }
+
+          const initialSelector = document.querySelector('[data-selector="ctrader"]');
+          if (initialSelector) {
+              updateIndicator(initialSelector, selectorIndicator, '.platform-selector-tabs');
+          }
+
+          // Update indicators on window resize
+          let resizeTimer;
+          window.addEventListener('resize', function() {
+              clearTimeout(resizeTimer);
+              resizeTimer = setTimeout(function() {
+                  const activeTop = document.querySelector('.platform-tab.active');
+                  if (activeTop && topIndicator) {
+                      updateIndicator(activeTop, topIndicator, '.platform-tabs');
+                  }
+                  const activeSelector = document.querySelector('.platform-selector-tab.active');
+                  if (activeSelector && selectorIndicator) {
+                      updateIndicator(activeSelector, selectorIndicator, '.platform-selector-tabs');
+                  }
+              }, 100);
+          });
+      });
+    </script>
+    {% endcomment %}
+    <script>
+      // Platform Tabs Functionality with Video Controls
+      document.addEventListener("DOMContentLoaded", function () {
         // Get video element
-        const video = document.getElementById('platformVideo');
-        const playPauseBtn = document.getElementById('playPauseBtn');
-        const muteBtn = document.getElementById('muteBtn');
-        const playIcon = document.querySelector('.play-icon');
-        const pauseIcon = document.querySelector('.pause-icon');
-        const unmuteIcon = document.querySelector('.unmute-icon');
-        const muteIcon = document.querySelector('.mute-icon');
-        
-        const topTabs = document.querySelectorAll('.platform-tab');
-        const selectorTabs = document.querySelectorAll('.platform-selector-tab');
-        const topIndicator = document.querySelector('.platform-tab-indicator');
-        const selectorIndicator = document.querySelector('.platform-selector-indicator');
-        
+        const video = document.getElementById("platformVideo");
+        const playPauseBtn = document.getElementById("playPauseBtn");
+        const muteBtn = document.getElementById("muteBtn");
+        const playIcon = document.querySelector(".play-icon");
+        const pauseIcon = document.querySelector(".pause-icon");
+        const unmuteIcon = document.querySelector(".unmute-icon");
+        const muteIcon = document.querySelector(".mute-icon");
+
+        const topTabs = document.querySelectorAll(".platform-tab");
+        const selectorTabs = document.querySelectorAll(
+          ".platform-selector-tab",
+        );
+        const topIndicator = document.querySelector(".platform-tab-indicator");
+        const selectorIndicator = document.querySelector(
+          ".platform-selector-indicator",
+        );
+
         // Video Control Functions
         function togglePlayPause() {
-            if (video.paused) {
-                video.play();
-                playIcon.style.display = 'none';
-                pauseIcon.style.display = 'block';
-            } else {
-                video.pause();
-                playIcon.style.display = 'block';
-                pauseIcon.style.display = 'none';
-            }
+          if (video.paused) {
+            video.play();
+            playIcon.style.display = "none";
+            pauseIcon.style.display = "block";
+          } else {
+            video.pause();
+            playIcon.style.display = "block";
+            pauseIcon.style.display = "none";
+          }
         }
-        
+
         function toggleMute() {
-            if (video.muted) {
-                video.muted = false;
-                unmuteIcon.style.display = 'none';
-                muteIcon.style.display = 'block';
-            } else {
-                video.muted = true;
-                unmuteIcon.style.display = 'block';
-                muteIcon.style.display = 'none';
-            }
+          if (video.muted) {
+            video.muted = false;
+            unmuteIcon.style.display = "none";
+            muteIcon.style.display = "block";
+          } else {
+            video.muted = true;
+            unmuteIcon.style.display = "block";
+            muteIcon.style.display = "none";
+          }
         }
-        
+
         // Update button states when video events occur
         function updatePlayPauseButton() {
-            if (video.paused) {
-                playIcon.style.display = 'block';
-                pauseIcon.style.display = 'none';
-            } else {
-                playIcon.style.display = 'none';
-                pauseIcon.style.display = 'block';
-            }
+          if (video.paused) {
+            playIcon.style.display = "block";
+            pauseIcon.style.display = "none";
+          } else {
+            playIcon.style.display = "none";
+            pauseIcon.style.display = "block";
+          }
         }
-        
+
         function updateMuteButton() {
-            if (video.muted) {
-                unmuteIcon.style.display = 'block';
-                muteIcon.style.display = 'none';
-            } else {
-                unmuteIcon.style.display = 'none';
-                muteIcon.style.display = 'block';
-            }
+          if (video.muted) {
+            unmuteIcon.style.display = "block";
+            muteIcon.style.display = "none";
+          } else {
+            unmuteIcon.style.display = "none";
+            muteIcon.style.display = "block";
+          }
         }
-        
+
         // Add event listeners for video controls
         if (playPauseBtn) {
-            playPauseBtn.addEventListener('click', togglePlayPause);
+          playPauseBtn.addEventListener("click", togglePlayPause);
         }
-        
+
         if (muteBtn) {
-            muteBtn.addEventListener('click', toggleMute);
+          muteBtn.addEventListener("click", toggleMute);
         }
-        
+
         if (video) {
-            video.addEventListener('play', updatePlayPauseButton);
-            video.addEventListener('pause', updatePlayPauseButton);
-            video.addEventListener('volumechange', updateMuteButton);
-            
-            // Ensure video continues playing when switching tabs
-            video.addEventListener('loadeddata', function() {
-                if (!video.paused) {
-                    video.play().catch(e => console.log('Autoplay prevented:', e));
-                }
-            });
+          video.addEventListener("play", updatePlayPauseButton);
+          video.addEventListener("pause", updatePlayPauseButton);
+          video.addEventListener("volumechange", updateMuteButton);
+
+          // Ensure video continues playing when switching tabs
+          video.addEventListener("loadeddata", function () {
+            if (!video.paused) {
+              video.play().catch((e) => console.log("Autoplay prevented:", e));
+            }
+          });
         }
-        
+
         // Function to update indicator position
         function updateIndicator(activeTab, indicator, container) {
-            if (!indicator) return;
-            const tabWidth = activeTab.offsetWidth;
-            const tabOffset = activeTab.offsetLeft;
-            indicator.style.width = tabWidth + 'px';
-            indicator.style.transform = `translateX(${tabOffset}px)`;
+          if (!indicator) return;
+          const tabWidth = activeTab.offsetWidth;
+          const tabOffset = activeTab.offsetLeft;
+          indicator.style.width = tabWidth + "px";
+          indicator.style.transform = `translateX(${tabOffset}px)`;
         }
-        
+
         // Function to update video source
         function updateVideoSource(platform) {
-            if (!video) return;
-            
-            let videoUrl = '';
-            switch(platform) {
-                case 'ctrader':
-                    videoUrl = "{% static 'video/ctrader.mov' %}";
-                    break;
-                case 'tradingview':
-                    videoUrl = "{% static 'video/matchtrader.mp4' %}";
-                    break;
-                case 'mt5':
-                    videoUrl = "{% static 'video/dxtrader.mov' %}";
-                    break;
+          if (!video) return;
+
+          let videoUrl = "";
+          switch (platform) {
+            case "ctrader":
+              videoUrl = "{% static 'video/ctrader.mov' %}";
+              break;
+            case "tradingview":
+              videoUrl = "{% static 'video/matchtrader.mp4' %}";
+              break;
+            case "mt5":
+              videoUrl = "{% static 'video/dxtrader.mov' %}";
+              break;
+          }
+
+          if (videoUrl) {
+            // Get current source element or create one
+            let source = video.querySelector("source");
+            if (!source) {
+              source = document.createElement("source");
+              video.appendChild(source);
             }
-            
-            if (videoUrl) {
-                // Get current source element or create one
-                let source = video.querySelector('source');
-                if (!source) {
-                    source = document.createElement('source');
-                    video.appendChild(source);
-                }
-                
-                // Update source
-                source.src = videoUrl;
-                source.type = 'video/mp4';
-                
-                // Reload video
-                video.load();
-                
-                // Attempt to play with error handling
-                const playPromise = video.play();
-                if (playPromise !== undefined) {
-                    playPromise.catch(error => {
-                        console.log("Autoplay prevented:", error);
-                        video.muted = true;
-                        video.play();
-                        updateMuteButton();
-                    });
-                }
-                
-                // Reset play/pause button state
-                setTimeout(updatePlayPauseButton, 100);
+
+            // Update source
+            source.src = videoUrl;
+            source.type = "video/mp4";
+
+            // Reload video
+            video.load();
+
+            // Attempt to play with error handling
+            const playPromise = video.play();
+            if (playPromise !== undefined) {
+              playPromise.catch((error) => {
+                console.log("Autoplay prevented:", error);
+                video.muted = true;
+                video.play();
+                updateMuteButton();
+              });
             }
+
+            // Reset play/pause button state
+            setTimeout(updatePlayPauseButton, 100);
+          }
         }
-        
+
         // Function to update content
         function updateContent(platform) {
-            // Get DOM elements
-            const featureTitle = document.getElementById('featureTitle');
-            const featureDesc = document.getElementById('featureDesc');
-            const stat1Title = document.getElementById('stat1Title');
-            const stat1Desc = document.getElementById('stat1Desc');
-            const stat2Title = document.getElementById('stat2Title');
-            const stat2Desc = document.getElementById('stat2Desc');
-            
-            switch(platform) {
-                case 'ctrader':
-                    if (featureTitle) featureTitle.textContent = 'Dive into Dominion ecosystem';
-                    if (featureDesc) featureDesc.textContent = 'Trade in a professional environment designed for consistency, risk control, and long-term performance — not gambling.';
-                    if (stat1Title) stat1Title.textContent = 'Advanced Order Execution';
-                    if (stat1Desc) stat1Desc.textContent = 'cTrader delivers ultra fast precise order execution with full market depth visibility.';
-                    if (stat2Title) stat2Title.textContent = 'Transparent Trading Environment';
-                    if (stat2Desc) stat2Desc.textContent = 'cTrader provides clear fair trading environment with no dealing desk intervention.';
-                    break;
-                case 'tradingview':
-                    if (featureTitle) featureTitle.textContent = 'Trade with Match-Trader';
-                    if (featureDesc) featureDesc.textContent = 'Access advanced charting tools, social trading features, and seamless integration with Dominion Funding.';
-                    if (stat1Title) stat1Title.textContent = 'Modern Web-Based Trading';
-                    if (stat1Desc) stat1Desc.textContent = 'Match Trader offers sleek browser based platform with fast execution tools.';
-                    if (stat2Title) stat2Title.textContent = 'Advanced Charting Tools';
-                    if (stat2Desc) stat2Desc.textContent = 'Match Trader provides powerful charting features with multiple indicators for analysis.';
-                    break;
-                case 'mt5':
-                    if (featureTitle) featureTitle.textContent = 'DXtrade Excellence';
-                    if (featureDesc) featureDesc.textContent = 'Experience the most advanced trading platform with depth of market, 21 timeframes, and algorithmic trading capabilities.';
-                    if (stat1Title) stat1Title.textContent = 'Customizable Trading Interface';
-                    if (stat1Desc) stat1Desc.textContent = 'DXTrader provides flexible interface allowing traders to personalize charts and layouts.';
-                    if (stat2Title) stat2Title.textContent = 'Advanced Risk Management';
-                    if (stat2Desc) stat2Desc.textContent = 'DXTrader includes built in tools helping traders manage risk and positions efficiently.';
-                    break;
-            }
-            
-            // Update video
-            updateVideoSource(platform);
+          // Get DOM elements
+          const featureTitle = document.getElementById("featureTitle");
+          const featureDesc = document.getElementById("featureDesc");
+          const stat1Title = document.getElementById("stat1Title");
+          const stat1Desc = document.getElementById("stat1Desc");
+          const stat2Title = document.getElementById("stat2Title");
+          const stat2Desc = document.getElementById("stat2Desc");
+
+          switch (platform) {
+            case "ctrader":
+              if (featureTitle)
+                featureTitle.textContent = "Dive into Gemscend platforms";
+              if (featureDesc)
+                featureDesc.textContent =
+                  "Trade in a professional environment designed for consistency, risk control, and long-term performance — not gambling.";
+              if (stat1Title)
+                stat1Title.textContent = "Advanced Order Execution";
+              if (stat1Desc)
+                stat1Desc.textContent =
+                  "cTrader delivers ultra fast precise order execution with full market depth visibility.";
+              if (stat2Title)
+                stat2Title.textContent = "Transparent Trading Environment";
+              if (stat2Desc)
+                stat2Desc.textContent =
+                  "cTrader provides clear fair trading environment with no dealing desk intervention.";
+              break;
+            case "tradingview":
+              if (featureTitle)
+                featureTitle.textContent = "Trade with Match-Trader";
+              if (featureDesc)
+                featureDesc.textContent =
+                  "Access advanced charting tools, social trading features, and seamless integration with Gemscend Funding.";
+              if (stat1Title)
+                stat1Title.textContent = "Modern Web-Based Trading";
+              if (stat1Desc)
+                stat1Desc.textContent =
+                  "Match Trader offers sleek browser based platform with fast execution tools.";
+              if (stat2Title)
+                stat2Title.textContent = "Advanced Charting Tools";
+              if (stat2Desc)
+                stat2Desc.textContent =
+                  "Match Trader provides powerful charting features with multiple indicators for analysis.";
+              break;
+            case "mt5":
+              if (featureTitle) featureTitle.textContent = "DXtrade Excellence";
+              if (featureDesc)
+                featureDesc.textContent =
+                  "Experience the most advanced trading platform with depth of market, 21 timeframes, and algorithmic trading capabilities.";
+              if (stat1Title)
+                stat1Title.textContent = "Customizable Trading Interface";
+              if (stat1Desc)
+                stat1Desc.textContent =
+                  "DXTrader provides flexible interface allowing traders to personalize charts and layouts.";
+              if (stat2Title)
+                stat2Title.textContent = "Advanced Risk Management";
+              if (stat2Desc)
+                stat2Desc.textContent =
+                  "DXTrader includes built in tools helping traders manage risk and positions efficiently.";
+              break;
+          }
+
+          // Update video
+          updateVideoSource(platform);
         }
-        
+
         // Add click handlers to selector tabs
         if (selectorTabs.length > 0) {
-            selectorTabs.forEach(tab => {
-                tab.addEventListener('click', function() {
-                    const platform = this.getAttribute('data-selector');
-                    
-                    // Update active states
-                    selectorTabs.forEach(t => t.classList.remove('active'));
-                    this.classList.add('active');
-                    
-                    if (topTabs.length > 0) {
-                        topTabs.forEach(t => {
-                            t.classList.remove('active');
-                            if (t.getAttribute('data-platform') === platform) {
-                                t.classList.add('active');
-                            }
-                        });
-                    }
-                    
-                    // Update indicators
-                    if (selectorIndicator) {
-                        updateIndicator(this, selectorIndicator, '.platform-selector-tabs');
-                    }
-                    
-                    if (topTabs.length > 0 && topIndicator) {
-                        const activeTop = document.querySelector(`.platform-tab[data-platform="${platform}"]`);
-                        if (activeTop) {
-                            updateIndicator(activeTop, topIndicator, '.platform-tabs');
-                        }
-                    }
-                    
-                    // Update content
-                    updateContent(platform);
+          selectorTabs.forEach((tab) => {
+            tab.addEventListener("click", function () {
+              const platform = this.getAttribute("data-selector");
+
+              // Update active states
+              selectorTabs.forEach((t) => t.classList.remove("active"));
+              this.classList.add("active");
+
+              if (topTabs.length > 0) {
+                topTabs.forEach((t) => {
+                  t.classList.remove("active");
+                  if (t.getAttribute("data-platform") === platform) {
+                    t.classList.add("active");
+                  }
                 });
+              }
+
+              // Update indicators
+              if (selectorIndicator) {
+                updateIndicator(
+                  this,
+                  selectorIndicator,
+                  ".platform-selector-tabs",
+                );
+              }
+
+              if (topTabs.length > 0 && topIndicator) {
+                const activeTop = document.querySelector(
+                  `.platform-tab[data-platform="${platform}"]`,
+                );
+                if (activeTop) {
+                  updateIndicator(activeTop, topIndicator, ".platform-tabs");
+                }
+              }
+
+              // Update content
+              updateContent(platform);
             });
-            
-            // Initialize with first tab
-            const initialPlatform = selectorTabs[0].getAttribute('data-selector');
-            updateContent(initialPlatform);
-            
-            if (selectorIndicator) {
-                updateIndicator(selectorTabs[0], selectorIndicator, '.platform-selector-tabs');
-            }
+          });
+
+          // Initialize with first tab
+          const initialPlatform = selectorTabs[0].getAttribute("data-selector");
+          updateContent(initialPlatform);
+
+          if (selectorIndicator) {
+            updateIndicator(
+              selectorTabs[0],
+              selectorIndicator,
+              ".platform-selector-tabs",
+            );
+          }
         }
-        
+
         // Handle top tabs if they exist
         if (topTabs.length > 0) {
-            topTabs.forEach(tab => {
-                tab.addEventListener('click', function() {
-                    const platform = this.getAttribute('data-platform');
-                    
-                    // Update active states
-                    topTabs.forEach(t => t.classList.remove('active'));
-                    this.classList.add('active');
-                    
-                    selectorTabs.forEach(t => {
-                        t.classList.remove('active');
-                        if (t.getAttribute('data-selector') === platform) {
-                            t.classList.add('active');
-                        }
-                    });
-                    
-                    // Update indicators
-                    if (topIndicator) {
-                        updateIndicator(this, topIndicator, '.platform-tabs');
-                    }
-                    
-                    if (selectorIndicator) {
-                        const activeSelector = document.querySelector(`.platform-selector-tab[data-selector="${platform}"]`);
-                        if (activeSelector) {
-                            updateIndicator(activeSelector, selectorIndicator, '.platform-selector-tabs');
-                        }
-                    }
-                    
-                    // Update content
-                    updateContent(platform);
-                });
-            });
-            
-            // Initialize top indicator if needed
-            if (topIndicator && topTabs.length > 0) {
-                const activeTop = document.querySelector('.platform-tab.active');
-                if (activeTop) {
-                    updateIndicator(activeTop, topIndicator, '.platform-tabs');
-                } else {
-                    updateIndicator(topTabs[0], topIndicator, '.platform-tabs');
+          topTabs.forEach((tab) => {
+            tab.addEventListener("click", function () {
+              const platform = this.getAttribute("data-platform");
+
+              // Update active states
+              topTabs.forEach((t) => t.classList.remove("active"));
+              this.classList.add("active");
+
+              selectorTabs.forEach((t) => {
+                t.classList.remove("active");
+                if (t.getAttribute("data-selector") === platform) {
+                  t.classList.add("active");
                 }
+              });
+
+              // Update indicators
+              if (topIndicator) {
+                updateIndicator(this, topIndicator, ".platform-tabs");
+              }
+
+              if (selectorIndicator) {
+                const activeSelector = document.querySelector(
+                  `.platform-selector-tab[data-selector="${platform}"]`,
+                );
+                if (activeSelector) {
+                  updateIndicator(
+                    activeSelector,
+                    selectorIndicator,
+                    ".platform-selector-tabs",
+                  );
+                }
+              }
+
+              // Update content
+              updateContent(platform);
+            });
+          });
+
+          // Initialize top indicator if needed
+          if (topIndicator && topTabs.length > 0) {
+            const activeTop = document.querySelector(".platform-tab.active");
+            if (activeTop) {
+              updateIndicator(activeTop, topIndicator, ".platform-tabs");
+            } else {
+              updateIndicator(topTabs[0], topIndicator, ".platform-tabs");
             }
+          }
         }
-        
+
         // Update indicators on window resize
         let resizeTimer;
-        window.addEventListener('resize', function() {
-            clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(function() {
-                if (topTabs.length > 0 && topIndicator) {
-                    const activeTop = document.querySelector('.platform-tab.active');
-                    if (activeTop) {
-                        updateIndicator(activeTop, topIndicator, '.platform-tabs');
-                    }
-                }
-                if (selectorTabs.length > 0 && selectorIndicator) {
-                    const activeSelector = document.querySelector('.platform-selector-tab.active');
-                    if (activeSelector) {
-                        updateIndicator(activeSelector, selectorIndicator, '.platform-selector-tabs');
-                    }
-                }
-            }, 100);
+        window.addEventListener("resize", function () {
+          clearTimeout(resizeTimer);
+          resizeTimer = setTimeout(function () {
+            if (topTabs.length > 0 && topIndicator) {
+              const activeTop = document.querySelector(".platform-tab.active");
+              if (activeTop) {
+                updateIndicator(activeTop, topIndicator, ".platform-tabs");
+              }
+            }
+            if (selectorTabs.length > 0 && selectorIndicator) {
+              const activeSelector = document.querySelector(
+                ".platform-selector-tab.active",
+              );
+              if (activeSelector) {
+                updateIndicator(
+                  activeSelector,
+                  selectorIndicator,
+                  ".platform-selector-tabs",
+                );
+              }
+            }
+          }, 100);
         });
-    });
-</script>
+      });
+    </script>
 
+    <!-- Slider Functionality Script -->
 
-<!-- Slider Functionality Script -->
-
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
         // Account size values for hard stops and corresponding fees/links
         const accountValues = [3000, 5000, 10000, 20000, 100000];
         const accountFees = [35, 50, 100, 200, 660];
         const accountLinks = [
-            "https://dashboard.gemscend.com/challenges?planid=121",
-            "https://dashboard.gemscend.com/challenges?planid=122", 
-            "https://dashboard.gemscend.com/challenges?planid=123",
-            "https://dashboard.gemscend.com/challenges?planid=124",
-            "https://dashboard.gemscend.com/challenges?planid=125"
+          "https://dashboard.gemscend.com/challenges?planid=121",
+          "https://dashboard.gemscend.com/challenges?planid=122",
+          "https://dashboard.gemscend.com/challenges?planid=123",
+          "https://dashboard.gemscend.com/challenges?planid=124",
+          "https://dashboard.gemscend.com/challenges?planid=125",
         ];
-        
+
         // Get DOM elements
-        const accountRange = document.getElementById('accountRange');
-        const profitRange = document.getElementById('profitRange');
-        const monthlyEarnings = document.getElementById('monthlyEarnings');
-        const accountValueDisplay = document.getElementById('accountValue');
-        const profitValueDisplay = document.getElementById('profitValue');
-        const accountProgress = document.getElementById('accountProgress');
-        const profitProgress = document.getElementById('profitProgress');
-        const planButton = document.getElementById('planButton'); // New
+        const accountRange = document.getElementById("accountRange");
+        const profitRange = document.getElementById("profitRange");
+        const monthlyEarnings = document.getElementById("monthlyEarnings");
+        const accountValueDisplay = document.getElementById("accountValue");
+        const profitValueDisplay = document.getElementById("profitValue");
+        const accountProgress = document.getElementById("accountProgress");
+        const profitProgress = document.getElementById("profitProgress");
+        const planButton = document.getElementById("planButton"); // New
 
         // Utility function to format currency
         function formatCurrency(amount) {
-            return new Intl.NumberFormat('en-US', {
-                style: 'currency',
-                currency: 'USD',
-                minimumFractionDigits: 0,
-                maximumFractionDigits: 0
-            }).format(amount);
+          return new Intl.NumberFormat("en-US", {
+            style: "currency",
+            currency: "USD",
+            minimumFractionDigits: 0,
+            maximumFractionDigits: 0,
+          }).format(amount);
         }
 
         // Update slider progress fill
         function updateSliderProgress(slider, progressElement) {
-            const min = parseFloat(slider.min);
-            const max = parseFloat(slider.max);
-            const value = parseFloat(slider.value);
-            let progress = ((value - min) / (max - min)) * 100;
+          const min = parseFloat(slider.min);
+          const max = parseFloat(slider.max);
+          const value = parseFloat(slider.value);
+          let progress = ((value - min) / (max - min)) * 100;
 
-            // Apply a slight extension to cover the thumb
-            const extendedProgress = Math.min(progress + 1.5, 100);
+          // Apply a slight extension to cover the thumb
+          const extendedProgress = Math.min(progress + 1.5, 100);
 
-            if (progressElement) {
-                progressElement.style.width = `${extendedProgress}%`;
-            }
+          if (progressElement) {
+            progressElement.style.width = `${extendedProgress}%`;
+          }
         }
 
         // Update the displayed value next to the slider title
         function updateDisplayValue(slider, displayElement) {
-            if (slider.id === 'accountRange') {
-                // Use the hard stop values
-                const index = parseInt(slider.value);
-                const value = accountValues[index];
-                const formattedValue = formatCurrency(value);
-                displayElement.textContent = formattedValue;
-            } else {
-                // Format profit rate as percentage
-                const value = parseFloat(slider.value);
-                displayElement.textContent = `${value}%`;
-            }
+          if (slider.id === "accountRange") {
+            // Use the hard stop values
+            const index = parseInt(slider.value);
+            const value = accountValues[index];
+            const formattedValue = formatCurrency(value);
+            displayElement.textContent = formattedValue;
+          } else {
+            // Format profit rate as percentage
+            const value = parseFloat(slider.value);
+            displayElement.textContent = `${value}%`;
+          }
         }
 
         // Update the plan button based on account size
         function updatePlanButton() {
-            const accountIndex = parseInt(accountRange.value);
-            const fee = accountFees[accountIndex];
-            const link = accountLinks[accountIndex];
-            
-            // Update button text and href
-            planButton.textContent = `$${fee}`;
-            planButton.href = link;
+          const accountIndex = parseInt(accountRange.value);
+          const fee = accountFees[accountIndex];
+          const link = accountLinks[accountIndex];
+
+          // Update button text and href
+          planButton.textContent = `$${fee}`;
+          planButton.href = link;
         }
 
         // Calculate and display the final earnings
         function calculateEarnings() {
-            // Get account size from hard stop values
-            const accountIndex = parseInt(accountRange.value);
-            const accountSize = accountValues[accountIndex];
-            const profitPercent = parseFloat(profitRange.value);
-            const traderTakeHomeRate = 0.80; // 80%
+          // Get account size from hard stop values
+          const accountIndex = parseInt(accountRange.value);
+          const accountSize = accountValues[accountIndex];
+          const profitPercent = parseFloat(profitRange.value);
+          const traderTakeHomeRate = 0.8; // 80%
 
-            // Calculate earnings based on account size and profit percentage
-            const monthlyProfit = (accountSize * profitPercent) / 100;
-            const calculatedTakeHome = monthlyProfit * traderTakeHomeRate;
-            monthlyEarnings.textContent = formatCurrency(calculatedTakeHome);
+          // Calculate earnings based on account size and profit percentage
+          const monthlyProfit = (accountSize * profitPercent) / 100;
+          const calculatedTakeHome = monthlyProfit * traderTakeHomeRate;
+          monthlyEarnings.textContent = formatCurrency(calculatedTakeHome);
         }
 
         // --- Event Listeners ---
 
         // Account slider input
-        accountRange.addEventListener('input', function() {
-            updateDisplayValue(accountRange, accountValueDisplay);
-            updateSliderProgress(accountRange, accountProgress);
-            updatePlanButton(); // Update button when account changes
-            calculateEarnings();
+        accountRange.addEventListener("input", function () {
+          updateDisplayValue(accountRange, accountValueDisplay);
+          updateSliderProgress(accountRange, accountProgress);
+          updatePlanButton(); // Update button when account changes
+          calculateEarnings();
         });
 
         // Profit slider input
-        profitRange.addEventListener('input', function() {
-            updateDisplayValue(profitRange, profitValueDisplay);
-            updateSliderProgress(profitRange, profitProgress);
-            calculateEarnings();
+        profitRange.addEventListener("input", function () {
+          updateDisplayValue(profitRange, profitValueDisplay);
+          updateSliderProgress(profitRange, profitProgress);
+          calculateEarnings();
         });
 
         // --- Initialization ---
@@ -1882,72 +2453,74 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         calculateEarnings();
 
         // Update on window resize (to correct progress bar position)
-        window.addEventListener('resize', function() {
-            updateSliderProgress(accountRange, accountProgress);
-            updateSliderProgress(profitRange, profitProgress);
+        window.addEventListener("resize", function () {
+          updateSliderProgress(accountRange, accountProgress);
+          updateSliderProgress(profitRange, profitProgress);
         });
-    });
-</script>
+      });
+    </script>
 
-
-<script>
-
-    document.addEventListener('DOMContentLoaded', function() {
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
         // Minimal tooltip implementation
-        document.querySelectorAll('.info-tooltip').forEach(icon => {
-            icon.addEventListener('mouseenter', function(e) {
-                const text = this.getAttribute('data-tooltip');
-                if (!text) return;
+        document.querySelectorAll(".info-tooltip").forEach((icon) => {
+          icon.addEventListener("mouseenter", function (e) {
+            const text = this.getAttribute("data-tooltip");
+            if (!text) return;
 
-                // Remove any existing tooltips
-                document.querySelectorAll('.floating-tooltip').forEach(t => t.remove());
+            // Remove any existing tooltips
+            document
+              .querySelectorAll(".floating-tooltip")
+              .forEach((t) => t.remove());
 
-                // Create new tooltip
-                const tooltip = document.createElement('div');
-                tooltip.className = 'floating-tooltip arrow-left';
-                tooltip.textContent = text;
-                document.body.appendChild(tooltip);
+            // Create new tooltip
+            const tooltip = document.createElement("div");
+            tooltip.className = "floating-tooltip arrow-left";
+            tooltip.textContent = text;
+            document.body.appendChild(tooltip);
 
-                // Simple positioning
-                const rect = this.getBoundingClientRect();
-                tooltip.style.left = (rect.right + 10) + 'px';
-                tooltip.style.top = (rect.top + window.scrollY) + 'px';
+            // Simple positioning
+            const rect = this.getBoundingClientRect();
+            tooltip.style.left = rect.right + 10 + "px";
+            tooltip.style.top = rect.top + window.scrollY + "px";
 
-                // Store reference
-                this.tooltip = tooltip;
-            });
+            // Store reference
+            this.tooltip = tooltip;
+          });
 
-            icon.addEventListener('mouseleave', function() {
-                if (this.tooltip) {
-                    this.tooltip.remove();
-                    this.tooltip = null;
-                }
-            });
+          icon.addEventListener("mouseleave", function () {
+            if (this.tooltip) {
+              this.tooltip.remove();
+              this.tooltip = null;
+            }
+          });
         });
-    });
-</script>
+      });
+    </script>
 
-
-
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="{% static 'js/jquery.js' %}"></script> 
-<script src="{% static 'js/popper.min.js' %}"></script>
-<script src="{% static 'js/bootstrap.min.js' %}"></script>
-<script src="{% static 'js/jquery.fancybox.js' %}"></script>
-<script src="{% static 'js/jquery-ui.js' %}"></script>
-<script src="{% static 'js/gsap.js' %}"></script>
-<script src="{% static 'js/gsap-scroll-to-plugin.js' %}"></script>
-<script src="{% static 'js/gsap-scroll-smoother.js' %}"></script>
-<script src="{% static 'js/gsap-scroll-trigger.js' %}"></script>
-<script src="{% static 'js/gsap-split-text.js' %}"></script>
-<script src="{% static 'js/split-type.min.js' %}"></script>
-<script src="{% static 'js/parallaxie.js' %}"></script>
-<script src="{% static 'js/wow.js' %}"></script>
-<script src="{% static 'js/bxslider.js' %}"></script>
-<script src="{% static 'js/nice-select.min.js' %}"></script>
-<script src="{% static 'js/knob.js' %}"></script>
-<script src="{% static 'js/appear.js' %}"></script>
-<script src="{% static 'js/swiper.min.js' %}"></script>
-<script src="{% static 'js/mixitup.js' %}"></script>
-<script src="{% static 'js/script.js' %}"></script>
-</body>
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.fancybox.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.js' %}"></script>
+    <script src="{% static 'js/gsap.js' %}"></script>
+    <script src="{% static 'js/gsap-scroll-to-plugin.js' %}"></script>
+    <script src="{% static 'js/gsap-scroll-smoother.js' %}"></script>
+    <script src="{% static 'js/gsap-scroll-trigger.js' %}"></script>
+    <script src="{% static 'js/gsap-split-text.js' %}"></script>
+    <script src="{% static 'js/split-type.min.js' %}"></script>
+    <script src="{% static 'js/parallaxie.js' %}"></script>
+    <script src="{% static 'js/wow.js' %}"></script>
+    <script src="{% static 'js/bxslider.js' %}"></script>
+    <script src="{% static 'js/nice-select.min.js' %}"></script>
+    <script src="{% static 'js/knob.js' %}"></script>
+    <script src="{% static 'js/appear.js' %}"></script>
+    <script src="{% static 'js/swiper.min.js' %}"></script>
+    <script src="{% static 'js/mixitup.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
 </html>
